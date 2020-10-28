@@ -2,7 +2,7 @@ module.exports = {
 	siteMetadata: {
 		defaultLanguage: "vn",
 		title: `Bwing`,
-		description: `Bwing là trang cá cược thể thao hàng đầu thế giới, cung cấp trải nghiệm tốt nhất cho người dùng trên tất cả môn thể thao, casino, xèng, keno, thể thao điện tử, casino RNG, thể thao fantasy, thể thao ảo, xổ số, casino trực tiếp, dealer trực tiếp, bingo và đua xe.`,
+		description: `Bwing is the world leading sportsbook offering one of the kind gambling experience in live betting covering all sports, casino, slots, keno, esports, rng casino, fantasy sports, virtual sports, lottery, live casino, live dealer, bingo, and racing.`,
 		author: `Bwing`,
 		supportedLanguages: ["en", "vn"],
 		siteUrl: "https://www.Bwing.com"
