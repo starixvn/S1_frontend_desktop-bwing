@@ -5,14 +5,6 @@ import { useTranslation } from "react-i18next";
 import { setCookie, readCookie } from "../common/common";
 import { api_account_GetWalletInfo } from "../../service/api/account";
 
-import edgeImg1 from "../../styles/img/EDGE1.jpg";
-import edgeImg2 from "../../styles/img/EDGE2.jpg";
-import edgeImg3 from "../../styles/img/EDGE3.jpg";
-
-import specialImg1 from "../../styles/img/slots777.png";
-import specialImg2 from "../../styles/img/service.png";
-import specialImg3 from "../../styles/img/bank.png";
-import specialImg4 from "../../styles/img/speed.png";
 import Bong88 from "../../styles/img/bong88.png";
 
 import Marquee from "./marquee";
@@ -82,57 +74,7 @@ export default () => {
 			<section>
 				<EventSwipper />
 				<News />
-				<div className="edge">
-					<div>
-						<div className="title">{t("lbl_EdgeOfBwing")}</div>
-						<span></span>
-					</div>
-					<div className="articleModule">
-						<div>
-							<img src={edgeImg1} alt="edgeImg" />
-						</div>
-						<div>
-							<img src={edgeImg2} alt="edgeImg" />
-						</div>
-						<div>
-							<img src={edgeImg3} alt="edgeImg" />
-						</div>
-					</div>
-				</div>
-				<div className="special">
-					<div>
-						<img src={specialImg1} alt="specialImg1" />
-						<ul>
-							<li className="title">{t("lbl_ExtensiveGames")}</li>
-							<li>{t("lbl_ExtensiveGamesDesc")}</li>
-						</ul>
-					</div>
-					<div>
-						<img src={specialImg2} alt="specialImg2" />
-						<ul>
-							<li className="title">
-								{t("lbl_ExcellentCustomerCare")}
-							</li>
-							<li>{t("lbl_ExcellentCustomerCareDesc")}</li>
-						</ul>
-					</div>
-					<div>
-						<img src={specialImg3} alt="specialImg3" />
-						<ul>
-							<li className="title">{t("lbl_PaymentMethods")}</li>
-							<li>{t("lbl_PaymentMethodsDesc")}</li>
-						</ul>
-					</div>
-					<div>
-						<img src={specialImg4} alt="specialImg4" />
-						<ul>
-							<li className="title">
-								{t("lbl_TransactionSpeed")}
-							</li>
-							<li>{t("lbl_TransactionSpeedDesc")}</li>
-						</ul>
-					</div>
-				</div>
+
 				<Platforms />
 				<div className="powered">
 					<div>{t("lbl_PoweredBy")}</div>
