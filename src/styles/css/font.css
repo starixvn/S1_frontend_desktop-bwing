@@ -53,8 +53,8 @@
   font-size: 36px !important;
 }
 
-.icon-balance:before {
-  font-size: 24px !important;
+.icon-spinner11:before {
+  font-size: 12px !important;
 }
 
 .icon-nodata:before {
@@ -109,11 +109,11 @@
   content: "\e996";
 }
 
-.icon-ethereum:before {
+.icon-ETH:before {
   content: "\e9a5";
 }
 
-.icon-bitcoin:before {
+.icon-BTC:before {
   content: "\e9a6";
 }
 
@@ -523,6 +523,22 @@
 
 .icon-withdrawal:before {
   content: "\e910";
+}
+
+.icon-arrow_right:before {
+  content: "\e9a8";
+}
+
+.icon-arrow_left:before {
+  content: "\e9a9";
+}
+
+.icon-arrow_drop_up:before {
+  content: "\e9aa";
+}
+
+.icon-arrow_drop_down:before {
+  content: "\e9ab";
 }
 
 .icon-broken_image:before {
