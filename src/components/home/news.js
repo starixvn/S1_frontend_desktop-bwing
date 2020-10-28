@@ -86,7 +86,7 @@ export default () => {
 		<>
 			<div className="news">
 				<div>
-					<div className="title">{t("lbl_Goal123News")}</div>
+					<div className="title">{t("lbl_BwingNews")}</div>
 					<span></span>
 				</div>
 				<div className="articleModule">{newsRows}</div>

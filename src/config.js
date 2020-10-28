@@ -1,4 +1,4 @@
-const siteName = "Goal123";
+const siteName = "Bwing";
 
 const getAffiliate = ({ langId }) => {
 	if (typeof window === `undefined`) return "";
@@ -34,8 +34,8 @@ export default process.env.NODE_ENV === "production"
 			// imgUrl: "http://localhost:60930",
 			// t_and_cURL: "http://localhost:60930",
 
-			apiURL: "http://stag.goal123.com",
-			imgUrl: "http://stag.goal123.com",
+			apiURL: "http://stag.Bwing.com",
+			imgUrl: "http://stag.Bwing.com",
 			t_and_cURL: "http://www.n88dev.com",
-			openURL: "http://stag.goal123.com"
+			openURL: "http://stag.Bwing.com"
 	  };
