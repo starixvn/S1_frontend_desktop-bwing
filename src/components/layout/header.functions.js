@@ -40,14 +40,14 @@ const BeforeLogin = ({ langId }) => {
 	};
 
 	return (
-		<>
-			<button className="join" onClick={clickJoin}>
-				{t("lbl_JoinNow")}
-			</button>
-			<button className="login" onClick={clickLogin}>
+		<div className="btnGroup">
+			<button className="blue login" onClick={clickLogin}>
 				{t("lbl_Login")}
 			</button>
-		</>
+			<button className="orange join" onClick={clickJoin}>
+				{t("lbl_JoinNow")}
+			</button>
+		</div>
 	);
 };
 
@@ -137,11 +137,24 @@ const AfterLogin = () => {
 
 	return (
 		<>
-			<Link
-				to={`/${userInfo.langId}/${path.deposit.root}`}
-				className="deposit-btn icon icon-icon32px_deposit">
-				{t("lbl_Deposit")}
-			</Link>
+			<div className="btnGroup">
+				<Link
+					to={`/${userInfo.langId}/${path.transferFunds.root}`}
+					className="blue">
+					{t("lbl_TransferFunds")}
+				</Link>
+				<Link
+					to={`/${userInfo.langId}/${path.deposit.root}`}
+					className="orange">
+					{t("lbl_Deposit")}
+				</Link>
+			</div>
+
+			{/* <Wallet langId={userInfo.langId} i18n={t} /> */}
+			<Suspense fallback={<></>}>
+				<Wallet langId={userInfo.langId} i18n={t} />
+			</Suspense>
+
 			<DropdownHeader
 				mainKey={`header-cashierLink`}
 				langId={userInfo.langId}
@@ -151,10 +164,7 @@ const AfterLogin = () => {
 				options={defCashierLinks}
 				placeholder={t("lbl_Cashier")}
 			/>
-			{/* <Wallet langId={userInfo.langId} i18n={t} /> */}
-			<Suspense fallback={<></>}>
-				<Wallet langId={userInfo.langId} i18n={t} />
-			</Suspense>
+
 			<DropdownHeader
 				mainKey={`header-settingLink`}
 				langId={userInfo.langId}

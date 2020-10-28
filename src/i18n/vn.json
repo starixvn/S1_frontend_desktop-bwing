@@ -18,7 +18,7 @@
 	"lbl_Cancel": "Hủy",
 	"lbl_Check18TC4": "Tôi xác nhận tôi đã trên 21 tuổi",
 	"lbl_DontHaveAccount": "Không có tài khoản?",
-	"lbl_ForgetPassword": "Quên ID hoặc mật khẩu?",
+	"lbl_ForgetPassword": "Quên mật khẩu?",
 	"lbl_Username": "Tên đăng nhập",
 	"lbl_Password": "Mật khẩu",
 	"msg_UsernameReq": "Tên đăng nhập là bắt buộc.",
@@ -362,5 +362,8 @@
 	"lbl_TurnoverAccmulateHint": "Bạn cần hoành thành doanh thu cược yêu cầu của khuyến mãi để thực hiện chuyển quỹ",
 	"lbl_PlayNow": "Tham gia",
 	"lbl_Free": "Chơi Thử",
-	"lbl_SiteMap":"Sơ đồ trang web"
+	"lbl_SiteMap":"Sơ đồ trang web",
+	"lbl_HowToDepoist":"CÁCH GỬI TIỀN",
+	"lbl_HowToPlay":"CÁCH ĐẶT CƯỢC",
+	"lbl_UserGuide":"User Guide"
 }

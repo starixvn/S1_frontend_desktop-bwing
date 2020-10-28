@@ -14,6 +14,7 @@ export default langId => {
 		Terms: `${config.t_and_cURL}/SiteSkin/${config.siteName}/Static/${langId}/Terms.html`,
 		ContactUs: `${config.t_and_cURL}/SiteSkin/${config.siteName}/Static/${langId}/ContactUs.html`,
 		Deposit: `${config.t_and_cURL}/SiteSkin/${config.siteName}/Static/${langId}/HowToDeposit.html`,
-		Withdrawal: `${config.t_and_cURL}/SiteSkin/${config.siteName}/Static/${langId}/HowToWithdrawal.html`
+		Withdrawal: `${config.t_and_cURL}/SiteSkin/${config.siteName}/Static/${langId}/HowToWithdrawal.html`,
+		HowToPlay: `${config.t_and_cURL}/SiteSkin/${config.siteName}/Static/${langId}/HowToBet.html`
 	};
 };

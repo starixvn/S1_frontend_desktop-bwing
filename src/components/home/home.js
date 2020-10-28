@@ -5,16 +5,11 @@ import { useTranslation } from "react-i18next";
 import { setCookie, readCookie } from "../common/common";
 import { api_account_GetWalletInfo } from "../../service/api/account";
 
-import Bong88 from "../../styles/img/bong88.png";
-
 import Marquee from "./marquee";
-import News from "./news";
 import EventSwipper from "./eventSwipper";
-import config from "../../config";
-import GameQuickLinks from "./gameQuickLinks";
 import SwipperBanner from "../common/swipperBanner";
-import CountDown from "./countDown";
 import PromoGameList from "./promoGameList";
+import TandC from "../../service/t_and_c";
 
 export default () => {
 	const { t } = useTranslation();
@@ -68,48 +63,73 @@ export default () => {
 		<main>
 			<SwipperBanner ImgFolder="Promotion" filterHideInHome={true} />
 			<Marquee />
-			<CountDown />
-			<GameQuickLinks t={t} />
-			<PromoGameList t={t} userInfo={userInfo} />
 			<section>
 				<EventSwipper />
-				<News />
-
-				<Platforms />
-				<div className="powered">
-					<div>{t("lbl_PoweredBy")}</div>
-					<img src={Bong88} alt="Bong88" />
+			</section>
+			<section>
+				<PromoGameList t={t} userInfo={userInfo} />
+			</section>
+			<section>
+				<div className="guide">
+					<div className="guidelist">
+						<span className="title">{t("lbl_UserGuide")}</span>
+						<UserGuide t={t} langId={userInfo.langId} />
+					</div>
+					<div className="exGroup">
+						<div className="ex">
+							<img
+								src={require("../../styles/img/24hr.png")}
+								alt="24/7 customer care service"
+							/>
+							<ul>
+								<li className="title">
+									{t("lbl_ExcellentCustomerCare")}
+								</li>
+								<li>{t("lbl_ExcellentCustomerCareDesc")}</li>
+							</ul>
+						</div>
+						<div className="ex">
+							<img
+								src={require("../../styles/img/games.png")}
+								alt="games"
+							/>
+							<ul>
+								<li className="title">
+									{t("lbl_ExtensiveGames")}
+								</li>
+								<li>{t("lbl_ExtensiveGamesDesc")}</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<img
+							src={require("../../styles/img/D&W.png")}
+							alt="deposit and withdrawal"
+						/>
+					</div>
 				</div>
 			</section>
 		</main>
 	);
 };
 
-const defPlatform = [
-	"saba",
-	"ab",
-	"yl",
-	"ag",
-	"gp",
-	"dg",
-	"sa",
-	"yg",
-	"pp",
-	"sg",
-	"pg"
-];
-
-const Platforms = () => {
-	const platformRows = defPlatform.map(item => {
-		return (
-			<button key={`platform-${item}`}>
-				<img
-					alt="logo"
-					src={`${config.imgUrl}/common/images/logo/${item}.png`}
-				/>
-			</button>
-		);
-	});
-
-	return <div className="platform">{platformRows}</div>;
+const UserGuide = ({ t, langId }) => {
+	return (
+		<ul>
+			<li className="icon icon-deposit1">
+				<a href={TandC(langId).Deposit}>{t("lbl_HowToDepoist")}</a>
+			</li>
+			<li className="icon icon-withdrawal1">
+				<a href={TandC(langId).Withdrawal}>
+					{t("lbl_HowToWithdrawal")}
+				</a>
+			</li>
+			<li className="icon icon-play">
+				<a href={TandC(langId).HowToPlay}>{t("lbl_HowToPlay")}</a>
+			</li>
+			<li className="icon icon-FAQS">
+				{<a href={TandC(langId).FAQ}>{t("lbl_FAQ")}</a>}
+			</li>
+		</ul>
+	);
 };

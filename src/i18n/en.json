@@ -18,7 +18,7 @@
 	"lbl_Cancel": "Cancel",
 	"lbl_Check18TC4": "I acknowledge I am at least 21 years of age.",
 	"lbl_DontHaveAccount": "Don't have an account?",
-	"lbl_ForgetPassword": "Forgotten your ID or password?",
+	"lbl_ForgetPassword": "Forget Password?",
 	"lbl_Username": "Username",
 	"lbl_Password": "Password",
 	"msg_UsernameReq": "Username is required.",
@@ -362,5 +362,10 @@
 	"lbl_TurnoverAccmulateHint": "Your Fund are locked to transfer out due to Rollover requirement is not fulfils.",
 	"lbl_PlayNow": "Play Now",
 	"lbl_Free": "Free Play",
-	"lbl_SiteMap":"Site Map"
+	"lbl_SiteMap":"Site Map",
+	"lbl_HowToRegister":"How to Register",
+	"lbl_HowToDepoist":"How to Deposit",
+	"lbl_HowToWithdrawal":"How to Withdrawal",
+	"lbl_HowToPlay":"How to Play",
+	"lbl_UserGuide":"User Guide"
 }

@@ -24,11 +24,11 @@ export default ({ langId, t, hideSiteMap = false }) => (
 			<a href={TandC(langId).ContactUs} target="_blank" rel="noreferrer">
 				{t("lbl_ContactUs")}
 			</a>
-			{hideSiteMap ? null : (
+			{/* {hideSiteMap ? null : (
 				<Link to={`/${langId}/${path.siteMap.root}`}>
 					{t("lbl_SiteMap")}
 				</Link>
-			)}
+			)} */}
 		</div>
 	</div>
 );

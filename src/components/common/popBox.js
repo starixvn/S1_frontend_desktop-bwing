@@ -201,9 +201,7 @@ export default () => {
 			<Loading />
 		) : (
 			<div id="popup" className="active">
-				<div className="pop">
-					<Suspense fallback={<Loading />}>{content}</Suspense>
-				</div>
+				<Suspense fallback={<Loading />}>{content}</Suspense>
 			</div>
 		)
 	) : (

@@ -170,11 +170,13 @@ const LoginPanel = () => {
 	};
 
 	return (
-		<div className="loginpop active">
-			<div className="joinloginModule">
+		<div className="loginpop">
+			<div className="icon icon-close" onClick={clickCancel}></div>
+			<div className="loginModule">
 				<img src={loginBanner} alt="loginBanner" />
-				<form className="joinloginFunction" onSubmit={handleLogin}>
-					<span className="title txt-yellow">{t("lbl_Login")}</span>
+
+				<div className="loginFunction">
+					<span className="title">{t("lbl_Login")}</span>
 					<div className="noAccount">
 						{t("lbl_DontHaveAccount")}&nbsp;
 						<button
@@ -184,51 +186,56 @@ const LoginPanel = () => {
 							{t("lbl_JoinNow")}
 						</button>
 					</div>
-					<div className="inputModule">
-						<Inputbox
-							icon="icon-member txt-blue12"
-							placeholder={t("lbl_Username")}
-							value={userValue.username}
-							onChange={EditField.bind(null, "username")}
-							onBlur={checkValue.bind(null, "username")}
-							clickInfo={clickInfo.bind(this, "username")}
-							checked={tip.username.checked}
-							tip={tip.username.msg}
-							warningIcon="icon-warning"
-						/>
+					<form onSubmit={handleLogin}>
+						<div className="inputModule">
+							<div className="title">{t("lbl_Username")}</div>
+							<Inputbox
+								// icon="icon-member txt-blue12"
+								placeholder={t("lbl_Username")}
+								value={userValue.username}
+								onChange={EditField.bind(null, "username")}
+								onBlur={checkValue.bind(null, "username")}
+								clickInfo={clickInfo.bind(this, "username")}
+								checked={tip.username.checked}
+								tip={tip.username.msg}
+								warningIcon="icon-warning"
+							/>
 
-						<InputboxPSW
-							icon="icon-key txt-blue12"
-							inputType={`${!showPsw ? "password" : "text"}`}
-							placeholder={t("lbl_Password")}
-							value={userValue.password}
-							onChange={EditField.bind(null, "password")}
-							onBlur={checkValue.bind(null, "password")}
-							showPsw={showPsw}
-							showPswHandler={showPswHandler}
-							checked={tip.password.checked}
-							clickInfo={clickInfo.bind(this, "password")}
-							tip={tip.password.msg}
-						/>
-
-						<Link
-							to={`/${userInfo.langId}/${path.forgetPassword.root}`}
-							className="txt-blue2">
-							{t("lbl_ForgetPassword")}
-						</Link>
-					</div>
-					<div className="btnGroup">
-						<button
-							className="btn-cancel"
-							type="button"
-							onClick={clickCancel}>
-							{t("lbl_Cancel")}
-						</button>
-						<button className="btn-check" type="submit">
-							{t("lbl_Login")}
-						</button>
-					</div>
-				</form>
+							<div className="title">
+								{t("lbl_Password")}
+								<Link
+									to={`/${userInfo.langId}/${path.forgetPassword.root}`}
+									className="txt-blue15">
+									{t("lbl_ForgetPassword")}
+								</Link>
+							</div>
+							<InputboxPSW
+								// icon="icon-key txt-blue12"
+								inputType={`${!showPsw ? "password" : "text"}`}
+								placeholder={t("lbl_Password")}
+								value={userValue.password}
+								onChange={EditField.bind(null, "password")}
+								onBlur={checkValue.bind(null, "password")}
+								showPsw={showPsw}
+								showPswHandler={showPswHandler}
+								checked={tip.password.checked}
+								clickInfo={clickInfo.bind(this, "password")}
+								tip={tip.password.msg}
+							/>
+						</div>
+						<div className="btnGroup">
+							<button
+								className="btn-cancel"
+								type="button"
+								onClick={clickCancel}>
+								{t("lbl_Cancel")}
+							</button>
+							<button className="blue" type="submit">
+								{t("lbl_Login")}
+							</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	);

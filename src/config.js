@@ -36,6 +36,6 @@ export default process.env.NODE_ENV === "production"
 
 			apiURL: "http://stag.Bwing.com",
 			imgUrl: "http://stag.Bwing.com",
-			t_and_cURL: "http://www.n88dev.com",
+			t_and_cURL: "http://stag.Bwing.com",
 			openURL: "http://stag.Bwing.com"
 	  };
