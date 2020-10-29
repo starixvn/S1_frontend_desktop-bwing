@@ -6,7 +6,7 @@ import { siteInfo } from "../../config";
 
 export default ({ langId, t, hideSiteMap = false }) => (
 	<div>
-		<span className="title">{t("lbl_AboutGoal123")}</span>
+		<span className="title">{t("lbl_AboutBwing")}</span>
 		<div>
 			<a
 				style={{ fontWeight: "bold" }}
@@ -24,11 +24,11 @@ export default ({ langId, t, hideSiteMap = false }) => (
 			<a href={TandC(langId).ContactUs} target="_blank" rel="noreferrer">
 				{t("lbl_ContactUs")}
 			</a>
-			{hideSiteMap ? null : (
+			{/* {hideSiteMap ? null : (
 				<Link to={`/${langId}/${path.siteMap.root}`}>
 					{t("lbl_SiteMap")}
 				</Link>
-			)}
+			)} */}
 		</div>
 	</div>
 );

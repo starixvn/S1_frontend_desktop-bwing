@@ -1,16 +1,12 @@
 import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { userInfoContext } from "../common/context";
-// import SocialMedia1 from "../../styles/img/te.png";
-// import SocialMedia2 from "../../styles/img/tw.png";
-// import SocialMedia3 from "../../styles/img/fb.png";
-// import SocialMedia4 from "../../styles/img/yb.png";
-// import SocialMedia5 from "../../styles/img/ig.png";
 import Bettings from "./footer.bettings";
 import OurPolicies from "./footer.ourPolicies";
 import HelpSupport from "./footer.helpSupport";
 import Promotions from "./footer.promotions";
 import About from "./footer.about";
+import config from "../../config";
 
 export default () => {
 	const { t } = useTranslation();
@@ -32,33 +28,50 @@ export default () => {
 				<div>
 					<span className="title">{t("lbl_ContactUs")}</span>
 					<div>{t("lbl_ConatctUsHint")}</div>
-					{/* <div>
-					<span className="title">Social Media</span>
-					<div>
-						<a href="">
-							<img src={SocialMedia1} />
-						</a>
-						<a href="">
-							<img src={SocialMedia2} />
-						</a>
-						<a href="">
-							<img src={SocialMedia3} />
-						</a>
-					</div>
-					<div>
-						<a href="">
-							<img src={SocialMedia4} />
-						</a>
-						<a href="">
-							<img src={SocialMedia5} />
-						</a>
-					</div>
-				</div> */}
+				</div>
+			</div>
+			<div>
+				<Platforms />
+				<div className="powered">
+					<div>{t("lbl_PoweredBy")}</div>
+					<img
+						src={require("../../styles/img/bong88.png")}
+						alt="Bong88"
+					/>
 				</div>
 			</div>
 			<div className="copyright">
-				© Copyright 2020. Goal123. All Rights Reserved.
+				© Copyright 2020. Bwing. All Rights Reserved.
 			</div>
 		</footer>
 	);
+};
+
+const defPlatform = [
+	"saba",
+	"ab",
+	"yl",
+	"ag",
+	"gp",
+	"dg",
+	"sa",
+	"yg",
+	"pp",
+	"sg",
+	"pg"
+];
+
+const Platforms = () => {
+	const platformRows = defPlatform.map(item => {
+		return (
+			<button key={`platform-${item}`}>
+				<img
+					alt="logo"
+					src={`${config.imgUrl}/common/images/logo/${item}.png`}
+				/>
+			</button>
+		);
+	});
+
+	return <div className="platformGroup">{platformRows}</div>;
 };

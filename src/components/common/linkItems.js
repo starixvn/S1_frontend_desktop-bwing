@@ -48,7 +48,7 @@ export default ({
 		let m = defMenuLinks[key];
 		let arrowIcon =
 			m.subMenu && m.subMenu.length > 0 ? (
-				<i className="icon icon-keyboard_arrow_right"></i>
+				<i className="icon icon-arrow_drop_down"></i>
 			) : null;
 
 		let _className = m.className ? m.className : "";
