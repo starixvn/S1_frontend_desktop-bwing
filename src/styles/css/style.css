@@ -68,6 +68,8 @@ img {
 
 a, button {
   color: white;
+  font-family: "Microsoft YaHei", sans-serif;
+  cursor: pointer;
 }
 
 .transition, header .header > div.menu .subMenu-Wrapper, .inputBox .dropdown > .dropdown-container, .inputBox-org .dropdown > .dropdown-container, .inputBox-white .dropdown > .dropdown-container, .inputBox-blue .dropdown > .dropdown-container, .inputBox-gray .dropdown > .dropdown-container, .inputBox-yellow .dropdown > .dropdown-container, .tip, .personal .list .listBody {
@@ -435,7 +437,7 @@ header .header > div.function > div:last-child {
   margin-right: 0;
 }
 
-header .header > div.function > div button {
+header .header > div.function > div button, header .header > div.function > div a {
   white-space: nowrap;
   max-width: unset;
 }
@@ -532,8 +534,6 @@ header .header > div.function .country .countryList {
   margin-top: 39px;
   background: rgba(37, 50, 88, 0.9);
   border-radius: 3px;
-  padding: 0 10px;
-  width: 105px;
   margin-left: -5px;
   right: 0;
   z-index: 1;
@@ -541,9 +541,15 @@ header .header > div.function .country .countryList {
 
 header .header > div.function .country .countryList button, header .header > div.function .country .countryList a {
   margin: 10px 0;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  line-height: 30px;
+}
+
+header .header > div.function .country .countryList button:hover, header .header > div.function .country .countryList a:hover {
+  background: #0F1A38;
 }
 
 header .header > div.function .country.active .countryList {
@@ -559,7 +565,7 @@ header .header > div.function .cashier, header .header > div.function .wallet, h
   cursor: pointer;
 }
 
-header .header > div.function .cashier > button, header .header > div.function .wallet > button, header .header > div.function .memberfile > button {
+header .header > div.function .cashier > button, header .header > div.function .cashier > a, header .header > div.function .wallet > button, header .header > div.function .wallet > a, header .header > div.function .memberfile > button, header .header > div.function .memberfile > a {
   color: white;
   font-size: 14px;
   -webkit-transition: 0.7s;
@@ -582,11 +588,13 @@ header .header > div.function .cashier .submenu, header .header > div.function .
   z-index: 1;
 }
 
-header .header > div.function .cashier .submenu > a, header .header > div.function .wallet .submenu > a, header .header > div.function .memberfile .submenu > a {
+header .header > div.function .cashier .submenu > a, header .header > div.function .cashier .submenu > button, header .header > div.function .wallet .submenu > a, header .header > div.function .wallet .submenu > button, header .header > div.function .memberfile .submenu > a, header .header > div.function .memberfile .submenu > button {
   padding: 0 20px;
+  line-height: 30px;
+  text-align: left;
 }
 
-header .header > div.function .cashier .submenu > a:hover, header .header > div.function .wallet .submenu > a:hover, header .header > div.function .memberfile .submenu > a:hover {
+header .header > div.function .cashier .submenu > a:hover, header .header > div.function .cashier .submenu > button:hover, header .header > div.function .wallet .submenu > a:hover, header .header > div.function .wallet .submenu > button:hover, header .header > div.function .memberfile .submenu > a:hover, header .header > div.function .memberfile .submenu > button:hover {
   background: #0F1A38;
 }
 
@@ -612,7 +620,7 @@ header .header > div.function .cashier .submenu .icon-exit span, header .header 
   transition: 0.7s;
 }
 
-header .header > div.function .cashier.active > button, header .header > div.function .cashier.active:before, header .header > div.function .cashier.active:after, header .header > div.function .wallet.active > button, header .header > div.function .wallet.active:before, header .header > div.function .wallet.active:after, header .header > div.function .memberfile.active > button, header .header > div.function .memberfile.active:before, header .header > div.function .memberfile.active:after {
+header .header > div.function .cashier.active > button, header .header > div.function .cashier.active > a, header .header > div.function .cashier.active:before, header .header > div.function .cashier.active:after, header .header > div.function .wallet.active > button, header .header > div.function .wallet.active > a, header .header > div.function .wallet.active:before, header .header > div.function .wallet.active:after, header .header > div.function .memberfile.active > button, header .header > div.function .memberfile.active > a, header .header > div.function .memberfile.active:before, header .header > div.function .memberfile.active:after {
   color: #1E85EC;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -648,9 +656,6 @@ header .header > div.function .wallet button.icon-eye-blocked, header .header > 
 
 header .header > div.function .wallet .submenu > div {
   padding: 0 20px;
-}
-
-header .header > div.function .wallet .submenu > div.walletBalance {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,39 +665,36 @@ header .header > div.function .wallet .submenu > div.walletBalance {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 260px;
 }
 
-header .header > div.function .wallet .submenu > div.walletBalance > div {
+header .header > div.function .wallet .submenu > div > div {
   -webkit-box-flex: 7;
       -ms-flex: 7;
           flex: 7;
   font-weight: bold;
-  padding-right: 10px;
   border-right: 1px dashed rgba(255, 255, 255, 0.5);
   margin-right: 10px;
 }
 
-header .header > div.function .wallet .submenu > div.walletBalance > div > div {
+header .header > div.function .wallet .submenu > div > div .walletBalance {
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .header > div.function .wallet .submenu > div > div .walletBalance > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-header .header > div.function .wallet .submenu > div.walletBalance > div > div span:last-child {
-  margin-left: 50px;
-}
-
-header .header > div.function .wallet .submenu > div.walletBalance button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: right;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
 }
 
 header .header > div.function .wallet .submenu > div.btnGroup {
@@ -706,7 +708,7 @@ header .header > div.function .wallet .submenu > div.btnGroup {
           justify-content: space-between;
 }
 
-header .header > div.function .wallet .submenu > div.btnGroup a {
+header .header > div.function .wallet .submenu > div.btnGroup a, header .header > div.function .wallet .submenu > div.btnGroup button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -714,7 +716,7 @@ header .header > div.function .wallet .submenu > div.btnGroup a {
   margin-right: 10px;
 }
 
-header .header > div.function .wallet .submenu > div.btnGroup a:last-child {
+header .header > div.function .wallet .submenu > div.btnGroup a:last-child, header .header > div.function .wallet .submenu > div.btnGroup button:last-child {
   margin-right: 0;
 }
 
@@ -773,7 +775,7 @@ main section > div .articleModule {
           justify-content: space-between;
 }
 
-main section > div .articleModule a {
+main section > div .articleModule a, main section > div .articleModule button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -790,11 +792,11 @@ main section > div .articleModule a {
           justify-content: space-between;
 }
 
-main section > div .articleModule a:last-child {
+main section > div .articleModule a:last-child, main section > div .articleModule button:last-child {
   margin-right: 0;
 }
 
-main section > div .articleModule a .title {
+main section > div .articleModule a .title, main section > div .articleModule button .title {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -929,15 +931,15 @@ footer > div.copyright {
   margin-left: 20px;
 }
 
-.joinus .joinModule > div.title {
+.joinus .joinModule > div:not(.btnGroup).title {
   font-size: 24px;
 }
 
-.joinus .joinModule > div.title + div {
+.joinus .joinModule > div:not(.btnGroup).title + div {
   margin: 15px 0 30px;
 }
 
-.joinus .joinModule > div a {
+.joinus .joinModule > div:not(.btnGroup) > a, .joinus .joinModule > div:not(.btnGroup) > button {
   font-weight: bold;
   text-decoration: underline;
   margin-left: 10px;
@@ -958,7 +960,7 @@ footer > div.copyright {
           align-items: flex-start;
 }
 
-.joinus .joinModule .Terms .agree a {
+.joinus .joinModule .Terms .agree a, .joinus .joinModule .Terms .agree button {
   color: #56ceff;
   font-size: 12px;
   font-weight: normal;
@@ -1197,7 +1199,6 @@ footer > div.copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Microsoft YaHei", sans-serif;
   color: #c6c6c6;
 }
 
@@ -1370,7 +1371,6 @@ input[type="file"] {
   font-weight: bold;
   font-size: 13px;
   line-height: normal;
-  max-width: 120px;
 }
 
 .btnGroup button:first-child, .btnGroup a:first-child {
@@ -1409,6 +1409,16 @@ input[type="file"] {
   background: #1fbdfd;
 }
 
+.btnGroup button.blueGradient, .btnGroup a.blueGradient {
+  background: -webkit-gradient(linear, left bottom, left top, from(#41b2e1), to(#6fd1fa));
+  background: linear-gradient(to top, #41b2e1, #6fd1fa);
+  color: black;
+}
+
+.btnGroup button.blueGradient:hover, .btnGroup a.blueGradient:hover {
+  background: #1fbdfd;
+}
+
 .btnGroup button.darkGray, .btnGroup a.darkGray {
   background: #666;
   color: white;
@@ -1433,8 +1443,8 @@ input[type="file"] {
 }
 
 .btnGroup button.blueBorder, .btnGroup a.blueBorder {
-  border: 1px solid #1E85EC;
-  color: white;
+  border: 1px solid #56ceff;
+  color: #56ceff;
 }
 
 .btnGroup button.blueBorder:hover, .btnGroup a.blueBorder:hover {
@@ -1475,25 +1485,6 @@ main > .swiper-container .swiper-slide {
   height: 10px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  width: calc(var(--swiper-navigation-size)/ 44 * 44);
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  outline: none;
-  z-index: 1;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-  content: "\e954";
-  font-family: 'icomoon';
-  color: white;
-}
-
-.swiper-button-prev {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
 }
 
 #Marquee {
@@ -1569,7 +1560,7 @@ main > .swiper-container .swiper-slide {
           align-items: center;
 }
 
-.quickLink a {
+.quickLink a, .quickLink button {
   width: 62px;
   height: 62px;
   margin: 5px 0;
@@ -1588,20 +1579,20 @@ main > .swiper-container .swiper-slide {
           align-items: center;
 }
 
-.quickLink a.icon {
+.quickLink a.icon, .quickLink button.icon {
   padding: 5px;
   background: #1E85EC;
 }
 
-.quickLink a:before {
+.quickLink a:before, .quickLink button:before {
   font-size: 48px;
 }
 
-.quickLink a.icon-library:before {
+.quickLink a.icon-library:before, .quickLink button.icon-library:before {
   font-size: 36px;
 }
 
-.quickLink a img {
+.quickLink a img, .quickLink button img {
   width: auto;
 }
 
@@ -1632,7 +1623,7 @@ main > .swiper-container .swiper-slide {
   margin-bottom: 30px;
 }
 
-#leftMenu .menuModule button {
+#leftMenu .menuModule button, #leftMenu .menuModule a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1677,7 +1668,7 @@ main > .swiper-container .swiper-slide {
   transition: 0.7s;
 }
 
-#leftMenu .menuModule a.menuSelect {
+#leftMenu .menuModule a.menuSelect, #leftMenu .menuModule button.menuSelect {
   border-bottom: 1px solid #1D3662;
   overflow: hidden;
   position: relative;
@@ -1696,12 +1687,12 @@ main > .swiper-container .swiper-slide {
   text-align: left;
 }
 
-#leftMenu .menuModule a.menuSelect span {
+#leftMenu .menuModule a.menuSelect span, #leftMenu .menuModule button.menuSelect span {
   z-index: 1;
   font-weight: normal;
 }
 
-#leftMenu .menuModule a.menuSelect:before {
+#leftMenu .menuModule a.menuSelect:before, #leftMenu .menuModule button.menuSelect:before {
   font-family: 'icomoon';
   content: "\e94e";
   font-size: 24px;
@@ -1710,7 +1701,7 @@ main > .swiper-container .swiper-slide {
   z-index: 1;
 }
 
-#leftMenu .menuModule a.menuSelect.active:after {
+#leftMenu .menuModule a.menuSelect.active:after, #leftMenu .menuModule button.menuSelect.active:after {
   content: '';
   width: 100%;
   height: 100%;
@@ -1721,7 +1712,7 @@ main > .swiper-container .swiper-slide {
   z-index: 0;
 }
 
-#leftMenu .menuModule a.menuSelect:last-child {
+#leftMenu .menuModule a.menuSelect:last-child, #leftMenu .menuModule button.menuSelect:last-child {
   border-bottom: 0;
 }
 
@@ -1775,7 +1766,7 @@ main > .swiper-container .swiper-slide {
   font-size: 24px;
 }
 
-.list .listTag button {
+.list .listTag button, .list .listTag a {
   line-height: 30px;
   background: #1E85EC;
   color: white;
@@ -1784,7 +1775,7 @@ main > .swiper-container .swiper-slide {
   border-top-right-radius: 10px;
 }
 
-.list .listTag button.active {
+.list .listTag button.active, .list .listTag a.active {
   background: #134DAE;
 }
 
@@ -1829,7 +1820,7 @@ main > .swiper-container .swiper-slide {
   font-weight: bold;
 }
 
-.list .listHeader button {
+.list .listHeader button, .list .listHeader a {
   font-size: 12px;
   position: absolute;
   right: 12px;
@@ -1920,7 +1911,7 @@ main > .swiper-container .swiper-slide {
   margin: 5px 0;
 }
 
-.list .listBody .btnGroup button {
+.list .listBody .btnGroup button, .list .listBody .btnGroup a {
   border-radius: 5px;
   margin: 2.5px 0;
 }
@@ -1940,8 +1931,7 @@ main > .swiper-container .swiper-slide {
   position: relative;
 }
 
-.pagination a {
-  color: #1E85EC;
+.pagination a, .pagination button {
   float: left;
   width: 30px;
   height: 30px;
@@ -1959,12 +1949,12 @@ main > .swiper-container .swiper-slide {
           align-items: center;
 }
 
-.pagination a.active {
+.pagination a.active, .pagination button.active {
   background: #1E85EC;
   color: white;
 }
 
-.pagination a:hover:not(.active) {
+.pagination a:hover:not(.active), .pagination button:hover:not(.active) {
   background: #1E85EC;
   color: white;
 }
@@ -2085,13 +2075,12 @@ main > .swiper-container .swiper-slide {
 
 .infoModule {
   border-radius: 5px;
-  background: rgba(29, 54, 98, 0.7);
   margin-bottom: 10px;
   padding-bottom: 10px;
   position: relative;
 }
 
-.infoModule > button.icon-arrow-left2 {
+.infoModule > button.icon-arrow-left2, .infoModule > a.icon-arrow-left2 {
   color: white;
   margin: 40px 40px 0;
   font-size: 18px;
@@ -2106,7 +2095,7 @@ main > .swiper-container .swiper-slide {
   padding: 5px 10px;
 }
 
-.infoModule > button.icon-arrow-left2:before {
+.infoModule > button.icon-arrow-left2:before, .infoModule > a.icon-arrow-left2:before {
   margin-right: 5px;
 }
 
@@ -2119,6 +2108,7 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #56ceff;
 }
 
 .inside-title.icon:before {
@@ -2250,7 +2240,7 @@ main > .swiper-container .swiper-slide {
   min-width: 76px;
 }
 
-.subModuleList .subModule .subModuleBody ul li a {
+.subModuleList .subModule .subModuleBody ul li a, .subModuleList .subModule .subModuleBody ul li button {
   border-radius: 30px;
   border: 1px solid #1E85EC;
   padding: 5px;
@@ -2270,7 +2260,7 @@ main > .swiper-container .swiper-slide {
   background: white;
 }
 
-.subModuleList .subModule .subModuleBody ul li a.icon-library {
+.subModuleList .subModule .subModuleBody ul li a.icon-library, .subModuleList .subModule .subModuleBody ul li button.icon-library {
   color: #1E85EC;
   font-size: 44px;
 }
@@ -2316,7 +2306,7 @@ main > .swiper-container .swiper-slide {
   position: relative;
 }
 
-.platformName button.icon {
+.platformName button.icon, .platformName a.icon {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -2399,7 +2389,7 @@ main > .swiper-container .swiper-slide {
   width: calc(25% - 20px);
 }
 
-.platformName + div.subModuleList .subModuleBody ul li a {
+.platformName + div.subModuleList .subModuleBody ul li a, .platformName + div.subModuleList .subModuleBody ul li button {
   padding: 5px 10px;
   width: calc(100% - 20px);
 }
@@ -2445,7 +2435,7 @@ main > .swiper-container .swiper-slide {
   height: 100%;
 }
 
-.bankName i, .bankName a {
+.bankName i, .bankName a, .bankName button {
   position: absolute;
   right: -10px;
   -webkit-transform: translateX(100%);
@@ -2784,7 +2774,7 @@ main > .swiper-container .swiper-slide {
   padding: 20px 40px 20px 70px;
 }
 
-.slipInfo button.icon {
+.slipInfo button.icon, .slipInfo a.icon {
   font-size: 24px;
   color: #1E85EC;
 }
@@ -2813,8 +2803,9 @@ main > .swiper-container .swiper-slide {
   padding: 0;
 }
 
-.offers img {
+.offers > img, .offers > div {
   width: calc(50% - 1px);
+  position: relative;
 }
 
 .offers .straightBorder {
@@ -2900,7 +2891,7 @@ main > .swiper-container .swiper-slide {
   margin: 0;
 }
 
-.walletModule .walletBalanceModule .btnGroup button {
+.walletModule .walletBalanceModule .btnGroup button, .walletModule .walletBalanceModule .btnGroup a {
   margin-bottom: 0;
 }
 
@@ -3087,7 +3078,7 @@ main > .swiper-container .swiper-slide {
   position: static;
 }
 
-.addBank .addBankName button.icon {
+.addBank .addBankName button.icon, .addBank .addBankName a.icon {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -3180,7 +3171,7 @@ main > .swiper-container .swiper-slide {
   width: calc(25% - 20px);
 }
 
-.addBank + div.subModuleList .subModuleBody ul li a {
+.addBank + div.subModuleList .subModuleBody ul li a, .addBank + div.subModuleList .subModuleBody ul li button {
   padding: 5px 10px;
   width: calc(100% - 20px);
 }
@@ -3344,19 +3335,16 @@ main > .swiper-container .swiper-slide {
   max-width: none;
 }
 
-.quickSelect > div.inputBox.promoType button.orange, .quickSelect > div.promoType.inputBox-org button.orange, .quickSelect > div.promoType.inputBox-white button.orange, .quickSelect > div.promoType.inputBox-blue button.orange, .quickSelect > div.promoType.inputBox-gray button.orange, .quickSelect > div.promoType.inputBox-yellow button.orange, .quickSelect > div.inputBox.promoType button.red, .quickSelect > div.promoType.inputBox-org button.red, .quickSelect > div.promoType.inputBox-white button.red, .quickSelect > div.promoType.inputBox-blue button.red, .quickSelect > div.promoType.inputBox-gray button.red, .quickSelect > div.promoType.inputBox-yellow button.red, .quickSelect > div:first-child.promoType button.orange, .quickSelect > div:first-child.promoType button.red {
-  position: relative;
-  margin-left: 25px;
+.quickSelect > div.inputBox.promoType button, .quickSelect > div.promoType.inputBox-org button, .quickSelect > div.promoType.inputBox-white button, .quickSelect > div.promoType.inputBox-blue button, .quickSelect > div.promoType.inputBox-gray button, .quickSelect > div.promoType.inputBox-yellow button, .quickSelect > div.inputBox.promoType a, .quickSelect > div.promoType.inputBox-org a, .quickSelect > div.promoType.inputBox-white a, .quickSelect > div.promoType.inputBox-blue a, .quickSelect > div.promoType.inputBox-gray a, .quickSelect > div.promoType.inputBox-yellow a, .quickSelect > div:first-child.promoType button, .quickSelect > div:first-child.promoType a {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  min-width: 120px;
 }
 
-.quickSelect > div.inputBox.promoType button.orange:before, .quickSelect > div.promoType.inputBox-org button.orange:before, .quickSelect > div.promoType.inputBox-white button.orange:before, .quickSelect > div.promoType.inputBox-blue button.orange:before, .quickSelect > div.promoType.inputBox-gray button.orange:before, .quickSelect > div.promoType.inputBox-yellow button.orange:before, .quickSelect > div.inputBox.promoType button.red:before, .quickSelect > div.promoType.inputBox-org button.red:before, .quickSelect > div.promoType.inputBox-white button.red:before, .quickSelect > div.promoType.inputBox-blue button.red:before, .quickSelect > div.promoType.inputBox-gray button.red:before, .quickSelect > div.promoType.inputBox-yellow button.red:before, .quickSelect > div:first-child.promoType button.orange:before, .quickSelect > div:first-child.promoType button.red:before {
-  content: '｜';
-  color: #1E85EC;
-  position: absolute;
-  left: -27.5px;
-  top: -5px;
-  font-weight: normal;
-  font-size: 24px;
+.quickSelect > div.inputBox.promoType button.orange, .quickSelect > div.promoType.inputBox-org button.orange, .quickSelect > div.promoType.inputBox-white button.orange, .quickSelect > div.promoType.inputBox-blue button.orange, .quickSelect > div.promoType.inputBox-gray button.orange, .quickSelect > div.promoType.inputBox-yellow button.orange, .quickSelect > div.inputBox.promoType button.red, .quickSelect > div.promoType.inputBox-org button.red, .quickSelect > div.promoType.inputBox-white button.red, .quickSelect > div.promoType.inputBox-blue button.red, .quickSelect > div.promoType.inputBox-gray button.red, .quickSelect > div.promoType.inputBox-yellow button.red, .quickSelect > div.inputBox.promoType a.orange, .quickSelect > div.promoType.inputBox-org a.orange, .quickSelect > div.promoType.inputBox-white a.orange, .quickSelect > div.promoType.inputBox-blue a.orange, .quickSelect > div.promoType.inputBox-gray a.orange, .quickSelect > div.promoType.inputBox-yellow a.orange, .quickSelect > div.inputBox.promoType a.red, .quickSelect > div.promoType.inputBox-org a.red, .quickSelect > div.promoType.inputBox-white a.red, .quickSelect > div.promoType.inputBox-blue a.red, .quickSelect > div.promoType.inputBox-gray a.red, .quickSelect > div.promoType.inputBox-yellow a.red, .quickSelect > div:first-child.promoType button.orange, .quickSelect > div:first-child.promoType button.red, .quickSelect > div:first-child.promoType a.orange, .quickSelect > div:first-child.promoType a.red {
+  position: relative;
+  margin-left: 25px;
 }
 
 .quickSelect > div:first-child {
@@ -3585,7 +3573,7 @@ main > .swiper-container .swiper-slide {
   margin: 0 10px;
 }
 
-.accountName button {
+.accountName button, .accountName a {
   color: #1E85EC;
 }
 
@@ -3651,7 +3639,7 @@ main > .swiper-container .swiper-slide {
   font-weight: bold;
 }
 
-.personal .list > div div.listHeader button {
+.personal .list > div div.listHeader button, .personal .list > div div.listHeader a {
   right: -12px;
 }
 
@@ -3754,7 +3742,7 @@ main > .swiper-container .swiper-slide {
   color: white;
 }
 
-.personal .list .functionMenu button.icon-bin {
+.personal .list .functionMenu button.icon-bin, .personal .list .functionMenu a.icon-bin {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
@@ -3763,7 +3751,7 @@ main > .swiper-container .swiper-slide {
   display: flex;
 }
 
-.personal .list .functionMenu button.icon-spinner11 {
+.personal .list .functionMenu button.icon-spinner11, .personal .list .functionMenu a.icon-spinner11 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -4045,7 +4033,7 @@ main > .swiper-container .swiper-slide {
           justify-content: flex-end;
 }
 
-.promotionsInfo .proData .proDataTitle .btnGroup button {
+.promotionsInfo .proData .proDataTitle .btnGroup button, .promotionsInfo .proData .proDataTitle .btnGroup a {
   max-width: 130px;
 }
 
@@ -4103,7 +4091,7 @@ form {
   margin: 10px 0 0;
 }
 
-.slotList > div .btnGroup button, .newsList > div .btnGroup button {
+.slotList > div .btnGroup button, .slotList > div .btnGroup a, .newsList > div .btnGroup button, .newsList > div .btnGroup a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(50% - 5px);
           flex: 0 0 calc(50% - 5px);
@@ -4175,7 +4163,7 @@ form {
   margin-right: 15px;
 }
 
-.newsList > div .btnGroup button {
+.newsList > div .btnGroup button, .newsList > div .btnGroup a {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -4361,7 +4349,7 @@ iframe {
   color: #1E85EC;
 }
 
-.progressBarModule .turnover button {
+.progressBarModule .turnover button, .progressBarModule .turnover a {
   background: #1E85EC;
   color: white;
   border-radius: 100%;
@@ -4376,7 +4364,7 @@ iframe {
   font-size: 12px;
 }
 
-.progressBarModule .progressBar {
+.progressBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4385,9 +4373,9 @@ iframe {
           align-items: center;
 }
 
-.progressBarModule .progressBar .bar {
-  height: 10px;
-  border: 1px solid #1E85EC;
+.progressBar .bar {
+  height: 6px;
+  border: 1px solid #56ceff;
   border-radius: 10px;
   margin-right: 10px;
   -webkit-box-flex: 1;
@@ -4395,13 +4383,13 @@ iframe {
           flex: auto;
 }
 
-.progressBarModule .progressBar .bar .progress {
-  background: #1E85EC;
+.progressBar .bar .progress {
+  background: #56ceff;
   height: 100%;
 }
 
-.progressBarModule .progressBar .percentage {
-  color: #1E85EC;
+.progressBar .percentage {
+  color: #56ceff;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -4517,12 +4505,12 @@ input:-webkit-autofill:active {
       flex-wrap: wrap;
 }
 
-.buttonBox button {
+.buttonBox button, .buttonBox a {
   margin: 5px;
   max-width: 140px;
 }
 
-.buttonBox button .icon {
+.buttonBox button .icon, .buttonBox a .icon {
   display: none;
   margin-left: 5px;
   background: white;
@@ -4537,11 +4525,11 @@ input:-webkit-autofill:active {
           align-items: center;
 }
 
-.buttonBox button.active {
+.buttonBox button.active, .buttonBox a.active {
   background: #134DAE;
 }
 
-.buttonBox button.active .icon {
+.buttonBox button.active .icon, .buttonBox a.active .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4579,7 +4567,7 @@ input:-webkit-autofill:active {
           animation: rotate .7s linear 2;
 }
 
-button.icon-books {
+button.icon-books, a.icon-books {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4591,7 +4579,7 @@ button.icon-books {
           justify-content: flex-end;
 }
 
-button.icon-books:hover:after {
+button.icon-books:hover:after, a.icon-books:hover:after {
   content: 'ALL Transaction';
   font-size: 12px;
   margin-left: 10px;
@@ -4623,7 +4611,7 @@ button.icon-books:hover:after {
   position: relative;
 }
 
-.changePassWordpop button.icon-cross {
+.changePassWordpop button.icon-cross, .changePassWordpop a.icon-cross {
   font-size: 12px;
   position: absolute;
   right: -20px;
@@ -4775,14 +4763,14 @@ input + .iconModule i.icon.icon-checkmark:before {
   text-align: center;
 }
 
-.indexGameList a {
+.indexGameList a, .indexGameList button {
   width: calc(100% / 4 - 24px);
   border: 1px solid #18759d;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.indexGameList a div {
+.indexGameList a div, .indexGameList button div {
   text-align: center;
   height: 50px;
   display: -webkit-box;
@@ -4799,7 +4787,7 @@ input + .iconModule i.icon.icon-checkmark:before {
   text-transform: uppercase;
 }
 
-.indexGameList + a {
+.indexGameList + a, .indexGameList + button {
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: -20px;

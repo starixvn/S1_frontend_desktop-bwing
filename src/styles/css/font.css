@@ -525,6 +525,14 @@
   content: "\e910";
 }
 
+.icon-last_page:before {
+  content: "\e9ad";
+}
+
+.icon-first_page:before {
+  content: "\e9ae";
+}
+
 .icon-arrow_right:before {
   content: "\e9a8";
 }
