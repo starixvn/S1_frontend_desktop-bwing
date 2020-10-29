@@ -101,7 +101,7 @@
 	"lbl_Login": "Đăng nhập",
 	"lbl_Check18TC4": "Tôi xác nhận tôi đã trên 21 tuổi",
 	"lbl_DontHaveAccount": "Không có tài khoản?",
-	"lbl_ForgetPassword": "Quên ID hoặc mật khẩu?",
+	"lbl_ForgetPassword": "Quên mật khẩu?",
 	"lbl_Username": "Tên đăng nhập",
 	"lbl_Password": "Mật khẩu",
 	"lbl_Check18TC1": "Tôi đồng ý với",
@@ -366,17 +366,5 @@
 	"lbl_Hours": "Giờ",
 	"lbl_Minutes": "Phút",
 	"lbl_Seconds": "Giây",
-	"lbl_5mins": "5 phút",
-	"lbl_Month1": "Tháng 1",
-	"lbl_Month2": "Tháng 2",
-	"lbl_Month3": "Tháng 3",
-	"lbl_Month4": "Tháng 4",
-	"lbl_Month5": "Tháng 5",
-	"lbl_Month6": "Tháng 6",
-	"lbl_Month7": "Tháng 7",
-	"lbl_Month8": "Tháng 8",
-	"lbl_Month9": "Tháng 9",
-	"lbl_Month10": "Tháng 10",
-	"lbl_Month11": "Tháng 11",
-	"lbl_Month12": "Tháng 12"
+	"lbl_5mins": "5 phút"
 }

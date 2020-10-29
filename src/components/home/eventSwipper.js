@@ -9,6 +9,11 @@ export default () => {
 				withBtn={true}
 				openInBlank={true}
 			/>
+			<span className="straightBorder"></span>
+			<img
+				src={require("../../styles/img/off2.jpg")}
+				alt="cash back offer"
+			/>
 		</div>
 	);
 };
