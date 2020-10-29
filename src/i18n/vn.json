@@ -30,6 +30,11 @@
 	"lbl_TransactionSpeed": "THỜI GIAN XỬ LÝ",
 	"lbl_TransactionSpeedDesc": "Gửi tiền siêu tốc. Rút tiền nhanh chóng",
 	"lbl_Announcement": "Thông Báo",
+	"lbl_HowToRegister":"How to Register",
+	"lbl_HowToDepoist":"How to Deposit",
+	"lbl_HowToWithdrawal":"How to Withdrawal",
+	"lbl_HowToPlay":"How to Play",
+	"lbl_UserGuide":"User Guide",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Goal123News": "Điểm báo Goal123",
@@ -366,5 +371,10 @@
 	"lbl_Hours": "Giờ",
 	"lbl_Minutes": "Phút",
 	"lbl_Seconds": "Giây",
-	"lbl_5mins": "5 phút"
+	"lbl_5mins": "5 phút",
+
+	"new ■■■■■■■■■■■■■■■■■■■■": "",
+	"newkey1":"value",
+	"newkey2":"value",
+	"---end---": "---"
 }
