@@ -59,5 +59,9 @@ a {
 
 img {
   width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  display: block;
 }
 /*# sourceMappingURL=reset.css.map */
