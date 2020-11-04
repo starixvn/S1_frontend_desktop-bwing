@@ -4,13 +4,11 @@ import SwipperBanner from "../common/swipperBanner";
 export default () => {
 	return (
 		<div className="offers">
-			<div>
-				<SwipperBanner
-					ImgFolder="Sports"
-					withBtn={true}
-					openInBlank={true}
-				/>
-			</div>
+			<SwipperBanner
+				ImgFolder="Sports"
+				withBtn={true}
+				openInBlank={true}
+			/>
 			<span className="straightBorder"></span>
 			<img
 				src={require("../../styles/img/off2.jpg")}

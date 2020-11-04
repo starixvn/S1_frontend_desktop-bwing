@@ -6,12 +6,19 @@ import { popBoxContext } from "../common/context";
 import { checkPromotion } from "./promotion.common";
 import { api_promotion_SetClaimPromotion } from "../../service/api/promotion";
 import path from "../../path";
+import { navigate } from "@reach/router";
 
-export default ({ promotionInfo, userInfo, _isExpiry, callBack }) => {
+export default ({
+	promotionInfo,
+	userInfo,
+	_isExpiry,
+	_isClaimed,
+	inListPage,
+	callBack
+}) => {
 	const { t } = useTranslation();
 	const { isLogin } = userInfo;
 	const isMountedRef = useRef(null);
-
 	const { setPopBox } = useContext(popBoxContext);
 
 	useEffect(() => {
@@ -110,11 +117,26 @@ export default ({ promotionInfo, userInfo, _isExpiry, callBack }) => {
 		if (success) return callBack();
 	};
 
-	if ((promotionInfo.isJoin && isLogin) || _isExpiry) return null;
+	// if ((promotionInfo.isJoin && isLogin) || _isExpiry) return null;
+
+	const clickBack = () => {
+		navigate(`/${userInfo.langId}/${path.promotion.root}`);
+	};
 
 	return (
-		<button className="orange" onClick={onJoinPromotion}>
-			{t("lbl_PromoJoinNow")}
-		</button>
+		<>
+			{inListPage ? null : (
+				<button className="lightgray" onClick={clickBack}>
+					{t("lbl_back")}
+				</button>
+			)}
+			{(promotionInfo.isJoin && isLogin) ||
+			_isExpiry ||
+			_isClaimed ? null : (
+				<button className="orange" onClick={onJoinPromotion}>
+					{t("lbl_PromoJoinNow")}
+				</button>
+			)}
+		</>
 	);
 };

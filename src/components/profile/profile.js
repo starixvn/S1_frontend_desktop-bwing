@@ -583,19 +583,9 @@ export default () => {
 		<Loading />
 	) : redirectPath === null ? (
 		<div className="infoModule">
-			<div className="inside-title icon icon-icon32px_Profile">
-				<span>{t("lbl_Profile")}</span>
-				<div>{t("lbl_ProfileModifyWarning")}</div>
-			</div>
-			<div
-				className={
-					!userInfo.accountName ||
-					!userInfo.birth_d ||
-					!userInfo.email ||
-					!userInfo.phoneNo
-						? "profileEdit"
-						: ""
-				}>
+			<div className="inside-title">{t("lbl_Profile")}</div>
+			<div className="txt-white">{t("lbl_ProfileModifyWarning")}</div>
+			<div className="profile">
 				<ProfileRead
 					userInfo={userInfo}
 					sendOTPSMS={sendOTPSMS}
@@ -629,6 +619,17 @@ export default () => {
 					/>
 				) : null}
 			</div>
+
+			{!userInfo.accountName ||
+			!userInfo.birth_d ||
+			!userInfo.phoneNo ||
+			!userInfo.email ? (
+				<div className="btnGroup">
+					<button className="blueGradient" onClick={submitCheck}>
+						{t("lbl_Submit")}
+					</button>
+				</div>
+			) : null}
 		</div>
 	) : (
 		<Redirect to={redirectPath} noThrow />

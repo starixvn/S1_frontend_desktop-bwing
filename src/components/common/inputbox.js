@@ -26,7 +26,7 @@ export default props => {
 				{props.title ? (
 					<i className="txt-blue12">{props.title}</i>
 				) : null}
-				{props.areaCode ? <div>{props.areaCode}</div> : null}
+				{props.areaCode ? <>{props.areaCode} &nbsp;</> : null}
 				<input
 					type={props.inputType ?? "text"}
 					className={props._isConvert ? "text-right" : ""}

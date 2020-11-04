@@ -11,12 +11,12 @@ import {
 	readCookie
 } from "../common/common";
 import { IS_LOGGED_IN } from "../../service/auth";
-import { api_accountStrict_GetCustProfile } from "../../service/api/accountStrict";
 import {
 	api_account_GetMsgCount,
 	api_account_GetWalletInfo,
 	api_account_onlineCheck
 } from "../../service/api/account";
+import { api_accountStrict_GetCustProfile } from "../../service/api/accountStrict";
 import { defPopBoxType } from "../common/popBox";
 import useInterval from "../hook/useInterval";
 
@@ -165,18 +165,27 @@ export default ({ children, afterLogin = false }) => {
 		let AffId = getUrlParameter("AffId");
 		let RefId = getUrlParameter("RefId");
 		let Aff = getUrlParameter("Aff");
+		let affiliateid = getUrlParameter("affiliateid");
 
 		if (AffId) {
 			setCookie("AffId", AffId, 7);
 			deleteCookie("RefId");
 			deleteCookie("Aff");
+			deleteCookie("affiliateid");
 		} else if (RefId) {
 			setCookie("RefId", RefId, 7);
 			deleteCookie("AffId");
 			deleteCookie("Aff");
+			deleteCookie("affiliateid");
 		} else if (Aff) {
 			setCookie("Aff", Aff, 7);
 			deleteCookie("AffId");
+			deleteCookie("RefId");
+			deleteCookie("affiliateid");
+		} else if (affiliateid) {
+			setCookie("affiliateid", affiliateid, 7);
+			deleteCookie("AffId");
+			deleteCookie("Aff");
 			deleteCookie("RefId");
 		}
 	}, []);

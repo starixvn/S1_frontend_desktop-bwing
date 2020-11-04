@@ -6,8 +6,8 @@ import InputboxPSW from "./inputbox.password";
 import { LOGIN } from "../../service/auth";
 import { userInfoContext, popBoxContext } from "./context";
 import { defPopBoxType } from "../common/popBox";
-import { Link } from "@reach/router";
 import path from "../../path";
+import { Link, navigate } from "@reach/router";
 
 const initValue = {
 	username: "",
@@ -163,10 +163,7 @@ const LoginPanel = () => {
 	};
 
 	const openJoin = () => {
-		setPopBox({
-			isOpen: true,
-			popBoxType: defPopBoxType.Join
-		});
+		setPopBox({ isOpen: false });
 	};
 
 	return (
@@ -179,12 +176,12 @@ const LoginPanel = () => {
 					<span className="title">{t("lbl_Login")}</span>
 					<div className="noAccount">
 						{t("lbl_DontHaveAccount")}&nbsp;
-						<button
+						<Link
 							className="txt-blue2"
-							type="button"
+							to={`/${userInfo.langId}/${path.join.root}`}
 							onClick={openJoin}>
 							{t("lbl_JoinNow")}
-						</button>
+						</Link>
 					</div>
 					<form onSubmit={handleLogin}>
 						<div className="inputModule">

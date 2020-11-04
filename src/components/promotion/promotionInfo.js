@@ -119,15 +119,17 @@ export default () => {
 		_isExpiry = isExpiry({ ...promotionInfo, isLogin: userInfo.isLogin });
 	}
 
-	let wrapperClass = _isClaimed
-		? _isExpiry
-			? " expiredClaimedInfo"
-			: " claimedInfo"
-		: _isExpiry
-		? " expiredClaimedInfo"
-		: "";
-
 	let _isConvert = isConvert(userInfo.currencyId);
+
+	let showClassStatus = () => {
+		if (_isClaimed) {
+			return "promotionsInfo claimed";
+		} else if (_isClaimed && _isExpiry) {
+			return "promotionsInfo expiredClaimedInfo";
+		} else {
+			return "promotionsInfo";
+		}
+	};
 
 	return loading ? (
 		<Loading />
@@ -137,26 +139,35 @@ export default () => {
 				<></>
 			) : (
 				<div className="infoModule">
-					<div className={`promotionsInfo${wrapperClass}`}>
-						{_isClaimed ? <div className="claimed"></div> : null}
+					<div className="inside-title">
+						<span>{t("lbl_Promotion_info")}</span>
+					</div>
+					<div className={showClassStatus()}>
 						<img
 							src={promotionInfo.banner}
 							alt={promotionInfo.description}
 						/>
+
 						<div className="proData">
 							<div className="proDataTitle">
-								<div className="txt-blue2">
-									{promotionInfo.title}
-									<div className="txt-blue2">
-										{promotionInfo.description}
-									</div>
-								</div>
+								<div>{promotionInfo.title}</div>
+							</div>
+							<PromoRule
+								promotionInfo={promotionInfo}
+								t={t}
+								inListPage={false}
+							/>
+
+							<div className="proDataTitle">
+								<div>{promotionInfo.description}</div>
 
 								<div className="btnGroup">
 									<PromotionJoinButton
 										promotionInfo={promotionInfo}
 										userInfo={userInfo}
 										_isExpiry={_isExpiry}
+										_isClaimed={_isClaimed}
+										inListPage={false}
 										callBack={() =>
 											getPromotionDetail(
 												userInfo.langId,
@@ -190,7 +201,7 @@ export default () => {
 									isLogin: userInfo.isLogin
 								})}
 							/>
-							<PromoRule promotionInfo={promotionInfo} t={t} />
+
 							<div
 								className="proDataBody"
 								dangerouslySetInnerHTML={{

@@ -3,7 +3,7 @@ import moment from "moment";
 import { promoStatus } from "./promotion.def";
 import { number_format } from "../common/common";
 
-export default ({ promotionInfo, t }) => {
+export default ({ promotionInfo, t, inListPage }) => {
 	const {
 		isJoin,
 		status,
@@ -45,7 +45,7 @@ export default ({ promotionInfo, t }) => {
 				<div className="icon icon-icon32px_">{t("lbl_RollOver")}</div>
 			</div>
 
-			<div className="txt-orange">
+			<div className={inListPage ? "txt-red" : ""}>
 				{requiredAmount > 0 ? (
 					<div>{number_format(requiredAmount)}</div>
 				) : null}

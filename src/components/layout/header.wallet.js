@@ -94,37 +94,27 @@ class Dropdown extends Component {
 			this.props.walletInfo.tpWallets &&
 			this.props.walletInfo.tpWallets.map(t => {
 				return (
-					<div
-						className="walletBalance"
-						key={`header-tpwallet-${t.tpId}`}>
-						<div>
-							<span>
-								{this.props.i18n(`lbl_TpWallet_${t.tpId}`)}
-							</span>
-							<span>{number_format(t.balance)}</span>
-						</div>
+					<div key={`header-tpwallet-${t.tpId}`}>
+						<span>{this.props.i18n(`lbl_TpWallet_${t.tpId}`)}</span>
+						<span>{number_format(t.balance)}</span>
 					</div>
 				);
 			});
 
 		const bonusWallets = this.props.bonusWallets.map(item => {
 			return (
-				<div
-					className="walletBalance"
-					key={`header-bonuswallet-${item.tpId}`}>
-					<div>
-						<span>
-							{this.props.i18n(
-								`lbl_BonusWallet_${item.promoCategoryId}`
-							)}
-						</span>
-						<span>{number_format(item.bonus)}</span>
-					</div>
-					<HeaderProcessBar
-						turnover={item.turnover}
-						rollover={item.rollover}
-					/>
+				<div key={`header-bonuswallet-${item.tpId}`}>
+					<span>
+						{this.props.i18n(
+							`lbl_BonusWallet_${item.promoCategoryId}`
+						)}
+					</span>
+					<span>{number_format(item.bonus)}</span>
 				</div>
+				// <HeaderProcessBar
+				// 	turnover={item.turnover}
+				// 	rollover={item.rollover}
+				// />
 			);
 		});
 
@@ -150,26 +140,22 @@ class Dropdown extends Component {
 					}`}></button>
 				<i className="icon icon-arrow_drop_down"></i>
 				<div className="submenu">
-					<div>
+					<div className="walletBalance">
 						<div>
-							<div className="walletBalance">
-								<div>
-									<span>{`${this.props.i18n(
-										"lbl_MainWallet"
-									)}`}</span>
-									<span>
-										{number_format(
-											this.props.walletInfo.main
-										)}
-									</span>
-								</div>
+							<div>
+								<span>{`${this.props.i18n(
+									"lbl_MainWallet"
+								)}`}</span>
+								<span>
+									{number_format(this.props.walletInfo.main)}
+								</span>
 							</div>
 							{bonusWallets}
 							{tpWallets}
 						</div>
+
 						<ReloadSpin func={this.props.getContentWalletInfo} />
 					</div>
-
 					<div className="btnGroup">
 						<Link
 							to={`${this.props.langId}/${path.deposit.root}`}
