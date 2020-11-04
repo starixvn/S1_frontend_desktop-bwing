@@ -33,10 +33,14 @@ export default ({
 					<div className={_isNew ? "new" : ""}></div>
 				)}
 				<img src={p.banner} alt={p.title} />
-				<div className="txt-darkBlue">{p.title}</div>
+				<div className="txt-red">{p.title}</div>
 				<div className="txt-dark">{t("lbl_PromotionsDesc")}</div>
-				<div className="txt-gray">{p.description}</div>
-				<PromoRule t={t} promotionInfo={p} />
+				<div className="txt-darkgray">
+					<ul>
+						<li>{p.description}</li>
+					</ul>
+				</div>
+				<PromoRule t={t} promotionInfo={p} inListPage={true}/>
 				<ProcessBar
 					{...p}
 					t={t}
@@ -47,7 +51,7 @@ export default ({
 				<div className="btnGroup">
 					<Link
 						type="button"
-						className="blue"
+						className={_isExpiry ? "blue" : "blue10"}
 						to={`/${langId}/${path.promotion.root}/${path.promotion.sub.promotionInfo.root}?BonusCode=${p.bonusCode}`}>
 						{t("lbl_Details")}
 					</Link>
@@ -56,6 +60,7 @@ export default ({
 						promotionInfo={p}
 						userInfo={userInfo}
 						_isExpiry={_isExpiry}
+						inListPage={true}
 						callBack={getPromotionListV2}
 					/>
 				</div>

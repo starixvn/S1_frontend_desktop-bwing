@@ -7,6 +7,7 @@ import PromotionList from "./promotion.list";
 import PromotionNavBar, { defFilterType } from "./promotion.nav";
 import { isExpiry } from "./promotion.common";
 import Loading from "../common/loading";
+import { isNew } from "./promotion.common";
 
 export default () => {
 	const { t } = useTranslation();
@@ -37,7 +38,6 @@ export default () => {
 					let result = res.data.data.sort((a, b) => {
 						return a.periodFrom > b.periodFrom ? -1 : 1;
 					});
-
 					setInitPromoList(result);
 					SetPromotionDatas(result, filter);
 					setLoading(false);
@@ -83,7 +83,6 @@ export default () => {
 		if (initPromoList) {
 			SetPromotionDatas(initPromoList, type);
 		}
-
 		setFilter(type);
 	};
 
@@ -124,8 +123,8 @@ export default () => {
 		<Loading />
 	) : (
 		<div className="infoModule">
-			<div className="inside-title icon icon-gift">
-				<span>{t("lbl_Promotions")}</span>
+			<div className="inside-title">
+				<span>{t("lbl_Promotion_list")}</span>
 			</div>
 			<PromotionNavBar
 				t={t}

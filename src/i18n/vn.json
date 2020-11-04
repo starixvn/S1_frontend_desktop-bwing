@@ -30,10 +30,10 @@
 	"lbl_TransactionSpeed": "THỜI GIAN XỬ LÝ",
 	"lbl_TransactionSpeedDesc": "Gửi tiền siêu tốc. Rút tiền nhanh chóng",
 	"lbl_Announcement": "Thông Báo",
-	"lbl_HowToRegister":"How to Register",
-	"lbl_HowToDepoist":"How to Deposit",
-	"lbl_HowToWithdrawal":"How to Withdrawal",
-	"lbl_HowToPlay":"How to Play",
+	"lbl_HowToRegister":"Cách đăng ký",
+	"lbl_HowToDepoist":"Hướng dẫn nạp tiền",
+	"lbl_HowToWithdraw":"Cách rút tiền",
+	"lbl_HowToPlay":"Cách đặt cược",
 	"lbl_UserGuide":"User Guide",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
@@ -156,6 +156,9 @@
 	"lbl_UpdatePersonalDetail": "Cập nhật thông tin cá nhân",
 	"lbl_Affiliate_ID":"ID Đại lý/ Người giới thiệu",
 	"lbl_Please_enter_Affiliate_ID":"Vui lòng nhập ID Đại lý (tùy chọn), hông tin không thể thay đổi sau khi đã nhập!",
+	"lbl_Verified":"Đã xác minh",
+	"lbl_Unverified": "Chưa được xác minh",
+	"lbl_PrefferedCurrency":"Tiền tệ ưa thích",
 
 	"promotion ■■■■■■■■■■■■■■■■■■■■": "",
 	"PromotionCategory1": "Nạp Lần Đầu",
@@ -170,6 +173,8 @@
 	"lbl_MinAmount": "Số tiền tối thiểu",
 	"lbl_RequireMinAmountHint_Front": "Tiền gửi tối thiểu là",
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
+	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
+	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Rất tiếc! Đã xảy ra lỗi, vui lòng thử lại.",
@@ -210,6 +215,8 @@
 	"lbl_UpdateSuccessWillProcess": "Chúng tôi sẽ xử lý yêu cầu của bạn nhanh nhất có thể!",
 	"lbl_Free": "Chơi Thử",
 	"lbl_PlayNow": "Tham gia",
+	"lbl_back":"Quay lại",
+	"lbl_Processing":"Đang xử lý",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Chuyển tiền",

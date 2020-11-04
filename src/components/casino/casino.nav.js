@@ -7,12 +7,12 @@ export default ({ t, onSelectNav, selNav }) => {
 		return (
 			<button
 				key={`casino-nav-${k}`}
-				className={selNav === k ? "btn-check" : "blueBorder"}
+				className={selNav === k ? "blueGradient" : "blueBorder"}
 				onClick={onSelectNav.bind(this, k)}>
 				{t(_nav.displayKey)}
 			</button>
 		);
 	});
 
-	return <div className="btnGroup promoType">{rows}</div>;
+	return <>{rows}</>;
 };

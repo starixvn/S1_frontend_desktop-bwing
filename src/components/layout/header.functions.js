@@ -24,12 +24,10 @@ export default () => {
 const BeforeLogin = ({ langId }) => {
 	const { t } = useTranslation();
 	const { setPopBox } = useContext(popBoxContext);
+	const { userInfo, setUserInfo } = useContext(userInfoContext);
 
 	const clickJoin = () => {
-		setPopBox({
-			isOpen: true,
-			popBoxType: defPopBoxType.Join
-		});
+		navigate(`/${userInfo.langId}/${path.join.root}`);
 	};
 
 	const clickLogin = () => {

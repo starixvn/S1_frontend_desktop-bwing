@@ -20,17 +20,16 @@ export default ({
 
 	return (
 		<>
-			<div>
-				<div className="inputBox">
-					<Dropdown
-						mainkey="casino-provider"
-						options={tpOptions}
-						onSelectItem={EditSearchField.bind(this, "provider")}
-						selectedIdx={searchInfo.provider.idx}
-					/>
-				</div>
+			<div className="inputBox-blue">
+				<Dropdown
+					mainkey="casino-provider"
+					options={tpOptions}
+					onSelectItem={EditSearchField.bind(this, "provider")}
+					selectedIdx={searchInfo.provider.idx}
+				/>
 			</div>
-			<div className="inputBox">
+
+			<div className="inputBox-blue">
 				<i className="txt-blue12 icon icon-search"></i>
 				<input
 					type="text"
@@ -39,11 +38,9 @@ export default ({
 					value={searchInfo.searchText}
 				/>
 			</div>
-			<div className="btnGroup">
-				<button className="btn-check" onClick={submitSearch}>
-					{t("lbl_Submit")}
-				</button>
-			</div>
+			<button className="btn-check" onClick={submitSearch}>
+				{t("lbl_Submit")}
+			</button>
 		</>
 	);
 };

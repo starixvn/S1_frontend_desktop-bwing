@@ -293,24 +293,27 @@ export default () => {
 		<Loading />
 	) : (
 		<div className="infoModule">
+			<div className="inside-title ">{t("lbl_Slots")}</div>
+
 			<SwipperBanner
 				ImgFolder="Casino"
 				withBtn={false}
 				openInBlank={true}
 			/>
-			<div className="inside-title icon icon-ow-casino">
-				<span>{t("lbl_Slots")}</span>
+
+			<div className="quickSelect">
+				<div className="btnGroup promoType">
+					<Nav selNav={selNav} onSelectNav={onSelectNav} t={t} />
+					<SearchBox
+						t={t}
+						tpOptions={tpOptions}
+						EditSearchField={EditSearchField}
+						searchInfo={searchInfo}
+						submitSearch={SubmitSearch.bind(this, searchInfo)}
+					/>
+				</div>
 			</div>
-			<div className="casinoSelect">
-				<Nav selNav={selNav} onSelectNav={onSelectNav} t={t} />
-				<SearchBox
-					t={t}
-					tpOptions={tpOptions}
-					EditSearchField={EditSearchField}
-					searchInfo={searchInfo}
-					submitSearch={SubmitSearch.bind(this, searchInfo)}
-				/>
-			</div>
+
 			<GameList
 				t={t}
 				displayGames={displayGames}
@@ -321,6 +324,7 @@ export default () => {
 				favorite={favorite}
 				onSetFavorite={onSetFavorite}
 			/>
+
 			<Pagination
 				totalPages={pageInfo.totalPages}
 				currentPage={pageInfo.currentPage}

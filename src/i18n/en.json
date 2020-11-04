@@ -30,10 +30,10 @@
 	"lbl_TransactionSpeed": "Transaction speed",
 	"lbl_TransactionSpeedDesc": "Instant or 2-3 mins for deposits. 10 mins for withdrawals",
 	"lbl_Announcement": "Announcement",
-	"lbl_HowToRegister":"How to Register",
-	"lbl_HowToDepoist":"CÁCH GỬI TIỀN",
-	"lbl_HowToWithdrawal":"How to Withdrawal",
-	"lbl_HowToPlay":"HƯỚNG DẪN CÁCH CHƠI",
+	"lbl_HowToRegister":"How to register",
+	"lbl_HowToDepoist":"How to deposit",
+	"lbl_HowToWithdraw":"How to withdraw",
+	"lbl_HowToPlay":"How to play",
 	"lbl_UserGuide":"User Guide",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
@@ -156,6 +156,9 @@
 	"lbl_UpdatePersonalDetail": "Update Personal Details",
 	"lbl_Affiliate_ID":"Affiliate ID/Referral",
 	"lbl_Please_enter_Affiliate_ID":"Please enter Affiliate ID (Optional), it can not change once enter!",
+	"lbl_Verified":"Verified",
+	"lbl_Unverified":"Unverified",
+	"lbl_PrefferedCurrency":"Preferred Currency",
 
 	"promotion ■■■■■■■■■■■■■■■■■■■■": "",
 	"PromotionCategory1": "First Deposit",
@@ -171,6 +174,8 @@
 	"lbl_RemainingTime": "REMAINING TIME",
 	"lbl_RequireMinAmountHint_Front": "The minimum amount of deposit are required to be at least",
 	"lbl_RequireMinAmountHint_Back": "Deposit now?",
+	"lbl_Promotion_list": "PROMOTION LIST",
+	"lbl_Promotion_info": "PROMOTION INFO",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Oops! Something wrong, please try again.",
@@ -211,6 +216,8 @@
 	"lbl_UpdateSuccessWillProcess": "We will process your request ASAP!",
 	"lbl_Free": "Free Play",
 	"lbl_PlayNow": "Play Now",
+	"lbl_back":"Back",
+	"lbl_Processing":"Processing",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Transfer",

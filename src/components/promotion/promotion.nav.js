@@ -7,31 +7,30 @@ export const defFilterType = {
 	freeBet: 3
 };
 
-const defPromoNavs = [
-	{
-		displayKey: "lbl_All",
-		value: defFilterType.all,
-		className: "blueBorder"
-	},
-	{
-		displayKey: "PromotionCategory1",
-		value: defFilterType.firstDeposit,
-		className: "blueBorder"
-	},
-	{
-		displayKey: "lbl_FreeBet",
-		value: defFilterType.freeBet,
-		className: "blueBorder"
-	},
-	{
-		displayKey: "lbl_Expired",
-		value: defFilterType.expiry,
-		className: "orange",
-		selectedClass: "red"
-	}
-];
-
 export default ({ t, onClick, selected }) => {
+	const defPromoNavs = [
+		{
+			displayKey: "lbl_All",
+			value: defFilterType.all,
+			className: "blueBorder"
+		},
+		{
+			displayKey: "PromotionCategory1",
+			value: defFilterType.firstDeposit,
+			className: "blueBorder"
+		},
+		{
+			displayKey: "lbl_FreeBet",
+			value: defFilterType.freeBet,
+			className: "blueBorder"
+		},
+		{
+			displayKey: selected === 999 ? "lbl_Processing" : "lbl_Expired",
+			value: selected === 999 ? defFilterType.all : defFilterType.expiry,
+			className: selected === 999 ? "red" : "lightgray"
+		}
+	];
+
 	let rows = defPromoNavs.map(p => {
 		return (
 			<button
@@ -40,7 +39,7 @@ export default ({ t, onClick, selected }) => {
 					p.value === selected
 						? p.selectedClass
 							? p.selectedClass
-							: "btn-check"
+							: "blueGradient"
 						: p.className
 				}
 				onClick={onClick.bind(this, p.value)}>
