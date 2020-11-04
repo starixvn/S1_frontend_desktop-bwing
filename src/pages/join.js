@@ -56,7 +56,7 @@ const Content = () => {
 	};
 
 	const { t } = useTranslation();
-	const { setUserInfo } = useContext(userInfoContext);
+	const { userInfo, setUserInfo } = useContext(userInfoContext);
 	const { setPopBox } = useContext(popBoxContext);
 	const [userValue, setUserValue] = useState(initValue);
 	const [tip, setTip] = useState(initTip);
@@ -610,12 +610,12 @@ const Content = () => {
 					) : null}
 
 					<div className="btnGroup">
-						<button
+						{/* <button
 							type="button"
 							className="btn-cancel"
 							onClick={clickCancel}>
 							{t("lbl_Cancel")}
-						</button>
+						</button> */}
 						<button
 							className="btn-check"
 							type="submit"
