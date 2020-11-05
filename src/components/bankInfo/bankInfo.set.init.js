@@ -10,27 +10,20 @@ export default ({ dispatch, numberOfAccount }) => {
 
 	return (
 		<div className="walletModule">
-			<div className="addBank">
+			<div className="addBank bankselect">
 				{numberOfAccount < 3 ? (
-					<div className="addBankName noBank" onClick={toNextStep}>
-						<div className="icon icon-plus"></div>
-						<div className="txt-yellow">
-							{t("lbl_AddNewAccount")}
-						</div>
+					<div className="btnGroup">
+						<button onClick={toNextStep} className="btn-check">
+							{t("lbl_AddBankAccount")}
+						</button>
 					</div>
 				) : (
-					<div className="addBankName noBank">
-						<div className="icon icon-warning"></div>
-						<div className="txt-yellow">
+					<div className="btnGroup">
+						<button className="btn-cancel" disabled>
 							{t("lbl_BankCardsFull")}
-						</div>
+						</button>
 					</div>
 				)}
-
-				<div className="remainder">
-					{t("lbl_NumberOfBankAccounts")}:{" "}
-					{numberOfAccount ? numberOfAccount : 0}/3
-				</div>
 			</div>
 		</div>
 	);

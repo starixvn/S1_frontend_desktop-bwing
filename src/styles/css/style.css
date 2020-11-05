@@ -1951,14 +1951,14 @@ main > .swiper-container .swiper-slide {
   color: black;
 }
 
-.stepBar {
+.stepBar, .stepBar-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 70px 20px;
 }
 
-.stepBar > div {
+.stepBar > div, .stepBar-left > div {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1980,7 +1980,7 @@ main > .swiper-container .swiper-slide {
   background: #070e22;
 }
 
-.stepBar > div:before {
+.stepBar > div:before, .stepBar-left > div:before {
   content: '';
   position: absolute;
   width: 11px;
@@ -1989,7 +1989,7 @@ main > .swiper-container .swiper-slide {
   background: url(../img/stepAfter.png);
 }
 
-.stepBar > div:after {
+.stepBar > div:after, .stepBar-left > div:after {
   content: '';
   position: absolute;
   width: 11px;
@@ -1999,7 +1999,7 @@ main > .swiper-container .swiper-slide {
   z-index: 1;
 }
 
-.stepBar > div.active {
+.stepBar > div.active, .stepBar-left > div.active {
   color: white;
   background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#F85F05));
   background: linear-gradient(to top, #f20c05, #F85F05);
@@ -2008,11 +2008,11 @@ main > .swiper-container .swiper-slide {
   border-bottom-right-radius: 0;
 }
 
-.stepBar > div.active:first-child:before {
+.stepBar > div.active:first-child:before, .stepBar-left > div.active:first-child:before {
   background: none;
 }
 
-.stepBar > div.active:after {
+.stepBar > div.active:after, .stepBar-left > div.active:after {
   content: '';
   position: absolute;
   width: 11px;
@@ -2020,6 +2020,10 @@ main > .swiper-container .swiper-slide {
   right: -11px;
   background: url(../img/stepAfter_a.png);
   z-index: 1;
+}
+
+.stepBar-left {
+  padding: 0 0 20px;
 }
 
 .cashBar {
@@ -2416,10 +2420,6 @@ main > .swiper-container .swiper-slide {
 
 .platformName + div.subModuleList .subModuleBody > div.tip {
   margin: 0;
-}
-
-.platformName + div.subModuleList .subModuleBody > div:first-child + .inputBox-blue {
-  margin-top: 20px;
 }
 
 .platformName + div.subModuleList .subModuleBody > div.btnGroup {
@@ -3097,6 +3097,44 @@ main > .swiper-container .swiper-slide {
   border: 1px solid #1a2b58;
 }
 
+.addBank.bankselect {
+  width: 100%;
+}
+
+.addBank.bankselect .icon-arrow-left2 {
+  color: #56ceff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addBank.bankselect .icon-arrow-left2:before {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.addBank.bankselect .btnGroup {
+  width: calc(100% / 6 - 10px);
+  margin-left: 0;
+}
+
+.addBank.bankselect .subModuleList {
+  margin: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule {
+  border: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule .subModuleBody {
+  padding: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule .subModuleBody li {
+  width: calc(100% / 6 - 10px);
+  margin: 10px 10px 10px 0;
+}
+
 .addBank .addBankName {
   background: white;
   border-radius: 5px;
@@ -3284,6 +3322,7 @@ main > .swiper-container .swiper-slide {
 .remainder {
   color: #aeb2bc;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .calculation {
@@ -3722,32 +3761,58 @@ main > .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 15px 5px;
+  border: 0;
+  border-top: 1px solid #1d2f62;
+  background: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .haveBank > div.addBankName {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% / 3 - 50px);
-          flex: 0 0 calc(100% / 3 - 50px);
-  margin-bottom: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+  max-width: calc(100% / 3 - 25px);
 }
 
-.haveBank > div.addBankName .icon-bin {
-  -webkit-transform: translateY(-75%);
-          transform: translateY(-75%);
+.haveBank > div.addBankName:last-child {
+  margin-right: 0;
+}
+
+.haveBank .txt-blue15 {
+  width: 100%;
+  line-height: 30px;
 }
 
 .accountName {
-  padding: 20px 70px 0;
-  color: #1E85EC;
+  padding: 15px;
+  margin: 10px 0;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% / 3 - 50px);
+}
+
+.accountName > div {
+  text-align: right;
+  width: 100%;
+}
+
+.accountName.icon:before {
+  font-size: 24px;
 }
 
 .accountName span {
-  color: white;
   margin: 0 10px;
-}
-
-.accountName button, .accountName a {
-  color: #1E85EC;
+  white-space: nowrap;
 }
 
 .accountName .tip {
@@ -4595,7 +4660,7 @@ input:-webkit-autofill:active {
   font-size: 14px;
 }
 
-.icon-spinner11.active {
+.icon-spinner11.active:before {
   -webkit-animation: rotate .7s linear 2;
           animation: rotate .7s linear 2;
 }

@@ -97,19 +97,25 @@ export default ({ dispatch, bankList }) => {
 		<Loading />
 	) : (
 		<>
-			<div className="platformName">
-				<div className="icon icon-arrow-right2"></div>
-				<div>
-					<div className="txt-blue2">{t("lbl_SelectBank")}</div>
-				</div>
-				<button
-					className="icon icon-arrow-left2"
-					onClick={toLastStep}></button>
-			</div>
-			<div className="subModuleList">
-				<div className="subModule">
-					<div className="subModuleBody">
-						<ul>{arr}</ul>
+			<div class="walletModule">
+				<div class="addBank bankselect">
+					<button
+						className="icon icon-arrow-left2"
+						onClick={toLastStep}>
+						{t("lbl_back")}
+					</button>
+					<div className="btnGroup">
+						<button className="btn-check">
+							{t("lbl_AddBankAccount")}
+						</button>
+					</div>
+
+					<div className="subModuleList">
+						<div className="subModule">
+							<div className="subModuleBody">
+								<ul>{arr}</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

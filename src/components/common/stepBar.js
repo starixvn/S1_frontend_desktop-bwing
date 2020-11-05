@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ t, step, defStep }) => {
+export default ({ t, step, defStep, className }) => {
 	let rows = defStep.map((s, sIdx) => {
 		return (
 			<div
@@ -12,5 +12,5 @@ export default ({ t, step, defStep }) => {
 		);
 	});
 
-	return <div className="stepBar">{rows}</div>;
+	return <div className={className ? className : "stepBar"}>{rows}</div>;
 };

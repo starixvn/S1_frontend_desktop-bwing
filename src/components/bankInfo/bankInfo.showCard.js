@@ -113,17 +113,19 @@ export default ({ accountName, custBankList, reload }) => {
 							src={`${config.imgUrl}/common/images/BankLogo/${item.bankLogo}`}
 						/>
 					</div>
+					<div>
+						<button
+							aria-label="delBankAccount"
+							className="icon icon-bin"
+							onClick={delBankAccount.bind(
+								this,
+								item.sysId,
+								item.accountNo
+							)}></button>
+					</div>
 				</div>
 				<div className="addBankInfo">
-					<div className="txt-blue2">{item.accountNo}</div>
-					<button
-						aria-label="delBankAccount"
-						className="icon icon-bin"
-						onClick={delBankAccount.bind(
-							this,
-							item.sysId,
-							item.accountNo
-						)}></button>
+					<div className="txt-dark">{item.accountNo}</div>
 				</div>
 			</div>
 		);
@@ -131,14 +133,19 @@ export default ({ accountName, custBankList, reload }) => {
 	return loading ? (
 		<Loading />
 	) : (
-		<>
-			{custBankList?.length > 0 ? (
-				<div className="infoModule">
-					<div className="walletModule">
-						<div className="addBank haveBank">{arr}</div>
+		<div className="infoModule">
+			<div className="walletModule">
+				<div className="addBank haveBank">
+					<div class="txt-blue15">
+						{t("lbl_BankAccount").toUpperCase()}
+						<div className="remainder">
+							{t("lbl_NumberOfBankAccounts")}:{" "}
+							{custBankList ? custBankList?.length : 0}/3
+						</div>
 					</div>
+					{arr}
 				</div>
-			) : null}
-		</>
+			</div>
+		</div>
 	);
 };

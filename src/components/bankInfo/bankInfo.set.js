@@ -20,6 +20,8 @@ import AccountPanel from "./bankInfo.set.account";
 import ShowCard from "./bankInfo.showCard";
 import Loading from "../common/loading";
 import { defPopBoxType } from "../common/popBox";
+import StepBar from "../common/stepBar";
+import bankInfoStep from "./bankInfo.set.defStep";
 
 export default () => {
 	const { t } = useTranslation();
@@ -151,27 +153,41 @@ export default () => {
 	) : (
 		<>
 			<div className="infoModule">
-				<div className="inside-title icon icon-icon32px_bank-account">
-					<span>{t("lbl_BankInfo")}</span>
-					<div>{t("lbl_UpdateBankInfo")}</div>
+				<div className="inside-title">
+					{t("lbl_BankInfo").toUpperCase()}
 				</div>
+				<div className="txt-white">{t("lbl_UpdateBankInfo")}</div>
 
 				{userInfo.accountName ? (
-					<div className="accountName">
-						{t("lbl_BankAccountName")}
-						<span>{userInfo.accountName}</span>
-						<button
-							className="icon icon-error"
-							onClick={clickTip}></button>
+					<>
+						<div className="accountName icon icon-icon32px_Profile">
+							<span>{t("lbl_BankAccountName")}</span>
+							<div>
+								<span>{userInfo.accountName}</span>
+								<button
+									className="icon icon-error"
+									onClick={clickTip}></button>
+							</div>
+						</div>
 						{showTip ? (
 							<div className="tip active">
 								{t("lbl_ContactCSD")}
 							</div>
 						) : null}
-					</div>
+					</>
 				) : null}
+				{state.custBankList?.length > 2 ? null : (
+					<StepBar
+						t={t}
+						step={state.step ?? 0}
+						defStep={bankInfoStep}
+						className="stepBar-left"
+					/>
+				)}
+
 				{displayModule}
 			</div>
+
 			<ShowCard
 				accountName={state.accountName}
 				custBankList={state.custBankList}

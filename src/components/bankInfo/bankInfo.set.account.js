@@ -173,67 +173,70 @@ export default ({
 	) : (
 		<>
 			<div className="platformName">
-				<div className="icon icon-arrow-right2"></div>
 				<div>
-					<div className="txt-blue2">
-						{t("lbl_EnterAccountNumber")}
-					</div>
+					<img
+						alt="BankLogo"
+						src={`${config.imgUrl}/common/images/BankLogo/${bankInfo.bankLogo}`}
+					/>
 				</div>
 				<button
 					aria-label="toLastStep"
 					className="icon icon-arrow-left2"
-					onClick={toLastStep}></button>
+					onClick={toLastStep}>
+					{t("lbl_back")}
+				</button>
 			</div>
 			<div className="subModuleList">
 				<div className="subModule">
 					<form
 						className="subModuleBody column"
 						onSubmit={clickSubmit}>
-						<div>
-							<div className="bankName">
-								<img
-									alt="BankLogo"
-									src={`${config.imgUrl}/common/images/BankLogo/${bankInfo.bankLogo}`}
-								/>
-							</div>
-						</div>
 						{!alreadyHasAccountName ? (
-							<Inputbox
-								value={accountName}
-								onChange={editField.bind(this, "accountName")}
-								onBlur={checkAccount.bind(
-									this,
-									accountName,
-									"accountName"
-								)}
-								title={t("lbl_RealName")}
-								clickInfo={clickInfo.bind(this, "accountName")}
-								checked={status.accountName.checked}
-								tip={status.accountName.tip}
-							/>
+							<>
+								<div class="txt-lightgray">
+									{t("lbl_RealName")}
+								</div>
+								<Inputbox
+									value={accountName}
+									onChange={editField.bind(
+										this,
+										"accountName"
+									)}
+									onBlur={checkAccount.bind(
+										this,
+										accountName,
+										"accountName"
+									)}
+									title={t("lbl_RealName")}
+									clickInfo={clickInfo.bind(
+										this,
+										"accountName"
+									)}
+									checked={status.accountName.checked}
+									tip={status.accountName.tip}
+								/>
+							</>
 						) : null}
-						<div className="inputModuleRow">
-							<Inputbox
-								value={accountNumber}
-								onChange={editField.bind(this, "accountNumber")}
-								onBlur={checkAccount.bind(
-									this,
-									accountNumber,
-									"accountNumber"
-								)}
-								clickInfo={clickInfo.bind(
-									this,
-									"accountNumber"
-								)}
-								title={t("lbl_BankNumber")}
-								checked={status.accountNumber.checked}
-								tip={status.accountNumber.tip}
-							/>
-							<div className="btnGroup">
-								<button className="btn-check" type="submit">
-									{t("lbl_Submit")}
-								</button>
-							</div>
+						<div class="txt-lightgray">
+							{t("lbl_AccountNumber")}
+						</div>
+						<Inputbox
+							value={accountNumber}
+							onChange={editField.bind(this, "accountNumber")}
+							onBlur={checkAccount.bind(
+								this,
+								accountNumber,
+								"accountNumber"
+							)}
+							clickInfo={clickInfo.bind(this, "accountNumber")}
+							title={t("lbl_BankNumber")}
+							checked={status.accountNumber.checked}
+							tip={status.accountNumber.tip}
+						/>
+						<div className="btnGroup">
+							<button className="btn-check" type="submit">
+								{t("lbl_Submit")}
+							</button>
 						</div>
 					</form>
 				</div>
