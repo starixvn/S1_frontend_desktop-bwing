@@ -405,11 +405,11 @@ const Content = () => {
 					tip={status.tip}
 					_isConvert={_isConvert}
 				/>
+				<RecentHistory
+					getHistory={getHistory}
+					GetTransferRecent={GetTransferRecent}
+				/>
 			</div>
-			<RecentHistory
-				getHistory={getHistory}
-				GetTransferRecent={GetTransferRecent}
-			/>
 		</div>
 	);
 };
