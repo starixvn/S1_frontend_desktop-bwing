@@ -13,7 +13,7 @@ const ShowWallet = props => {
 				<span>{number_format(item.balance, false)}</span>
 				<div className="btnGroup">
 					<button
-						className="blue"
+						className="btn-check"
 						onClick={props.restoreAll.bind(this, idx)}>
 						{props.i18n("lbl_RestoreAll")}
 					</button>
