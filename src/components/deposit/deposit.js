@@ -5,14 +5,13 @@ import MobilePayList from "./mobilePay.list";
 
 import { Redirect } from "@reach/router";
 
-
 export default () => {
 	const [redirectPath, setRedirectPath] = useState(null);
 
 	return redirectPath === null ? (
 		<div className="subModuleList">
-			<MobilePayList />
 			<OnlineBankList />
+			<MobilePayList />
 			<LocalBankList />
 		</div>
 	) : (
