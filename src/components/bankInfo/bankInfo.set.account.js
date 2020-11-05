@@ -197,6 +197,7 @@ export default ({
 									{t("lbl_RealName")}
 								</div>
 								<Inputbox
+									placeholder={t("lbl_RealName")}
 									value={accountName}
 									onChange={editField.bind(
 										this,
@@ -207,7 +208,6 @@ export default ({
 										accountName,
 										"accountName"
 									)}
-									title={t("lbl_RealName")}
 									clickInfo={clickInfo.bind(
 										this,
 										"accountName"
@@ -221,6 +221,7 @@ export default ({
 							{t("lbl_AccountNumber")}
 						</div>
 						<Inputbox
+							placeholder="1111 2222 3333 4444"
 							value={accountNumber}
 							onChange={editField.bind(this, "accountNumber")}
 							onBlur={checkAccount.bind(
@@ -229,7 +230,6 @@ export default ({
 								"accountNumber"
 							)}
 							clickInfo={clickInfo.bind(this, "accountNumber")}
-							title={t("lbl_BankNumber")}
 							checked={status.accountNumber.checked}
 							tip={status.accountNumber.tip}
 						/>

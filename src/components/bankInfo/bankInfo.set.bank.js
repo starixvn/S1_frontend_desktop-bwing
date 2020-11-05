@@ -104,12 +104,6 @@ export default ({ dispatch, bankList }) => {
 						onClick={toLastStep}>
 						{t("lbl_back")}
 					</button>
-					<div className="btnGroup">
-						<button className="btn-check">
-							{t("lbl_AddBankAccount")}
-						</button>
-					</div>
-
 					<div className="subModuleList">
 						<div className="subModule">
 							<div className="subModuleBody">
