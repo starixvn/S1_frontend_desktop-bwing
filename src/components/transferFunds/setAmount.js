@@ -14,9 +14,9 @@ export default props => {
 					</div>
 					<button
 						aria-label="changeDirection"
-						className="icon icon-arrow-right2 active"
+						className="icon icon-loop active"
 						onClick={props.changeDirection}>
-						<span>{props.i18n("lbl_Exchange")}</span>
+						{/* <span>{props.i18n("lbl_Exchange")}</span> */}
 					</button>
 					<div className="walletBalanceModule to">
 						<span>{props.i18n("lbl_To")}</span>
@@ -33,7 +33,8 @@ export default props => {
 						onBlur={props.onBlur}
 						clickInfo={props.clickInfo}
 						checked={props.checked}
-						tip={props.tip}
+						textRight={true}
+						// tip={props.tip}
 					/>
 					<div className="btnGroup">
 						<button className="btn-check" type="submit">
@@ -41,6 +42,9 @@ export default props => {
 						</button>
 					</div>
 				</form>
+				<div className={`tip${props.tip ? " active" : ""}`}>
+					{props.tip}
+				</div>
 			</div>
 		</div>
 	);
