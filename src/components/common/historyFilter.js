@@ -85,8 +85,9 @@ export default props => {
 	return (
 		<div className="quickSelect">
 			<div>
-				<div className="inputBox">
-					<i className="txt-blue12">{t("lbl_QuickPick")}</i>
+				<div class="txt-lightgray">{t("lbl_QuickPick")}</div>
+
+				<div className="inputBox-blue">
 					<Dropdown
 						i18n={t}
 						mainKey="history_"
@@ -97,27 +98,33 @@ export default props => {
 				</div>
 			</div>
 
-			<div className="inputBox">
-				<DateTime
-					value={moment(startDate).format("YYYY-MM-DD")}
-					onChange={selectDate.bind(this, "start")}
-					timeFormat={false}
-					isValidDate={valid}
-				/>
-				<div className="iconModule">
-					<i className="icon icon-calendar"></i>
+			<div>
+				<div class="txt-lightgray">{t("lbl_From")}</div>
+				<div class="inputBox-blue">
+					<DateTime
+						value={moment(startDate).format("YYYY-MM-DD")}
+						onChange={selectDate.bind(this, "start")}
+						timeFormat={false}
+						isValidDate={valid}
+					/>{" "}
+					<div class="iconModule">
+						<i class="icon icon-calendar"></i>
+					</div>
 				</div>
 			</div>
 
-			<div className="inputBox">
-				<DateTime
-					value={moment(endDate).format("YYYY-MM-DD")}
-					onChange={selectDate.bind(this, "end")}
-					timeFormat={false}
-					isValidDate={valid}
-				/>
-				<div className="iconModule">
-					<i className="icon icon-calendar"></i>
+			<div>
+				<div class="txt-lightgray">{t("lbl_To")}</div>
+				<div class="inputBox-blue">
+					<DateTime
+						value={moment(endDate).format("YYYY-MM-DD")}
+						onChange={selectDate.bind(this, "end")}
+						timeFormat={false}
+						isValidDate={valid}
+					/>
+					<div class="iconModule">
+						<i class="icon icon-calendar"></i>
+					</div>
 				</div>
 			</div>
 
