@@ -70,7 +70,6 @@ const Content = () => {
 		const ClickClose = () => {
 			setPopBox({ isOpen: false });
 		};
-
 		api_tp_GetTransferHistory({
 			...transactionData,
 			PageNumber: pageNumber

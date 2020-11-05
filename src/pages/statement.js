@@ -56,7 +56,6 @@ const Content = () => {
 		const ClickClose = () => {
 			setPopBox({ isOpen: false });
 		};
-
 		api_payment_GetStatement({
 			...transactionData,
 			PageNumber: pageNumber
@@ -216,7 +215,7 @@ const TansactionHistory = props => {
 			<div>{props.idx}</div>
 			<div>
 				{moment(props.createTime).format("DD/MM/YYYY")}
-				<span className="txt-blue2">
+				<span className="txt-blue15">
 					{moment(props.createTime).format("HH:mm:ss")}
 				</span>
 			</div>
