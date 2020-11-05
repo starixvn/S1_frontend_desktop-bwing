@@ -193,7 +193,7 @@ export default ({
 						onSubmit={clickSubmit}>
 						{!alreadyHasAccountName ? (
 							<>
-								<div class="txt-lightgray">
+								<div className="txt-lightgray">
 									{t("lbl_RealName")}
 								</div>
 								<Inputbox
@@ -217,7 +217,7 @@ export default ({
 								/>
 							</>
 						) : null}
-						<div class="txt-lightgray">
+						<div className="txt-lightgray">
 							{t("lbl_AccountNumber")}
 						</div>
 						<Inputbox

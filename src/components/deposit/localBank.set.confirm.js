@@ -131,7 +131,7 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 		<div className="subModuleList">
 			<div className="subModule">
 				<div className="subModuleBody column ">
-					<div class="ImportantNote column">
+					<div className="ImportantNote column">
 						<span className="title txt-org">
 							{t("lbl_ImportantNote")}
 						</span>
@@ -139,7 +139,7 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 							{t("lbl_ConfirmDeposit")}
 						</div>
 					</div>
-					<div class="depositInfo">
+					<div className="depositInfo">
 						<div className="bankName">
 							<img
 								src={`${config.imgUrl}/common/images/BankLogo/${bankInfo.bankLogo}`}

@@ -97,8 +97,8 @@ export default ({ dispatch, bankList }) => {
 		<Loading />
 	) : (
 		<>
-			<div class="walletModule">
-				<div class="addBank bankselect">
+			<div className="walletModule">
+				<div className="addBank bankselect">
 					<button
 						className="icon icon-arrow-left2"
 						onClick={toLastStep}>

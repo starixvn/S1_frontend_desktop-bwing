@@ -136,7 +136,7 @@ export default ({ accountName, custBankList, reload }) => {
 		<div className="infoModule">
 			<div className="walletModule">
 				<div className="addBank haveBank">
-					<div class="txt-blue15">
+					<div className="txt-blue15">
 						{t("lbl_BankAccount").toUpperCase()}
 						<div className="remainder">
 							{t("lbl_NumberOfBankAccounts")}:{" "}
