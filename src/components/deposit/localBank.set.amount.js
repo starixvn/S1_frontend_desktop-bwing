@@ -8,6 +8,7 @@ import Inputbox from "../common/inputbox";
 import { api_accountStrict_SetAccountName } from "../../service/api/accountStrict";
 import { defPopBoxType } from "../common/popBox";
 import { popBoxContext } from "../common/context";
+import { Link } from "gatsby";
 
 export default ({
 	bankInfo,
@@ -232,6 +233,8 @@ export default ({
 						/>
 					</div>
 
+					{console.log(userInfo)}
+
 					{userInfo.isLogin === true &&
 					!userInfo.accountName &&
 					userInfo.accountName !== undefined ? (
@@ -261,29 +264,32 @@ export default ({
 						</div>
 					)}
 
-					<div className="inputModuleRow">
-						<Inputbox
-							title={t("lbl_Amount")}
-							value={amount}
-							onChange={onChangeAmount}
-							onBlur={ValidAmount.bind(this, amount)}
-							clickInfo={clickInfo.bind(this, "amount")}
-							checked={status.amount.checked}
-							tip={status.amount.tip}
-							_isConvert={_isConvert}
-						/>
-						<div className="btnGroup">
-							<button
-								className={`${
-									status.amount.checked &&
-									status.accountName.checked
-										? "btn-check"
-										: "btn-cancel"
-								}`}
-								onClick={berforeSubmitCheck}>
-								{t("lbl_Submit")}
-							</button>
-						</div>
+					<Inputbox
+						// title={t("lbl_Amount")}
+						placeholder={t("lbl_DepositAmount")}
+						value={amount}
+						onChange={onChangeAmount}
+						onBlur={ValidAmount.bind(this, amount)}
+						clickInfo={clickInfo.bind(this, "amount")}
+						checked={status.amount.checked}
+						// tip={status.amount.tip}
+						_isConvert={_isConvert}
+					/>
+					<div className={`tip${status.tip ? " active" : ""}`}>
+						{status.tip}
+					</div>
+					<div className="btnGroup">
+						<button
+							className={`${
+								status.amount.checked &&
+								(status.accountName ||
+									status.accountName.checked)
+									? "btn-check"
+									: "btn-cancel"
+							}`}
+							onClick={berforeSubmitCheck}>
+							{t("lbl_Submit")}
+						</button>
 					</div>
 				</div>
 			</div>
