@@ -56,7 +56,7 @@ const Content = () => {
 		const ClickClose = () => {
 			setPopBox({ isOpen: false });
 		};
-
+		setLoading(true);
 		api_payment_GetStatement({
 			...transactionData,
 			PageNumber: pageNumber
@@ -64,79 +64,11 @@ const Content = () => {
 			res => {
 				if (isMountedRef.current) {
 					if (res.data.errorCode === 0) {
-						let fakeData = {
-							data: [
-								{
-									type: null,
-									changeAmount: 300000.0,
-									beforeAmount: 6200.0,
-									afterAmount: 306200.0,
-									refTransId: "WD87",
-									createTime: "2020-07-27T03:46:55-04:00",
-									direction: 1,
-									typeName: "Cancelled Withdrawal"
-								},
-								{
-									type: null,
-									changeAmount: 100.0,
-									beforeAmount: 6100.0,
-									afterAmount: 6200.0,
-									refTransId: "AD477",
-									createTime: "2020-07-13T05:53:40-04:00",
-									direction: 1,
-									typeName: "Payment Adjustment Debit"
-								},
-								{
-									type: null,
-									changeAmount: 1000.0,
-									beforeAmount: 7100.0,
-									afterAmount: 6100.0,
-									refTransId: "TD2857",
-									createTime: "2020-07-13T04:14:31-04:00",
-									direction: 2,
-									typeName: "Saba Sports"
-								},
-								{
-									type: null,
-									changeAmount: 7100.0,
-									beforeAmount: 0.0,
-									afterAmount: 7100.0,
-									refTransId: "TD2856",
-									createTime: "2020-07-03T06:58:08-04:00",
-									direction: 1,
-									typeName: "Saba Sports"
-								},
-								{
-									type: null,
-									changeAmount: 7100.0,
-									beforeAmount: 7100.0,
-									afterAmount: 0.0,
-									refTransId: "TD2855",
-									createTime: "2020-07-03T06:56:01-04:00",
-									direction: 2,
-									typeName: "Saba Sports"
-								}
-							],
-							totalPages: 2,
-							pageNumber: 1,
-							rowCount: 10,
-							errorCode: 0,
-							message: "",
-							rawErrorCode: "",
-							rawMessage: ""
-						};
-
-						setGetHistory(fakeData.data);
+						setGetHistory(res.data.data);
 						setPagination(prev => ({
 							...prev,
-							totalPages: fakeData.totalPages
+							totalPages: res.data.totalPages
 						}));
-
-						// setGetHistory(res.data.data);
-						// setPagination(prev => ({
-						// 	...prev,
-						// 	totalPages: res.data.totalPages
-						// }));
 					} else {
 						setPopBox({
 							isOpen: true,
@@ -154,6 +86,7 @@ const Content = () => {
 						});
 					}
 					setProcessing(false);
+					setLoading(false);
 				}
 			},
 			err => {
@@ -173,6 +106,7 @@ const Content = () => {
 						)
 					});
 					setProcessing(false);
+					setLoading(false);
 				}
 			}
 		);
