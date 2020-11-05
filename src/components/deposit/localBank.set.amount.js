@@ -8,7 +8,6 @@ import Inputbox from "../common/inputbox";
 import { api_accountStrict_SetAccountName } from "../../service/api/accountStrict";
 import { defPopBoxType } from "../common/popBox";
 import { popBoxContext } from "../common/context";
-import { Link } from "gatsby";
 
 export default ({
 	bankInfo,
@@ -232,8 +231,6 @@ export default ({
 							_isConvert={_isConvert}
 						/>
 					</div>
-
-					{console.log(userInfo)}
 
 					{userInfo.isLogin === true &&
 					!userInfo.accountName &&

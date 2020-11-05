@@ -22,8 +22,6 @@ import {
 	defActionType
 } from "./mobilePay.reducer";
 import Loading from "../common/loading";
-import { defPopBoxType } from "../common/popBox";
-import { popBoxContext } from "../common/context";
 import config from "../../config";
 
 export default () => {
@@ -122,9 +120,7 @@ export default () => {
 						src={`${config.imgUrl}/common/images/MobilePay/${gName}.png`}
 						alt={gName}></img>
 					<div>
-						<div>
-							{t("lbl_MobileDeposit")}
-						</div>
+						<div>{t("lbl_MobileDeposit")}</div>
 						<div>
 							{t("lbl_CreditTime")}:{t("lbl_Instant")}
 						</div>

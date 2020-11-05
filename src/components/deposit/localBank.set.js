@@ -23,7 +23,6 @@ import {
 } from "./localBank.reducer";
 import Loading from "../common/loading";
 import { defPopBoxType } from "../common/popBox";
-import config from "../../config";
 
 export default () => {
 	const { t } = useTranslation();
