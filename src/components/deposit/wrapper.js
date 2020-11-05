@@ -8,9 +8,11 @@ export default ({ step, children }) => {
 
 	return (
 		<div className="infoModule">
-			<div className="inside-title icon icon-library">
-				<span>{t("lbl_Deposit")}</span>
-				<div>{t("lbl_DepositOptionHint")}</div>
+			<div className="inside-title icon-icon32px_deposit">
+				{t("lbl_Deposit").toUpperCase()}
+			</div>
+			<div className="txt-white txt-center">
+				{t("lbl_DepositOptionHint")}
 			</div>
 			<StepBar step={step} t={t} defStep={defStep} />
 			{children}

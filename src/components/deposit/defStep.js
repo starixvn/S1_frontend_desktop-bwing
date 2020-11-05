@@ -1,18 +1,18 @@
 export default [
 	{
-		title: "01",
+		title: "",
 		descriptionKey: "lbl_SelectPaymentModes"
 	},
 	{
-		title: "02",
+		title: "",
 		descriptionKey: "lbl_SelectBank"
 	},
 	{
-		title: "03",
+		title: "",
 		descriptionKey: "lbl_EnterAmount"
 	},
 	{
-		title: "OK",
+		title: "",
 		descriptionKey: "lbl_Confirm"
 	}
 ];

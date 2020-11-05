@@ -80,29 +80,31 @@ export default ({
 							_isConvert={_isConvert}
 						/>
 					</div>
-					<div className="inputModuleRow">
-						<Inputbox
-							title={t("lbl_Amount")}
-							value={amount}
-							onChange={EditAmount}
-							onBlur={VaildAmount.bind(this, amount)}
-							clickInfo={clickInfo}
-							checked={status.checked}
-							tip={status.tip}
-							_isConvert={_isConvert}
-						/>
-						<div className="btnGroup">
-							<button
-								className={`${
-									status.checked === true
-										? "btn-check"
-										: "btn-cancel"
-								}`}
-								onClick={SubmitAmount}>
-								{" "}
-								{t("lbl_Submit")}
-							</button>
-						</div>
+
+					<Inputbox
+						// title={t("lbl_Amount")}
+						placeholder={t("lbl_DepositAmount")}
+						value={amount}
+						onChange={EditAmount}
+						onBlur={VaildAmount.bind(this, amount)}
+						clickInfo={clickInfo}
+						checked={status.checked}
+						// tip={status.tip}
+						_isConvert={_isConvert}
+					/>
+					<div className={`tip${status.tip ? " active" : ""}`}>
+						{status.tip}
+					</div>
+					<div className="btnGroup">
+						<button
+							className={`${
+								status.checked === true
+									? "btn-check"
+									: "btn-cancel"
+							}`}
+							onClick={SubmitAmount}>
+							{t("lbl_Submit")}
+						</button>
 					</div>
 				</div>
 			</div>

@@ -145,21 +145,25 @@ export default () => {
 	) : redirectPath === null ? (
 		<DepositWrapper step={state.step}>
 			<div className="platformName">
-				<div className="icon icon-library"></div>
 				<div>
-					<div className="txt-yellow">{t("lbl_WireTransfers")}</div>
-					<div className="txt-red">
-						{t("lbl_CreditTime")}: {t("lbl_5mins")}
+					<div className="icon icon-library"></div>
+					<div>
+						<div>{t("lbl_WireTransfers")}</div>
+						<div>
+							{t("lbl_CreditTime")}: {t("lbl_5mins")}
+						</div>
 					</div>
 				</div>
 				{state.step === 2 ? (
 					<Link
 						to={`/${userInfo.langId}/${path.deposit.root}`}
-						className="icon icon-arrow-left2"></Link>
+						className="icon icon-arrow-left2">
+						{t("lbl_back")}
+					</Link>
 				) : (
-					<a
-						className="icon icon-arrow-left2"
-						onClick={ClickBack}></a>
+					<a className="icon icon-arrow-left2" onClick={ClickBack}>
+						{t("lbl_back")}
+					</a>
 				)}
 			</div>
 			{displayModule}

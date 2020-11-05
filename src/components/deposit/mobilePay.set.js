@@ -22,8 +22,7 @@ import {
 	defActionType
 } from "./mobilePay.reducer";
 import Loading from "../common/loading";
-import { defPopBoxType } from "../common/popBox";
-import { popBoxContext } from "../common/context";
+import config from "../../config";
 
 export default () => {
 	const { t } = useTranslation();
@@ -115,21 +114,28 @@ export default () => {
 	) : redirectPath === null ? (
 		<DepositWrapper step={state.step}>
 			<div className="platformName">
-				<div className={`icon icon-${gName}`}></div>
 				<div>
-					<div className="txt-yellow">{t("lbl_MobileDeposit")}</div>
-					<div className="txt-red">
-						{t("lbl_CreditTime")}:{t("lbl_Instant")}
+					{/* <div className={`icon icon-${gName}`}></div> */}
+					<img
+						src={`${config.imgUrl}/common/images/MobilePay/${gName}.png`}
+						alt={gName}></img>
+					<div>
+						<div>{t("lbl_MobileDeposit")}</div>
+						<div>
+							{t("lbl_CreditTime")}:{t("lbl_Instant")}
+						</div>
 					</div>
 				</div>
 				{state.step === 2 ? (
 					<Link
 						to={`/${userInfo.langId}/${path.deposit.root}`}
-						className="icon icon-arrow-left2"></Link>
+						className="icon icon-arrow-left2">
+						{t("lbl_back")}
+					</Link>
 				) : (
-					<a
-						onClick={ClickBack}
-						className="icon icon-arrow-left2"></a>
+					<a onClick={ClickBack} className="icon icon-arrow-left2">
+						{t("lbl_back")}
+					</a>
 				)}
 			</div>
 			{displayMoudle}
