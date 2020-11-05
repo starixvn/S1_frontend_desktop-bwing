@@ -56,7 +56,6 @@ const Content = () => {
 		const ClickClose = () => {
 			setPopBox({ isOpen: false });
 		};
-		setLoading(true);
 		api_payment_GetStatement({
 			...transactionData,
 			PageNumber: pageNumber
@@ -86,7 +85,6 @@ const Content = () => {
 						});
 					}
 					setProcessing(false);
-					setLoading(false);
 				}
 			},
 			err => {
@@ -106,7 +104,6 @@ const Content = () => {
 						)
 					});
 					setProcessing(false);
-					setLoading(false);
 				}
 			}
 		);

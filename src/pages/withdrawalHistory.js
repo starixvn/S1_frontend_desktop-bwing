@@ -60,7 +60,6 @@ const Content = () => {
 	};
 
 	const GetWithdrawalInfoHistory = (transactionData, pageNumber) => {
-		setLoading(true);
 		api_payment_GetWithdrawalInfoHistory({
 			...transactionData,
 			PageNumber: pageNumber
@@ -90,7 +89,6 @@ const Content = () => {
 						});
 					}
 					setProcessing(false);
-					setLoading(false);
 				}
 			},
 			err => {
@@ -110,7 +108,6 @@ const Content = () => {
 						)
 					});
 					setProcessing(false);
-					setLoading(false);
 				}
 			}
 		);

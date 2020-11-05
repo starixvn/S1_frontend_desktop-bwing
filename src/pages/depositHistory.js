@@ -58,7 +58,6 @@ const Content = () => {
 	};
 
 	const GetDepositInfoHistory = (transactionData, pageNumber) => {
-		setLoading(true);
 		api_payment_GetDepositInfoHistory({
 			...transactionData,
 			PageNumber: pageNumber
@@ -88,7 +87,6 @@ const Content = () => {
 						});
 					}
 					setProcessing(false);
-					setLoading(false);
 				}
 			},
 			err => {
@@ -108,7 +106,6 @@ const Content = () => {
 						)
 					});
 					setProcessing(false);
-					setLoading(false);
 				}
 			}
 		);

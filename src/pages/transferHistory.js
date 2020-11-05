@@ -70,7 +70,6 @@ const Content = () => {
 		const ClickClose = () => {
 			setPopBox({ isOpen: false });
 		};
-		setLoading(true);
 		api_tp_GetTransferHistory({
 			...transactionData,
 			PageNumber: pageNumber
@@ -100,7 +99,6 @@ const Content = () => {
 						});
 					}
 					setProcessing(false);
-					setLoading(false);
 				}
 			},
 			err => {
@@ -120,7 +118,6 @@ const Content = () => {
 						)
 					});
 					setProcessing(false);
-					setLoading(false);
 				}
 			}
 		);
