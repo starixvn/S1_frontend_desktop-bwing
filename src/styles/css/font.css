@@ -53,10 +53,6 @@
   font-size: 36px !important;
 }
 
-.icon-spinner11:before {
-  font-size: 12px !important;
-}
-
 .icon-nodata:before {
   content: "\e9a7";
 }
