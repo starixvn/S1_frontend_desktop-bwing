@@ -302,7 +302,8 @@ const Content = () => {
 	};
 
 	const clickInfo = () => {
-		let _msg = status.tip === "" ? t("lbl_AmountTooltip") : "";
+		let _msg =
+			status.tip === "" ? t("lbl_AmountTooltip")?.replace("{0}", 1) : "";
 		setStatus({
 			checked: null,
 			tip: _msg
