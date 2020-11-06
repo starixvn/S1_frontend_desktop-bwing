@@ -6,7 +6,7 @@ import { siteInfo } from "../../config";
 
 export default ({ langId, t, hideSiteMap = false }) => (
 	<div>
-		<span className="title">{t("lbl_AboutBwing")}</span>
+		<span className="title">{t("lbl_AboutSite")}</span>
 		<div>
 			<a
 				style={{ fontWeight: "bold" }}

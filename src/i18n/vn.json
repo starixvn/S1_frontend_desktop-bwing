@@ -1,6 +1,6 @@
-{	
+{
 	"home ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_AboutGoal123": "Goal123.com",
+	"lbl_AboutSite": "Bwing.com",
 	"lbl_PrivacyPolicy": "Chính sách quyền riêng tư",
 	"lbl_Affiliates": "Đại lý",
 	"lbl_Games": "Trò Chơi",
@@ -15,7 +15,6 @@
 	"lbl_AboutUs": "Giới thiệu",
 	"lbl_Terms": "Điều Khoản Sử Dụng",
 	"lbl_PoweredBy": "Một sản phẩm của",
-	"lbl_EdgeOfGoal123": "Ưu điểm của sản phẩm",
 	"lbl_SiteMap":"Sơ đồ trang web",
 	"lbl_ResposibleGaming": "Chơi có trách nhiệm",
 	"lbl_ConatctUsHint": "Bộ phận hỗ trợ trực tuyến 24/7 luôn sẵn sàng lắng nghe và giải đáp những thắc mắc của thành viên. Chúng tôi hỗ trợ thông qua chat hỗ trợ trực tuyến, điện thoại và nhiều kênh thông dụng khác như : Zalo, Telegram và Skype.",
@@ -32,14 +31,14 @@
 	"lbl_Announcement": "Thông Báo",
 	"lbl_TermsConditions": "Điều Khoản và Điều Kiện",
 	"lbl_RuleRegulations": "Quy Tắc và Quy Định đặt cược",
-	"lbl_HowToRegister":"Cách đăng ký",
-	"lbl_HowToDepoist":"Hướng dẫn nạp tiền",
-	"lbl_HowToWithdraw":"Cách rút tiền",
-	"lbl_HowToPlay":"Cách đặt cược",
-	"lbl_UserGuide":"User Guide",
+	"lbl_HowToRegister": "Cách đăng ký",
+	"lbl_HowToDepoist": "Hướng dẫn nạp tiền",
+	"lbl_HowToWithdraw": "Cách rút tiền",
+	"lbl_HowToPlay": "Cách đặt cược",
+	"lbl_UserGuide": "User Guide",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_Goal123News": "Điểm báo Goal123",
+	"lbl_SiteNews": "Điểm báo Bwing",
 	"lbl_News": "Tin Tức",
 	"lbl_BackToNews": "Quay lại mục Tin tức",
 
@@ -56,6 +55,9 @@
 	"lbl_eSports": "Thể thao điện tử",
 	"lbl_eSportsBetting": "Cược Thể thao điện tử",
 	"lbl_Fishing": "Bắn Cá",
+	"lbl_FishingGG": "Thế giới bắn cá",
+	"lbl_FishingSG1": "Thánh bắn cá",
+	"lbl_FishingSG2": "Bắn cá giao đấu",
 	"lbl_FootballBetting": "Cược Bóng Bầu Dục",
 	"lbl_HockeyBetting": "Cược Hockey",
 	"lbl_Keno": "Keno",
@@ -81,7 +83,7 @@
 	"lbl_VirtualSports": "Thể thao ảo",
 
 	"account ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_Affiliate_ID":"ID Đại lý/ Người giới thiệu",
+	"lbl_Affiliate_ID": "ID Đại lý/ Người giới thiệu",
 	"lbl_Birthday": "Ngày sinh",
 	"lbl_BirthRequired": "Vui lòng nhập ngày sinh",
 	"lbl_ChangePassword": "Đổi Mật Khẩu",
@@ -115,7 +117,7 @@
 	"lbl_Phone": "Số ĐT",
 	"lbl_PhoneRequired": "Vui lòng nhập số điện thoại",
 	"lbl_PhoneTooltip": "Vui lòng nhập số điện thoại của bạn. Lưu ý: số điện thoại này sẽ không thể thay đổi!",
-	"lbl_Please_enter_Affiliate_ID":"Vui lòng nhập ID Đại lý (tùy chọn), hông tin không thể thay đổi sau khi đã nhập!",
+	"lbl_Please_enter_Affiliate_ID": "Vui lòng nhập ID Đại lý (tùy chọn), hông tin không thể thay đổi sau khi đã nhập!",
 	"lbl_PreferredCurrencyToolTip": "Không thể thay đổi Tiền tệ ưa thích sau khi đăng ký.",
 	"lbl_Profile": "Hồ sơ",
 	"lbl_ProfileModifyWarning": "Nhằm đảm bảo an toàn tài khoản, Thông tin cá nhân không thể thay đổi sau khi xác nhận",
@@ -153,9 +155,9 @@
 	"lbl_ResetPassword": "Đổi mật khẩu",
 	"lbl_VertifyContactConfirm": "Vui lòng xác minh số điện thoại của bạn để được hưởng các chương trình khuyến mãi hấp dẫn?",
 	"lbl_VertifyNow": "Xác minh ngay bây giờ",
-	"lbl_Verified":"Đã xác minh",
+	"lbl_Verified": "Đã xác minh",
 	"lbl_Unverified": "Chưa được xác minh",
-	"lbl_PrefferedCurrency":"Tiền tệ ưa thích",
+	"lbl_PrefferedCurrency": "Tiền tệ ưa thích",
 
 	"promotion ■■■■■■■■■■■■■■■■■■■■": "",
 	"PromotionCategory1": "Nạp Lần Đầu",
@@ -213,8 +215,8 @@
 	"lbl_UpdateSuccessWillProcess": "Chúng tôi sẽ xử lý yêu cầu của bạn nhanh nhất có thể!",
 	"lbl_Free": "Chơi Thử",
 	"lbl_PlayNow": "Tham gia",
-	"lbl_back":"Quay lại",
-	"lbl_Processing":"Đang xử lý",
+	"lbl_back": "Quay lại",
+	"lbl_Processing": "Đang xử lý",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Chuyển tiền",
@@ -317,6 +319,7 @@
 	"lbl_UpdatePersonalInfoWithdrawal": "Xin vui lòng cập nhật thông tin cá nhân đầy đủ trước khi thực hiện rút tiền.",
 	"lbl_WithdrawalNow": "Rút tiền",
 	"lbl_GoWithdrawalPage": "Chuyển đến trang Rút tiền?",
+	"lbl_DragToUploadFile": "Drag and drop to upload or to chose a file",
 
 	"transaction ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_NeedAccountNo": "Cần nhập số tài khoản",
@@ -350,7 +353,7 @@
 	"lbl_AddBankAccount": "Thêm Tài Khoản",
 	"lbl_TurnoverAccmulateHint": "Bạn cần hoành thành doanh thu cược yêu cầu của khuyến mãi để thực hiện chuyển quỹ",
 	"lbl_QuickPick": "Chọn nhanh",
-	"lbl_BankAccount":"Tài khoản ngân hàng",
+	"lbl_BankAccount": "Tài khoản ngân hàng",
 	"lbl_RollOver": "Số vòng cược",
 
 	"casino ■■■■■■■■■■■■■■■■■■■■": "",
@@ -381,7 +384,7 @@
 	"lbl_5mins": "5 phút",
 
 	"new ■■■■■■■■■■■■■■■■■■■■": "",
-	"newkey1":"value",
-	"newkey2":"value",
+	"newkey1": "value",
+	"newkey2": "value",
 	"---end---": "---"
 }

@@ -24,8 +24,8 @@ export default () => {
 						<div className="rightModule">
 							<WithdrawalWrapper step={1}>
 								<Withdrawal refreshHitory={refreshHitory} />
+								<RecentHistory shouldRefresh={shouldRefresh} />
 							</WithdrawalWrapper>
-							<RecentHistory shouldRefresh={shouldRefresh} />
 						</div>
 					</section>
 				</main>
