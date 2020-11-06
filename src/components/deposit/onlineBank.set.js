@@ -25,6 +25,7 @@ import {
 	defActionType
 } from "./onlineBank.reducer";
 import Loading from "../common/loading";
+import config from "../../config";
 
 export default () => {
 	const { t } = useTranslation();
@@ -113,7 +114,6 @@ export default () => {
 		dispatch({ type: defActionType.CLICK_BACK });
 	};
 
-	let pName = getUrlParameter("name");
 	let displayMoudle = null;
 	const _isConvert = isConvert(userInfo.currencyId);
 	switch (state.displayMoudle) {
@@ -152,27 +152,35 @@ export default () => {
 			break;
 	}
 
+	let pName = getUrlParameter("name");
+
 	return loading ? (
 		<Loading />
 	) : redirectPath === null ? (
 		<DepositWrapper step={state.step}>
 			<div className="platformName">
-				<div className={`icon icon-${pName}`}></div>
 				<div>
-					<div className="txt-yellow">{t("lbl_OnlineBanking")}</div>
-					<div className="txt-red">
-						{t("lbl_CreditTime")}:{t("lbl_Instant")}
+					<img
+						src={`${config.imgUrl}/common/images/Payment/${pName}.png`}
+						alt={pName}></img>
+					<div>
+						<div>{t("lbl_OnlineBanking")}</div>
+						<div>
+							{t("lbl_CreditTime")}:{t("lbl_Instant")}
+						</div>
 					</div>
 				</div>
 				{state.step === 2 ||
 				(state.bankList.length < 1 && state.step === 3) ? (
 					<Link
 						to={`/${userInfo.langId}/${path.deposit.root}`}
-						className="icon icon-arrow-left2"></Link>
+						className="icon icon-arrow-left2">
+						{t("lbl_back")}
+					</Link>
 				) : (
-					<a
-						onClick={ClickBack}
-						className="icon icon-arrow-left2"></a>
+					<a onClick={ClickBack} className="icon icon-arrow-left2">
+						{t("lbl_back")}
+					</a>
 				)}
 			</div>
 			{displayMoudle}

@@ -55,31 +55,37 @@ export default ({ channelInfo, amount, _isConvert }) => {
 	return (
 		<div className="subModuleList">
 			<div className="subModule">
-				<div className="subModuleBody column align-items-center">
-					<span className="title">{t("lbl_ImportantNote")}</span>
-					<div className="txt-lightgray">
-						{t("lbl_ConfirmDeposit")}
+				<div className="subModuleBody column">
+					<div className="ImportantNote column">
+						<span className="title txt-org">
+							{t("lbl_ImportantNote")}
+						</span>
+						<div className="txt-lightgray">
+							{t("lbl_ConfirmDeposit")}
+						</div>
 					</div>
-					<div className="bankName">
-						<img
-							src={`${config.imgUrl}/common/images/MobilePay/${channelInfo.groupName}.png`}
-							alt={channelInfo.groupName}
-						/>
-					</div>
-					<div className="smallList">
-						<ul>
-							<li>{t("lbl_SelectedChannel")}</li>
-							<li>{channelInfo.channelName}</li>
-						</ul>
-						<ul>
-							<li>{t("lbl_Amount")}</li>
-							<li>
-								{number_format(
-									_isConvert ? amount * 1000 : amount,
-									_isConvert
-								)}
-							</li>
-						</ul>
+					<div className="depositInfo">
+						<div className="bankName">
+							<img
+								src={`${config.imgUrl}/common/images/MobilePay/${channelInfo.groupName}.png`}
+								alt={channelInfo.groupName}
+							/>
+						</div>
+						<div className="smallList">
+							<ul>
+								<li>{t("lbl_SelectedChannel")}</li>
+								<li>{channelInfo.channelName}</li>
+							</ul>
+							<ul>
+								<li>{t("lbl_Amount")}</li>
+								<li>
+									{number_format(
+										_isConvert ? amount * 1000 : amount,
+										_isConvert
+									)}
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div className="btnGroup">
 						<button onClick={ClickCancel} className="btn-cancel">

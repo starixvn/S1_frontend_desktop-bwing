@@ -302,7 +302,8 @@ const Content = () => {
 	};
 
 	const clickInfo = () => {
-		let _msg = status.tip === "" ? t("lbl_AmountTooltip") : "";
+		let _msg =
+			status.tip === "" ? t("lbl_AmountTooltip")?.replace("{0}", 1) : "";
 		setStatus({
 			checked: null,
 			tip: _msg
@@ -380,8 +381,8 @@ const Content = () => {
 	) : (
 		<div className="rightModule">
 			<div className="infoModule">
-				<div className="inside-title icon icon-transfer">
-					<span>{t("lbl_TransferFunds")}</span>
+				<div className="inside-title icon icon-icon32px_deposit">
+					{t("lbl_TransferFunds").toUpperCase()}
 				</div>
 				<ShowWallets
 					i18n={t}
