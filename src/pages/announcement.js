@@ -44,34 +44,7 @@ const Content = () => {
 			res => {
 				if (isMountedRef.current) {
 					if (res.data.errorCode === 0) {
-						let fakeData = {
-							data: [
-								{
-									id: 1,
-									subject:
-										"We are pleased to announce that our Company have Official Facebook, Instagram and Twitter account - nova88official!",
-									content:
-										"To our valued Members: \n\nWe are pleased to announce that our Company have Official Facebook, Instagram and Twitter account - nova88official! \nKindly be reminded that our Company only have three official social accounts, while other accounts appeared in any social platform IS NOT our company's official accounts. \nTherefore, we would like to bring it to your attention on any fraudulent social account. \nShould you have any inquiries, please do not hesitate to contact Nova88’s Customer Service.\n\nNova88’s Customer Service",
-									startTime: "2020-04-14T12:00:00-04:00"
-								},
-								{
-									id: 2,
-									subject:
-										"Our company would like to take this opportunity to remind our valued customers change your password frequently to keep your account safe. ",
-									content:
-										"Dear valued customer: \n\nIt is safe to have an unique password for your account. \nOur company would like to take this opportunity to remind our valued customers change your password frequently to keep your account safe. \n\nThank you.",
-									startTime: "2020-04-14T12:00:00-04:00"
-								}
-							],
-							errorCode: 0,
-							message: "",
-							rawErrorCode: "",
-							rawMessage: ""
-						};
-
-						setGetAnnouncement(fakeData.data);
-
-						// setGetAnnouncement(res.data.data);
+						setGetAnnouncement(res.data.data);
 					} else {
 						setPopBox({
 							isOpen: true,
