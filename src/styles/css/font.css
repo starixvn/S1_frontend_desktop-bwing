@@ -521,6 +521,14 @@
   content: "\e910";
 }
 
+.icon-cloud_upload:before {
+  content: "\e9af";
+}
+
+.icon-backup:before {
+  content: "\e9af";
+}
+
 .icon-last_page:before {
   content: "\e9ad";
 }
