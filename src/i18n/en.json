@@ -1,6 +1,6 @@
 {
 	"home ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_AboutGoal123": "Goal123.com",
+	"lbl_AboutSite": "Bwing.com",
 	"lbl_PrivacyPolicy": "Privacy Policy",
 	"lbl_Affiliates": "Affiliates",
 	"lbl_Games": "Games",
@@ -15,7 +15,6 @@
 	"lbl_AboutUs": "About Us",
 	"lbl_Terms": "Terms of Use",
 	"lbl_PoweredBy": "Powered by",
-	"lbl_EdgeOfGoal123": "The Edge Of Goal123",
 	"lbl_SiteMap":"Site Map",
 	"lbl_ResposibleGaming": "Responsible Gaming",
 	"lbl_ConatctUsHint": "Our 24/7 online support team is always available to listen and answer your questions. We support via online chat, phone and many other popular channels such as: Zalo, Telegram and Skype.",
@@ -39,7 +38,7 @@
 	"lbl_UserGuide":"User Guide",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_Goal123News": "Goal123 News",
+	"lbl_SiteNews": "Bwing News",
 	"lbl_News": "News",
 	"lbl_BackToNews": "Back To NEWS",
 
@@ -56,6 +55,9 @@
 	"lbl_eSports": "E-SPORT",
 	"lbl_eSportsBetting": "E-Sport Betting",
 	"lbl_Fishing": "Fishing",
+	"lbl_FishingGG": "Fishing World",
+	"lbl_FishingSG1": "Fishing God",
+	"lbl_FishingSG2": "Fishing War",
 	"lbl_FootballBetting": "Football Betting",
 	"lbl_HockeyBetting": "Hockey Betting",
 	"lbl_Keno": "Keno",

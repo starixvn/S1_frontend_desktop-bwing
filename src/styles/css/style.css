@@ -223,20 +223,20 @@ header .header > div.menu .subMenu-Wrapper .icon:before {
   font-size: 30px;
 }
 
-header .header > div.menu .gameList, header .header > div.menu .casinoList, header .header > div.menu .livecasinoList {
+header .header > div.menu .gameList, header .header > div.menu .casinoList, header .header > div.menu .livecasinoList, header .header > div.menu .fishList {
   width: 100%;
   max-width: 1170px;
   margin: auto;
   display: none;
 }
 
-header .header > div.menu .gameList.active, header .header > div.menu .gameList div, header .header > div.menu .casinoList.active, header .header > div.menu .casinoList div, header .header > div.menu .livecasinoList.active, header .header > div.menu .livecasinoList div {
+header .header > div.menu .gameList.active, header .header > div.menu .gameList div, header .header > div.menu .casinoList.active, header .header > div.menu .casinoList div, header .header > div.menu .livecasinoList.active, header .header > div.menu .livecasinoList div, header .header > div.menu .fishList.active, header .header > div.menu .fishList div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .header > div.menu .gameList a, header .header > div.menu .gameList button, header .header > div.menu .casinoList a, header .header > div.menu .casinoList button, header .header > div.menu .livecasinoList a, header .header > div.menu .livecasinoList button {
+header .header > div.menu .gameList a, header .header > div.menu .gameList button, header .header > div.menu .casinoList a, header .header > div.menu .casinoList button, header .header > div.menu .livecasinoList a, header .header > div.menu .livecasinoList button, header .header > div.menu .fishList a, header .header > div.menu .fishList button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -259,18 +259,18 @@ header .header > div.menu .gameList a, header .header > div.menu .gameList butto
   margin-top: -20px;
 }
 
-header .header > div.menu .gameList a img, header .header > div.menu .gameList button img, header .header > div.menu .casinoList a img, header .header > div.menu .casinoList button img, header .header > div.menu .livecasinoList a img, header .header > div.menu .livecasinoList button img {
+header .header > div.menu .gameList a img, header .header > div.menu .gameList button img, header .header > div.menu .casinoList a img, header .header > div.menu .casinoList button img, header .header > div.menu .livecasinoList a img, header .header > div.menu .livecasinoList button img, header .header > div.menu .fishList a img, header .header > div.menu .fishList button img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-header .header > div.menu .gameList a span, header .header > div.menu .gameList button span, header .header > div.menu .casinoList a span, header .header > div.menu .casinoList button span, header .header > div.menu .livecasinoList a span, header .header > div.menu .livecasinoList button span {
+header .header > div.menu .gameList a span, header .header > div.menu .gameList button span, header .header > div.menu .casinoList a span, header .header > div.menu .casinoList button span, header .header > div.menu .livecasinoList a span, header .header > div.menu .livecasinoList button span, header .header > div.menu .fishList a span, header .header > div.menu .fishList button span {
   top: 20px;
   position: relative;
 }
 
-header .header > div.menu .gameList a:hover, header .header > div.menu .gameList button:hover, header .header > div.menu .casinoList a:hover, header .header > div.menu .casinoList button:hover, header .header > div.menu .livecasinoList a:hover, header .header > div.menu .livecasinoList button:hover {
+header .header > div.menu .gameList a:hover, header .header > div.menu .gameList button:hover, header .header > div.menu .casinoList a:hover, header .header > div.menu .casinoList button:hover, header .header > div.menu .livecasinoList a:hover, header .header > div.menu .livecasinoList button:hover, header .header > div.menu .fishList a:hover, header .header > div.menu .fishList button:hover {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -281,14 +281,6 @@ header .header > div.menu .gameList .sabaclub {
 
 header .header > div.menu .gameList .sabaclub:hover {
   background: url(../img/sabaclub_a.png) no-repeat center/auto 100%;
-}
-
-header .header > div.menu .gameList .fishing {
-  background: url(../img/fishing.png) no-repeat center/auto 100%;
-}
-
-header .header > div.menu .gameList .fishing:hover {
-  background: url(../img/fishing_a.png) no-repeat center/auto 100%;
 }
 
 header .header > div.menu .gameList .keno {
@@ -421,6 +413,30 @@ header .header > div.menu .livecasinoList .liveEB:hover {
 
 header .header > div.menu .livecasinoList .liveEB .icon-EB:before {
   font-size: 16px;
+}
+
+header .header > div.menu .fishList .fgg {
+  background: url(../img/fishingGG.png) no-repeat center 10px/auto 100%;
+}
+
+header .header > div.menu .fishList .fgg:hover {
+  background: url(../img/fishingGGa.png) no-repeat center 0px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsg {
+  background: url(../img/fishingSG.png) no-repeat center 10px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsg:hover {
+  background: url(../img/fishingSGa.png) no-repeat center 0px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsgw {
+  background: url(../img/fishingSGwar.png) no-repeat center 10px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsgw:hover {
+  background: url(../img/fishingSGwara.png) no-repeat center 0px/auto 100%;
 }
 
 header .header > div.function {
@@ -2430,7 +2446,6 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 10px 0;
 }
 
 .platformName + div.subModuleList .subModuleBody > div > .bankName {
@@ -3028,6 +3043,11 @@ main > .swiper-container .swiper-slide {
 
 .walletModule .walletBalanceModule + .icon-spinner11:before {
   font-size: 28px;
+}
+
+.walletModule .walletBalanceModule + .icon-spinner11.active:before {
+  -webkit-animation: rotate .7s linear 2;
+          animation: rotate .7s linear 2;
 }
 
 .walletModule .walletBalanceModule .icon-error {
@@ -3661,22 +3681,14 @@ main > .swiper-container .swiper-slide {
 }
 
 .changePassWord .lastChange, .forgetPassWord .lastChange {
-  width: calc(100% - 5px);
-  padding-left: 5px;
-  color: #1E85EC;
+  width: 100%;
+  color: #56ceff;
+  margin-bottom: 20px;
 }
 
 .changePassWord .lastChange span, .forgetPassWord .lastChange span {
   color: white;
   margin-left: 10px;
-}
-
-.forgetPassWord {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
 .forgetPassWord .icon {
@@ -4519,60 +4531,64 @@ iframe {
           align-items: center;
 }
 
+.loading div {
+  width: 260px;
+  height: 94px;
+  background: url(../img/loading_logo.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .loading img {
-  width: auto;
-  margin-right: 5px;
+  width: 21px;
+  height: 20px;
+  -webkit-animation: loading 3s infinite;
+          animation: loading 3s infinite;
+  opacity: 0;
 }
 
-.loading img:nth-child(2) {
-  opacity: 0;
-  -webkit-animation: loading 2s infinite;
-          animation: loading 2s infinite;
+.loading img:first-child, .loading img:last-child {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-.loading img:nth-child(3) {
-  opacity: 0;
-  -webkit-animation: loading 2s infinite;
-          animation: loading 2s infinite;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.loading img:nth-child(4) {
-  opacity: 0;
-  -webkit-animation: loading 2s infinite;
-          animation: loading 2s infinite;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+.loading img:nth-child(2), .loading img:nth-child(4) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 @-webkit-keyframes loading {
   0% {
     opacity: 0;
-    margin-top: 30px;
   }
   50% {
     opacity: 1;
-    margin-top: -30px;
   }
   100% {
     opacity: 0;
-    margin-top: 30px;
   }
 }
 
 @keyframes loading {
   0% {
     opacity: 0;
-    margin-top: 30px;
   }
   50% {
     opacity: 1;
-    margin-top: -30px;
   }
   100% {
     opacity: 0;
-    margin-top: 30px;
   }
 }
 
@@ -4669,8 +4685,12 @@ input:-webkit-autofill:active {
 }
 
 .buttonBox button, .buttonBox a {
-  margin: 5px;
-  max-width: 140px;
+  max-width: 120px;
+  min-width: 120px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 5px 5px 5px 0;
 }
 
 .buttonBox button .icon, .buttonBox a .icon {
@@ -4690,6 +4710,7 @@ input:-webkit-autofill:active {
 
 .buttonBox button.active, .buttonBox a.active {
   background: #134DAE;
+  color: white;
 }
 
 .buttonBox button.active .icon, .buttonBox a.active .icon {
@@ -4725,7 +4746,7 @@ input:-webkit-autofill:active {
   font-size: 14px;
 }
 
-.icon-spinner11.active:before {
+.icon-spinner11.active {
   -webkit-animation: rotate .7s linear 2;
           animation: rotate .7s linear 2;
 }
