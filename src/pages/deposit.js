@@ -16,8 +16,8 @@ export default () => {
 						<div className="rightModule">
 							<DepositWrapper step={1}>
 								<Deposit />
+								<RecentHistory />
 							</DepositWrapper>
-							<RecentHistory />
 						</div>
 					</section>
 				</main>
