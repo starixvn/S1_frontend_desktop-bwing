@@ -223,20 +223,20 @@ header .header > div.menu .subMenu-Wrapper .icon:before {
   font-size: 30px;
 }
 
-header .header > div.menu .gameList, header .header > div.menu .casinoList, header .header > div.menu .livecasinoList {
+header .header > div.menu .gameList, header .header > div.menu .casinoList, header .header > div.menu .livecasinoList, header .header > div.menu .fishList {
   width: 100%;
   max-width: 1170px;
   margin: auto;
   display: none;
 }
 
-header .header > div.menu .gameList.active, header .header > div.menu .gameList div, header .header > div.menu .casinoList.active, header .header > div.menu .casinoList div, header .header > div.menu .livecasinoList.active, header .header > div.menu .livecasinoList div {
+header .header > div.menu .gameList.active, header .header > div.menu .gameList div, header .header > div.menu .casinoList.active, header .header > div.menu .casinoList div, header .header > div.menu .livecasinoList.active, header .header > div.menu .livecasinoList div, header .header > div.menu .fishList.active, header .header > div.menu .fishList div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .header > div.menu .gameList a, header .header > div.menu .gameList button, header .header > div.menu .casinoList a, header .header > div.menu .casinoList button, header .header > div.menu .livecasinoList a, header .header > div.menu .livecasinoList button {
+header .header > div.menu .gameList a, header .header > div.menu .gameList button, header .header > div.menu .casinoList a, header .header > div.menu .casinoList button, header .header > div.menu .livecasinoList a, header .header > div.menu .livecasinoList button, header .header > div.menu .fishList a, header .header > div.menu .fishList button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -259,18 +259,18 @@ header .header > div.menu .gameList a, header .header > div.menu .gameList butto
   margin-top: -20px;
 }
 
-header .header > div.menu .gameList a img, header .header > div.menu .gameList button img, header .header > div.menu .casinoList a img, header .header > div.menu .casinoList button img, header .header > div.menu .livecasinoList a img, header .header > div.menu .livecasinoList button img {
+header .header > div.menu .gameList a img, header .header > div.menu .gameList button img, header .header > div.menu .casinoList a img, header .header > div.menu .casinoList button img, header .header > div.menu .livecasinoList a img, header .header > div.menu .livecasinoList button img, header .header > div.menu .fishList a img, header .header > div.menu .fishList button img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-header .header > div.menu .gameList a span, header .header > div.menu .gameList button span, header .header > div.menu .casinoList a span, header .header > div.menu .casinoList button span, header .header > div.menu .livecasinoList a span, header .header > div.menu .livecasinoList button span {
+header .header > div.menu .gameList a span, header .header > div.menu .gameList button span, header .header > div.menu .casinoList a span, header .header > div.menu .casinoList button span, header .header > div.menu .livecasinoList a span, header .header > div.menu .livecasinoList button span, header .header > div.menu .fishList a span, header .header > div.menu .fishList button span {
   top: 20px;
   position: relative;
 }
 
-header .header > div.menu .gameList a:hover, header .header > div.menu .gameList button:hover, header .header > div.menu .casinoList a:hover, header .header > div.menu .casinoList button:hover, header .header > div.menu .livecasinoList a:hover, header .header > div.menu .livecasinoList button:hover {
+header .header > div.menu .gameList a:hover, header .header > div.menu .gameList button:hover, header .header > div.menu .casinoList a:hover, header .header > div.menu .casinoList button:hover, header .header > div.menu .livecasinoList a:hover, header .header > div.menu .livecasinoList button:hover, header .header > div.menu .fishList a:hover, header .header > div.menu .fishList button:hover {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -281,14 +281,6 @@ header .header > div.menu .gameList .sabaclub {
 
 header .header > div.menu .gameList .sabaclub:hover {
   background: url(../img/sabaclub_a.png) no-repeat center/auto 100%;
-}
-
-header .header > div.menu .gameList .fishing {
-  background: url(../img/fishing.png) no-repeat center/auto 100%;
-}
-
-header .header > div.menu .gameList .fishing:hover {
-  background: url(../img/fishing_a.png) no-repeat center/auto 100%;
 }
 
 header .header > div.menu .gameList .keno {
@@ -421,6 +413,30 @@ header .header > div.menu .livecasinoList .liveEB:hover {
 
 header .header > div.menu .livecasinoList .liveEB .icon-EB:before {
   font-size: 16px;
+}
+
+header .header > div.menu .fishList .fgg {
+  background: url(../img/fishingGG.png) no-repeat center 10px/auto 100%;
+}
+
+header .header > div.menu .fishList .fgg:hover {
+  background: url(../img/fishingGGa.png) no-repeat center 0px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsg {
+  background: url(../img/fishingSG.png) no-repeat center 10px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsg:hover {
+  background: url(../img/fishingSGa.png) no-repeat center 0px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsgw {
+  background: url(../img/fishingSGwar.png) no-repeat center 10px/auto 100%;
+}
+
+header .header > div.menu .fishList .fsgw:hover {
+  background: url(../img/fishingSGwara.png) no-repeat center 0px/auto 100%;
 }
 
 header .header > div.function {
@@ -1951,14 +1967,14 @@ main > .swiper-container .swiper-slide {
   color: black;
 }
 
-.stepBar {
+.stepBar, .stepBar-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 70px 20px;
 }
 
-.stepBar > div {
+.stepBar > div, .stepBar-left > div {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1980,7 +1996,7 @@ main > .swiper-container .swiper-slide {
   background: #070e22;
 }
 
-.stepBar > div:before {
+.stepBar > div:before, .stepBar-left > div:before {
   content: '';
   position: absolute;
   width: 11px;
@@ -1989,7 +2005,7 @@ main > .swiper-container .swiper-slide {
   background: url(../img/stepAfter.png);
 }
 
-.stepBar > div:after {
+.stepBar > div:after, .stepBar-left > div:after {
   content: '';
   position: absolute;
   width: 11px;
@@ -1999,7 +2015,7 @@ main > .swiper-container .swiper-slide {
   z-index: 1;
 }
 
-.stepBar > div.active {
+.stepBar > div.active, .stepBar-left > div.active {
   color: white;
   background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#F85F05));
   background: linear-gradient(to top, #f20c05, #F85F05);
@@ -2008,11 +2024,11 @@ main > .swiper-container .swiper-slide {
   border-bottom-right-radius: 0;
 }
 
-.stepBar > div.active:first-child:before {
+.stepBar > div.active:first-child:before, .stepBar-left > div.active:first-child:before {
   background: none;
 }
 
-.stepBar > div.active:after {
+.stepBar > div.active:after, .stepBar-left > div.active:after {
   content: '';
   position: absolute;
   width: 11px;
@@ -2020,6 +2036,10 @@ main > .swiper-container .swiper-slide {
   right: -11px;
   background: url(../img/stepAfter_a.png);
   z-index: 1;
+}
+
+.stepBar-left {
+  padding: 0 0 20px;
 }
 
 .cashBar {
@@ -2418,10 +2438,6 @@ main > .swiper-container .swiper-slide {
   margin: 0;
 }
 
-.platformName + div.subModuleList .subModuleBody > div:first-child + .inputBox-blue {
-  margin-top: 20px;
-}
-
 .platformName + div.subModuleList .subModuleBody > div.btnGroup {
   margin: 10px auto 10px 0;
 }
@@ -2430,7 +2446,6 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 10px 0;
 }
 
 .platformName + div.subModuleList .subModuleBody > div > .bankName {
@@ -2491,10 +2506,6 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.align-items-center .txt-lightgray {
-  text-align: center;
 }
 
 .bankName {
@@ -2848,24 +2859,81 @@ main > .swiper-container .swiper-slide {
 }
 
 .slipInfo {
-  width: calc(100% / 3 - 110px);
+  max-width: calc(45% - 40px);
   float: left;
-  border-radius: 15px;
-  padding: 20px 40px 20px 70px;
+  border-radius: 5px;
+  padding: 20px;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  margin-right: 20px;
 }
 
-.slipInfo button.icon, .slipInfo a.icon {
-  font-size: 24px;
-  color: #1E85EC;
+.slipInfo + .subModuleList {
+  margin-top: 20px;
 }
 
-.slipInfo .smallList li {
-  font-size: 16px;
-  line-height: 40px;
+.slipInfo + .subModuleList .txt-lightgray {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1d2f62;
 }
 
-.slipInfo .smallList li:first-child {
-  font-weight: normal;
+.slipInfo + .subModuleList .uploadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.slipInfo + .subModuleList .directions {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.slipInfo + .subModuleList .btnGroup {
+  margin-left: 0;
+}
+
+.slipInfo + .subModuleList .upload_img {
+  border: 2px dashed #56ceff;
+  background: #010E33;
+  width: 290px;
+  height: 120px;
+}
+
+.slipInfo + .subModuleList .upload_img .icon {
+  color: #56ceff;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  float: left;
+}
+
+.slipInfo + .subModuleList .upload_img .icon:before {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.slipInfo li {
+  float: left;
+  line-height: 35px;
+}
+
+.slipInfo li:nth-child(odd) {
+  color: #56ceff;
+  clear: both;
+  min-width: 140px;
+}
+
+.slipInfo li:nth-child(even) {
+  min-width: 165px;
 }
 
 .offers {
@@ -2975,6 +3043,11 @@ main > .swiper-container .swiper-slide {
 
 .walletModule .walletBalanceModule + .icon-spinner11:before {
   font-size: 28px;
+}
+
+.walletModule .walletBalanceModule + .icon-spinner11.active:before {
+  -webkit-animation: rotate .7s linear 2;
+          animation: rotate .7s linear 2;
 }
 
 .walletModule .walletBalanceModule .icon-error {
@@ -3090,11 +3163,49 @@ main > .swiper-container .swiper-slide {
 }
 
 .addBank {
-  width: calc(100% / 3 - 50px);
+  width: calc(100% / 3 - 40px);
   background: #0C1A3F;
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #1a2b58;
+}
+
+.addBank.bankselect {
+  width: 100%;
+}
+
+.addBank.bankselect .icon-arrow-left2 {
+  color: #56ceff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addBank.bankselect .icon-arrow-left2:before {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.addBank.bankselect .btnGroup {
+  width: calc(100% / 6 - 10px);
+  margin-left: 0;
+}
+
+.addBank.bankselect .subModuleList {
+  margin: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule {
+  border: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule .subModuleBody {
+  padding: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule .subModuleBody li {
+  width: calc(100% / 6 - 10px);
+  margin: 10px 10px 10px 0;
 }
 
 .addBank .addBankName {
@@ -3284,6 +3395,7 @@ main > .swiper-container .swiper-slide {
 .remainder {
   color: #aeb2bc;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .calculation {
@@ -3435,16 +3547,8 @@ main > .swiper-container .swiper-slide {
   margin-right: 10px;
 }
 
-.kycHeight {
-  height: calc(100% - 190px);
-}
-
 .kycHeight .subModuleBody {
   height: calc(100% - 40px);
-}
-
-.kycHeight .icon {
-  font-size: 48px;
 }
 
 .quickSelect {
@@ -3577,22 +3681,14 @@ main > .swiper-container .swiper-slide {
 }
 
 .changePassWord .lastChange, .forgetPassWord .lastChange {
-  width: calc(100% - 5px);
-  padding-left: 5px;
-  color: #1E85EC;
+  width: 100%;
+  color: #56ceff;
+  margin-bottom: 20px;
 }
 
 .changePassWord .lastChange span, .forgetPassWord .lastChange span {
   color: white;
   margin-left: 10px;
-}
-
-.forgetPassWord {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
 .forgetPassWord .icon {
@@ -3698,11 +3794,11 @@ main > .swiper-container .swiper-slide {
           flex: 1.5;
 }
 
-.profileEdit .editModule .inputBox, .profileEdit .editModule .inputBox-org, .profileEdit .editModule .inputBox-white, .profileEdit .editModule .inputBox-blue, .profileEdit .editModule .inputBox-gray, .profileEdit .editModule .inputBox-yellow {
+.profileEdit .editModule .inputBox-blue {
   z-index: auto;
 }
 
-.profileEdit .editModule .inputBox:first-child, .profileEdit .editModule .inputBox-org:first-child, .profileEdit .editModule .inputBox-white:first-child, .profileEdit .editModule .inputBox-blue:first-child, .profileEdit .editModule .inputBox-gray:first-child, .profileEdit .editModule .inputBox-yellow:first-child {
+.profileEdit .editModule .inputBox-blue:first-child {
   margin-top: 8px;
 }
 
@@ -3722,32 +3818,58 @@ main > .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 15px 5px;
+  border: 0;
+  border-top: 1px solid #1d2f62;
+  background: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .haveBank > div.addBankName {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% / 3 - 50px);
-          flex: 0 0 calc(100% / 3 - 50px);
-  margin-bottom: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+  max-width: calc(100% / 3 - 25px);
 }
 
-.haveBank > div.addBankName .icon-bin {
-  -webkit-transform: translateY(-75%);
-          transform: translateY(-75%);
+.haveBank > div.addBankName:last-child {
+  margin-right: 0;
+}
+
+.haveBank .txt-blue15 {
+  width: 100%;
+  line-height: 30px;
 }
 
 .accountName {
-  padding: 20px 70px 0;
-  color: #1E85EC;
+  padding: 15px;
+  margin: 10px 0;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% / 3 - 50px);
+}
+
+.accountName > div {
+  text-align: right;
+  width: 100%;
+}
+
+.accountName.icon:before {
+  font-size: 24px;
 }
 
 .accountName span {
-  color: white;
   margin: 0 10px;
-}
-
-.accountName button, .accountName a {
-  color: #1E85EC;
+  white-space: nowrap;
 }
 
 .accountName .tip {
@@ -3755,12 +3877,18 @@ main > .swiper-container .swiper-slide {
 }
 
 .announcement, .personal {
-  width: calc(100% - 70px);
+  width: calc(100% - 20px);
   margin: 0 auto;
 }
 
 .announcement pre, .personal pre {
   color: white;
+}
+
+.announcement .list > div, .personal .list > div {
+  margin-bottom: 10px;
+  background: #233157;
+  border-radius: 5px;
 }
 
 .announcement .list .listHeader, .announcement .list .listBody, .personal .list .listHeader, .personal .list .listBody {
@@ -3777,10 +3905,13 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .announcement .list .listHeader div, .personal .list .listHeader div {
   padding: 0;
+  border: 0;
 }
 
 .announcement .list .listHeader div:nth-child(1), .personal .list .listHeader div:nth-child(1) {
@@ -3790,12 +3921,18 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  color: #56ceff;
 }
 
 .announcement .list .listHeader div:nth-child(2), .personal .list .listHeader div:nth-child(2) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  color: white;
+  font-weight: normal;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .announcement .list .listHeader div:nth-child(2) i, .personal .list .listHeader div:nth-child(2) i {
@@ -3803,24 +3940,27 @@ main > .swiper-container .swiper-slide {
   right: 0;
 }
 
-.personal {
-  width: calc(100% - 70px);
-  margin: 0 auto;
+.personal .list > div {
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 .personal .list > div div.listHeader {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .personal .list > div div.listHeader button, .personal .list > div div.listHeader a {
-  right: -12px;
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  position: unset;
 }
 
 .personal .list .year {
   margin-right: 5px;
 }
 
-.personal .list .haveRead div {
+.personal .list .haveRead .listHeader > div:nth-child(2), .personal .list .haveRead .listHeader > div:nth-child(3) {
   font-weight: normal;
 }
 
@@ -3844,8 +3984,9 @@ main > .swiper-container .swiper-slide {
 }
 
 .personal .list .listHeader .checkbox label.icon.icon:before, .personal .list .functionMenu .checkbox label.icon.icon:before {
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
+  color: #1E85EC;
+  font-size: 18px;
+  margin-left: -1px;
 }
 
 .personal .list .listHeader div, .personal .list .functionMenu div {
@@ -3868,9 +4009,12 @@ main > .swiper-container .swiper-slide {
 }
 
 .personal .list .listHeader div:nth-child(3), .personal .list .functionMenu div:nth-child(3) {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .personal .list .listHeader div:nth-child(3) i, .personal .list .functionMenu div:nth-child(3) i {
@@ -3884,18 +4028,16 @@ main > .swiper-container .swiper-slide {
 
 .personal .list .listBody.active {
   padding: 10px 20px;
-}
-
-.personal .list .listHeader label {
-  color: #1E85EC;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .personal .list .listHeader > div:nth-child(2), .personal .list .listHeader > div:nth-child(3) {
   cursor: pointer;
+  font-weight: bold;
 }
 
 .personal .list .functionMenu {
-  background: #1E85EC;
+  background: #324578;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4389,60 +4531,64 @@ iframe {
           align-items: center;
 }
 
+.loading div {
+  width: 260px;
+  height: 94px;
+  background: url(../img/loading_logo.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .loading img {
-  width: auto;
-  margin-right: 5px;
+  width: 21px;
+  height: 20px;
+  -webkit-animation: loading 3s infinite;
+          animation: loading 3s infinite;
+  opacity: 0;
 }
 
-.loading img:nth-child(2) {
-  opacity: 0;
-  -webkit-animation: loading 2s infinite;
-          animation: loading 2s infinite;
+.loading img:first-child, .loading img:last-child {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-.loading img:nth-child(3) {
-  opacity: 0;
-  -webkit-animation: loading 2s infinite;
-          animation: loading 2s infinite;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.loading img:nth-child(4) {
-  opacity: 0;
-  -webkit-animation: loading 2s infinite;
-          animation: loading 2s infinite;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+.loading img:nth-child(2), .loading img:nth-child(4) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 @-webkit-keyframes loading {
   0% {
     opacity: 0;
-    margin-top: 30px;
   }
   50% {
     opacity: 1;
-    margin-top: -30px;
   }
   100% {
     opacity: 0;
-    margin-top: 30px;
   }
 }
 
 @keyframes loading {
   0% {
     opacity: 0;
-    margin-top: 30px;
   }
   50% {
     opacity: 1;
-    margin-top: -30px;
   }
   100% {
     opacity: 0;
-    margin-top: 30px;
   }
 }
 
@@ -4539,8 +4685,12 @@ input:-webkit-autofill:active {
 }
 
 .buttonBox button, .buttonBox a {
-  margin: 5px;
-  max-width: 140px;
+  max-width: 120px;
+  min-width: 120px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 5px 5px 5px 0;
 }
 
 .buttonBox button .icon, .buttonBox a .icon {
@@ -4560,6 +4710,7 @@ input:-webkit-autofill:active {
 
 .buttonBox button.active, .buttonBox a.active {
   background: #134DAE;
+  color: white;
 }
 
 .buttonBox button.active .icon, .buttonBox a.active .icon {

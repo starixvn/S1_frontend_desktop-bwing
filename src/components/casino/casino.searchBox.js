@@ -38,9 +38,11 @@ export default ({
 					value={searchInfo.searchText}
 				/>
 			</div>
-			<button className="btn-check" onClick={submitSearch}>
-				{t("lbl_Submit")}
-			</button>
+			<div className="btnGroup">
+				<button className="orange" onClick={submitSearch}>
+					{t("lbl_Submit")}
+				</button>
+			</div>
 		</>
 	);
 };

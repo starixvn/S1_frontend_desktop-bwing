@@ -44,8 +44,8 @@ export default props => {
 							viewDate={moment(legalDate).format("YYYY-MM-DD")}
 							isValidDate={valid}
 						/>
-						<div class="iconModule">
-							<i class="icon icon-calendar"></i>
+						<div className="iconModule">
+							<i className="icon icon-calendar"></i>
 						</div>
 					</div>
 				</>

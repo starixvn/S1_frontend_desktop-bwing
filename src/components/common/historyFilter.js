@@ -85,7 +85,7 @@ export default props => {
 	return (
 		<div className="quickSelect">
 			<div>
-				<div class="txt-lightgray">{t("lbl_QuickPick")}</div>
+				<div className="txt-lightgray">{t("lbl_QuickPick")}</div>
 
 				<div className="inputBox-blue">
 					<Dropdown
@@ -99,31 +99,31 @@ export default props => {
 			</div>
 
 			<div>
-				<div class="txt-lightgray">{t("lbl_From")}</div>
-				<div class="inputBox-blue">
+				<div className="txt-lightgray">{t("lbl_From")}</div>
+				<div className="inputBox-blue">
 					<DateTime
 						value={moment(startDate).format("YYYY-MM-DD")}
 						onChange={selectDate.bind(this, "start")}
 						timeFormat={false}
 						isValidDate={valid}
 					/>{" "}
-					<div class="iconModule">
-						<i class="icon icon-calendar"></i>
+					<div className="iconModule">
+						<i className="icon icon-calendar"></i>
 					</div>
 				</div>
 			</div>
 
 			<div>
-				<div class="txt-lightgray">{t("lbl_To")}</div>
-				<div class="inputBox-blue">
+				<div className="txt-lightgray">{t("lbl_To")}</div>
+				<div className="inputBox-blue">
 					<DateTime
 						value={moment(endDate).format("YYYY-MM-DD")}
 						onChange={selectDate.bind(this, "end")}
 						timeFormat={false}
 						isValidDate={valid}
 					/>
-					<div class="iconModule">
-						<i class="icon icon-calendar"></i>
+					<div className="iconModule">
+						<i className="icon icon-calendar"></i>
 					</div>
 				</div>
 			</div>

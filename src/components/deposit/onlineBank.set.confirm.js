@@ -65,7 +65,7 @@ export default ({ bankInfo, amount, _isConvert }) => {
 		<div className="subModuleList">
 			<div className="subModule">
 				<div className="subModuleBody column">
-					<div class="ImportantNote column">
+					<div className="ImportantNote column">
 						<span className="title txt-org">
 							{t("lbl_ImportantNote")}
 						</span>
@@ -73,7 +73,7 @@ export default ({ bankInfo, amount, _isConvert }) => {
 							{t("lbl_ConfirmDeposit")}
 						</div>
 					</div>
-					<div class="depositInfo">
+					<div className="depositInfo">
 						{bankInfo ? (
 							<div className="bankName">
 								<img

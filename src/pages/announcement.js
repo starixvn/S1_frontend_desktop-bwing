@@ -99,13 +99,11 @@ const Content = () => {
 			? moment(item.startTime).format("hh:mm:ss A")
 			: moment(item.startTime).format("MM/DD/YYYY");
 
-		let textColor = isToday ? "txt-blue2" : "";
-
 		return (
 			<div key={`announcement-${item.id}`}>
 				<div className="listHeader">
 					<div>{item.subject}</div>
-					<div className={textColor}>{displayTime}</div>
+					<div>{displayTime}</div>
 				</div>
 				<pre className="listBody">{item.content}</pre>
 			</div>
@@ -116,7 +114,7 @@ const Content = () => {
 		<Loading />
 	) : (
 		<div className="infoModule">
-			<div className="inside-title icon icon-icon32px_openmail">
+			<div className="inside-title">
 				<span>{t("lbl_Announcement")}</span>
 			</div>
 			<div className="announcement">
