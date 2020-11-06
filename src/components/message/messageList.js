@@ -7,7 +7,6 @@ import { popBoxContext, msgCountContext } from "../common/context";
 import { useTranslation } from "react-i18next";
 import { defPopBoxType } from "../common/popBox";
 import moment from "moment";
-import Loading from "../common/loading";
 
 export default props => {
 	const { t } = useTranslation();
@@ -16,7 +15,6 @@ export default props => {
 	const isMountedRef = useRef(null);
 	const [msgContentData, setMsgContentData] = useState("");
 	const [showContent, setShowContent] = useState(false);
-	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		isMountedRef.current = true;
@@ -29,8 +27,6 @@ export default props => {
 
 	const getMsgContent = getMsg => {
 		if (getMsg) {
-			setLoading(true);
-
 			api_account_GetMsgContent(props.id).then(
 				res => {
 					if (isMountedRef.current) {
@@ -62,7 +58,6 @@ export default props => {
 								)
 							});
 						}
-						setLoading(false);
 					}
 				},
 				err => {
@@ -81,7 +76,6 @@ export default props => {
 								</div>
 							)
 						});
-						setLoading(false);
 					}
 				}
 			);
@@ -119,9 +113,7 @@ export default props => {
 		}
 	};
 
-	return loading ? (
-		<Loading />
-	) : (
+	return (
 		<div className={props.flag ? "haveRead" : ""}>
 			<div className="listHeader">
 				<div className="checkbox">
