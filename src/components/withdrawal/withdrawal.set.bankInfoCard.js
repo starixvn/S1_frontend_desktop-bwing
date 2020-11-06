@@ -166,37 +166,39 @@ export default props => {
 							alt={item.bankName}
 						/>
 					</div>
-					<div className="checkbox">
-						<input
-							type="checkbox"
-							checked={hasCheckedKey === item.accountNo}
-							onChange={checkInput.bind(
+					<div>
+						<button
+							className="icon icon-bin"
+							onClick={popDelete.bind(
 								this,
 								item.sysId,
-								item.accountNo,
-								item.bankName
-							)}
-							id={checkKey}
-						/>
-						<label
-							htmlFor={checkKey}
-							className="icon icon-checkbox-checked"></label>
+								item.accountNo
+							)}></button>
+						<div className="checkbox">
+							<input
+								type="checkbox"
+								checked={hasCheckedKey === item.accountNo}
+								onChange={checkInput.bind(
+									this,
+									item.sysId,
+									item.accountNo,
+									item.bankName
+								)}
+								id={checkKey}
+							/>
+							<label
+								htmlFor={checkKey}
+								className="icon icon-checkbox-checked"></label>
+						</div>
 					</div>
 				</div>
 				<div className="addBankInfo">
-					<div className="txt-blue2">
+					<div className="txt-dark">
 						<span>{item.accountNo?.slice(0, 4)}</span>
 						<span>{item.accountNo?.slice(4, 8)}</span>
 						<span>{item.accountNo?.slice(8, 12)}</span>
 						<span>{item.accountNo?.slice(12, 16)}</span>
 					</div>
-					<div
-						className="icon icon-bin"
-						onClick={popDelete.bind(
-							this,
-							item.sysId,
-							item.accountNo
-						)}></div>
 				</div>
 			</div>
 		);

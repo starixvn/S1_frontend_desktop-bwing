@@ -15,7 +15,7 @@ export default props => {
 		<>
 			{props.accountName ? (
 				<div className="walletBalanceModule">
-					<span className="icon icon-balance">
+					<span className="icon icon-icon32px_Profile">
 						{props.accountName}
 					</span>
 					<i
