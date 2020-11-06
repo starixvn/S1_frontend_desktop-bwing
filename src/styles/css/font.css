@@ -53,10 +53,6 @@
   font-size: 36px !important;
 }
 
-.icon-spinner11:before {
-  font-size: 12px !important;
-}
-
 .icon-nodata:before {
   content: "\e9a7";
 }
@@ -523,6 +519,14 @@
 
 .icon-withdrawal:before {
   content: "\e910";
+}
+
+.icon-cloud_upload:before {
+  content: "\e9af";
+}
+
+.icon-backup:before {
+  content: "\e9af";
 }
 
 .icon-last_page:before {

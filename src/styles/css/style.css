@@ -1026,7 +1026,7 @@ footer > div.copyright {
 }
 
 .txt-lightgray {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .txt-yellow {
@@ -1069,6 +1069,7 @@ footer > div.copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .inputModuleRow .inputBox-blue {
@@ -1109,19 +1110,19 @@ footer > div.copyright {
 }
 
 .inputBox::-webkit-input-placeholder, .inputBox-org::-webkit-input-placeholder, .inputBox-white::-webkit-input-placeholder, .inputBox-blue::-webkit-input-placeholder, .inputBox-gray::-webkit-input-placeholder, .inputBox-yellow::-webkit-input-placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox:-ms-input-placeholder, .inputBox-org:-ms-input-placeholder, .inputBox-white:-ms-input-placeholder, .inputBox-blue:-ms-input-placeholder, .inputBox-gray:-ms-input-placeholder, .inputBox-yellow:-ms-input-placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox::-ms-input-placeholder, .inputBox-org::-ms-input-placeholder, .inputBox-white::-ms-input-placeholder, .inputBox-blue::-ms-input-placeholder, .inputBox-gray::-ms-input-placeholder, .inputBox-yellow::-ms-input-placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox::placeholder, .inputBox-org::placeholder, .inputBox-white::placeholder, .inputBox-blue::placeholder, .inputBox-gray::placeholder, .inputBox-yellow::placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox.active, .active.inputBox-org, .active.inputBox-white, .active.inputBox-blue, .active.inputBox-gray, .active.inputBox-yellow {
@@ -1145,19 +1146,19 @@ footer > div.copyright {
 }
 
 .inputBox input::-webkit-input-placeholder, .inputBox-org input::-webkit-input-placeholder, .inputBox-white input::-webkit-input-placeholder, .inputBox-blue input::-webkit-input-placeholder, .inputBox-gray input::-webkit-input-placeholder, .inputBox-yellow input::-webkit-input-placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox input:-ms-input-placeholder, .inputBox-org input:-ms-input-placeholder, .inputBox-white input:-ms-input-placeholder, .inputBox-blue input:-ms-input-placeholder, .inputBox-gray input:-ms-input-placeholder, .inputBox-yellow input:-ms-input-placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox input::-ms-input-placeholder, .inputBox-org input::-ms-input-placeholder, .inputBox-white input::-ms-input-placeholder, .inputBox-blue input::-ms-input-placeholder, .inputBox-gray input::-ms-input-placeholder, .inputBox-yellow input::-ms-input-placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox input::placeholder, .inputBox-org input::placeholder, .inputBox-white input::placeholder, .inputBox-blue input::placeholder, .inputBox-gray input::placeholder, .inputBox-yellow input::placeholder {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox .iconModule, .inputBox-org .iconModule, .inputBox-white .iconModule, .inputBox-blue .iconModule, .inputBox-gray .iconModule, .inputBox-yellow .iconModule {
@@ -1168,7 +1169,7 @@ footer > div.copyright {
 
 .inputBox .iconModule .icon, .inputBox-org .iconModule .icon, .inputBox-white .iconModule .icon, .inputBox-blue .iconModule .icon, .inputBox-gray .iconModule .icon, .inputBox-yellow .iconModule .icon {
   margin-left: 5px;
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox .iconModule .icon.icon-checkmark, .inputBox-org .iconModule .icon.icon-checkmark, .inputBox-white .iconModule .icon.icon-checkmark, .inputBox-blue .iconModule .icon.icon-checkmark, .inputBox-gray .iconModule .icon.icon-checkmark, .inputBox-yellow .iconModule .icon.icon-checkmark {
@@ -1199,7 +1200,7 @@ footer > div.copyright {
 .inputBox .dropdown > .dropdown-container .dropdown-item, .inputBox-org .dropdown > .dropdown-container .dropdown-item, .inputBox-white .dropdown > .dropdown-container .dropdown-item, .inputBox-blue .dropdown > .dropdown-container .dropdown-item, .inputBox-gray .dropdown > .dropdown-container .dropdown-item, .inputBox-yellow .dropdown > .dropdown-container .dropdown-item {
   font-size: 13px;
   padding: 5px 0;
-  color: #c6c6c6;
+  color: #aeb2bc;
   cursor: pointer;
 }
 
@@ -1218,7 +1219,7 @@ footer > div.copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .inputBox-org {
@@ -1352,8 +1353,8 @@ input[type="file"] {
 
 .checkbox label.icon:before {
   display: none;
-  font-size: 14px;
-  color: #56ceff;
+  font-size: 15px;
+  color: #259076;
 }
 
 .checkbox input[type="checkbox"]:checked + label.icon {
@@ -1400,32 +1401,32 @@ input[type="file"] {
   margin-right: 0;
 }
 
-.btnGroup button.orange, .btnGroup button.btn-check, .btnGroup a.orange, .btnGroup a.btn-check {
+.btnGroup button.orange, .btnGroup a.orange {
   background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#F85F05));
   background: linear-gradient(to top, #f20c05, #F85F05);
   color: white;
 }
 
-.btnGroup button.orange:hover, .btnGroup button.btn-check:hover, .btnGroup a.orange:hover, .btnGroup a.btn-check:hover {
+.btnGroup button.orange:hover, .btnGroup a.orange:hover {
   background: #f20c05;
 }
 
-.btnGroup button.gray, .btnGroup button.btn-cancel, .btnGroup a.gray, .btnGroup a.btn-cancel {
+.btnGroup button.gray, .btnGroup a.gray {
   background: -webkit-gradient(linear, left bottom, left top, from(#505050), to(#C0C0C0));
   background: linear-gradient(to top, #505050, #C0C0C0);
 }
 
-.btnGroup button.gray:hover, .btnGroup button.btn-cancel:hover, .btnGroup a.gray:hover, .btnGroup a.btn-cancel:hover {
+.btnGroup button.gray:hover, .btnGroup a.gray:hover {
   background: #505050;
 }
 
-.btnGroup button.lightgray, .btnGroup button.btn-no, .btnGroup a.lightgray, .btnGroup a.btn-no {
+.btnGroup button.lightgray, .btnGroup button.btn-cancel, .btnGroup a.lightgray, .btnGroup a.btn-cancel {
   background: #afafaf;
   color: black;
 }
 
-.btnGroup button.lightgray:hover, .btnGroup button.btn-no:hover, .btnGroup a.lightgray:hover, .btnGroup a.btn-no:hover {
-  background: #c6c6c6;
+.btnGroup button.lightgray:hover, .btnGroup button.btn-cancel:hover, .btnGroup a.lightgray:hover, .btnGroup a.btn-cancel:hover {
+  background: #aeb2bc;
 }
 
 .btnGroup button.blue, .btnGroup a.blue {
@@ -1445,13 +1446,13 @@ input[type="file"] {
   background: #1a2e56;
 }
 
-.btnGroup button.blueGradient, .btnGroup button.btn-yes, .btnGroup a.blueGradient, .btnGroup a.btn-yes {
+.btnGroup button.blueGradient, .btnGroup button.btn-check, .btnGroup a.blueGradient, .btnGroup a.btn-check {
   background: -webkit-gradient(linear, left bottom, left top, from(#41b2e1), to(#6fd1fa));
   background: linear-gradient(to top, #41b2e1, #6fd1fa);
   color: black;
 }
 
-.btnGroup button.blueGradient:hover, .btnGroup button.btn-yes:hover, .btnGroup a.blueGradient:hover, .btnGroup a.btn-yes:hover {
+.btnGroup button.blueGradient:hover, .btnGroup button.btn-check:hover, .btnGroup a.blueGradient:hover, .btnGroup a.btn-check:hover {
   background: #1fbdfd;
 }
 
@@ -1494,7 +1495,8 @@ input[type="file"] {
 .tip {
   font-size: 12px;
   margin-bottom: 10px;
-  color: #c6c6c6;
+  color: #aeb2bc;
+  width: 100%;
 }
 
 main > .swiper-container .swiper-slide {
@@ -1733,7 +1735,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .list {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .list + button, .list + a {
@@ -1847,7 +1849,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .list .listBody > div div {
-  color: #c6c6c6;
+  color: #aeb2bc;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1949,14 +1951,14 @@ main > .swiper-container .swiper-slide {
   color: black;
 }
 
-.stepBar {
+.stepBar, .stepBar-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 70px 20px;
 }
 
-.stepBar > div {
+.stepBar > div, .stepBar-left > div {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1978,26 +1980,26 @@ main > .swiper-container .swiper-slide {
   background: #070e22;
 }
 
-.stepBar > div:before {
+.stepBar > div:before, .stepBar-left > div:before {
   content: '';
   position: absolute;
   width: 11px;
   height: 40px;
   left: -1px;
-  /* background: url(../img/stepAfter.png); */
+  background: url(../img/stepAfter.png);
 }
 
-.stepBar > div:after {
+.stepBar > div:after, .stepBar-left > div:after {
   content: '';
   position: absolute;
   width: 11px;
   height: 40px;
   right: -10px;
-  /* background: url(../img/stepAfter.png); */
+  background: url(../img/stepAfter.png);
   z-index: 1;
 }
 
-.stepBar > div.active {
+.stepBar > div.active, .stepBar-left > div.active {
   color: white;
   background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#F85F05));
   background: linear-gradient(to top, #f20c05, #F85F05);
@@ -2006,52 +2008,56 @@ main > .swiper-container .swiper-slide {
   border-bottom-right-radius: 0;
 }
 
-.stepBar > div.active:first-child:before {
+.stepBar > div.active:first-child:before, .stepBar-left > div.active:first-child:before {
   background: none;
 }
 
-.stepBar > div.active:after {
+.stepBar > div.active:after, .stepBar-left > div.active:after {
   content: '';
   position: absolute;
   width: 11px;
   height: 40px;
   right: -11px;
-  /* background: url(../img/stepAfter_a.png); */
+  background: url(../img/stepAfter_a.png);
   z-index: 1;
 }
 
+.stepBar-left {
+  padding: 0 0 20px;
+}
+
 .cashBar {
-  background: rgba(102, 102, 102, 0.5);
+  background: #3B4D80;
   height: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 30px;
   position: relative;
-  margin: 80px 50px 40px;
+  margin: 40px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: calc(100% - 80px);
 }
 
 .cashBar:before {
   content: "Min";
-  -webkit-transform: translateX(-160%);
-          transform: translateX(-160%);
+  position: absolute;
+  left: -40px;
 }
 
 .cashBar:after {
   content: "Max";
-  -webkit-transform: translateX(160%);
-          transform: translateX(160%);
+  position: absolute;
+  right: -40px;
 }
 
 .cashBar .cashLine {
-  background: #1E85EC;
+  background: #56ceff;
   position: absolute;
   height: 100%;
   border-radius: 30px;
@@ -2079,8 +2085,8 @@ main > .swiper-container .swiper-slide {
   width: 15px;
   height: 15px;
   border-radius: 20px;
-  background: #1E85EC;
-  border: 2px solid #fab617;
+  background: #56ceff;
+  border: 2px solid #0C1A3F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2092,7 +2098,6 @@ main > .swiper-container .swiper-slide {
 .cashBar .cashLine .cashPoint span {
   margin-top: -24px;
   font-size: 12px;
-  color: #1E85EC;
 }
 
 .infoModule {
@@ -2171,7 +2176,6 @@ main > .swiper-container .swiper-slide {
           flex: 1;
   background: #0C1A3F;
   border-radius: 5px;
-  overflow: hidden;
   border: 1px solid #1a2b58;
 }
 
@@ -2294,7 +2298,7 @@ main > .swiper-container .swiper-slide {
 .subModuleList .subModule .subModuleBody ul li span {
   width: 100%;
   padding: 5px 0;
-  color: #c6c6c6;
+  color: #aeb2bc;
   font-size: 12px;
   text-align: center;
   margin-top: -3px;
@@ -2418,10 +2422,6 @@ main > .swiper-container .swiper-slide {
   margin: 0;
 }
 
-.platformName + div.subModuleList .subModuleBody > div:first-child + .inputBox-blue {
-  margin-top: 20px;
-}
-
 .platformName + div.subModuleList .subModuleBody > div.btnGroup {
   margin: 10px auto 10px 0;
 }
@@ -2449,19 +2449,20 @@ main > .swiper-container .swiper-slide {
   margin: 10px 0 5px;
 }
 
-.platformName + div.subModuleList .subModuleBody > div.smallList {
+.platformName + div.subModuleList .subModuleBody > div .smallList {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.platformName + div.subModuleList .subModuleBody > div.smallList li {
+.platformName + div.subModuleList .subModuleBody > div .smallList li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   margin: auto 10px auto 0;
-  max-width: 130px;
+  width: auto;
+  min-width: 115px;
 }
 
 .platformName + div.subModuleList .subModuleBody ul li {
@@ -2490,10 +2491,6 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.align-items-center .txt-lightgray {
-  text-align: center;
 }
 
 .bankName {
@@ -2706,7 +2703,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .Submit .popList ul li:first-child, .Success .popList ul li:first-child, .Error .popList ul li:first-child, .Cancel .popList ul li:first-child, .uploadSuccess .popList ul li:first-child, .updateSuccess .popList ul li:first-child, .tokyc .popList ul li:first-child, .addBankpop .popList ul li:first-child, .changePassWordpop .popList ul li:first-child, .editSuccess .popList ul li:first-child, .upload .popList ul li:first-child, .update .popList ul li:first-child {
-  color: #1E85EC;
+  color: #56ceff;
   font-weight: bold;
 }
 
@@ -2783,10 +2780,12 @@ main > .swiper-container .swiper-slide {
   font-weight: bold;
 }
 
-.smallList {
-  margin-top: 10px;
-  padding-bottom: 20px;
+.depositInfo {
+  padding: 30px 0;
   border-bottom: 1px solid #1d2f62;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .smallList ul li {
@@ -2798,7 +2797,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .smallList ul li:nth-child(odd) {
-  color: #1E85EC;
+  color: #56ceff;
 }
 
 .smallList ul li:first-child {
@@ -2807,7 +2806,7 @@ main > .swiper-container .swiper-slide {
 
 .directions {
   border-bottom: 1px solid #666;
-  color: #c6c6c6;
+  color: #aeb2bc;
   margin: 20px 0 20px 20px;
   padding-bottom: 20px;
   text-align: left;
@@ -2845,24 +2844,81 @@ main > .swiper-container .swiper-slide {
 }
 
 .slipInfo {
-  width: calc(100% / 3 - 110px);
+  max-width: calc(45% - 40px);
   float: left;
-  border-radius: 15px;
-  padding: 20px 40px 20px 70px;
+  border-radius: 5px;
+  padding: 20px;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  margin-right: 20px;
 }
 
-.slipInfo button.icon, .slipInfo a.icon {
-  font-size: 24px;
-  color: #1E85EC;
+.slipInfo + .subModuleList {
+  margin-top: 20px;
 }
 
-.slipInfo .smallList li {
-  font-size: 16px;
-  line-height: 40px;
+.slipInfo + .subModuleList .txt-lightgray {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1d2f62;
 }
 
-.slipInfo .smallList li:first-child {
-  font-weight: normal;
+.slipInfo + .subModuleList .uploadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.slipInfo + .subModuleList .directions {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.slipInfo + .subModuleList .btnGroup {
+  margin-left: 0;
+}
+
+.slipInfo + .subModuleList .upload_img {
+  border: 2px dashed #56ceff;
+  background: #010E33;
+  width: 290px;
+  height: 120px;
+}
+
+.slipInfo + .subModuleList .upload_img .icon {
+  color: #56ceff;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  float: left;
+}
+
+.slipInfo + .subModuleList .upload_img .icon:before {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.slipInfo li {
+  float: left;
+  line-height: 35px;
+}
+
+.slipInfo li:nth-child(odd) {
+  color: #56ceff;
+  clear: both;
+  min-width: 140px;
+}
+
+.slipInfo li:nth-child(even) {
+  min-width: 165px;
 }
 
 .offers {
@@ -2891,18 +2947,14 @@ main > .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 140px);
-  margin: 15px 0 0;
+  margin: 0 0 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 70px 30px;
 }
 
 .walletModule .walletBalanceModule {
-  background: #070e22;
-  border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -2915,8 +2967,15 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: calc(50% - 40px);
   position: relative;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  margin-right: 10px;
+}
+
+.walletModule .walletBalanceModule:last-child {
+  margin: 0;
 }
 
 .walletModule .walletBalanceModule .tip {
@@ -2928,7 +2987,11 @@ main > .swiper-container .swiper-slide {
   margin-left: 15px;
 }
 
-.walletModule .walletBalanceModule span.icon-balance {
+.walletModule .walletBalanceModule span {
+  margin-right: 10px;
+}
+
+.walletModule .walletBalanceModule span.icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2940,20 +3003,31 @@ main > .swiper-container .swiper-slide {
           flex: 1;
 }
 
-.walletModule .walletBalanceModule span.icon-balance.icon:before {
+.walletModule .walletBalanceModule span.icon.icon:before {
   color: white;
-  margin-right: 5px;
+  margin-right: 10px;
+  font-size: 24px;
 }
 
-.walletModule .walletBalanceModule + .icon-spinner11, .walletModule .walletBalanceModule .icon-error {
-  margin-left: 10px;
-  margin-right: 0;
+.walletModule .walletBalanceModule + .icon-spinner11 {
+  width: 61px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  color: #56ceff;
+}
+
+.walletModule .walletBalanceModule + .icon-spinner11:before {
+  font-size: 28px;
 }
 
 .walletModule .walletBalanceModule .icon-error {
@@ -2972,15 +3046,11 @@ main > .swiper-container .swiper-slide {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  color: #1E85EC;
-  margin-left: 15px;
 }
 
 .walletTransfer {
-  background: #070e22;
-  border-radius: 5px;
   width: 100%;
-  padding: 30px 100px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2989,6 +3059,9 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
 }
 
 .walletTransfer .walletModule {
@@ -2997,7 +3070,7 @@ main > .swiper-container .swiper-slide {
   margin-bottom: 15px;
 }
 
-.walletTransfer .walletModule .icon-arrow-right2 {
+.walletTransfer .walletModule .icon-loop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3012,15 +3085,8 @@ main > .swiper-container .swiper-slide {
       -ms-flex-align: center;
           align-items: center;
   width: 55px;
-}
-
-.walletTransfer .walletModule .icon-arrow-right2 span {
-  display: none;
-  font-size: 12px;
-}
-
-.walletTransfer .walletModule .icon-arrow-right2:hover span {
-  display: block;
+  color: #F85B05;
+  font-size: 24px;
 }
 
 .walletTransfer .walletModule .walletBalanceModule {
@@ -3028,6 +3094,9 @@ main > .swiper-container .swiper-slide {
   font-weight: bold;
   margin-right: 0;
   padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .walletTransfer .walletModule .walletBalanceModule span {
@@ -3047,12 +3116,10 @@ main > .swiper-container .swiper-slide {
 
 .walletTransfer .walletModule .from span:nth-child(1), .walletTransfer .walletModule .to span:nth-child(1) {
   display: block;
-  color: #1E85EC;
 }
 
 .walletTransfer .inputBox, .walletTransfer .inputBox-org, .walletTransfer .inputBox-white, .walletTransfer .inputBox-blue, .walletTransfer .inputBox-gray, .walletTransfer .inputBox-yellow {
-  float: left;
-  width: calc(100% - 171px);
+  width: 100%;
   margin-right: 10px;
 }
 
@@ -3060,11 +3127,6 @@ main > .swiper-container .swiper-slide {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-}
-
-.walletTransfer .icon.icon-arrow-right2 {
-  margin: 0 30px;
-  font-size: 24px;
 }
 
 .walletTransfer .icon.icon-information-solid {
@@ -3081,16 +3143,57 @@ main > .swiper-container .swiper-slide {
 }
 
 .addBank {
-  width: calc(100% / 3);
+  width: calc(100% / 3 - 40px);
+  background: #0C1A3F;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+}
+
+.addBank.bankselect {
+  width: 100%;
+}
+
+.addBank.bankselect .icon-arrow-left2 {
+  color: #56ceff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addBank.bankselect .icon-arrow-left2:before {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.addBank.bankselect .btnGroup {
+  width: calc(100% / 6 - 10px);
+  margin-left: 0;
+}
+
+.addBank.bankselect .subModuleList {
+  margin: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule {
+  border: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule .subModuleBody {
+  padding: 0;
+}
+
+.addBank.bankselect .subModuleList .subModule .subModuleBody li {
+  width: calc(100% / 6 - 10px);
+  margin: 10px 10px 10px 0;
 }
 
 .addBank .addBankName {
-  width: calc(100% - 50px);
-  background: #070e22;
+  background: white;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 15px;
-  margin-right: 10px;
+  min-height: 90px;
 }
 
 .addBank .addBankName.noBank {
@@ -3104,6 +3207,9 @@ main > .swiper-container .swiper-slide {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   cursor: pointer;
+  min-height: auto;
+  background: #3A4D80;
+  border: 1px solid #4D5E8E;
 }
 
 .addBank .addBankName .addBankInfo {
@@ -3113,9 +3219,6 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .addBank .addBankName .addBankInfo:last-child {
@@ -3128,27 +3231,42 @@ main > .swiper-container .swiper-slide {
   margin-right: 5px;
 }
 
-.addBank .addBankName .addBankInfo .bankName, .addBank .addBankName .addBankInfo .icon-bin {
+.addBank .addBankName .addBankInfo .bankName {
   margin: 0;
+  padding: 0;
+}
+
+.addBank .addBankName .addBankInfo .bankName + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .addBank .addBankName .addBankInfo .checkbox {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  margin: 0;
 }
 
 .addBank .addBankName .addBankInfo .checkbox label {
-  border-radius: 0;
   width: 15px;
   height: 15px;
   margin-right: 0;
+  border: 1px solid #0C1A3F;
+  border-radius: 3px;
+}
+
+.addBank .addBankName .addBankInfo .checkbox label:before {
+  margin-left: -0.5px;
 }
 
 .addBank .addBankName .addBankInfo .icon-bin {
   font-size: 24px;
-  color: #666;
-  margin-top: -4px;
+  color: #56607B;
   position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 17px;
+  margin-right: 15px;
 }
 
 .addBank .addBankName button.icon, .addBank .addBankName a.icon {
@@ -3160,13 +3278,12 @@ main > .swiper-container .swiper-slide {
 }
 
 .addBank .addBankName .icon-plus {
-  font-size: 40px;
+  font-size: 18px;
 }
 
 .addBank + div.subModuleList {
-  width: calc(100% / 3 * 2 - 30px);
+  width: calc(100% / 3 * 2);
   margin: 0;
-  padding: 0 0 0 30px;
 }
 
 .addBank + div.subModuleList .subModuleBody {
@@ -3182,6 +3299,10 @@ main > .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.addBank + div.subModuleList .subModuleBody > div.txt-lightgray {
+  margin: 20px 0;
 }
 
 .addBank + div.subModuleList .subModuleBody > div > .bankName {
@@ -3238,6 +3359,8 @@ main > .swiper-container .swiper-slide {
 
 .addBank + div.subModuleList .subModuleBody > div.smallList li.accountNumber span {
   margin-right: 5px;
+  background: none;
+  color: white;
 }
 
 .addBank + div.subModuleList .subModuleBody ul li {
@@ -3250,8 +3373,9 @@ main > .swiper-container .swiper-slide {
 }
 
 .remainder {
-  color: #c6c6c6;
-  text-align: center;
+  color: #aeb2bc;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .calculation {
@@ -3266,7 +3390,7 @@ main > .swiper-container .swiper-slide {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 3px;
   word-break: break-all;
   padding: 10px;
   display: -webkit-box;
@@ -3282,20 +3406,51 @@ main > .swiper-container .swiper-slide {
 }
 
 .calculation > div:nth-child(odd) {
-  background: #1D3662;
+  background: #3A4D80;
+  border: 1px solid #4D5E8E;
 }
 
 .calculation > div:nth-child(even) {
   margin: 0 10px;
-  color: #666;
   font-size: 48px;
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculation > div:nth-child(4) {
+  font-size: 32px;
+}
+
+.calculation > div div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px;
+  font-weight: bold;
 }
 
 .calculation > div div:first-child {
-  color: #1E85EC;
+  border-bottom: 1px solid #4D5E8E;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
 }
 
 .calculation > div span {
@@ -3372,44 +3527,56 @@ main > .swiper-container .swiper-slide {
   margin-right: 10px;
 }
 
-.kycHeight {
-  height: calc(100% - 190px);
-}
-
 .kycHeight .subModuleBody {
   height: calc(100% - 40px);
 }
 
-.kycHeight .icon {
-  font-size: 48px;
+.quickSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.history {
-  width: calc(100% - 70px);
-  margin: 10px auto;
-}
-
-.quickSelect > div.inputBox, .quickSelect > div.inputBox-org, .quickSelect > div.inputBox-white, .quickSelect > div.inputBox-blue, .quickSelect > div.inputBox-gray, .quickSelect > div.inputBox-yellow, .quickSelect > div:first-child {
+.quickSelect > div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 5px;
+  padding: 0 0 0 10px;
+  margin-right: 10px;
 }
 
-.quickSelect > div.inputBox.promoType, .quickSelect > div.promoType.inputBox-org, .quickSelect > div.promoType.inputBox-white, .quickSelect > div.promoType.inputBox-blue, .quickSelect > div.promoType.inputBox-gray, .quickSelect > div.promoType.inputBox-yellow, .quickSelect > div:first-child.promoType {
-  display: inline-block;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.quickSelect > div.inputBox.promoType > button, .quickSelect > div.promoType.inputBox-org > button, .quickSelect > div.promoType.inputBox-white > button, .quickSelect > div.promoType.inputBox-blue > button, .quickSelect > div.promoType.inputBox-gray > button, .quickSelect > div.promoType.inputBox-yellow > button, .quickSelect > div.inputBox.promoType > a, .quickSelect > div.promoType.inputBox-org > a, .quickSelect > div.promoType.inputBox-white > a, .quickSelect > div.promoType.inputBox-blue > a, .quickSelect > div.promoType.inputBox-gray > a, .quickSelect > div.promoType.inputBox-yellow > a, .quickSelect > div:first-child.promoType > button, .quickSelect > div:first-child.promoType > a {
+.quickSelect > div.btnGroup:not(.promoType) {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  min-width: 120px;
-  float: left;
-  min-height: 31px;
-  margin: 20px 0 0 15px;
+  padding-left: 0;
+  margin-right: 10px;
+  height: 42px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.quickSelect > div.btnGroup.promoType {
+  margin-right: 10px;
+}
+
+.quickSelect > div.btnGroup.promoType ~ .btnGroup {
+  height: auto;
+  margin-top: 0;
+}
+
+.quickSelect > div > .inputBox-blue {
+  margin: 10px 0 0;
+}
+
+.quickSelect > div.inputBox.promoType > button, .quickSelect > div.promoType.inputBox-org > button, .quickSelect > div.promoType.inputBox-white > button, .quickSelect > div.promoType.inputBox-blue > button, .quickSelect > div.promoType.inputBox-gray > button, .quickSelect > div.promoType.inputBox-yellow > button, .quickSelect > div.inputBox.promoType > a, .quickSelect > div.promoType.inputBox-org > a, .quickSelect > div.promoType.inputBox-white > a, .quickSelect > div.promoType.inputBox-blue > a, .quickSelect > div.promoType.inputBox-gray > a, .quickSelect > div.promoType.inputBox-yellow > a, .quickSelect > div:first-child.promoType > button, .quickSelect > div:first-child.promoType > a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .quickSelect > div.inputBox.promoType > button.orange, .quickSelect > div.promoType.inputBox-org > button.orange, .quickSelect > div.promoType.inputBox-white > button.orange, .quickSelect > div.promoType.inputBox-blue > button.orange, .quickSelect > div.promoType.inputBox-gray > button.orange, .quickSelect > div.promoType.inputBox-yellow > button.orange, .quickSelect > div.inputBox.promoType > button.red, .quickSelect > div.promoType.inputBox-org > button.red, .quickSelect > div.promoType.inputBox-white > button.red, .quickSelect > div.promoType.inputBox-blue > button.red, .quickSelect > div.promoType.inputBox-gray > button.red, .quickSelect > div.promoType.inputBox-yellow > button.red, .quickSelect > div.inputBox.promoType > a.orange, .quickSelect > div.promoType.inputBox-org > a.orange, .quickSelect > div.promoType.inputBox-white > a.orange, .quickSelect > div.promoType.inputBox-blue > a.orange, .quickSelect > div.promoType.inputBox-gray > a.orange, .quickSelect > div.promoType.inputBox-yellow > a.orange, .quickSelect > div.inputBox.promoType > a.red, .quickSelect > div.promoType.inputBox-org > a.red, .quickSelect > div.promoType.inputBox-white > a.red, .quickSelect > div.promoType.inputBox-blue > a.red, .quickSelect > div.promoType.inputBox-gray > a.red, .quickSelect > div.promoType.inputBox-yellow > a.red, .quickSelect > div:first-child.promoType > button.orange, .quickSelect > div:first-child.promoType > button.red, .quickSelect > div:first-child.promoType > a.orange, .quickSelect > div:first-child.promoType > a.red {
@@ -3422,7 +3589,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-org .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-white .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-gray .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-yellow .blueBorder ~ .inputBox-blue, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue {
-  margin: 0 5px 0 10px;
+  margin: 20px 0 0 10px;
   min-height: auto;
   width: 200px;
   float: left;
@@ -3639,32 +3806,58 @@ main > .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 15px 5px;
+  border: 0;
+  border-top: 1px solid #1d2f62;
+  background: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .haveBank > div.addBankName {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% / 3 - 50px);
-          flex: 0 0 calc(100% / 3 - 50px);
-  margin-bottom: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+  max-width: calc(100% / 3 - 25px);
 }
 
-.haveBank > div.addBankName .icon-bin {
-  -webkit-transform: translateY(-75%);
-          transform: translateY(-75%);
+.haveBank > div.addBankName:last-child {
+  margin-right: 0;
+}
+
+.haveBank .txt-blue15 {
+  width: 100%;
+  line-height: 30px;
 }
 
 .accountName {
-  padding: 20px 70px 0;
-  color: #1E85EC;
+  padding: 15px;
+  margin: 10px 0;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% / 3 - 50px);
+}
+
+.accountName > div {
+  text-align: right;
+  width: 100%;
+}
+
+.accountName.icon:before {
+  font-size: 24px;
 }
 
 .accountName span {
-  color: white;
   margin: 0 10px;
-}
-
-.accountName button, .accountName a {
-  color: #1E85EC;
+  white-space: nowrap;
 }
 
 .accountName .tip {
@@ -3915,11 +4108,11 @@ main > .swiper-container .swiper-slide {
 
 .claimed:before {
   content: "CLAIMED";
-  background: #c6c6c6;
+  background: #aeb2bc;
   color: black;
 }
 
-.proList, .slotList, .newsList {
+.proList, .slotList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3928,55 +4121,55 @@ main > .swiper-container .swiper-slide {
   line-height: 20px;
 }
 
-.proList > div, .slotList > div, .newsList > div {
+.proList > div, .slotList > div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% / 4 - 50px);
-          flex: 0 0 calc(100% / 4 - 50px);
+      -ms-flex: 0 0 calc(100% / 4 - 52px);
+          flex: 0 0 calc(100% / 4 - 52px);
   padding: 15px;
   background: white;
   border-radius: 5px;
-  color: #333;
+  color: #aeb2bc;
   position: relative;
 }
 
-.proList > div.active, .slotList > div.active, .newsList > div.active {
+.proList > div.active, .slotList > div.active {
   opacity: 0.7;
 }
 
-.proList > div .txt-dark, .proList > div .txt-red, .slotList > div .txt-dark, .slotList > div .txt-red, .newsList > div .txt-dark, .newsList > div .txt-red {
+.proList > div .txt-blue15, .slotList > div .txt-blue15 {
   font-weight: bold;
   margin: 10px 0 0;
 }
 
-.proList > div .txt-darkgray li, .slotList > div .txt-darkgray li, .newsList > div .txt-darkgray li {
+.proList > div .txt-lightgray li, .slotList > div .txt-lightgray li {
   font-size: 12px;
   list-style: disc;
-  margin-left: 15px;
-  font-weight: bold;
+  margin: 5px 15px;
 }
 
-.proList > div img, .slotList > div img, .newsList > div img {
+.proList > div img, .slotList > div img {
   border-radius: 5px;
 }
 
-.proList .rollover, .slotList .rollover, .newsList .rollover {
+.proList .rollover, .slotList .rollover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   font-weight: bold;
   margin: 10px 0;
-  background: #E4E8F2;
+  background: #0D1B42;
+  border: 1px solid #102358;
   border-radius: 5px;
   padding: 10px;
 }
 
-.proList .rollover > div, .slotList .rollover > div, .newsList .rollover > div {
+.proList .rollover > div, .slotList .rollover > div {
   margin: 0;
   margin-right: 10px;
 }
 
-.proList .rollover > div .icon:before, .slotList .rollover > div .icon:before, .newsList .rollover > div .icon:before {
+.proList .rollover > div .icon:before, .slotList .rollover > div .icon:before {
   font-weight: normal;
   margin-right: 5px;
 }
@@ -3992,13 +4185,13 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  float: left;
   margin: 10px;
-  min-width: 350px;
+  min-width: 348px;
+  background: #081129;
+  border: 1px solid #182852;
 }
 
 .proList > div:hover {
-  background: #e2e2e2;
   -webkit-box-shadow: 0 0 0 3px #1E85EC inset;
           box-shadow: 0 0 0 3px #1E85EC inset;
 }
@@ -4035,33 +4228,13 @@ main > .swiper-container .swiper-slide {
   margin: 0;
 }
 
-.proList.expired > div {
-  background: #081129;
-  border: 1px solid #182852;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% / 4 - 52px);
-          flex: 0 0 calc(100% / 4 - 52px);
-  opacity: 1;
-}
-
-.proList.expired > div .txt-red, .proList.expired > div .txt-dark, .proList.expired > div .txt-darkgray, .proList.expired > div .txt-orange, .proList.expired > div .rollover, .proList.expired > div .progressBarModule {
+.proList.expired > div .txt-blue15, .proList.expired > div .txt-yellow, .proList.expired > div .rollover, .proList.expired > div .progressBarModule {
   color: #aeb2bc;
 }
 
 .proList.expired > div > img, .proList.expired > div .progressBarModule {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-}
-
-.proList.expired > div .rollover {
-  background: #0D1B42;
-  border: 1px solid #102358;
-}
-
-.proList.expired > div .btnGroup .blue {
-  border: 1px solid #56ceff;
-  color: #56ceff;
-  background: transparent;
 }
 
 .proList.expired > div .expiredIcon {
@@ -4076,10 +4249,6 @@ main > .swiper-container .swiper-slide {
   padding: 5px 15px;
   color: white;
   font-size: 18px;
-}
-
-.proList.expired > div.active .txt-orange {
-  color: #fab617;
 }
 
 .promotionsInfo {
@@ -4170,7 +4339,23 @@ form {
   width: 100%;
 }
 
-.slotList > div, .newsList > div {
+.casinoSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 34px;
+  height: 49px;
+  margin-top: 40px;
+}
+
+.casinoSelect > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 5px;
+}
+
+.slotList > div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(100% / 5 - 130px);
           flex: 0 0 calc(100% / 5 - 130px);
@@ -4181,19 +4366,19 @@ form {
   min-width: 190px;
 }
 
-.slotList > div .txt-blue15, .newsList > div .txt-blue15 {
+.slotList > div .txt-blue15 {
   font-weight: bold;
   margin-top: 10px;
 }
 
-.slotList > div .btnGroup, .newsList > div .btnGroup {
+.slotList > div .btnGroup {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10px 0 0;
 }
 
-.slotList > div .btnGroup button, .slotList > div .btnGroup a, .newsList > div .btnGroup button, .newsList > div .btnGroup a {
+.slotList > div .btnGroup button, .slotList > div .btnGroup a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(50% - 5px);
           flex: 0 0 calc(50% - 5px);
@@ -4201,7 +4386,7 @@ form {
   margin: 0;
 }
 
-.slotList > div .brand, .newsList > div .brand {
+.slotList > div .brand {
   padding: 5px 10px;
   position: absolute;
   top: 0;
@@ -4216,7 +4401,7 @@ form {
   background: linear-gradient(to top, #41b2e1, #6fd1fa);
 }
 
-.slotList > div .icon-star-full, .newsList > div .icon-star-full {
+.slotList > div .icon-star-full {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -4226,7 +4411,7 @@ form {
           filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.5));
 }
 
-.slotList > div .icon-star-full.active, .newsList > div .icon-star-full.active {
+.slotList > div .icon-star-full.active {
   color: #fab617;
 }
 
@@ -4262,11 +4447,11 @@ article p {
   line-height: 18px;
   margin-bottom: 18px;
   letter-spacing: 1px;
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 article pre {
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .rdt {
@@ -4281,7 +4466,7 @@ article pre {
 
 .rdt + .icon-calendar {
   margin-right: 0;
-  color: #c6c6c6;
+  color: #aeb2bc;
 }
 
 .rdt .inputBox, .rdt .inputBox-org, .rdt .inputBox-white, .rdt .inputBox-blue, .rdt .inputBox-gray, .rdt .inputBox-yellow {
@@ -4520,7 +4705,7 @@ input:-webkit-autofill:active {
   font-size: 14px;
 }
 
-.icon-spinner11.active {
+.icon-spinner11.active:before {
   -webkit-animation: rotate .7s linear 2;
           animation: rotate .7s linear 2;
 }
@@ -4894,5 +5079,9 @@ input + .iconModule i.icon.icon-checkmark:before {
 .minAmount > div > div:last-child {
   color: #1E85EC;
   background: white;
+}
+
+.icon-spinner11:before {
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
