@@ -61,6 +61,8 @@ export default props => {
 	};
 
 	const checkInput = (sysId, accountNo, bankName) => {
+		if (props.step !== 1 && props.step !== 2) return;
+
 		let value = hasCheckedKey === accountNo ? "" : accountNo;
 		setHasCheckedKey(value);
 		if (value) {
@@ -167,13 +169,16 @@ export default props => {
 						/>
 					</div>
 					<div>
-						<button
-							className="icon icon-bin"
-							onClick={popDelete.bind(
-								this,
-								item.sysId,
-								item.accountNo
-							)}></button>
+						{props.step === 3 ? null : (
+							<button
+								className="icon icon-bin"
+								onClick={popDelete.bind(
+									this,
+									item.sysId,
+									item.accountNo
+								)}></button>
+						)}
+
 						<div className="checkbox">
 							<input
 								type="checkbox"
