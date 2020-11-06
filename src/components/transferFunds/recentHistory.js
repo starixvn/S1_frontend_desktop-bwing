@@ -51,7 +51,7 @@ export default props => {
 	return (
 		<>
 			<div className="list">
-				{/* <div className="tip active">{t("msg_AmountFormatTip")}</div> */}
+				<div className="tip active">{t("msg_AmountFormatTip")}</div>
 				<div className="listHeader">
 					<div>{t("lbl_NO")}</div>
 					<div>
