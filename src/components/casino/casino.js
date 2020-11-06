@@ -304,14 +304,14 @@ export default () => {
 			<div className="quickSelect">
 				<div className="btnGroup promoType">
 					<Nav selNav={selNav} onSelectNav={onSelectNav} t={t} />
-					<SearchBox
-						t={t}
-						tpOptions={tpOptions}
-						EditSearchField={EditSearchField}
-						searchInfo={searchInfo}
-						submitSearch={SubmitSearch.bind(this, searchInfo)}
-					/>
 				</div>
+				<SearchBox
+					t={t}
+					tpOptions={tpOptions}
+					EditSearchField={EditSearchField}
+					searchInfo={searchInfo}
+					submitSearch={SubmitSearch.bind(this, searchInfo)}
+				/>
 			</div>
 
 			<GameList
