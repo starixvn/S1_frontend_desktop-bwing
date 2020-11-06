@@ -1,6 +1,6 @@
 {
 	"home ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_AboutGoal123": "Goal123.com",
+	"lbl_AboutSite": "Bwing.com",
 	"lbl_PrivacyPolicy": "Chính sách quyền riêng tư",
 	"lbl_Affiliates": "Đại lý",
 	"lbl_Games": "Trò Chơi",
@@ -15,8 +15,7 @@
 	"lbl_AboutUs": "Giới thiệu",
 	"lbl_Terms": "Điều Khoản Sử Dụng",
 	"lbl_PoweredBy": "Một sản phẩm của",
-	"lbl_EdgeOfGoal123": "Ưu điểm của sản phẩm",
-	"lbl_SiteMap": "Sơ đồ trang web",
+	"lbl_SiteMap":"Sơ đồ trang web",
 	"lbl_ResposibleGaming": "Chơi có trách nhiệm",
 	"lbl_ConatctUsHint": "Bộ phận hỗ trợ trực tuyến 24/7 luôn sẵn sàng lắng nghe và giải đáp những thắc mắc của thành viên. Chúng tôi hỗ trợ thông qua chat hỗ trợ trực tuyến, điện thoại và nhiều kênh thông dụng khác như : Zalo, Telegram và Skype.",
 	"lbl_CookiePolicy": "Chính sách Cookie",
@@ -39,7 +38,7 @@
 	"lbl_UserGuide": "User Guide",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_Goal123News": "Điểm báo Goal123",
+	"lbl_SiteNews": "Điểm báo Bwing",
 	"lbl_News": "Tin Tức",
 	"lbl_BackToNews": "Quay lại mục Tin tức",
 
@@ -56,6 +55,9 @@
 	"lbl_eSports": "Thể thao điện tử",
 	"lbl_eSportsBetting": "Cược Thể thao điện tử",
 	"lbl_Fishing": "Bắn Cá",
+	"lbl_FishingGG": "Thế giới bắn cá",
+	"lbl_FishingSG1": "Thánh bắn cá",
+	"lbl_FishingSG2": "Bắn cá giao đấu",
 	"lbl_FootballBetting": "Cược Bóng Bầu Dục",
 	"lbl_HockeyBetting": "Cược Hockey",
 	"lbl_Keno": "Keno",
