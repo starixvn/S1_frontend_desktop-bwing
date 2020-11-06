@@ -215,7 +215,6 @@ export default () => {
 				<span>{t("lbl_PersonalMsg")}</span>
 			</div>
 
-			{/*  */}
 			<div className="personal">
 				<div className="list">
 					<div className="functionMenu">
