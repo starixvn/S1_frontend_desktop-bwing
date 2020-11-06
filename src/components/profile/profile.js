@@ -489,7 +489,7 @@ export default () => {
 											{t("lbl_Later")}
 										</button>
 										<button
-											className="yellow"
+											className="btn-check"
 											onClick={sendOTPSMS}>
 											{t("lbl_VertifyNow")}
 										</button>

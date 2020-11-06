@@ -23,6 +23,10 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 		return () => (isMountedRef.current = false);
 	});
 
+	const ClickClose = () => {
+		setPopBox({ isOpen: false });
+	};
+
 	const ClickCancel = () => {
 		const ClickYes = () => {
 			setPopBox({
@@ -37,6 +41,9 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 		setPopBox({
 			isOpen: true,
 			popBoxType: defPopBoxType.Cancel,
+			btnClose: (
+				<div className="icon icon-close" onClick={ClickClose}></div>
+			),
 			btnBar: (
 				<div className="btnGroup">
 					<Link
@@ -55,10 +62,6 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 
 	const ClickConfirm = () => {
 		setLoading(true);
-
-		const ClickClose = () => {
-			setPopBox({ isOpen: false });
-		};
 
 		let real_amount = _isConvert ? Number(amount) * 1000 : Number(amount);
 		api_payment_DepositReqWireTransfer({

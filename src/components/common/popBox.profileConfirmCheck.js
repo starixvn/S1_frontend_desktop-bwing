@@ -10,7 +10,7 @@ export default ({ btnBar, accountName }) => {
 			<div className="title">
 				{t("lbl_Hi")} {accountName}
 			</div>
-			<div>
+			<div className="txt-lightgray">
 				{t("lbl_EnsureTransactionsCorrect")}
 				<br />
 				{t("lbl_BankAccountNameHint")}

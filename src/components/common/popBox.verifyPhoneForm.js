@@ -206,9 +206,10 @@ export default ({ startUnixTime = 0 }) => {
 
 	return (
 		<div className="editSuccess active" style={{ display: "flex" }}>
+			<div className="icon icon-close" onClick={clickClose}></div>
 			<div className="icon icon-icon32px_notification"></div>
 			<div className="title">{t("lbl_ImportantNote")}</div>
-			<div>{t("msg_OTPSendCode")}</div>
+			<div className="txt-lightgray">{t("msg_OTPSendCode")}</div>
 			<div className="inputModuleRow">
 				<div className="inputBox">
 					<input value={code} onChange={e => onChanheCode(e)} />
@@ -223,7 +224,7 @@ export default ({ startUnixTime = 0 }) => {
 				) : (
 					<>
 						<button className="btn-cancel" onClick={clickClose}>
-							{t("lbl_Close")}
+							{t("lbl_Cancel")}
 						</button>
 						<button onClick={verifyOTP} className="btn-check">
 							{t("lbl_Submit")}

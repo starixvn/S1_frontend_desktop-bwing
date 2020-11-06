@@ -8,7 +8,7 @@ export default ({ title, content, btnBar }) => {
 		<div className="Cancel active">
 			<div className="icon icon-icon32px_Profile"></div>
 			<div className="title">{title}</div>
-			<div>{content}</div>
+			<div className="txt-lightgray">{content}</div>
 			{btnBar}
 		</div>
 	);

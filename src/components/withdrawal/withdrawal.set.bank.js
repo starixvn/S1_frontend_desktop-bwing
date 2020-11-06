@@ -308,6 +308,7 @@ export default props => {
 						setPopBox({
 							isOpen: true,
 							popBoxType: defPopBoxType.WithdrawalSuccess,
+							onClickClose: ClickClose,
 							btnBar: (
 								<div className="btnGroup">
 									<button

@@ -173,6 +173,23 @@ const Content = () => {
 						getContentWalletInfo();
 						GetTransferRecent();
 						setAmount("1");
+						setPopBox({
+							isOpen: true,
+							popBoxType: defPopBoxType.Success,
+							titleIcon: "icon-transfer",
+							titleText: "lbl_ImportantNote",
+							message1: "lbl_UpdateSuccessful",
+							message2: "lbl_UpdateSuccessWillProcess",
+							btnBar: (
+								<div className="btnGroup">
+									<button
+										className="btn-cancel"
+										onClick={ClickClose}>
+										OK
+									</button>
+								</div>
+							)
+						});
 					} else {
 						setPopBox({
 							isOpen: true,

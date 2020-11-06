@@ -2493,10 +2493,6 @@ main > .swiper-container .swiper-slide {
           align-items: center;
 }
 
-.align-items-center .txt-lightgray {
-  text-align: center;
-}
-
 .bankName {
   padding: 0 10px;
   height: 70px;
@@ -2848,24 +2844,81 @@ main > .swiper-container .swiper-slide {
 }
 
 .slipInfo {
-  width: calc(100% / 3 - 110px);
+  max-width: calc(45% - 40px);
   float: left;
-  border-radius: 15px;
-  padding: 20px 40px 20px 70px;
+  border-radius: 5px;
+  padding: 20px;
+  background: #0C1A3F;
+  border-radius: 5px;
+  border: 1px solid #1a2b58;
+  margin-right: 20px;
 }
 
-.slipInfo button.icon, .slipInfo a.icon {
-  font-size: 24px;
-  color: #1E85EC;
+.slipInfo + .subModuleList {
+  margin-top: 20px;
 }
 
-.slipInfo .smallList li {
-  font-size: 16px;
-  line-height: 40px;
+.slipInfo + .subModuleList .txt-lightgray {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1d2f62;
 }
 
-.slipInfo .smallList li:first-child {
-  font-weight: normal;
+.slipInfo + .subModuleList .uploadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.slipInfo + .subModuleList .directions {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.slipInfo + .subModuleList .btnGroup {
+  margin-left: 0;
+}
+
+.slipInfo + .subModuleList .upload_img {
+  border: 2px dashed #56ceff;
+  background: #010E33;
+  width: 290px;
+  height: 120px;
+}
+
+.slipInfo + .subModuleList .upload_img .icon {
+  color: #56ceff;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  float: left;
+}
+
+.slipInfo + .subModuleList .upload_img .icon:before {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.slipInfo li {
+  float: left;
+  line-height: 35px;
+}
+
+.slipInfo li:nth-child(odd) {
+  color: #56ceff;
+  clear: both;
+  min-width: 140px;
+}
+
+.slipInfo li:nth-child(even) {
+  min-width: 165px;
 }
 
 .offers {
@@ -3090,7 +3143,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .addBank {
-  width: calc(100% / 3 - 50px);
+  width: calc(100% / 3 - 40px);
   background: #0C1A3F;
   padding: 15px;
   border-radius: 5px;
@@ -3474,16 +3527,8 @@ main > .swiper-container .swiper-slide {
   margin-right: 10px;
 }
 
-.kycHeight {
-  height: calc(100% - 190px);
-}
-
 .kycHeight .subModuleBody {
   height: calc(100% - 40px);
-}
-
-.kycHeight .icon {
-  font-size: 48px;
 }
 
 .quickSelect {
@@ -3737,11 +3782,11 @@ main > .swiper-container .swiper-slide {
           flex: 1.5;
 }
 
-.profileEdit .editModule .inputBox, .profileEdit .editModule .inputBox-org, .profileEdit .editModule .inputBox-white, .profileEdit .editModule .inputBox-blue, .profileEdit .editModule .inputBox-gray, .profileEdit .editModule .inputBox-yellow {
+.profileEdit .editModule .inputBox-blue {
   z-index: auto;
 }
 
-.profileEdit .editModule .inputBox:first-child, .profileEdit .editModule .inputBox-org:first-child, .profileEdit .editModule .inputBox-white:first-child, .profileEdit .editModule .inputBox-blue:first-child, .profileEdit .editModule .inputBox-gray:first-child, .profileEdit .editModule .inputBox-yellow:first-child {
+.profileEdit .editModule .inputBox-blue:first-child {
   margin-top: 8px;
 }
 
@@ -3820,12 +3865,18 @@ main > .swiper-container .swiper-slide {
 }
 
 .announcement, .personal {
-  width: calc(100% - 70px);
+  width: calc(100% - 20px);
   margin: 0 auto;
 }
 
 .announcement pre, .personal pre {
   color: white;
+}
+
+.announcement .list > div, .personal .list > div {
+  margin-bottom: 10px;
+  background: #233157;
+  border-radius: 5px;
 }
 
 .announcement .list .listHeader, .announcement .list .listBody, .personal .list .listHeader, .personal .list .listBody {
@@ -3842,10 +3893,13 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .announcement .list .listHeader div, .personal .list .listHeader div {
   padding: 0;
+  border: 0;
 }
 
 .announcement .list .listHeader div:nth-child(1), .personal .list .listHeader div:nth-child(1) {
@@ -3855,12 +3909,18 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  color: #56ceff;
 }
 
 .announcement .list .listHeader div:nth-child(2), .personal .list .listHeader div:nth-child(2) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  color: white;
+  font-weight: normal;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .announcement .list .listHeader div:nth-child(2) i, .personal .list .listHeader div:nth-child(2) i {
@@ -3868,24 +3928,27 @@ main > .swiper-container .swiper-slide {
   right: 0;
 }
 
-.personal {
-  width: calc(100% - 70px);
-  margin: 0 auto;
+.personal .list > div {
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 .personal .list > div div.listHeader {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .personal .list > div div.listHeader button, .personal .list > div div.listHeader a {
-  right: -12px;
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  position: unset;
 }
 
 .personal .list .year {
   margin-right: 5px;
 }
 
-.personal .list .haveRead div {
+.personal .list .haveRead .listHeader > div:nth-child(2), .personal .list .haveRead .listHeader > div:nth-child(3) {
   font-weight: normal;
 }
 
@@ -3909,8 +3972,9 @@ main > .swiper-container .swiper-slide {
 }
 
 .personal .list .listHeader .checkbox label.icon.icon:before, .personal .list .functionMenu .checkbox label.icon.icon:before {
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
+  color: #1E85EC;
+  font-size: 18px;
+  margin-left: -1px;
 }
 
 .personal .list .listHeader div, .personal .list .functionMenu div {
@@ -3933,9 +3997,12 @@ main > .swiper-container .swiper-slide {
 }
 
 .personal .list .listHeader div:nth-child(3), .personal .list .functionMenu div:nth-child(3) {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .personal .list .listHeader div:nth-child(3) i, .personal .list .functionMenu div:nth-child(3) i {
@@ -3949,18 +4016,16 @@ main > .swiper-container .swiper-slide {
 
 .personal .list .listBody.active {
   padding: 10px 20px;
-}
-
-.personal .list .listHeader label {
-  color: #1E85EC;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .personal .list .listHeader > div:nth-child(2), .personal .list .listHeader > div:nth-child(3) {
   cursor: pointer;
+  font-weight: bold;
 }
 
 .personal .list .functionMenu {
-  background: #1E85EC;
+  background: #324578;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

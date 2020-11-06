@@ -126,6 +126,23 @@ export default ({
 					if (isMountedRef.current) {
 						if (res.data.errorCode === 0) {
 							reload(!alreadyHasAccountName);
+							setPopBox({
+								isOpen: true,
+								popBoxType: defPopBoxType.Success,
+								titleIcon: "icon-library",
+								titleText: "lbl_AddBankAccount",
+								message1: "lbl_UpdateSuccessful",
+								onClickClose: ClickClose,
+								btnBar: (
+									<div className="btnGroup">
+										<button
+											className="btn-cancel"
+											onClick={ClickClose}>
+											OK
+										</button>
+									</div>
+								)
+							});
 						} else {
 							setPopBox({
 								isOpen: true,

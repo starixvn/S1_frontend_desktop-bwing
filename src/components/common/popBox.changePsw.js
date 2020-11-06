@@ -9,7 +9,7 @@ export default ({ btnBar, title, message, ClickClose }) => {
 			<button className="icon icon-cross" onClick={ClickClose}></button>
 			<div className="icon icon-icon32px_password"></div>
 			<div className="title">{title}</div>
-			<div>{message}</div>
+			<div className="txt-lightgray">{message}</div>
 			{btnBar}
 		</div>
 	);

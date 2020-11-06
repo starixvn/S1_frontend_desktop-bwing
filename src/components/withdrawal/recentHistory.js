@@ -150,6 +150,7 @@ export default props => {
 		setPopBox({
 			isOpen: true,
 			popBoxType: defPopBoxType.Cancel,
+			onClickClose: ClickClose,
 			btnBar: (
 				<div className="btnGroup">
 					<button className="btn-cancel" onClick={ClickConfirm}>
