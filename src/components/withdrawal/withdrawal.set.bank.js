@@ -450,7 +450,7 @@ export default props => {
 								bankCardValue={getBankCardValue}
 								allBankCardData={getAllBankCardData}
 								_isConvert={_isConvert}
-								step={step}
+								confirmPage={showConfirmPage}
 							/>
 							<AddBankAccount allBankCardData={allBankCardData} />
 						</div>
