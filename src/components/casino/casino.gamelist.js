@@ -59,7 +59,7 @@ export default ({
 					<div className="txt-darkBlue">{gameDisplayName}</div>
 					<div className="btnGroup">
 						<button
-							className="blue"
+							className="orange"
 							onClick={onClickPlay.bind(
 								this,
 								g.tpId,
@@ -70,7 +70,7 @@ export default ({
 						</button>
 						{tpInfo.playFree ? (
 							<button
-								className="blue"
+								className="blueBorder"
 								onClick={onClickPlay.bind(
 									this,
 									g.tpId,
