@@ -14,7 +14,6 @@ export default props => {
 					title={t("lbl_Amount")}
 					clickInfo={props.clickInfo}
 					checked={props.checked}
-					// tip={props.tip}
 					_isConvert={props._isConvert}
 				/>
 
