@@ -108,8 +108,8 @@ export default props => {
 	) : (
 		<div className="subModuleList">
 			<div className="subModule">
-				<div className="subModuleBody column align-items-center">
-					<span className="title txt-yellow">
+				<div className="subModuleBody column">
+					<span className="title txt-org">
 						{t("lbl_SubmitPhotoId")}
 					</span>
 					<div className="txt-lightgray">
@@ -119,31 +119,36 @@ export default props => {
 						<br />
 						{t("lbl_ImageJpgPngOnly")}
 					</div>
-
-					<label
-						className="upload_img"
-						onDragOver={dragOver.bind(this)}
-						onDrop={onChangeFile.bind(this, "onDrop")}>
-						<input
-							type="file"
-							accept="image/*"
-							ref={filebox}
-							onChange={onChangeFile.bind(this, "onChange")}
-						/>
-						{picFileName ? (
-							<img alt="for kyc" src={fileImg} />
-						) : (
-							<i className="icon icon-plus"></i>
-						)}
-					</label>
-					<div className="directions">
-						<ul>
-							<li>{t("lbl_NationalIdentityCard")}</li>
-							<li>{t("lbl_Passport")}</li>
-							<li>{t("lbl_DrivingLicense")}</li>
-							<li>{t("lbl_BirthCertificate")}</li>
-						</ul>
+					<div className="uploadBox">
+						<label
+							className="upload_img"
+							onDragOver={dragOver.bind(this)}
+							onDrop={onChangeFile.bind(this, "onDrop")}>
+							<input
+								type="file"
+								accept="image/*"
+								ref={filebox}
+								onChange={onChangeFile.bind(this, "onChange")}
+							/>
+							{picFileName ? (
+								<img alt="for kyc" src={fileImg} />
+							) : (
+								<>
+									<i className="icon icon-cloud_upload"></i>
+									{t("lbl_DragToUploadFile")}
+								</>
+							)}
+						</label>
+						<div className="directions">
+							<ul>
+								<li>{t("lbl_NationalIdentityCard")}</li>
+								<li>{t("lbl_Passport")}</li>
+								<li>{t("lbl_DrivingLicense")}</li>
+								<li>{t("lbl_BirthCertificate")}</li>
+							</ul>
+						</div>
 					</div>
+
 					<div className="btnGroup">
 						<button
 							className="btn-check"
