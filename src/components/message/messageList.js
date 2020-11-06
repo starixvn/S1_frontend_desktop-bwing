@@ -142,9 +142,7 @@ export default props => {
 					onKeyDown={getMsgContent.bind(this, !showContent)}>
 					{props.title}
 				</div>
-				<div
-					className="txt-blue2"
-					onClick={getMsgContent.bind(this, !showContent)}>
+				<div onClick={getMsgContent.bind(this, !showContent)}>
 					{dateTimeFormat()}
 					<button
 						aria-label="getMsgContent"
