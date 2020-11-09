@@ -201,14 +201,14 @@ const Content = () => {
 		<Loading />
 	) : (
 		<div className="infoModule">
-			<div className="inside-title icon icon-icon32px_password">
-				<span>{t("lbl_ChangePassword")}</span>
-				<div>{t("lbl_ChangePasswordHint")}</div>
+			<div className="inside-title icon-icon32px_deposit">
+				{t("lbl_ChangePassword")}
 			</div>
+			<div className="txt-white">{t("lbl_ChangePasswordHint")}</div>
 			<form className="changePassWord" onSubmit={clickSubmit}>
+				<div>{t("lbl_OldPassword")}</div>
 				<Inputbox
 					inputType={showPsw.oldPsw ? "text" : "password"}
-					title={t("lbl_OldPassword")}
 					value={userPsw.oldPsw}
 					onChange={editField.bind(this, "oldPsw")}
 					onBlur={checkPswHandler.bind(this, "oldPsw")}
@@ -218,9 +218,9 @@ const Content = () => {
 					clickInfo={clickInfo.bind(this, "oldPsw")}
 					tip={status.oldPsw.msg}
 				/>
+				<div>{t("lbl_NewPassword")}</div>
 				<Inputbox
 					inputType={showPsw.newPsw ? "text" : "password"}
-					title={t("lbl_NewPassword")}
 					value={userPsw.newPsw}
 					onChange={editField.bind(this, "newPsw")}
 					onBlur={checkPswHandler.bind(this, "newPsw")}
