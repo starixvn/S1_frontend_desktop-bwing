@@ -21,7 +21,8 @@ import InputboxPSW from "../components/common/inputbox.password";
 import Dropdown from "../components/common/dropdown";
 import Checkbox from "../components/common/checkbox";
 import joinBanner from "../styles/img/joinBanner.jpg";
-import { navigate } from "@reach/router";
+import { Redirect } from "@reach/router";
+import Loading from "../components/common/loading";
 
 export default () => {
 	return (
@@ -64,10 +65,21 @@ const Content = () => {
 	const [siteCurrency, setSiteCurrency] = useState([]);
 	const defaultLangId = GET_LANG_ID();
 	const isMountedRef = useRef(null);
+	const [redirectPath, setRedirectPath] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		isMountedRef.current = true;
 		return () => (isMountedRef.current = false);
+	});
+
+	useEffect(() => {
+		if (userInfo.isLogin) {
+			setRedirectPath(`/${userInfo.langId}`);
+			setLoading(false);
+		} else {
+			setLoading(false);
+		}
 	});
 
 	useEffect(() => {
@@ -387,7 +399,9 @@ const Content = () => {
 												..._user,
 												...res_custInfo.data.data
 											};
-											navigate(`/${defaultLangId}`);
+											setRedirectPath(
+												`/${userInfo.langId}`
+											);
 										} else {
 											setPopBox({
 												isOpen: true,
@@ -503,7 +517,9 @@ const Content = () => {
 		});
 	};
 
-	return (
+	return loading ? (
+		<Loading />
+	) : redirectPath === null ? (
 		<div className="joinus">
 			<img src={joinBanner} alt="joinBanner" />
 			<div className="joinloginModule">
@@ -626,5 +642,7 @@ const Content = () => {
 				</div>
 			</div>
 		</div>
+	) : (
+		<Redirect to={redirectPath} noThrow />
 	);
 };
