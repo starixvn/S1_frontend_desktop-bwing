@@ -154,7 +154,7 @@ const Content = () => {
 			<div className="inside-title icon-icon32px_deposit">
 				{t("lbl_ForgetPassword")}
 			</div>
-			<div class="txt-white">{t("lbl_ForgetPwdHint")}</div>
+			<div className="txt-white">{t("lbl_ForgetPwdHint")}</div>
 			<div className="forgetPassWord">
 				<div>{t("lbl_Email")}</div>
 				<form className="inputModuleRow" onSubmit={clickSubmit}>
