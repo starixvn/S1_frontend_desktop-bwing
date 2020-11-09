@@ -152,21 +152,20 @@ const Content = () => {
 
 	return (
 		<div className="infoModule">
-			<div className="inside-title icon icon-icon32px_password">
-				<span>{t("lbl_ForgetPassword")}</span>
-				<div>{t("lbl_ForgetPwdHint")}</div>
+			<div className="inside-title icon-icon32px_deposit">
+				{t("lbl_ForgetPassword")}
 			</div>
+			<div className="txt-white">{t("lbl_ForgetPwdHint")}</div>
 			<div className="forgetPassWord">
+				<div>{t("lbl_Email")}</div>
 				<form className="inputModuleRow" onSubmit={clickSubmit}>
 					<Inputbox
 						icon="icon-email txt-blue12"
-						title={t("lbl_Email")}
 						value={userEmail}
 						onChange={editField.bind(this)}
 						onBlur={emailCheck.bind(this, userEmail)}
 						checked={status.checked}
 						clickInfo={clickInfo.bind(this)}
-						tip={status.msg}
 					/>
 					<div className="btnGroup">
 						<button className="btn-check" type="submit">
@@ -174,6 +173,9 @@ const Content = () => {
 						</button>
 					</div>
 				</form>
+				{status.msg ? (
+					<div className="tip active">{status.msg}</div>
+				) : null}
 			</div>
 		</div>
 	);
