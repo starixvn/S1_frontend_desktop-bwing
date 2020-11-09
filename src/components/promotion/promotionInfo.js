@@ -53,7 +53,7 @@ export default () => {
 			errorCode,
 			isOpen: true,
 			popBoxType: defPopBoxType.ErrorMsg,
-			icon: "icon-bell",
+			icon: "icon-icon32px_notification",
 			btnBar: (
 				<div className="btnGroup">
 					<button className="btn-cancel" onClick={clickClose}>

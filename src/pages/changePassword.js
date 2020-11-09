@@ -128,6 +128,7 @@ const Content = () => {
 							setPopBox({
 								isOpen: true,
 								popBoxType: defPopBoxType.ChangePsw,
+								titleIcon: "icon-icon32px_password",
 								title: t("lbl_ChangePassword"),
 								message: (
 									<>
@@ -139,7 +140,7 @@ const Content = () => {
 								btnBar: (
 									<div className="btnGroup">
 										<button
-											className="btn-cancel"
+											className="btn-check"
 											onClick={ClickClose}>
 											OK
 										</button>

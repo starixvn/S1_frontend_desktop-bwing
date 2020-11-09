@@ -175,6 +175,7 @@
 	"lbl_RequireMinAmountHint_Back": "Deposit now?",
 	"lbl_Promotion_list": "PROMOTION LIST",
 	"lbl_Promotion_info": "PROMOTION INFO",
+	"lbl_Sign_up_successful":"Sign up successful !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Oops! Something wrong, please try again.",
@@ -217,6 +218,7 @@
 	"lbl_PlayNow": "Play Now",
 	"lbl_back": "Back",
 	"lbl_Processing": "Processing",
+	"lbl_Congratulations":"Congratulations",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Transfer",

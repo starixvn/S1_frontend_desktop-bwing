@@ -140,6 +140,7 @@ export default () => {
 					title={popBox.title}
 					message={popBox.message}
 					ClickClose={popBox.ClickClose}
+					titleIcon={popBox.titleIcon}
 				/>
 			);
 			break;

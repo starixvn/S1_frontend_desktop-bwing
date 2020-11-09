@@ -180,6 +180,7 @@ const Content = () => {
 							titleText: "lbl_ImportantNote",
 							message1: "lbl_UpdateSuccessful",
 							message2: "lbl_UpdateSuccessWillProcess",
+							onClickClose: ClickClose,
 							btnBar: (
 								<div className="btnGroup">
 									<button
