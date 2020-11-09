@@ -76,7 +76,7 @@ export const checkPromotion = ({ promotionInfo, userInfo, setPopBox, t }) => {
 	if (currencyId && (!accountName || !phoneNo || !email))
 		return setPopBox({
 			isOpen: true,
-			popBoxType: defPopBoxType.UpdateProfile,
+			popBoxType: defPopBoxType.p,
 			title: t("lbl_ImportantNote"),
 			content: t("lbl_UpdatePersonalInfoPromotion"),
 			btnBar: (

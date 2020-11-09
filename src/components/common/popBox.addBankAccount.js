@@ -198,12 +198,13 @@ export default ({ bankInfoSysList = [] }) => {
 	return (
 		<div className="addBankpop active" onSubmit={ClickSubmit}>
 			<span className="title">{t("lbl_AddNewAccount")}</span>
-			<div>{t("lbl_UpdateBankInfo")}</div>
+			<div className="txt-lightgray">{t("lbl_UpdateBankInfo")}</div>
+
 			{!userInfo.accountName ? (
 				<Inputbox
 					value={userValue.realName}
 					onChange={editField.bind(this, "realName")}
-					title={t("lbl_RealName")}
+					// title={t("lbl_RealName")}
 					onBlur={checkAll.bind(this, userValue.realName, "realName")}
 					clickInfo={clickInfo.bind(this, "realName")}
 					checked={status.realName.checked}
@@ -213,7 +214,7 @@ export default ({ bankInfoSysList = [] }) => {
 				<>
 					<div className="txt">
 						<div>
-							<span className="txt-blue2">
+							<span className="txt-blue15">
 								{t("lbl_RealName")}
 							</span>
 							<span>{userInfo.accountName}</span>
@@ -227,7 +228,8 @@ export default ({ bankInfoSysList = [] }) => {
 					<div>{status.realName_after.tip}</div>
 				</>
 			)}
-			<div className="inputBox">
+
+			<div className="inputBox-blue">
 				<Dropdown
 					mainkey="bankList"
 					options={bankInfoSysList}
@@ -246,6 +248,9 @@ export default ({ bankInfoSysList = [] }) => {
 				checked={status.accountNo.checked}
 				tip={status.accountNo.tip}
 			/>
+			<div className={`tip${status.accountNo.tip ? " active" : ""}`}>
+				{status.accountNo.tip}
+			</div>
 			<div className="btnGroup">
 				<button className="btn-cancel" onClick={ClickCancel}>
 					{t("lbl_Cancel")}

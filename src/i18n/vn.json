@@ -175,6 +175,7 @@
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
+	"lbl_Sign_up_successful":"Tham gia thành công !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Rất tiếc! Đã xảy ra lỗi, vui lòng thử lại.",
@@ -217,6 +218,7 @@
 	"lbl_PlayNow": "Tham gia",
 	"lbl_back": "Quay lại",
 	"lbl_Processing": "Đang xử lý",
+	"lbl_Congratulations":"Chúc mừng",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Chuyển tiền",

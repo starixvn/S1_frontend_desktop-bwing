@@ -32,7 +32,28 @@ export default () => {
 	switch (popBox.popBoxType) {
 		case defPopBoxType.Cancel:
 			const Cancel = lazy(() => import("./popBox.cancel"));
-			content = <Cancel btnBar={popBox.btnBar} />;
+			content = (
+				<Cancel
+					btnBar={popBox.btnBar}
+					titleIcon={popBox.titleIcon}
+					titleText={popBox.titleText}
+					onClickClose={popBox.onClickClose}
+				/>
+			);
+			break;
+
+		case defPopBoxType.Success:
+			const Success = lazy(() => import("./popBox.success"));
+			content = (
+				<Success
+					btnBar={popBox.btnBar}
+					titleIcon={popBox.titleIcon}
+					titleText={popBox.titleText}
+					message1={popBox.message1}
+					message2={popBox.message2}
+					onClickClose={popBox.onClickClose}
+				/>
+			);
 			break;
 
 		case defPopBoxType.UploadBankSlip:
@@ -41,11 +62,6 @@ export default () => {
 				import("./popBox.uploadBankSlip")
 			);
 			content = <UploadBankSlip {...restProps} />;
-			break;
-
-		case defPopBoxType.Success:
-			const Success = lazy(() => import("./popBox.success"));
-			content = <Success btnBar={popBox.btnBar} />;
 			break;
 
 		case defPopBoxType.ErrorMsg:
@@ -124,6 +140,7 @@ export default () => {
 					title={popBox.title}
 					message={popBox.message}
 					ClickClose={popBox.ClickClose}
+					titleIcon={popBox.titleIcon}
 				/>
 			);
 			break;
@@ -144,7 +161,12 @@ export default () => {
 			const WithdrawalSuccess = lazy(() =>
 				import("./popBox.withdrawalSuccess")
 			);
-			content = <WithdrawalSuccess btnBar={popBox.btnBar} />;
+			content = (
+				<WithdrawalSuccess
+					btnBar={popBox.btnBar}
+					onClickClose={popBox.onClickClose}
+				/>
+			);
 			break;
 
 		case defPopBoxType.OTPHint:

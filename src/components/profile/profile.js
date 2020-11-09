@@ -77,7 +77,7 @@ export default () => {
 			errorCode,
 			isOpen: true,
 			popBoxType: defPopBoxType.ErrorMsg,
-			icon: "icon-bell",
+			icon: "icon-icon32px_notification",
 			btnBar: (
 				<div className="btnGroup">
 					<button className="btn-cancel" onClick={ClickClose}>
@@ -489,7 +489,7 @@ export default () => {
 											{t("lbl_Later")}
 										</button>
 										<button
-											className="yellow"
+											className="btn-check"
 											onClick={sendOTPSMS}>
 											{t("lbl_VertifyNow")}
 										</button>

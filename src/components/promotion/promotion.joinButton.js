@@ -39,7 +39,7 @@ export default ({
 			errorCode,
 			isOpen: true,
 			popBoxType: defPopBoxType.ErrorMsg,
-			icon: "icon-bell",
+			icon: "icon-icon32px_notification",
 			btnBar: (
 				<div className="btnGroup">
 					<button className="btn-cancel" onClick={clickClose}>
@@ -57,10 +57,8 @@ export default ({
 		}).then(
 			({ data: { message, errorCode } }) => {
 				if (!isMountedRef.current) return;
-
 				const success = errorCode === 0;
 				const OTPNotVerify = errorCode === -5;
-
 				if (OTPNotVerify)
 					return setPopBox({
 						isOpen: true,
@@ -75,11 +73,14 @@ export default ({
 							</div>
 						)
 					});
-
 				if (success) {
 					setPopBox({
 						isOpen: true,
 						popBoxType: defPopBoxType.Success,
+						titleText: "lbl_Congratulations",
+						titleIcon: "icon-gift",
+						message1: "lbl_Sign_up_successful",
+						onClickClose: clickClose,
 						btnBar: (
 							<div className="btnGroup">
 								<button
@@ -92,7 +93,6 @@ export default ({
 					});
 					return true;
 				}
-
 				openErrorMessagePopBox(message || "error", errorCode);
 			},
 			err => {

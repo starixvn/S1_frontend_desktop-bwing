@@ -94,12 +94,13 @@ const Content = () => {
 							setPopBox({
 								isOpen: true,
 								popBoxType: defPopBoxType.ChangePsw,
+								titleIcon: "icon-icon32px_uplock",
 								title: t("lbl_ForgetPsw"),
 								message: t("lbl_ForgetPwdSuccess"),
 								btnBar: (
 									<div className="btnGroup">
 										<button
-											className="btn-cancel"
+											className="btn-check"
 											onClick={ClickClose}>
 											OK
 										</button>

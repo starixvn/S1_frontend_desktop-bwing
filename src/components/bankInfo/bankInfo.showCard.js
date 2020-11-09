@@ -88,6 +88,7 @@ export default ({ accountName, custBankList, reload }) => {
 			popBoxType: defPopBoxType.ConfirmDelete,
 			message: t("lbl_AreYouSureDelete"),
 			message2: t("lbl_CantBeRestore"),
+			onClickClose: ClickCancel,
 			btnBar: (
 				<div className="btnGroup">
 					<button
