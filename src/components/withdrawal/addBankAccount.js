@@ -103,7 +103,7 @@ export default props => {
 					onKeyDown={openPopBox}
 					tabIndex="0">
 					<div className="icon icon-plus"></div>
-					<div className="txt-yellow">{t("lbl_AddNewAccount")}</div>
+					<div>{t("lbl_AddNewAccount")}</div>
 				</div>
 			) : (
 				<></>

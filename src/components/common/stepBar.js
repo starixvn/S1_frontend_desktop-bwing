@@ -6,7 +6,6 @@ export default ({ t, step, defStep, className }) => {
 			<div
 				className={sIdx <= step - 1 ? "active" : ""}
 				key={`step-${sIdx}`}>
-				<span>{s.title}</span>
 				<span>{t(s.descriptionKey)}</span>
 			</div>
 		);

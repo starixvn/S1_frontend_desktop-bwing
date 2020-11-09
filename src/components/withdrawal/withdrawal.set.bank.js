@@ -416,9 +416,11 @@ export default props => {
 		<>
 			{kycStatus !== "normal" ? (
 				<>
-					<div className="inside-title icon icon-transfer">
-						<span>{t("lbl_Withdrawal")}</span>
-						<div>{t("lbl_SubmitPhotoIdHint")}</div>
+					<div className="inside-title icon-icon32px_deposit">
+						{t("lbl_Withdrawal")}
+					</div>
+					<div className="txt-white txt-center">
+						{t("lbl_SubmitPhotoIdHint")}
 					</div>
 					{kycStatus === "kycUpload" ? (
 						<KycUpload getKycStatus={getKycStatus} />
@@ -428,9 +430,11 @@ export default props => {
 				</>
 			) : (
 				<>
-					<div className="inside-title icon icon-transfer">
-						<span>{t("lbl_Withdrawal")}</span>
-						<div>{t("lbl_UpdateBankInfo")}</div>
+					<div className="inside-title icon-icon32px_deposit">
+						{t("lbl_Withdrawal")}
+					</div>
+					<div className="txt-white txt-center">
+						{t("lbl_UpdateBankInfo")}
 					</div>
 					<StepBar step={step} t={t} defStep={defStep} />
 					<div className="walletModule">
@@ -447,6 +451,7 @@ export default props => {
 								bankCardValue={getBankCardValue}
 								allBankCardData={getAllBankCardData}
 								_isConvert={_isConvert}
+								confirmPage={showConfirmPage}
 							/>
 							<AddBankAccount allBankCardData={allBankCardData} />
 						</div>

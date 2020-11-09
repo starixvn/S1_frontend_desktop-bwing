@@ -31,11 +31,11 @@
 	"lbl_Announcement": "Announcement",
 	"lbl_TermsConditions": "Terms and Conditions",
 	"lbl_RuleRegulations": "Rules and Regulations",
-	"lbl_HowToRegister":"How to register",
-	"lbl_HowToDepoist":"How to deposit",
-	"lbl_HowToWithdraw":"How to withdraw",
-	"lbl_HowToPlay":"How to play",
-	"lbl_UserGuide":"User Guide",
+	"lbl_HowToRegister": "How to register",
+	"lbl_HowToDepoist": "How to deposit",
+	"lbl_HowToWithdraw": "How to withdraw",
+	"lbl_HowToPlay": "How to play",
+	"lbl_UserGuide": "User Guide",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_SiteNews": "Bwing News",
@@ -83,7 +83,7 @@
 	"lbl_VirtualSports": "Virtual Sports",
 
 	"account ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_Affiliate_ID":"Affiliate ID/Referral",
+	"lbl_Affiliate_ID": "Affiliate ID/Referral",
 	"lbl_Birthday": "Birthday",
 	"lbl_BirthRequired": "Please fill in the birthday field",
 	"lbl_ChangePassword": "Change Password",
@@ -117,7 +117,7 @@
 	"lbl_Phone": "Phone Number",
 	"lbl_PhoneRequired": "Please fill in the phone field",
 	"lbl_PhoneTooltip": "Please enter your phone number, it can not change once enter!",
-	"lbl_Please_enter_Affiliate_ID":"Please enter Affiliate ID (Optional), it can not change once enter!",
+	"lbl_Please_enter_Affiliate_ID": "Please enter Affiliate ID (Optional), it can not change once enter!",
 	"lbl_PreferredCurrencyToolTip": "Preferred currency can not be changed after registration.",
 	"lbl_Profile": "Profile",
 	"lbl_ProfileModifyWarning": "Ensure account security,Personal information cannot be modified after filling.",
@@ -155,9 +155,9 @@
 	"lbl_ResetPassword": "Reset password",
 	"lbl_VertifyContactConfirm": "Verify your contact number to enjoy our promotions?",
 	"lbl_VertifyNow": "Vertify Now",
-	"lbl_Verified":"Verified",
-	"lbl_Unverified":"Unverified",
-	"lbl_PrefferedCurrency":"Preferred Currency",
+	"lbl_Verified": "Verified",
+	"lbl_Unverified": "Unverified",
+	"lbl_PrefferedCurrency": "Preferred Currency",
 
 	"promotion ■■■■■■■■■■■■■■■■■■■■": "",
 	"PromotionCategory1": "First Deposit",
@@ -215,8 +215,8 @@
 	"lbl_UpdateSuccessWillProcess": "We will process your request ASAP!",
 	"lbl_Free": "Free Play",
 	"lbl_PlayNow": "Play Now",
-	"lbl_back":"Back",
-	"lbl_Processing":"Processing",
+	"lbl_back": "Back",
+	"lbl_Processing": "Processing",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Transfer",
@@ -280,7 +280,7 @@
 	"lbl_UpdatePersonalInfoDeposit": "Please update your personal information before making deposit.",
 	"lbl_DepositNow": "Deposit Now",
 	"lbl_GoDepositPage": "Go to deposit page?",
-	
+
 	"withdrawal ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Withdrawal": "Withdrawal",
 	"lbl_WithdrawalStatus0": "Draft",
@@ -319,6 +319,7 @@
 	"lbl_UpdatePersonalInfoWithdrawal": "Please update your personal information before making withdrawal.",
 	"lbl_WithdrawalNow": "Withdrawal Now",
 	"lbl_GoWithdrawalPage": "Go to withdrawal page?",
+	"lbl_DragToUploadFile": "Drag and drop to upload or to chose a file",
 
 	"transaction ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_NeedAccountNo": "Need Account Number",
@@ -352,7 +353,7 @@
 	"lbl_AddBankAccount": "Add Bank Account",
 	"lbl_TurnoverAccmulateHint": "Your Fund are locked to transfer out due to Rollover requirement is not fulfils.",
 	"lbl_QuickPick": "Quick Pick",
-	"lbl_BankAccount":"Bank Account",
+	"lbl_BankAccount": "Bank Account",
 	"lbl_RollOver": "Rollover",
 
 	"casino ■■■■■■■■■■■■■■■■■■■■": "",
@@ -383,7 +384,7 @@
 	"lbl_5mins": "5 mins",
 
 	"new ■■■■■■■■■■■■■■■■■■■■": "",
-	"newkey1":"value",
-	"newkey2":"value",
+	"newkey1": "value",
+	"newkey2": "value",
 	"---end---": "---"
 }
