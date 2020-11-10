@@ -4946,9 +4946,7 @@ input + .iconModule i.icon.icon-checkmark:before {
 }
 
 .indexGameList a, .indexGameList button {
-  width: calc(100% / 4 - 24px);
-  border: 1px solid #18759d;
-  border-radius: 3px;
+  width: calc(100% / 6 - 24px);
   margin-bottom: 24px;
 }
 
@@ -4964,17 +4962,11 @@ input + .iconModule i.icon.icon-checkmark:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #56ceff;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-.indexGameList + a, .indexGameList + button {
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: -20px;
-  display: block;
-  text-align: center;
+.indexGameList a:hover div, .indexGameList button:hover div {
+  color: #56ceff;
 }
 
 .guide {
