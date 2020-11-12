@@ -10,8 +10,8 @@ export default () => {
 
 	return redirectPath === null ? (
 		<div className="subModuleList">
-			<OnlineBankList />
 			<MobilePayList />
+			<OnlineBankList />
 			<LocalBankList />
 		</div>
 	) : (
