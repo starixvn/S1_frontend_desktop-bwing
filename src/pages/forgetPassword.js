@@ -6,6 +6,7 @@ import Wrapper from "../components/common/wrapper";
 import Layout from "../components/common/layout";
 import Inputbox from "../components/common/inputbox";
 import { defPopBoxType } from "../components/common/popBox";
+import { navigate } from "@reach/router";
 
 export default () => {
 	return (
@@ -37,6 +38,12 @@ const Content = () => {
 		isMountedRef.current = true;
 		return () => (isMountedRef.current = false);
 	});
+
+	useEffect(() => {
+		if (userInfo.isLogin) {
+			navigate(`/${userInfo.langId}`);
+		}
+	}, [userInfo.isLogin, userInfo.langId]);
 
 	const emailCheck = val => {
 		let _checked = true;
@@ -150,7 +157,9 @@ const Content = () => {
 		}
 	};
 
-	return (
+	return userInfo?.isLogin === true ? (
+		<></>
+	) : (
 		<div className="infoModule">
 			<div className="inside-title icon-icon32px_deposit">
 				{t("lbl_ForgetPassword")}
