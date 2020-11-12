@@ -26,9 +26,23 @@ export default () => {
 				<About langId={userInfo.langId} t={t} />
 
 				<div>
+					<span className="title">{t("lbl_SocialMedia")}</span>
+					<div>
+						<a
+							href="https://www.facebook.com/bwingofficial/"
+							target="_blank"
+							className="icon icon-facebook"></a>
+						<a
+							href="https://twitter.com/Bwingofficial/"
+							target="_blank"
+							className="icon icon-twitter"></a>
+					</div>
+				</div>
+
+				{/* <div>
 					<span className="title">{t("lbl_ContactUs")}</span>
 					<div>{t("lbl_ConatctUsHint")}</div>
-				</div>
+				</div> */}
 			</div>
 			<div>
 				<Platforms />

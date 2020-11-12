@@ -25,9 +25,10 @@ export default ({ t, onClick, selected }) => {
 			className: "blueBorder"
 		},
 		{
-			displayKey: selected === 999 ? "lbl_Processing" : "lbl_Expired",
-			value: selected === 999 ? defFilterType.all : defFilterType.expiry,
-			className: selected === 999 ? "red" : "lightgray"
+			displayKey: "lbl_Expired",
+			value: defFilterType.expiry,
+			className: "lightgray",
+			selectedClass: "red"
 		}
 	];
 
