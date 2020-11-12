@@ -141,6 +141,7 @@ const Content = () => {
 	};
 
 	const Transfer = (_tpId, _amount, _direction) => {
+		let startWallet = getWalletInfo[_tpId];
 		setLoading(true);
 
 		api_tp_Transfer({
@@ -173,24 +174,26 @@ const Content = () => {
 						getContentWalletInfo();
 						GetTransferRecent();
 						setAmount("1");
-						setPopBox({
-							isOpen: true,
-							popBoxType: defPopBoxType.Success,
-							titleIcon: "icon-transfer",
-							titleText: "lbl_ImportantNote",
-							message1: "lbl_UpdateSuccessful",
-							message2: "lbl_UpdateSuccessWillProcess",
-							onClickClose: ClickClose,
-							btnBar: (
-								<div className="btnGroup">
-									<button
-										className="btn-cancel"
-										onClick={ClickClose}>
-										OK
-									</button>
-								</div>
-							)
-						});
+						if (_amount !== startWallet.balance) {
+							setPopBox({
+								isOpen: true,
+								popBoxType: defPopBoxType.Success,
+								titleIcon: "icon-transfer",
+								titleText: "lbl_ImportantNote",
+								message1: "lbl_UpdateSuccessful",
+								message2: "lbl_UpdateSuccessWillProcess",
+								onClickClose: ClickClose,
+								btnBar: (
+									<div className="btnGroup">
+										<button
+											className="btn-cancel"
+											onClick={ClickClose}>
+											OK
+										</button>
+									</div>
+								)
+							});
+						}
 					} else {
 						setPopBox({
 							isOpen: true,
