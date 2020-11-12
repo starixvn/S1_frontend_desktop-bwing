@@ -126,18 +126,6 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 		);
 	};
 
-	useEffect(() => {
-		const pressEnter = e => {
-			if (e.key === "Enter" || e.key === "NumpadEnter") {
-				ClickConfirm();
-			}
-		};
-		document.addEventListener("keydown", pressEnter);
-		return () => {
-			document.removeEventListener("keydown", pressEnter);
-		};
-	}, []);
-
 	return loading ? (
 		<Loading />
 	) : redirectPath === null ? (

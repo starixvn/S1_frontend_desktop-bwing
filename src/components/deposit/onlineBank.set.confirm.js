@@ -62,19 +62,6 @@ export default ({ bankInfo, amount, _isConvert }) => {
 		}
 	};
 
-	useEffect(() => {
-		const pressEnter = e => {
-			if (e.key === "Enter" || e.key === "NumpadEnter") {
-				ClickSubmit();
-			}
-		};
-		document.addEventListener("keydown", pressEnter);
-		return () => {
-			document.removeEventListener("keydown", pressEnter);
-		};
-	}, []);
-
-
 	return (
 		<div className="subModuleList">
 			<div className="subModule">
