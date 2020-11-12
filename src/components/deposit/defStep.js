@@ -1,6 +1,6 @@
 export default [
 	{
-		descriptionKey: "lbl_SelectPaymentModes"
+		descriptionKey: "lbl_SelectPaymentMethods"
 	},
 	{
 		descriptionKey: "lbl_SelectBank"

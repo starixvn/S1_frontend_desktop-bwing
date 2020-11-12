@@ -139,12 +139,12 @@ const AfterLogin = () => {
 				<Link
 					to={`/${userInfo.langId}/${path.transferFunds.root}`}
 					className="blue">
-					{t("lbl_TransferFunds")}
+					{t("lbl_TransferFunds").toUpperCase()}
 				</Link>
 				<Link
 					to={`/${userInfo.langId}/${path.deposit.root}`}
 					className="orange">
-					{t("lbl_Deposit")}
+					{t("lbl_Deposit").toUpperCase()}
 				</Link>
 			</div>
 

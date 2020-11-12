@@ -96,6 +96,7 @@ class Dropdown extends Component {
 				return (
 					<div key={`header-tpwallet-${t.tpId}`}>
 						<span>{this.props.i18n(`lbl_TpWallet_${t.tpId}`)}</span>
+						&nbsp;
 						<span>{number_format(t.balance)}</span>
 					</div>
 				);
@@ -109,6 +110,7 @@ class Dropdown extends Component {
 							`lbl_BonusWallet_${item.promoCategoryId}`
 						)}
 					</span>
+					&nbsp;
 					<span>{number_format(item.bonus)}</span>
 				</div>
 				// <HeaderProcessBar
@@ -126,7 +128,7 @@ class Dropdown extends Component {
 				ref={this.wrapper}
 				onClick={this.clickDropdown}>
 				<button>
-					{this.props.currencyId === 51 ? "VNĐ" : "$"}
+					{this.props.currencyId === 51 ? "VNĐ" : "$"}&nbsp;
 					{balance}
 				</button>
 				<button
