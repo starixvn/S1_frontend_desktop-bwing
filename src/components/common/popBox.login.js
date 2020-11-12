@@ -199,7 +199,7 @@ const LoginPanel = () => {
 							/>
 
 							<div className="title">
-								{t("lbl_Password")}
+								{t("lbl_Password")} &nbsp;
 								<Link
 									to={`/${userInfo.langId}/${path.forgetPassword.root}`}
 									className="txt-blue15">
