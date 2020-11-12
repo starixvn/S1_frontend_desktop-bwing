@@ -85,8 +85,7 @@ const defSettingLinks = ({ logoutFunc }) => {
 		{
 			displayKey: "lbl_Logout",
 			href: logoutFunc,
-			elemType: defElemType.btn,
-			icon: "icon icon-exit"
+			elemType: defElemType.btn
 		}
 	];
 };
