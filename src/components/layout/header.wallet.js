@@ -94,24 +94,32 @@ class Dropdown extends Component {
 			this.props.walletInfo.tpWallets &&
 			this.props.walletInfo.tpWallets.map(t => {
 				return (
-					<div key={`header-tpwallet-${t.tpId}`}>
-						<span>{this.props.i18n(`lbl_TpWallet_${t.tpId}`)}</span>
-						&nbsp;
-						<span>{number_format(t.balance)}</span>
+					<div
+						className="walletBalance"
+						key={`header-tpwallet-${t.tpId}`}>
+						<div>
+							<span>
+								{this.props.i18n(`lbl_TpWallet_${t.tpId}`)}
+							</span>
+							<span>{number_format(t.balance)}</span>
+						</div>
 					</div>
 				);
 			});
 
 		const bonusWallets = this.props.bonusWallets.map(item => {
 			return (
-				<div key={`header-bonuswallet-${item.tpId}`}>
-					<span>
-						{this.props.i18n(
-							`lbl_BonusWallet_${item.promoCategoryId}`
-						)}
-					</span>
-					&nbsp;
-					<span>{number_format(item.bonus)}</span>
+				<div
+					className="walletBalance"
+					key={`header-bonuswallet-${item.tpId}`}>
+					<div>
+						<span>
+							{this.props.i18n(
+								`lbl_BonusWallet_${item.promoCategoryId}`
+							)}
+						</span>
+						<span>{number_format(item.bonus)}</span>
+					</div>
 				</div>
 				// <HeaderProcessBar
 				// 	turnover={item.turnover}
@@ -142,16 +150,19 @@ class Dropdown extends Component {
 					}`}></button>
 				<i className="icon icon-arrow_drop_down"></i>
 				<div className="submenu">
-					<div className="walletBalance">
+					<div>
 						<div>
-							<div>
-								<span>{`${this.props.i18n(
-									"lbl_MainWallet"
-								)}`}</span>
-								&nbsp;
-								<span>
-									{number_format(this.props.walletInfo.main)}
-								</span>
+							<div className="walletBalance">
+								<div>
+									<span>{`${this.props.i18n(
+										"lbl_MainWallet"
+									)}`}</span>
+									<span>
+										{number_format(
+											this.props.walletInfo.main
+										)}
+									</span>
+								</div>
 							</div>
 							{bonusWallets}
 							{tpWallets}
@@ -163,12 +174,12 @@ class Dropdown extends Component {
 						<Link
 							to={`${this.props.langId}/${path.deposit.root}`}
 							className="blue">
-							{this.props.i18n("lbl_Deposit")}
+							{this.props.i18n("lbl_Deposit").toUpperCase()}
 						</Link>
 						<Link
 							to={`${this.props.langId}/${path.transferFunds.root}`}
 							className="blue">
-							{this.props.i18n("lbl_TransferFunds")}
+							{this.props.i18n("lbl_TransferFunds").toUpperCase()}
 						</Link>
 					</div>
 					<div className="loginLog">
