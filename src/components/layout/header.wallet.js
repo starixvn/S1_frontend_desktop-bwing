@@ -146,6 +146,7 @@ class Dropdown extends Component {
 								<span>{`${this.props.i18n(
 									"lbl_MainWallet"
 								)}`}</span>
+								&nbsp;
 								<span>
 									{number_format(this.props.walletInfo.main)}
 								</span>
