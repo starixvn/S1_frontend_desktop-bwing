@@ -41,9 +41,7 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 		setPopBox({
 			isOpen: true,
 			popBoxType: defPopBoxType.Cancel,
-			btnClose: (
-				<div className="icon icon-close" onClick={ClickClose}></div>
-			),
+			onClickClose: ClickNo,
 			btnBar: (
 				<div className="btnGroup">
 					<Link
@@ -127,6 +125,18 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 			}
 		);
 	};
+
+	useEffect(() => {
+		const pressEnter = e => {
+			if (e.key === "Enter" || e.key === "NumpadEnter") {
+				ClickConfirm();
+			}
+		};
+		document.addEventListener("keydown", pressEnter);
+		return () => {
+			document.removeEventListener("keydown", pressEnter);
+		};
+	}, []);
 
 	return loading ? (
 		<Loading />

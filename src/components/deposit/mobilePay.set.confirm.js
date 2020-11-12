@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { number_format } from "../common/common";
 import { userInfoContext, popBoxContext } from "../common/context";
 import { useTranslation } from "react-i18next";
@@ -11,6 +11,7 @@ export default ({ channelInfo, amount, _isConvert }) => {
 	const { userInfo } = useContext(userInfoContext);
 	const { setPopBox } = useContext(popBoxContext);
 	const { t } = useTranslation();
+
 	const ClickCancel = () => {
 		const ClickYes = () => {
 			setPopBox({
@@ -27,6 +28,7 @@ export default ({ channelInfo, amount, _isConvert }) => {
 		setPopBox({
 			isOpen: true,
 			popBoxType: defPopBoxType.Cancel,
+			onClickClose: ClickNo,
 			btnBar: (
 				<div className="btnGroup">
 					<Link
@@ -51,6 +53,18 @@ export default ({ channelInfo, amount, _isConvert }) => {
 			);
 		}
 	};
+
+	useEffect(() => {
+		const pressEnter = e => {
+			if (e.key === "Enter" || e.key === "NumpadEnter") {
+				ClickSubmit();
+			}
+		};
+		document.addEventListener("keydown", pressEnter);
+		return () => {
+			document.removeEventListener("keydown", pressEnter);
+		};
+	}, []);
 
 	return (
 		<div className="subModuleList">

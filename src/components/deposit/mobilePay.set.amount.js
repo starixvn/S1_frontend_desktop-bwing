@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import { useTranslation } from "react-i18next";
 import config from "../../config";
 import LimitTip from "./limitTip";
 import { defActionType } from "./mobilePay.reducer";
 import { checkAmount, number_format, getAmountTip } from "../common/common";
 import Inputbox from "../common/inputbox";
+import { reducer, initState } from "./mobilePay.reducer";
 
 export default ({ channelInfo, _isConvert, amount, dispatch }) => {
 	const { t } = useTranslation();
@@ -12,6 +13,7 @@ export default ({ channelInfo, _isConvert, amount, dispatch }) => {
 		checked: null,
 		tip: ""
 	});
+	const [state] = useReducer(reducer, initState);
 
 	const EditAmount = e => {
 		let value = e.target.value;
@@ -107,8 +109,13 @@ export default ({ channelInfo, _isConvert, amount, dispatch }) => {
 						checked={status.checked}
 						// tip={status.tip}
 						_isConvert={_isConvert}
+						onKeyPress={e => {
+							if (e.key === "Enter") {
+								SubmitAmount();
+							}
+						}}
 					/>
-						<div className={`tip${status.tip ? " active" : ""}`}>
+					<div className={`tip${status.tip ? " active" : ""}`}>
 						{status.tip}
 					</div>
 					<div className="btnGroup">
