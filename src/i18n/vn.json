@@ -1,6 +1,6 @@
 {
 	"home ■■■■■■■■■■■■■■■■■■■■": "",
-	"lbl_AboutSite": "Bwing.com",
+	"lbl_AboutSite": "Bwing",
 	"lbl_PrivacyPolicy": "Chính sách quyền riêng tư",
 	"lbl_Affiliates": "Đại lý",
 	"lbl_Games": "Trò Chơi",
@@ -388,5 +388,7 @@
 	"new ■■■■■■■■■■■■■■■■■■■■": "",
 	"newkey1": "value",
 	"newkey2": "value",
+	"lbl_SocialMedia":"Mạng xã hội",
+	"lbl_Withdraw": "Rút tiền",
 	"---end---": "---"
 }

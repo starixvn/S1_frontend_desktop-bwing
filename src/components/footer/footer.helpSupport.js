@@ -24,8 +24,8 @@ export default ({ langId, t }) => {
 				<a href={TandC(langId).Deposit} target="_blank">
 					{t("lbl_Deposit")}
 				</a>
-				<a href={TandC(langId).Withdrawal} target="_blank">
-					{t("lbl_Withdrawal")}
+				<a href={TandC(langId).Withdraw} target="_blank">
+					{t("lbl_Withdraw")}
 				</a>
 			</div>
 		</div>
