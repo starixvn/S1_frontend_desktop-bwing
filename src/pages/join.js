@@ -315,7 +315,7 @@ const Content = () => {
 	};
 
 	const clickCancel = () => {
-		setPopBox({ isOpen: false });
+		navigate(`/${userInfo.langId}`);
 	};
 
 	const checkAll = () => {
@@ -617,17 +617,17 @@ const Content = () => {
 					) : null}
 
 					<div className="btnGroup">
-						{/* <button
-							type="button"
-							className="btn-cancel"
-							onClick={clickCancel}>
-							{t("lbl_Cancel")}
-						</button> */}
 						<button
-							className="btn-check"
+							type="button"
+							className="gray"
+							onClick={clickCancel}>
+							{t("lbl_Cancel").toUpperCase()}
+						</button>
+						<button
+							className="orange"
 							type="submit"
 							onClick={clickSubmit}>
-							{t("lbl_Submit")}
+							{t("lbl_JoinNow").toUpperCase()}
 						</button>
 					</div>
 				</div>

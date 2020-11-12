@@ -42,6 +42,7 @@ export default props => {
 					}
 					max={props.max ? props.max : null}
 					readOnly={props.readOnly}
+					onKeyPress={props.onKeyPress}
 				/>
 				{props.checked !== undefined ? (
 					<div className="iconModule">
