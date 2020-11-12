@@ -107,8 +107,13 @@ export default ({ channelInfo, _isConvert, amount, dispatch }) => {
 						checked={status.checked}
 						// tip={status.tip}
 						_isConvert={_isConvert}
+						onKeyPress={e => {
+							if (e.key === "Enter") {
+								SubmitAmount();
+							}
+						}}
 					/>
-						<div className={`tip${status.tip ? " active" : ""}`}>
+					<div className={`tip${status.tip ? " active" : ""}`}>
 						{status.tip}
 					</div>
 					<div className="btnGroup">

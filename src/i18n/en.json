@@ -99,9 +99,9 @@
 	"lbl_EmailFormatError": "Mail Format is wrong.",
 	"lbl_EmailRequired": "Please fill in the email field",
 	"lbl_EmailToolTip": "Email cannot be changed after submission.",
-	"lbl_ForgetPassword": "Forgotten your ID or password?",
+	"lbl_ForgetPassword": "Forgotten your password?",
 	"lbl_ForgetPsw": "Forget Password",
-	"lbl_ForgetPwdHint": "If you have forgotten your username or password, please provide your email and we will send your new password to your registered email address.",
+	"lbl_ForgetPwdHint": "If you have forgotten your password, please provide your email and we will send your new password to your registered email address.",
 	"lbl_JoinNow": "Register",
 	"lbl_LastLogin": "Last Login",
 	"lbl_Login": "Login",
@@ -390,5 +390,6 @@
 	"newkey2": "value",
 	"lbl_SocialMedia":"Social Media",
 	"lbl_Withdraw": "Withdraw",
+	"lbl_SelectPaymentMethods": "Select Payment Methods",
 	"---end---": "---"
 }

@@ -136,7 +136,7 @@ class Dropdown extends Component {
 				ref={this.wrapper}
 				onClick={this.clickDropdown}>
 				<button>
-					{this.props.currencyId === 51 ? "VNĐ" : "$"}
+					{this.props.currencyId === 51 ? "VNĐ" : "$"}&nbsp;
 					{balance}
 				</button>
 				<button
