@@ -71,10 +71,10 @@ const defGameList = [
 		gameId: 10
 	},
 	{
+		...productList.virtualSports,
 		img: require("../../styles/img/GameList10.png"),
 		displayKey: "lbl_VirtualSports",
-		tpId: 1,
-		gameId: 180
+		linkType: defLinkType.sports
 	},
 	{
 		img: require("../../styles/img/GameList11.png"),
