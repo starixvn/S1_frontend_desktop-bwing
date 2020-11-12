@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect } from "react";
 import { number_format, getUrlParameter } from "../common/common";
 import { userInfoContext, popBoxContext } from "../common/context";
 import { useTranslation } from "react-i18next";
@@ -27,6 +27,7 @@ export default ({ bankInfo, amount, _isConvert }) => {
 		setPopBox({
 			isOpen: true,
 			popBoxType: defPopBoxType.Cancel,
+			onClickClose: ClickNo,
 			btnBar: (
 				<div className="btnGroup">
 					<Link

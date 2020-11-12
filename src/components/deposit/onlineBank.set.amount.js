@@ -91,6 +91,11 @@ export default ({
 						checked={status.checked}
 						// tip={status.tip}
 						_isConvert={_isConvert}
+						onKeyPress={e => {
+							if (e.key === "Enter") {
+								SubmitAmount();
+							}
+						}}
 					/>
 					<div className={`tip${status.tip ? " active" : ""}`}>
 						{status.tip}

@@ -41,9 +41,7 @@ export default ({ bankInfo, amount, _isConvert, dispatch }) => {
 		setPopBox({
 			isOpen: true,
 			popBoxType: defPopBoxType.Cancel,
-			btnClose: (
-				<div className="icon icon-close" onClick={ClickClose}></div>
-			),
+			onClickClose: ClickNo,
 			btnBar: (
 				<div className="btnGroup">
 					<Link
