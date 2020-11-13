@@ -44,7 +44,7 @@ export default ({ t, onClick, selected }) => {
 						: p.className
 				}
 				onClick={onClick.bind(this, p.value)}>
-				{t(p.displayKey)}
+				{t(p.displayKey).toUpperCase()}
 			</button>
 		);
 	});

@@ -34,23 +34,25 @@ export default ({ promotionInfo, t, inListPage }) => {
 	return (
 		<div className="rollover">
 			<div>
-				{requiredAmount > 0 ? (
+				<div>{t("lbl_Bonus")}</div>
+				<div>{t("lbl_MaxBonusAmount")}</div>
+				{/* {requiredAmount > 0 ? (
 					<div className="icon icon-icon32px_money">
 						{t("lbl_MinAmount")}
 					</div>
-				) : null}
-				<div className="icon icon-icon32px_time">
-					{t("lbl_RemainingTime")}
-				</div>
-				<div className="icon icon-icon32px_">{t("lbl_RollOver")}</div>
+				) : null} */}
+				<div>{t("lbl_RollOver").toUpperCase()}</div>
+				<div>{t("lbl_RemainingTime")}</div>
 			</div>
 
-			<div className={inListPage ? "txt-red" : ""}>
-				{requiredAmount > 0 ? (
+			<div className={inListPage ? "txt-yellow" : ""}>
+				<div>{number_format(promotionInfo.bonus)}</div>
+				<div>{number_format(promotionInfo.maxBonus)}</div>
+				{/* {requiredAmount > 0 ? (
 					<div>{number_format(requiredAmount)}</div>
-				) : null}
+				) : null} */}
+				<div>{rollOver}X</div>
 				<div>{displayExpiryTime}</div>
-				<div>{rollOver ? rollOver : 1}X</div>
 			</div>
 		</div>
 	);
