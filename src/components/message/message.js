@@ -252,6 +252,9 @@ export default () => {
 							page={pagination.currentPage}
 						/>
 					))}
+					{msgListData.length > 0 ? (
+						<div className="nodata">{t("msg_NoData")}</div>
+					) : null}
 				</div>
 			</div>
 			{pagination.totalPages !== 0 ? (
