@@ -176,6 +176,8 @@
 	"lbl_Promotion_list": "PROMOTION LIST",
 	"lbl_Promotion_info": "PROMOTION INFO",
 	"lbl_Sign_up_successful":"Sign up successful !",
+	"lbl_Bonus":"BONUS",
+	"lbl_MaxBonusAmount":"MAX BONUS AMOUNT",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Oops! Something wrong, please try again.",

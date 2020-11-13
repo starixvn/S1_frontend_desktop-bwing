@@ -176,6 +176,8 @@
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
 	"lbl_Sign_up_successful":"Tham gia thành công !",
+	"lbl_Bonus":"KHUYẾN MÃI",
+	"lbl_MaxBonusAmount":"TIỀN KHUYẾN MÃI TỐI ĐA",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Rất tiếc! Đã xảy ra lỗi, vui lòng thử lại.",
