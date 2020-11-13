@@ -57,7 +57,7 @@ export const LOGIN = async ({ userName, password, langId }) => {
 					..._loginUser,
 					...data
 				};
-				setCookie("goalLangId", data.langId);
+				setCookie("bwingLangId", data.langId);
 			}
 
 			errMsg = "";
