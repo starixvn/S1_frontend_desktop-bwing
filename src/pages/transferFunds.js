@@ -140,8 +140,7 @@ const Content = () => {
 		);
 	};
 
-	const Transfer = (_tpId, _amount, _direction) => {
-		let startWallet = getWalletInfo[_tpId];
+	const Transfer = (_tpId, _amount, _direction, isRestoreAll) => {
 		setLoading(true);
 
 		api_tp_Transfer({
@@ -174,7 +173,7 @@ const Content = () => {
 						getContentWalletInfo();
 						GetTransferRecent();
 						setAmount("1");
-						if (_amount !== startWallet.balance) {
+						if (!isRestoreAll) {
 							setPopBox({
 								isOpen: true,
 								popBoxType: defPopBoxType.Success,
@@ -347,6 +346,7 @@ const Content = () => {
 			let _wallet = getWalletInfo.find(item => {
 				return item.displayKey === direction.transferFrom;
 			});
+			let isRestoreAll = false;
 
 			if (_wallet.balance < real_amount) {
 				setPopBox({
@@ -362,7 +362,7 @@ const Content = () => {
 					)
 				});
 			} else {
-				Transfer(_wallet.id, real_amount, _direction);
+				Transfer(_wallet.id, real_amount, _direction, isRestoreAll);
 			}
 			setStatus(initStatus);
 			setAmount("1");
@@ -378,6 +378,7 @@ const Content = () => {
 
 		let startId = idx === 0 ? 1 : 0;
 		let startWallet = getWalletInfo[startId];
+		let isRestoreAll = true;
 
 		if (startWallet.balance === 0) {
 			setPopBox({
@@ -393,7 +394,12 @@ const Content = () => {
 				)
 			});
 		} else {
-			Transfer(startWallet.id, startWallet.balance, _direction);
+			Transfer(
+				startWallet.id,
+				startWallet.balance,
+				_direction,
+				isRestoreAll
+			);
 		}
 	};
 
