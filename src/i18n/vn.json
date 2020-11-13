@@ -15,7 +15,7 @@
 	"lbl_AboutUs": "Giới thiệu",
 	"lbl_Terms": "Điều Khoản Sử Dụng",
 	"lbl_PoweredBy": "Một sản phẩm của",
-	"lbl_SiteMap":"Sơ đồ trang web",
+	"lbl_SiteMap": "Sơ đồ trang web",
 	"lbl_ResposibleGaming": "Chơi có trách nhiệm",
 	"lbl_ConatctUsHint": "Bộ phận hỗ trợ trực tuyến 24/7 luôn sẵn sàng lắng nghe và giải đáp những thắc mắc của thành viên. Chúng tôi hỗ trợ thông qua chat hỗ trợ trực tuyến, điện thoại và nhiều kênh thông dụng khác như : Zalo, Telegram và Skype.",
 	"lbl_CookiePolicy": "Chính sách Cookie",
@@ -175,7 +175,7 @@
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
-	"lbl_Sign_up_successful":"Tham gia thành công !",
+	"lbl_Sign_up_successful": "Tham gia thành công !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Rất tiếc! Đã xảy ra lỗi, vui lòng thử lại.",
@@ -218,7 +218,7 @@
 	"lbl_PlayNow": "Tham gia",
 	"lbl_back": "Quay lại",
 	"lbl_Processing": "Đang xử lý",
-	"lbl_Congratulations":"Chúc mừng",
+	"lbl_Congratulations": "Chúc mừng",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Chuyển tiền",
@@ -388,8 +388,10 @@
 	"new ■■■■■■■■■■■■■■■■■■■■": "",
 	"newkey1": "value",
 	"newkey2": "value",
-	"lbl_SocialMedia":"Mạng xã hội",
+	"lbl_SocialMedia": "Mạng xã hội",
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
+	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
+
 	"---end---": "---"
 }
