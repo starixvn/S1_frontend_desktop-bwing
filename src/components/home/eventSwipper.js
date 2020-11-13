@@ -6,7 +6,7 @@ export default () => {
 		<div className="offers">
 			<SwipperBanner
 				ImgFolder="Sports"
-				withBtn={true}
+				withBtn={false}
 				openInBlank={true}
 			/>
 			<span className="straightBorder"></span>
