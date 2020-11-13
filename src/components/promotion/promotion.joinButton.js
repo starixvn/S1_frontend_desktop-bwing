@@ -127,14 +127,14 @@ export default ({
 		<>
 			{inListPage ? null : (
 				<button className="lightgray" onClick={clickBack}>
-					{t("lbl_back")}
+					{t("lbl_back").toUpperCase()}
 				</button>
 			)}
 			{(promotionInfo.isJoin && isLogin) ||
 			_isExpiry ||
 			_isClaimed ? null : (
 				<button className="orange" onClick={onJoinPromotion}>
-					{t("lbl_PromoJoinNow")}
+					{t("lbl_PromoJoinNow").toUpperCase()}
 				</button>
 			)}
 		</>

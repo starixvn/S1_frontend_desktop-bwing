@@ -45,7 +45,7 @@ export default ({ promotionInfo, t, inListPage }) => {
 				<div className="icon icon-icon32px_">{t("lbl_RollOver")}</div>
 			</div>
 
-			<div className={inListPage ? "txt-red" : ""}>
+			<div className={inListPage ? "txt-yellow" : ""}>
 				{requiredAmount > 0 ? (
 					<div>{number_format(requiredAmount)}</div>
 				) : null}
