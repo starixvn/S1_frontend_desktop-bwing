@@ -210,11 +210,11 @@ export default ({ startUnixTime = 0 }) => {
 			<div className="icon icon-icon32px_notification"></div>
 			<div className="title">{t("lbl_ImportantNote")}</div>
 			<div className="txt-lightgray">{t("msg_OTPSendCode")}</div>
-			<div className="inputModuleRow">
-				<div className="inputBox">
-					<input value={code} onChange={e => onChanheCode(e)} />
-				</div>
+
+			<div className="inputBox">
+				<input value={code} onChange={e => onChanheCode(e)} />
 			</div>
+
 			<div className={`tip ${verifyPhoneError ? "active" : ""}`}>
 				{verifyPhoneError}
 			</div>
