@@ -394,5 +394,7 @@
 	"lbl_SocialMedia": "Social Media",
 	"lbl_Withdraw": "Withdraw",
 	"lbl_SelectPaymentMethods": "Select Payment Methods",
+	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
+
 	"---end---": "---"
 }

@@ -137,18 +137,18 @@ export default () => {
 	};
 
 	const checkName = () => {
-		let checkResult = false;
-		let checkTip = "";
+		const regx_alpha_dash = /^[a-zA-Z0-9-_]*$/;
 
-		if (userInfo.accountName) {
-			checkResult = true;
-		} else if (!userInfo.accountName && nameValue === "") {
-			checkResult = false;
-			checkTip = t("lbl_NameRequired");
-		} else if (!userInfo.accountName && nameValue !== "") {
-			checkResult = true;
-			checkTip = "";
-		}
+		let checkResult =
+			(Boolean(userInfo.accountName) || Boolean(nameValue)) &&
+			regx_alpha_dash.test(nameValue);
+
+		let checkTip =
+			nameValue === ""
+				? t("lbl_NameRequired")
+				: !regx_alpha_dash.test(nameValue)
+				? t("msg_Alpha_Dash_Invalid")
+				: "";
 
 		setStatus(prev => ({
 			...prev,
