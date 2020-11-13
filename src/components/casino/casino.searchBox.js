@@ -26,6 +26,7 @@ export default ({
 					options={tpOptions}
 					onSelectItem={EditSearchField.bind(this, "provider")}
 					selectedIdx={searchInfo.provider.idx}
+					showDropDownIcon={true}
 				/>
 			</div>
 

@@ -43,7 +43,7 @@ export default () => {
 	const { t } = useTranslation();
 	const isMountedRef = useRef(null);
 	const { setPopBox } = useContext(popBoxContext);
-	const [redirectPath, setRedirectPath] = useState(null);
+	const [redirectPath] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [mobileVerificationLoading, setMobileVerificationLoading] = useState(
 		false
@@ -513,7 +513,7 @@ export default () => {
 										</button>
 										<Link
 											className="btn-check"
-											to={defPrevPage[_prevPage].path}>
+											to={`/${userInfo.langId}/${defPrevPage[_prevPage].path}`}>
 											{t(defPrevPage[_prevPage].label)}
 										</Link>
 									</div>

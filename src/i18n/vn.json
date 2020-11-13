@@ -175,6 +175,8 @@
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
+	"lbl_Bonus":"KHUYẾN MÃI",
+	"lbl_MaxBonusAmount":"TIỀN KHUYẾN MÃI TỐI ĐA",
 	"lbl_Sign_up_successful": "Tham gia thành công !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
@@ -293,6 +295,7 @@
 	"lbl_WithdrawalStatus5": "Hủy",
 	"lbl_WithdrawalStatus6": "Thành công",
 	"lbl_WithdrawalStatus7": "Từ chối",
+	"lbl_WithdrawalStatus8": "Đang xử lý",
 	"lbl_WithdrawalStatus99": "Lỗi",
 	"lbl_EligibleWithdrawalAmount": "Số tiền có thể rút",
 	"lbl_SelectBank_Required": "Xin lựa chọn tài khoản ngân hàng",

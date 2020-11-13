@@ -175,6 +175,8 @@
 	"lbl_RequireMinAmountHint_Back": "Deposit now?",
 	"lbl_Promotion_list": "PROMOTION LIST",
 	"lbl_Promotion_info": "PROMOTION INFO",
+	"lbl_Bonus":"BONUS",
+	"lbl_MaxBonusAmount":"MAX BONUS AMOUNT",
 	"lbl_Sign_up_successful": "Sign up successful !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
@@ -293,6 +295,7 @@
 	"lbl_WithdrawalStatus5": "Cancelled",
 	"lbl_WithdrawalStatus6": "Approved",
 	"lbl_WithdrawalStatus7": "Rejected",
+	"lbl_WithdrawalStatus8": "Processing",
 	"lbl_WithdrawalStatus99": "Error",
 	"lbl_EligibleWithdrawalAmount": "Your eligible withdrawal amount is",
 	"lbl_SelectBank_Required": "Please select bank accounts",
