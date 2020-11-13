@@ -9,7 +9,7 @@ import Loading from "../common/loading";
 
 export default props => {
 	const [bankInfoList, setBankInfoList] = useState([]);
-	const [hasCheckedKey, setHasCheckedKey] = useState();
+	const [hasCheckedSysId, setHasCheckedSysId] = useState(null);
 	const { userInfo } = useContext(userInfoContext);
 	const { setPopBox } = useContext(popBoxContext);
 	const [loading, setLoading] = useState(true);
@@ -61,7 +61,7 @@ export default props => {
 	};
 
 	const checkInput = (sysId, accountNo, bankName) => {
-		setHasCheckedKey(accountNo);
+		setHasCheckedSysId(sysId);
 		if (accountNo) {
 			props.bankCardValue(sysId, accountNo, bankName);
 		} else {
@@ -153,7 +153,7 @@ export default props => {
 	};
 
 	let bankCardArr = bankInfoList.map(item => {
-		let key = `withdrawal-banklist-${item.accountNo}`;
+		let key = `withdrawal-banklist-${item.sysId}`;
 		let checkKey = `${key}-check`;
 
 		return (
@@ -179,7 +179,7 @@ export default props => {
 						<div className="checkbox">
 							<input
 								type="checkbox"
-								checked={hasCheckedKey === item.accountNo}
+								checked={hasCheckedSysId === item.sysId}
 								onChange={checkInput.bind(
 									this,
 									item.sysId,
