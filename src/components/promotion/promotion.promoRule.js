@@ -51,7 +51,7 @@ export default ({ promotionInfo, t, inListPage }) => {
 				{/* {requiredAmount > 0 ? (
 					<div>{number_format(requiredAmount)}</div>
 				) : null} */}
-				<div>{rollOver ? rollOver : 1}X</div>
+				<div>{rollOver}X</div>
 				<div>{displayExpiryTime}</div>
 			</div>
 		</div>
