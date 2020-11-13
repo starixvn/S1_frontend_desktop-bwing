@@ -78,7 +78,13 @@ export class Dropdown extends Component {
 				{this.props.icon ? (
 					<i className={`icon ${this.props.icon}`}></i>
 				) : null}
-				<button className="btn txt-orange">{selected}</button>
+				<button className="btn txt-orange">
+					{selected}
+					{this.props.showDropDownIcon ? (
+						<i class="icon icon-arrow_drop_down"></i>
+					) : null}
+				</button>
+
 				<div
 					className={`dropdown-container${
 						this.state.isOpen ? " active" : ""
