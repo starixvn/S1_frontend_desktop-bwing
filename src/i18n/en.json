@@ -120,7 +120,7 @@
 	"lbl_Please_enter_Affiliate_ID": "Please enter Affiliate ID (Optional), it can not change once enter!",
 	"lbl_PreferredCurrencyToolTip": "Preferred currency can not be changed after registration.",
 	"lbl_Profile": "Profile",
-	"lbl_ProfileModifyWarning": "Ensure account security,Personal information cannot be modified after filling.",
+	"lbl_ProfileModifyWarning": "To ensure account security, personal information cannot be modified after filling. Please input your real name as in your ID to avoid delay in your transactions.",
 	"lbl_RealName": "Real Name",
 	"lbl_RegisterTime": "Register Time",
 	"lbl_RemindForName": "*FULL NAME must match name in your bank account for instant deposit & withdrawal.",
@@ -175,8 +175,8 @@
 	"lbl_RequireMinAmountHint_Back": "Deposit now?",
 	"lbl_Promotion_list": "PROMOTION LIST",
 	"lbl_Promotion_info": "PROMOTION INFO",
-	"lbl_Bonus":"BONUS",
-	"lbl_MaxBonusAmount":"MAX BONUS AMOUNT",
+	"lbl_Bonus": "BONUS",
+	"lbl_MaxBonusAmount": "MAX BONUS AMOUNT",
 	"lbl_Sign_up_successful": "Sign up successful !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
@@ -394,9 +394,8 @@
 	"lbl_SocialMedia": "Social Media",
 	"lbl_Withdraw": "Withdraw",
 	"lbl_SelectPaymentMethods": "Select Payment Methods",
-	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
-	"lbl_dream_gaming_se_die":"Dream Gaming Se die",
-	"lbl_restore_all_hint":"By clicking Restore All button, you will restore all of your funds from the other wallet.",
+	"msg_Alpha_Dash_Invalid": "Cannot contain any numbers or special characters",
+	"lbl_dream_gaming_se_die": "Dream Gaming Se die",
 
 	"---end---": "---"
 }

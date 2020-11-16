@@ -35,7 +35,7 @@
 	"lbl_HowToDepoist": "Hướng dẫn nạp tiền",
 	"lbl_HowToWithdraw": "Cách rút tiền",
 	"lbl_HowToPlay": "Cách đặt cược",
-	"lbl_UserGuide": "User Guide",
+	"lbl_UserGuide": "HƯỚNG DẪN NGƯỜI DÙNG",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_SiteNews": "Điểm báo Bwing",
@@ -120,7 +120,7 @@
 	"lbl_Please_enter_Affiliate_ID": "Vui lòng nhập ID Đại lý (tùy chọn), hông tin không thể thay đổi sau khi đã nhập!",
 	"lbl_PreferredCurrencyToolTip": "Không thể thay đổi Tiền tệ ưa thích sau khi đăng ký.",
 	"lbl_Profile": "Hồ sơ",
-	"lbl_ProfileModifyWarning": "Nhằm đảm bảo an toàn tài khoản, Thông tin cá nhân không thể thay đổi sau khi xác nhận",
+	"lbl_ProfileModifyWarning": "Để đảm bảo an toàn tài khoản, bạn không thể thay đổi thông tin cá nhân sau khi xác nhận. Vui lòng điền đúng tên thật như trong CMND để giao dịch được suôn sẻ.",
 	"lbl_RealName": "Tên thật",
 	"lbl_RegisterTime": "Thời gian đăng ký",
 	"lbl_RemindForName": "*Tên đầy đủ của bạn phải đúng với tên trên tài khoản Ngân hàng để thực hiện việc nạp/ rút tiền nhanh",
@@ -175,8 +175,8 @@
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
-	"lbl_Bonus":"KHUYẾN MÃI",
-	"lbl_MaxBonusAmount":"TIỀN KHUYẾN MÃI TỐI ĐA",
+	"lbl_Bonus": "KHUYẾN MÃI",
+	"lbl_MaxBonusAmount": "TIỀN KHUYẾN MÃI TỐI ĐA",
 	"lbl_Sign_up_successful": "Tham gia thành công !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
@@ -394,9 +394,8 @@
 	"lbl_SocialMedia": "Mạng xã hội",
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
-	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
-	"lbl_dream_gaming_se_die":"Xóc đĩa live",
-	"lbl_restore_all_hint":"Khi chọn nút Phục hồi quỹ, toàn bộ quỹ từ các ví khác của bạn sẽ được chuyển về ví này.",
+	"msg_Alpha_Dash_Invalid": "Không thể có số hoặc ký tự đặc biệt ",
+	"lbl_dream_gaming_se_die": "Xóc đĩa live",
 
 	"---end---": "---"
 }
