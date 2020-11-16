@@ -77,6 +77,22 @@ export default {
 		gameId: 8,
 		tpId: 1,
 		name: "baseball"
+	},
+	liveCasino_Allbet: {
+		gameId: 12,
+		tpId: 12
+	},
+	liveCasino_AG: {
+		gameId: 3,
+		tpId: 3
+	},
+	liveCasino_DG: {
+		gameId: 4,
+		tpId: 4
+	},
+	liveCasino_SA: {
+		gameId: 2,
+		tpId: 2
 	}
 };
 
