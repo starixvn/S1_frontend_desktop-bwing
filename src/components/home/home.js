@@ -120,7 +120,7 @@ const UserGuide = ({ t, langId }) => {
 				<a href={TandC(langId).Deposit}>{t("lbl_HowToDepoist")}</a>
 			</li>
 			<li className="icon icon-withdrawal1">
-				<a href={TandC(langId).Withdrawal}>
+				<a href={TandC(langId).Withdraw}>
 					{t("lbl_HowToWithdraw")}
 				</a>
 			</li>
