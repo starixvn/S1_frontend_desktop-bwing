@@ -237,6 +237,7 @@ export default ({ bankInfoSysList = [] }) => {
 					selectedIdx={userValue.bankId}
 					imgUrl={`${config.imgUrl}/common/images/BankLogo/`}
 					className="bankLogo"
+					showDropDownIcon={true}
 				/>
 			</div>
 			<Inputbox

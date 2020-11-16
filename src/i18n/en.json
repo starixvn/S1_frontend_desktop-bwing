@@ -396,6 +396,7 @@
 	"lbl_SelectPaymentMethods": "Select Payment Methods",
 	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
 	"lbl_dream_gaming_se_die":"Dream Gaming Se die",
+	"lbl_restore_all_hint":"By clicking Restore All button, you will restore all of your funds from the other wallet.",
 
 	"---end---": "---"
 }
