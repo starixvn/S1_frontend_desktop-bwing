@@ -120,7 +120,7 @@
 	"lbl_Please_enter_Affiliate_ID": "Vui lòng nhập ID Đại lý (tùy chọn), hông tin không thể thay đổi sau khi đã nhập!",
 	"lbl_PreferredCurrencyToolTip": "Không thể thay đổi Tiền tệ ưa thích sau khi đăng ký.",
 	"lbl_Profile": "Hồ sơ",
-	"lbl_ProfileModifyWarning": "Nhằm đảm bảo an toàn tài khoản, Thông tin cá nhân không thể thay đổi sau khi xác nhận",
+	"lbl_ProfileModifyWarning": "Để đảm bảo an toàn tài khoản, bạn không thể thay đổi thông tin cá nhân sau khi xác nhận. Vui lòng điền đúng tên thật như trong CMND để giao dịch được suôn sẻ.",
 	"lbl_RealName": "Tên thật",
 	"lbl_RegisterTime": "Thời gian đăng ký",
 	"lbl_RemindForName": "*Tên đầy đủ của bạn phải đúng với tên trên tài khoản Ngân hàng để thực hiện việc nạp/ rút tiền nhanh",
@@ -394,7 +394,7 @@
 	"lbl_SocialMedia": "Mạng xã hội",
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
-	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
+	"msg_Alpha_Dash_Invalid": "Không thể có số hoặc ký tự đặc biệt ",
 	"lbl_dream_gaming_se_die": "Xóc đĩa live",
 
 	"---end---": "---"
