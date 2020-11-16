@@ -35,7 +35,7 @@
 	"lbl_HowToDepoist": "Hướng dẫn nạp tiền",
 	"lbl_HowToWithdraw": "Cách rút tiền",
 	"lbl_HowToPlay": "Cách đặt cược",
-	"lbl_UserGuide": "User Guide",
+	"lbl_UserGuide": "HƯỚNG DẪN NGƯỜI DÙNG",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_SiteNews": "Điểm báo Bwing",
@@ -175,8 +175,8 @@
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
-	"lbl_Bonus":"KHUYẾN MÃI",
-	"lbl_MaxBonusAmount":"TIỀN KHUYẾN MÃI TỐI ĐA",
+	"lbl_Bonus": "KHUYẾN MÃI",
+	"lbl_MaxBonusAmount": "TIỀN KHUYẾN MÃI TỐI ĐA",
 	"lbl_Sign_up_successful": "Tham gia thành công !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
@@ -395,7 +395,7 @@
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
 	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
-	"lbl_dream_gaming_se_die":"Xóc đĩa live",
+	"lbl_dream_gaming_se_die": "Xóc đĩa live",
 
 	"---end---": "---"
 }
