@@ -22,10 +22,15 @@ const ShowWallet = props => {
 		);
 	});
 	return (
-		<div className="walletModule">
-			{arr}
-			<ReloadSpin func={props.GetWalletInfo} />
-		</div>
+		<>
+			<div className="walletModule">
+				{arr}
+				<ReloadSpin func={props.GetWalletInfo} />
+			</div>
+			<div className="tip active">
+				{props.i18n("lbl_restore_all_hint")}
+			</div>
+		</>
 	);
 };
 

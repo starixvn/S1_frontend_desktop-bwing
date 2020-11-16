@@ -35,7 +35,7 @@
 	"lbl_HowToDepoist": "Hướng dẫn nạp tiền",
 	"lbl_HowToWithdraw": "Cách rút tiền",
 	"lbl_HowToPlay": "Cách đặt cược",
-	"lbl_UserGuide": "User Guide",
+	"lbl_UserGuide": "HƯỚNG DẪN NGƯỜI DÙNG",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_SiteNews": "Điểm báo Bwing",
@@ -120,7 +120,7 @@
 	"lbl_Please_enter_Affiliate_ID": "Vui lòng nhập ID Đại lý (tùy chọn), hông tin không thể thay đổi sau khi đã nhập!",
 	"lbl_PreferredCurrencyToolTip": "Không thể thay đổi Tiền tệ ưa thích sau khi đăng ký.",
 	"lbl_Profile": "Hồ sơ",
-	"lbl_ProfileModifyWarning": "Nhằm đảm bảo an toàn tài khoản, Thông tin cá nhân không thể thay đổi sau khi xác nhận",
+	"lbl_ProfileModifyWarning": "Để đảm bảo an toàn tài khoản, bạn không thể thay đổi thông tin cá nhân sau khi xác nhận. Vui lòng điền đúng tên thật như trong CMND để giao dịch được suôn sẻ.",
 	"lbl_RealName": "Tên thật",
 	"lbl_RegisterTime": "Thời gian đăng ký",
 	"lbl_RemindForName": "*Tên đầy đủ của bạn phải đúng với tên trên tài khoản Ngân hàng để thực hiện việc nạp/ rút tiền nhanh",
@@ -228,7 +228,7 @@
 	"lbl_TpWallet_1": "Ví Thể thao",
 	"lbl_Wallet_Saba": "Ví Sportsbook",
 	"lbl_MainWallet": "Ví chính",
-	"lbl_RestoreAll": "Chuyển Hết",
+	"lbl_RestoreAll": "Phục hồi quỹ",
 	"lbl_TransferHistory": "Lịch sử giao dịch",
 	"msg_InsufficientFund": "Không đủ tiền!",
 
