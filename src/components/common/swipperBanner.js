@@ -123,6 +123,15 @@ const Panel = ({
 					<img src={imgSRC} className="banner" alt={b.img ?? ""} />
 				</Link>
 			);
+		} else if (actionLink?.startsWith("Promotion/Bonus?")) {
+			let promoUrlParam = actionLink.split("?")?.[1];
+			return (
+				<Link
+					key={key}
+					to={`/${userInfo.langId}/${path.promotion.root}/${path.promotion.sub.promotionInfo.root}?${promoUrlParam}`}>
+					<img src={imgSRC} className="banner" alt={b.img ?? ""} />
+				</Link>
+			);
 		} else if (
 			b.fromDB &&
 			b.actionLink.startsWith("promotion/promotionInfo?BonusCode=")
