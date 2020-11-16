@@ -175,8 +175,8 @@
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
-	"lbl_Bonus":"KHUYẾN MÃI",
-	"lbl_MaxBonusAmount":"TIỀN KHUYẾN MÃI TỐI ĐA",
+	"lbl_Bonus": "KHUYẾN MÃI",
+	"lbl_MaxBonusAmount": "TIỀN KHUYẾN MÃI TỐI ĐA",
 	"lbl_Sign_up_successful": "Tham gia thành công !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
@@ -394,8 +394,8 @@
 	"lbl_SocialMedia": "Mạng xã hội",
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
-	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
-	"lbl_dream_gaming_se_die":"Xóc đĩa live",
+	"msg_Regex_Punct_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
+	"lbl_dream_gaming_se_die": "Xóc đĩa live",
 
 	"---end---": "---"
 }

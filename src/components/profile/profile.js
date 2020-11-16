@@ -137,17 +137,19 @@ export default () => {
 	};
 
 	const checkName = () => {
-		const regx_alpha_dash = /^[a-zA-Z0-9-_]*$/;
+		let pattern_punct = new RegExp(
+			"[`~!@#$^&*()=|{}':;',ˇˋ˙ˊ\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]"
+		);
 
 		let checkResult =
 			(Boolean(userInfo.accountName) || Boolean(nameValue)) &&
-			regx_alpha_dash.test(nameValue);
+			!pattern_punct.test(nameValue);
 
 		let checkTip =
 			nameValue === ""
 				? t("lbl_NameRequired")
-				: !regx_alpha_dash.test(nameValue)
-				? t("msg_Alpha_Dash_Invalid")
+				: pattern_punct.test(nameValue)
+				? t("msg_Regex_Punct_Invalid")
 				: "";
 
 		setStatus(prev => ({

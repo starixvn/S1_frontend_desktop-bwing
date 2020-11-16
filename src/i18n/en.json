@@ -175,8 +175,8 @@
 	"lbl_RequireMinAmountHint_Back": "Deposit now?",
 	"lbl_Promotion_list": "PROMOTION LIST",
 	"lbl_Promotion_info": "PROMOTION INFO",
-	"lbl_Bonus":"BONUS",
-	"lbl_MaxBonusAmount":"MAX BONUS AMOUNT",
+	"lbl_Bonus": "BONUS",
+	"lbl_MaxBonusAmount": "MAX BONUS AMOUNT",
 	"lbl_Sign_up_successful": "Sign up successful !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
@@ -394,8 +394,8 @@
 	"lbl_SocialMedia": "Social Media",
 	"lbl_Withdraw": "Withdraw",
 	"lbl_SelectPaymentMethods": "Select Payment Methods",
-	"msg_Alpha_Dash_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
-	"lbl_dream_gaming_se_die":"Dream Gaming Se die",
+	"msg_Regex_Punct_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
+	"lbl_dream_gaming_se_die": "Dream Gaming Se die",
 
 	"---end---": "---"
 }
