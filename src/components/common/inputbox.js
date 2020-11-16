@@ -38,7 +38,7 @@ export default props => {
 					value={
 						props.value === null || props.value === undefined
 							? ""
-							: " " + props.value
+							: props.value
 					}
 					max={props.max ? props.max : null}
 					readOnly={props.readOnly}
