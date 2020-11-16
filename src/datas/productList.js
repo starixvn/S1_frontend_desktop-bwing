@@ -107,3 +107,49 @@ export const defCasinoProviders = {
 		name: "OW"
 	}
 };
+
+export const footerProductList = {
+	sports: {
+		game: "soccer"
+	},
+	liveCasino_Allbet: {
+		gameId: 12,
+		tpId: 12
+	},
+	fishing: {
+		tpId: 7,
+		gameId: 10
+	},
+	liveCasino_AG: {
+		gameId: 3,
+		tpId: 3
+	},
+	casino_GPI: {
+		tpId: 6,
+		provider: "GPI"
+	},
+	liveCasino_DG: {
+		gameId: 4,
+		tpId: 4
+	},
+	liveCasino_SA: {
+		gameId: 2,
+		tpId: 2
+	},
+	casino_YGG: {
+		tpId: 8,
+		provider: "YGG"
+	},
+	casino_PP: {
+		tpId: 5,
+		provider: "PP"
+	},
+	casino_SG: {
+		tpId: 10,
+		provider: "SG"
+	},
+	casino_PG: {
+		tpId: 14,
+		provider: "PG"
+	}
+};
