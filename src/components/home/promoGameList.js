@@ -55,7 +55,7 @@ const defGameList = [
 	},
 	{
 		img: require("../../styles/img/GameList7.png"),
-		displayKey: "Dream Gaming Se die",
+		displayKey: "lbl_dream_gaming_se_die",
 		tpId: 4
 	},
 	{
