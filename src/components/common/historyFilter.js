@@ -94,6 +94,7 @@ export default props => {
 						options={quickPickList}
 						selectedIdx={selectedIdx}
 						onSelectItem={onSelectItem}
+						showDropDownIcon={true}
 					/>
 				</div>
 			</div>
