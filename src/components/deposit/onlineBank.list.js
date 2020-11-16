@@ -62,7 +62,7 @@ export default () => {
 				<div>
 					<span>{t("lbl_DepositType1").toUpperCase()}</span>
 					<span>
-						{t("lbl_CreditTime")}: {t("lbl_Instant")}
+						{t("lbl_CreditTime")}:&nbsp;{t("lbl_Instant")}
 					</span>
 				</div>
 			</div>

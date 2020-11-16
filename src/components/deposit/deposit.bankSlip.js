@@ -297,7 +297,7 @@ export class Module extends Component {
 					<div className="inputBox">
 						<i className="txt-blue12">
 							{this.props.i18n("lbl_DepositTime")}
-						</i>
+						</i> &nbsp;
 						<DateTime
 							value={moment(this.state.depositTime).format(
 								"YYYY-MM-DD HH:mm A"
