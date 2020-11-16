@@ -146,6 +146,9 @@ export class Module extends Component {
 									prevBtnBar: prevS.btnBar,
 									titleIcon: "icon-icon32px_deposit",
 									titleText: "lbl_ImportantNote",
+									message2: this.props.i18n(
+										"lbl_UpdateSuccessWillProcess"
+									),
 									onClickClose: ClickClose,
 									btnBar: (
 										<div className="btnGroup">
