@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import path from "../../path";
-import { footerProductList } from "../../datas/productList";
+import productList, { defCasinoProviders } from "../../datas/productList";
 import { navigate } from "@reach/router";
 import { popBoxContext } from "../common/context";
 import { defPopBoxType } from "../common/popBox";
@@ -10,52 +10,52 @@ import config from "../../config";
 const defPlatfrom = [
 	{
 		path: path.sports.root,
-		parameter: { ...footerProductList.sports },
+		parameter: { game: "soccer" },
 		imgName: "saba"
 	},
 	{
-		...footerProductList.liveCasino_Allbet,
+		...productList.liveCasino_Allbet,
 		imgName: "ab"
 	},
 	{
-		...footerProductList.fishing,
+		...productList.fishing,
 		imgName: "yl"
 	},
 	{
-		...footerProductList.liveCasino_AG,
+		...productList.liveCasino_AG,
 		imgName: "ag"
 	},
 	{
 		path: path.casino.root,
-		parameter: { ...footerProductList.casino_GPI },
+		parameter: { provider: defCasinoProviders.GPI.name },
 		imgName: "gp"
 	},
 	{
-		...footerProductList.liveCasino_DG,
+		...productList.liveCasino_DG,
 		imgName: "dg"
 	},
 	{
-		...footerProductList.liveCasino_SA,
+		...productList.liveCasino_SA,
 		imgName: "sa"
 	},
 	{
 		path: path.casino.root,
-		parameter: { ...footerProductList.casino_YGG },
+		parameter: { provider: defCasinoProviders.YGG.name },
 		imgName: "yg"
 	},
 	{
 		path: path.casino.root,
-		parameter: { ...footerProductList.casino_PP },
+		parameter: { provider: defCasinoProviders.PP.name },
 		imgName: "pp"
 	},
 	{
 		path: path.casino.root,
-		parameter: { ...footerProductList.casino_SG },
+		parameter: { provider: defCasinoProviders.SG.name },
 		imgName: "sg"
 	},
 	{
 		path: path.casino.root,
-		parameter: { ...footerProductList.casino_PG },
+		parameter: { provider: defCasinoProviders.PG.name },
 		imgName: "pg"
 	}
 ];
