@@ -13,13 +13,13 @@ export default ({ showSubMenu }) => {
 
 	return (
 		<>
-			{/* <Link
+			<Link
 				to={`/${userInfo.langId}`}
 				className={
 					currentPage === `/${userInfo.langId}` ? "active" : ""
 				}>
 				<i className="icon icon-home"></i>
-			</Link> */}
+			</Link>
 			<LinkItems
 				defMenuLinks={defMenuLinks}
 				t={t}
