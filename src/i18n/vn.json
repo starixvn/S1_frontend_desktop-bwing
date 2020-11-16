@@ -394,7 +394,7 @@
 	"lbl_SocialMedia": "Mạng xã hội",
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
-	"msg_Regex_Punct_Invalid": "The field under validation may contain alphabetic characters, numbers, dashes or underscores.",
+	"msg_Regex_Punct_Invalid": "Không thể có số hoặc ký tự đặc biệt",
 	"lbl_dream_gaming_se_die": "Xóc đĩa live",
 
 	"---end---": "---"
