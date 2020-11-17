@@ -419,7 +419,7 @@ export default props => {
 					<div className="inside-title icon-icon32px_deposit">
 						{t("lbl_Withdrawal")}
 					</div>
-					<div className="txt-white txt-center">
+					<div className="txt-white">
 						{t("lbl_SubmitPhotoIdHint")}
 					</div>
 					{kycStatus === "kycUpload" ? (
@@ -433,7 +433,7 @@ export default props => {
 					<div className="inside-title icon-icon32px_deposit">
 						{t("lbl_Withdrawal")}
 					</div>
-					<div className="txt-white txt-center">
+					<div className="txt-white">
 						{t("lbl_UpdateBankInfo")}
 					</div>
 					<StepBar step={step} t={t} defStep={defStep} />
