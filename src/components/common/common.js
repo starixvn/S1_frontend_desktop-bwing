@@ -20,17 +20,12 @@ export const number_format = (n, IsConvertRequired = false) => {
 
 	n += "";
 	let arr = n.split(".");
-	if (IsConvertRequired) {
-		let re = /(\d{1,3})(?=(\d{3})+$)/g;
-		return (
-			arr[0].replace(re, ",") +
-			(arr.length === 2 ? "." + arr[1] : "") +
-			(IsConvertRequired ? " ('000)" : "")
-		);
-	} else {
-		let re = /\B(?=(\d{3})+(?!\d))/g;
-		return arr[0].replace(re, ",") + (arr.length === 2 ? "." + arr[1] : "");
-	}
+	let re = /(\d{1,3})(?=(\d{3})+$)/g;
+	return (
+		arr[0].replace(re, "$1,") +
+		(arr.length === 2 ? "." + arr[1] : "") +
+		(IsConvertRequired ? " ('000)" : "")
+	);
 };
 
 const _isConvertList = {
