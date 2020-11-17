@@ -139,7 +139,7 @@ export default props => {
 						false,
 						selectedIdx
 					)}>
-					{t("lbl_Submit")}
+					{t("lbl_check_history")}
 				</button>
 			</div>
 		</div>
