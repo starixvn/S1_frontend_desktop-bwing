@@ -41,7 +41,7 @@ const Content = () => {
 		username: "",
 		password: "",
 		currency: 0,
-		affiliateId: "",
+		aff: "",
 		termsCheck: false,
 		ageCheck: false
 	};
@@ -50,7 +50,7 @@ const Content = () => {
 		username: { checked: null, msg: "" },
 		password: { checked: null, msg: "" },
 		currency: { checked: null, msg: "" },
-		affiliateId: { checked: null, msg: "" },
+		aff: { checked: null, msg: "" },
 		checkbox: { checked: null, msg: "" }
 	};
 
@@ -138,7 +138,7 @@ const Content = () => {
 			msg = t("lbl_UsernameTooltip");
 		} else if (col === "password") {
 			msg = t("lbl_PasswordTooltip");
-		} else if (col === "affiliateId") {
+		} else if (col === "aff") {
 			msg = t("lbl_Please_enter_Affiliate_ID");
 		}
 
@@ -169,9 +169,6 @@ const Content = () => {
 			[col]: val
 		}));
 	};
-
-	const isUrlAffiliateId =
-		getUrlParameter("affiliateid") || readCookie("affiliateid");
 
 	const checkValue = (col, e) => {
 		let val = e.target.value;
@@ -357,6 +354,8 @@ const Content = () => {
 		return checked;
 	};
 
+	const isUrlAff = getUrlParameter("aff") || readCookie("aff");
+
 	const clickSubmit = e => {
 		e.preventDefault();
 		let checked = checkAll();
@@ -371,8 +370,7 @@ const Content = () => {
 
 			regData["RefId"] = getUrlParameter("RefId") || readCookie("RefId");
 			regData["AffId"] = getUrlParameter("AffId") || readCookie("AffId");
-			regData["Aff"] = getUrlParameter("Aff") || readCookie("Aff");
-			regData["AffiliateId"] = isUrlAffiliateId ?? userValue.affiliateId;
+			regData["Aff"] = isUrlAff ?? userValue.aff;
 			api_site_Register(regData).then(
 				res => {
 					if (isMountedRef.current) {
@@ -574,12 +572,12 @@ const Content = () => {
 						<Inputbox
 							icon="icon-affiliate txt-blue12"
 							placeholder={t("lbl_Affiliate_ID")}
-							value={isUrlAffiliateId ?? userValue.affiliateId}
-							onChange={EditField.bind(null, "affiliateId")}
-							readOnly={isUrlAffiliateId}
-							checked={tip.affiliateId.checked}
-							tip={tip.affiliateId.msg}
-							clickInfo={clickInfo.bind(this, "affiliateId")}
+							value={isUrlAff ?? userValue.aff}
+							onChange={EditField.bind(null, "aff")}
+							readOnly={isUrlAff}
+							checked={tip.aff.checked}
+							tip={tip.aff.msg}
+							clickInfo={clickInfo.bind(this, "aff")}
 						/>
 					</div>
 
