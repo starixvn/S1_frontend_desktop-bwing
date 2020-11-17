@@ -58,7 +58,7 @@ export default ({ bankInfoSysList = [] }) => {
 		let _tip = "";
 
 		if (col === "realName") {
-			_tip = t("lbl_BankAccountNameHint");
+			_tip = t("lbl_Please_input_your_real_name_as_in_your_ID");
 		} else if (col === "realName_after") {
 			_tip = t("lbl_ContactCSD");
 		} else {
@@ -198,7 +198,9 @@ export default ({ bankInfoSysList = [] }) => {
 	return (
 		<div className="addBankpop active" onSubmit={ClickSubmit}>
 			<span className="title">{t("lbl_AddNewAccount")}</span>
-			<div className="txt-lightgray">{t("lbl_UpdateBankInfo")}</div>
+			<div className="txt-lightgray">
+				{t("lbl_Please_update_your_bank_account_details")}
+			</div>
 
 			{!userInfo.accountName ? (
 				<Inputbox

@@ -360,6 +360,8 @@
 	"lbl_QuickPick": "Quick Pick",
 	"lbl_BankAccount": "Bank Account",
 	"lbl_RollOver": "Rollover",
+	"lbl_Please_update_your_bank_account_details": "Please update your bank account details before making a withdrawal. Please note that you should input your real name as in your ID to avoid delay in your transactions. Your account name should be the same with your profile name.",
+	"lbl_Please_input_your_real_name_as_in_your_ID":"Please input your real name as in your ID. Your account name should be the same with your profile name.",
 
 	"casino ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Casino": "CASINO",
