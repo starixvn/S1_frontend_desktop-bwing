@@ -56,7 +56,7 @@ export class Dropdown extends Component {
 		}
 
 		window.location.href = newPath;
-		setCookie("goalLangId", value);
+		setCookie("bwingLangId", value);
 	};
 
 	render() {

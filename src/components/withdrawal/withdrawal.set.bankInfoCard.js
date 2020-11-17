@@ -9,7 +9,8 @@ import Loading from "../common/loading";
 
 export default props => {
 	const [bankInfoList, setBankInfoList] = useState([]);
-	const [hasCheckedKey, setHasCheckedKey] = useState();
+	const [checkedBankInfo, setCheckedBankInfo] = useState({});
+
 	const { userInfo } = useContext(userInfoContext);
 	const { setPopBox } = useContext(popBoxContext);
 	const [loading, setLoading] = useState(true);
@@ -61,7 +62,7 @@ export default props => {
 	};
 
 	const checkInput = (sysId, accountNo, bankName) => {
-		setHasCheckedKey(accountNo);
+		setCheckedBankInfo({ sysId, accountNo });
 		if (accountNo) {
 			props.bankCardValue(sysId, accountNo, bankName);
 		} else {
@@ -98,6 +99,10 @@ export default props => {
 		setPopBox({ isOpen: false });
 		setLoading(true);
 
+		let selected =
+			checkedBankInfo.sysId === sysId &&
+			checkedBankInfo.accountNo === accountNo;
+
 		api_accountStrict_DelCustBankInfo({
 			AccountName: userInfo.accountName,
 			AccountNo: accountNo,
@@ -106,9 +111,15 @@ export default props => {
 			res => {
 				if (isMountedRef.current) {
 					if (res.data.errorCode === 0) {
+						if (selected) {
+							props.bankCardValue(0, 0, "");
+						}
+
 						setBankInfoList(
 							bankInfoList.filter(
-								item => item.accountNo !== accountNo
+								item =>
+									item.sysId !== sysId ||
+									item.accountNo !== accountNo
 							)
 						);
 					} else {
@@ -153,7 +164,7 @@ export default props => {
 	};
 
 	let bankCardArr = bankInfoList.map(item => {
-		let key = `withdrawal-banklist-${item.accountNo}`;
+		let key = `withdrawal-banklist-${item.sysId}-${item.accountNo}`;
 		let checkKey = `${key}-check`;
 
 		return (
@@ -179,7 +190,10 @@ export default props => {
 						<div className="checkbox">
 							<input
 								type="checkbox"
-								checked={hasCheckedKey === item.accountNo}
+								checked={
+									checkedBankInfo.sysId === item.sysId &&
+									checkedBankInfo.accountNo === item.accountNo
+								}
 								onChange={checkInput.bind(
 									this,
 									item.sysId,

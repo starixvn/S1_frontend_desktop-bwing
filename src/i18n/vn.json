@@ -15,7 +15,7 @@
 	"lbl_AboutUs": "Giới thiệu",
 	"lbl_Terms": "Điều Khoản Sử Dụng",
 	"lbl_PoweredBy": "Một sản phẩm của",
-	"lbl_SiteMap":"Sơ đồ trang web",
+	"lbl_SiteMap": "Sơ đồ trang web",
 	"lbl_ResposibleGaming": "Chơi có trách nhiệm",
 	"lbl_ConatctUsHint": "Bộ phận hỗ trợ trực tuyến 24/7 luôn sẵn sàng lắng nghe và giải đáp những thắc mắc của thành viên. Chúng tôi hỗ trợ thông qua chat hỗ trợ trực tuyến, điện thoại và nhiều kênh thông dụng khác như : Zalo, Telegram và Skype.",
 	"lbl_CookiePolicy": "Chính sách Cookie",
@@ -35,7 +35,7 @@
 	"lbl_HowToDepoist": "Hướng dẫn nạp tiền",
 	"lbl_HowToWithdraw": "Cách rút tiền",
 	"lbl_HowToPlay": "Cách đặt cược",
-	"lbl_UserGuide": "User Guide",
+	"lbl_UserGuide": "HƯỚNG DẪN NGƯỜI DÙNG",
 
 	"news ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_SiteNews": "Điểm báo Bwing",
@@ -120,7 +120,7 @@
 	"lbl_Please_enter_Affiliate_ID": "Vui lòng nhập ID Đại lý (tùy chọn), hông tin không thể thay đổi sau khi đã nhập!",
 	"lbl_PreferredCurrencyToolTip": "Không thể thay đổi Tiền tệ ưa thích sau khi đăng ký.",
 	"lbl_Profile": "Hồ sơ",
-	"lbl_ProfileModifyWarning": "Nhằm đảm bảo an toàn tài khoản, Thông tin cá nhân không thể thay đổi sau khi xác nhận",
+	"lbl_ProfileModifyWarning": "Để đảm bảo an toàn tài khoản, bạn không thể thay đổi thông tin cá nhân sau khi xác nhận. Vui lòng điền đúng tên thật như trong CMND để giao dịch được suôn sẻ.",
 	"lbl_RealName": "Tên thật",
 	"lbl_RegisterTime": "Thời gian đăng ký",
 	"lbl_RemindForName": "*Tên đầy đủ của bạn phải đúng với tên trên tài khoản Ngân hàng để thực hiện việc nạp/ rút tiền nhanh",
@@ -175,7 +175,9 @@
 	"lbl_RequireMinAmountHint_Back": "Nạp tiền ngay?",
 	"lbl_Promotion_list": "DANH SÁCH KHUYẾN MÃI",
 	"lbl_Promotion_info": "THÔNG TIN KHUYẾN MÃI",
-	"lbl_Sign_up_successful":"Tham gia thành công !",
+	"lbl_Bonus": "KHUYẾN MÃI",
+	"lbl_MaxBonusAmount": "TIỀN KHUYẾN MÃI TỐI ĐA",
+	"lbl_Sign_up_successful": "Tham gia thành công !",
 
 	"general ■■■■■■■■■■■■■■■■■■■■": "",
 	"msg_ApiServerError": "Rất tiếc! Đã xảy ra lỗi, vui lòng thử lại.",
@@ -218,7 +220,7 @@
 	"lbl_PlayNow": "Tham gia",
 	"lbl_back": "Quay lại",
 	"lbl_Processing": "Đang xử lý",
-	"lbl_Congratulations":"Chúc mừng",
+	"lbl_Congratulations": "Chúc mừng",
 
 	"transfer ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Transfer": "Chuyển tiền",
@@ -226,7 +228,7 @@
 	"lbl_TpWallet_1": "Ví Thể thao",
 	"lbl_Wallet_Saba": "Ví Sportsbook",
 	"lbl_MainWallet": "Ví chính",
-	"lbl_RestoreAll": "Chuyển Hết",
+	"lbl_RestoreAll": "Phục hồi quỹ",
 	"lbl_TransferHistory": "Lịch sử giao dịch",
 	"msg_InsufficientFund": "Không đủ tiền!",
 
@@ -293,6 +295,7 @@
 	"lbl_WithdrawalStatus5": "Hủy",
 	"lbl_WithdrawalStatus6": "Thành công",
 	"lbl_WithdrawalStatus7": "Từ chối",
+	"lbl_WithdrawalStatus8": "Đang xử lý",
 	"lbl_WithdrawalStatus99": "Lỗi",
 	"lbl_EligibleWithdrawalAmount": "Số tiền có thể rút",
 	"lbl_SelectBank_Required": "Xin lựa chọn tài khoản ngân hàng",
@@ -390,8 +393,11 @@
 	"new ■■■■■■■■■■■■■■■■■■■■": "",
 	"newkey1": "value",
 	"newkey2": "value",
-	"lbl_SocialMedia":"Mạng xã hội",
+	"lbl_SocialMedia": "Mạng xã hội",
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
+	"msg_Regex_Punct_Invalid": "Không thể có số hoặc ký tự đặc biệt",
+	"lbl_dream_gaming_se_die": "Xóc đĩa live",
+
 	"---end---": "---"
 }

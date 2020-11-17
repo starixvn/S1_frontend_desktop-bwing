@@ -13,10 +13,10 @@ export const defMenuLinks = {
 		path: path.sports.root,
 		displayKey: "lbl_Sports"
 	},
-	cockFighting: {
-		productInfo: productList.cockFighting,
-		displayKey: "lbl_CockFighting"
-	},
+	// cockFighting: {
+	// 	productInfo: productList.cockFighting,
+	// 	displayKey: "lbl_CockFighting"
+	// },
 	// sabaClub: {
 	// 	productInfo: productList.sabaClub,
 	// 	displayKey: "lbl_SabaClub"
@@ -179,10 +179,6 @@ export const defMenuLinks = {
 			}
 		]
 	},
-	promotion: {
-		path: path.promotion.root,
-		displayKey: "lbl_Promotions"
-	},
 	fishing: {
 		productInfo: productList.fishing,
 		displayKey: "lbl_Fishing",
@@ -209,7 +205,11 @@ export const defMenuLinks = {
 				parameter: { ...productList.fishing_SGW }
 			}
 		]
-	}
+	},
+	promotion: {
+		path: path.promotion.root,
+		displayKey: "lbl_Promotions"
+	},
 	// lottery: {
 	// 	productInfo: productList.lottery,
 	// 	path: path.sports.root,

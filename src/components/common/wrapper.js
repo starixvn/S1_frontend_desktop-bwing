@@ -35,7 +35,7 @@ export default ({ children, afterLogin = false }) => {
 	const [userInfo, setUserInfo] = useState({
 		isLogin: null,
 		userName: null,
-		langId: readCookie("goalLangId") ?? "vn"
+		langId: readCookie("bwingLangId") ?? "vn"
 	});
 
 	const [currentPath] = useState(
@@ -110,7 +110,7 @@ export default ({ children, afterLogin = false }) => {
 						isMountedRef.current
 					) {
 						let data = res_custInfo.data.data;
-						setCookie("goalLangId", data.langId);
+						setCookie("bwingLangId", data.langId);
 						setUserInfo(prevState => ({
 							...prevState,
 							...data
@@ -143,7 +143,7 @@ export default ({ children, afterLogin = false }) => {
 		if (userInfo.isLogin !== null) {
 			if (typeof window !== `undefined`) {
 				let pathLang = window.location.pathname.split("/")?.[1];
-				let currentLang = readCookie("goalLangId") ?? userInfo.langId;
+				let currentLang = readCookie("bwingLangId") ?? userInfo.langId;
 				if (!pathLang && currentLang !== defaultLang) {
 					setRedirectPath(`/${currentLang}`);
 				} else if (pathLang !== "" && pathLang !== currentLang) {

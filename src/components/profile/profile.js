@@ -43,7 +43,7 @@ export default () => {
 	const { t } = useTranslation();
 	const isMountedRef = useRef(null);
 	const { setPopBox } = useContext(popBoxContext);
-	const [redirectPath, setRedirectPath] = useState(null);
+	const [redirectPath] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [mobileVerificationLoading, setMobileVerificationLoading] = useState(
 		false
@@ -137,18 +137,20 @@ export default () => {
 	};
 
 	const checkName = () => {
-		let checkResult = false;
-		let checkTip = "";
+		let pattern_punct = new RegExp(
+			"[`~!@#$^&*()=|{}':;',ˇˋ˙ˊ\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]"
+		);
 
-		if (userInfo.accountName) {
-			checkResult = true;
-		} else if (!userInfo.accountName && nameValue === "") {
-			checkResult = false;
-			checkTip = t("lbl_NameRequired");
-		} else if (!userInfo.accountName && nameValue !== "") {
-			checkResult = true;
-			checkTip = "";
-		}
+		let checkResult =
+			(Boolean(userInfo.accountName) || Boolean(nameValue)) &&
+			!pattern_punct.test(nameValue);
+
+		let checkTip =
+			nameValue === ""
+				? t("lbl_NameRequired")
+				: pattern_punct.test(nameValue)
+				? t("msg_Regex_Punct_Invalid")
+				: "";
 
 		setStatus(prev => ({
 			...prev,
@@ -513,7 +515,7 @@ export default () => {
 										</button>
 										<Link
 											className="btn-check"
-											to={defPrevPage[_prevPage].path}>
+											to={`/${userInfo.langId}/${defPrevPage[_prevPage].path}`}>
 											{t(defPrevPage[_prevPage].label)}
 										</Link>
 									</div>

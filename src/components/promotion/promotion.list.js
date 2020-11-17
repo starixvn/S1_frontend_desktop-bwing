@@ -28,19 +28,19 @@ export default ({
 				className={_isClaimed ? "active" : ""}>
 				{_isClaimed ? <div className="claimed"></div> : null}
 				{filter === defFilterType.expiry ? (
-					<div className="expiredIcon">EXPIRED</div>
+					<div className="expiredIcon">{t("lbl_Expired")}</div>
 				) : (
 					<div className={_isNew ? "new" : ""}></div>
 				)}
 				<img src={p.banner} alt={p.title} />
-				<div className="txt-red">{p.title}</div>
-				<div className="txt-dark">{t("lbl_PromotionsDesc")}</div>
-				<div className="txt-darkgray">
+				<div className="txt-blue15">{p.title}</div>
+				<div className="txt-lightgray">{t("lbl_PromotionsDesc")}</div>
+				<div className="txt-txt-lightgray">
 					<ul>
 						<li>{p.description}</li>
 					</ul>
 				</div>
-				<PromoRule t={t} promotionInfo={p} inListPage={true}/>
+				<PromoRule t={t} promotionInfo={p} inListPage={true} />
 				<ProcessBar
 					{...p}
 					t={t}
@@ -51,9 +51,9 @@ export default ({
 				<div className="btnGroup">
 					<Link
 						type="button"
-						className={_isExpiry ? "blue" : "blue10"}
+						className="blueBorder"
 						to={`/${langId}/${path.promotion.root}/${path.promotion.sub.promotionInfo.root}?BonusCode=${p.bonusCode}`}>
-						{t("lbl_Details")}
+						{t("lbl_Details").toUpperCase()}
 					</Link>
 
 					<PromotionJoinButton
