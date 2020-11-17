@@ -249,9 +249,7 @@ export default ({ bankInfoSysList = [] }) => {
 				checked={status.accountNo.checked}
 				tip={status.accountNo.tip}
 			/>
-			<div className={`tip${status.accountNo.tip ? " active" : ""}`}>
-				{status.accountNo.tip}
-			</div>
+
 			<div className="btnGroup">
 				<button className="btn-cancel" onClick={ClickCancel}>
 					{t("lbl_Cancel")}
