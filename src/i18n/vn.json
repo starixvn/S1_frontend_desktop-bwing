@@ -394,7 +394,7 @@
 	"lbl_SocialMedia": "Mạng xã hội",
 	"lbl_Withdraw": "Rút tiền",
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
-	"msg_Alpha_Dash_Invalid": "Không thể có số hoặc ký tự đặc biệt ",
+	"msg_Regex_Punct_Invalid": "Không thể có số hoặc ký tự đặc biệt",
 	"lbl_dream_gaming_se_die": "Xóc đĩa live",
 
 	"---end---": "---"

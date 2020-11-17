@@ -394,7 +394,7 @@
 	"lbl_SocialMedia": "Social Media",
 	"lbl_Withdraw": "Withdraw",
 	"lbl_SelectPaymentMethods": "Select Payment Methods",
-	"msg_Alpha_Dash_Invalid": "Cannot contain any numbers or special characters",
+	"msg_Regex_Punct_Invalid": "Cannot contain any numbers or special characters",
 	"lbl_dream_gaming_se_die": "Dream Gaming Se die",
 
 	"---end---": "---"

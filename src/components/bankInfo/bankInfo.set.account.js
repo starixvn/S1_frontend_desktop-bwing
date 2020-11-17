@@ -64,12 +64,19 @@ export default ({
 	};
 
 	const checkAccount = (val, col) => {
+		let pattern_punct = new RegExp(
+			"[`~!@#$^&*()=|{}':;',ˇˋ˙ˊ\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]"
+		);
+
 		let checked = true;
 		let message = "";
 
 		if (col === "accountName" && !alreadyHasAccountName) {
 			if (!val) {
 				message = t("msg_EnterRealName");
+				checked = false;
+			} else if (pattern_punct.test(val)) {
+				message = t("msg_Regex_Punct_Invalid");
 				checked = false;
 			}
 		} else if (col === "accountNumber") {
