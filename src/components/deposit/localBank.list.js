@@ -82,7 +82,7 @@ export default () => {
 				<div>
 					<span>{t("lbl_WireTransfers").toUpperCase()}</span>
 					<span>
-						{t("lbl_CreditTime")}: {t("lbl_5mins")}
+						{t("lbl_CreditTime")}:&nbsp;{t("lbl_5mins")}
 					</span>
 				</div>
 			</div>

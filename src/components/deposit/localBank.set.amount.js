@@ -238,7 +238,7 @@ export default ({
 						<>
 							<div className="inputModuleRow">
 								<Inputbox
-									title={t("lbl_RealName")}
+									placeholder={t("lbl_RealName")}
 									onChange={onChangeName}
 									value={nameValue}
 									onBlur={checkName}
