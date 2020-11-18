@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		defaultLanguage: "vn",
-		title: `Bwing`,
+		title: `Bwing - Nhà cái Thể thao, Casino hàng đầu Châu Á`,
 		description: `Bwing is the world leading sportsbook offering one of the kind gambling experience in live betting covering all sports, casino, slots, keno, esports, rng casino, fantasy sports, virtual sports, lottery, live casino, live dealer, bingo, and racing.`,
 		author: `Bwing`,
 		supportedLanguages: ["en", "vn"],
