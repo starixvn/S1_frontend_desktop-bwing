@@ -18,7 +18,14 @@ import defStep from "../withdrawal/defStep";
 import { checkWithdrawalAmount, getAmountTip } from "../common/common";
 import { Link } from "@reach/router";
 import path from "../../path";
-export default props => {
+
+export default ({
+	balanceData,
+	kycStatus,
+	getWithdrawalInfoRecent,
+	getWithdrawalAvailableBalance,
+	getKycStatus
+}) => {
 	const { t } = useTranslation();
 	const { setPopBox } = useContext(popBoxContext);
 	const isMountedRef = useRef(null);
@@ -35,13 +42,6 @@ export default props => {
 		tip: ""
 	});
 	const [step, setStep] = useState(1);
-
-	const {
-		balanceData,
-		kycStatus,
-		getWithdrawalAvailableBalance,
-		getKycStatus
-	} = props;
 
 	useEffect(() => {
 		isMountedRef.current = true;
@@ -223,7 +223,7 @@ export default props => {
 								</div>
 							)
 						});
-						props.getWithdrawalInfoRecent();
+						getWithdrawalInfoRecent();
 						getKycStatus();
 					} else if (res.data.errorCode === -1) {
 						setPopBox({
