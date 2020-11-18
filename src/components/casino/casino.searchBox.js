@@ -41,7 +41,7 @@ export default ({
 			</div>
 			<div className="btnGroup">
 				<button className="orange" onClick={submitSearch}>
-					{t("lbl_Submit")}
+					{t("lbl_slot_submit")}
 				</button>
 			</div>
 		</>

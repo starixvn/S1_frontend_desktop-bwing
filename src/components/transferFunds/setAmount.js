@@ -38,7 +38,7 @@ export default props => {
 					/>
 					<div className="btnGroup">
 						<button className="btn-check" type="submit">
-							{props.i18n("lbl_Submit")}
+							{props.i18n("lbl_transfer_submit")}
 						</button>
 					</div>
 				</form>

@@ -139,7 +139,9 @@ export default props => {
 						false,
 						selectedIdx
 					)}>
-					{t("lbl_check_history")}
+					{props.submitTranslation
+						? t(props.submitTranslation)
+						: t("lbl_history_submit")}
 				</button>
 			</div>
 		</div>
