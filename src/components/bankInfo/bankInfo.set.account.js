@@ -259,7 +259,7 @@ export default ({
 						/>
 						<div className="btnGroup">
 							<button className="btn-check" type="submit">
-								{t("lbl_Submit")}
+								{t("lbl_add_bank_submit")}
 							</button>
 						</div>
 					</form>

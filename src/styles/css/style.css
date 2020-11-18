@@ -1402,6 +1402,8 @@ input[type="file"] {
   background: -webkit-gradient(linear, left bottom, left top, from(#41b2e1), to(#6fd1fa));
   background: linear-gradient(to top, #41b2e1, #6fd1fa);
   color: black;
+  white-space: nowrap;
+  max-width: none;
 }
 
 .btnGroup button.blueGradient:hover, .btnGroup button.btn-check:hover, .btnGroup a.blueGradient:hover, .btnGroup a.btn-check:hover {
@@ -4335,12 +4337,12 @@ form {
 
 .slotList > div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% / 5 - 130px);
-          flex: 0 0 calc(100% / 5 - 130px);
+      -ms-flex: 0 0 calc(100% / 4 - 122px);
+          flex: 0 0 calc(100% / 4 - 122px);
   padding: 10px;
-  margin: 10px 8px;
-  background: #0A1533;
-  border: 1px solid #1E3267;
+  margin: 10px 10px;
+  background: #0a1533;
+  border: 1px solid #1e3267;
   min-width: 190px;
 }
 
@@ -4391,6 +4393,13 @@ form {
 
 .slotList > div .icon-star-full.active {
   color: #fab617;
+}
+
+.slotList > div img {
+  width: 100%;
+  background-size: 100%;
+  max-width: inherit;
+  display: block;
 }
 
 article {

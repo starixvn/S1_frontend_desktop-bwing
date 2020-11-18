@@ -20,7 +20,7 @@ export default ({ t, onClick, selected }) => {
 			className: "blueBorder"
 		},
 		{
-			displayKey: "lbl_FreeBet",
+			displayKey: "lbl_Freebet",
 			value: defFilterType.freeBet,
 			className: "blueBorder"
 		},

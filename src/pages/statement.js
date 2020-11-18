@@ -165,7 +165,7 @@ const Content = () => {
 			<div className="inside-title">
 				<span>{t("lbl_Statement")}</span>
 			</div>
-			<Filter submitHandler={clickDateSubmit} keepData={keepData} />
+			<Filter submitHandler={clickDateSubmit} keepData={keepData} submitTranslation={`lbl_statement_submit`}/>
 
 			{getHistory ? (
 				<div className="list history">

@@ -183,7 +183,7 @@
 	"msg_ApiServerError": "Rất tiếc! Đã xảy ra lỗi, vui lòng thử lại.",
 	"msg_NoData": "Không có dữ liệu",
 	"lbl_Cancel": "Hủy",
-	"lbl_Submit": "RÚT TIỀN",
+	"lbl_Submit": "Gửi",
 	"lbl_Guest": "Khách",
 	"lbl_AreYouSureDelete": "Bạn có chắc muốn xóa?",
 	"lbl_CantBeRestore": "Không thể khôi phục lại sau khi xóa!",
@@ -378,7 +378,7 @@
 
 	"time ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Today": "Hôm nay",
-	"lbl_YesterDay": "Hom qua",
+	"lbl_YesterDay": "Hôm qua",
 	"lbl_ThisWeek": "Tuần này",
 	"lbl_LastWeek": "Tuần trước",
 	"lbl_ThisMonth": "Tháng này",
@@ -398,8 +398,15 @@
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
 	"msg_Regex_Punct_Invalid": "Không thể có số hoặc ký tự đặc biệt",
 	"lbl_dream_gaming_se_die": "Xóc đĩa live",
-	"lbl_check_history":"Xem lịch sử",
 	"lbl_restore_all_hint":"Khi chọn nút Phục hồi quỹ, toàn bộ quỹ từ các ví khác của bạn sẽ được chuyển về ví này.",
+	"lbl_history_submit":"Xem lịch sử",
+	"lbl_statement_submit": "Xem sao kê",
+	"lbl_transfer_submit": "CHUYỂN QUỸ",
+	"lbl_add_bank_submit": "THÊM TÀI KHOẢN",
+	"lbl_change_password_submit": "LƯU MẬT KHẨU",
+	"lbl_deposit_submit": "NẠP TIỀN",
+	"lbl_slot_submit": "TÌM KIẾM",
+	"lbl_withdraw_submit": "RÚT TIỀN",
 
 	"---end---": "---"
 }

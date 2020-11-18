@@ -124,7 +124,7 @@ export default ({ channelInfo, _isConvert, amount, dispatch }) => {
 									: "btn-cancel"
 							}`}
 							onClick={SubmitAmount}>
-							{t("lbl_Submit")}
+							{t("lbl_deposit_submit")}
 						</button>
 					</div>
 				</div>
