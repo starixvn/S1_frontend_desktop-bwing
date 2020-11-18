@@ -588,7 +588,7 @@ header .header > div.function .country.active .countryList {
 }
 
 header .header > div.function .btnGroup a, header .header > div.function .btnGroup button {
-  height: 32px;
+  max-height: 32px;
 }
 
 header .header > div.function .cashier, header .header > div.function .wallet, header .header > div.function .memberfile {
@@ -1187,6 +1187,10 @@ footer > div.copyright {
   color: #aeb2bc;
 }
 
+.inputBox input.text-right, .inputBox-blue input.text-right {
+  text-align: right;
+}
+
 .inputBox .iconModule, .inputBox-blue .iconModule {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1346,6 +1350,7 @@ input[type="file"] {
 
 .btnGroup button:last-child, .btnGroup a:last-child {
   margin-right: 0;
+  max-width: 100px;
 }
 
 .btnGroup button.orange, .btnGroup a.orange {
@@ -2472,6 +2477,12 @@ main > .swiper-container .swiper-slide {
   display: none;
 }
 
+#popup > .Cancel > .icon-icon32px_Profile ~ .btnGroup > .btn-check {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 #popup.active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2655,6 +2666,8 @@ main > .swiper-container .swiper-slide {
 .upload {
   max-width: unset;
   min-width: 500px;
+  overflow-y: auto;
+  max-height: calc(100% - 160px);
 }
 
 .upload_img {
@@ -3232,7 +3245,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .addBank + div.subModuleList .subModuleBody {
-  height: calc(100% - 40px);
+  height: calc(100% - 30px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3647,12 +3660,12 @@ main > .swiper-container .swiper-slide {
   margin-top: 0;
 }
 
-.profile > div:not(.tip) div:not(.iconModule) {
+.profile > div:not(.tip) > div:not(.iconModule) {
   min-width: 120px;
   float: left;
 }
 
-.profile > div:not(.tip) div:not(.iconModule).icon-spinner11 {
+.profile > div:not(.tip) > div:not(.iconModule).icon-spinner11 {
   -webkit-animation: rotate .7s linear infinite;
           animation: rotate .7s linear infinite;
   min-width: unset;
@@ -3788,6 +3801,7 @@ main > .swiper-container .swiper-slide {
       -ms-flex-align: center;
           align-items: center;
   width: calc(100% / 3 - 50px);
+  min-width: 312px;
 }
 
 .accountName > div {
@@ -4617,6 +4631,14 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0px 1000px #070e22 inset;
           box-shadow: 0 0 0px 1000px #070e22 inset;
   -webkit-text-fill-color: white;
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+}
+
+input:-moz-placeholder {
+  text-align: left;
 }
 
 .buttonBox {
