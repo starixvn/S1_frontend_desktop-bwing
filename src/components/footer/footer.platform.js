@@ -93,7 +93,8 @@ export default ({ langId, isLogin }) => {
 	};
 
 	let rows = defPlatfrom.map(p => {
-		let key = `footer-platform-${p.tpId}-${p.gameId}`;
+		let key = `footer-platform-${p.imgName}`;
+		console.log(key)
 		let params = null;
 		if (p.parameter) {
 			params = Object.keys(p.parameter).map(key => {
