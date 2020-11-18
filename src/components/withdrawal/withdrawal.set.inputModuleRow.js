@@ -4,6 +4,7 @@ import Inputbox from "../common/inputbox";
 
 export default props => {
 	const { t } = useTranslation();
+
 	return (
 		<>
 			<div className="inputModuleRow">
