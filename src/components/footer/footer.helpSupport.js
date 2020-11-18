@@ -3,7 +3,7 @@ import TandC from "../../service/t_and_c";
 
 export default ({ langId, t }) => {
 	return (
-		<div>
+		<>
 			<span className="title">{t("lbl_HelpSupport")}</span>
 			<div>
 				<a
@@ -21,13 +21,13 @@ export default ({ langId, t }) => {
 				<a href={TandC(langId).FAQ} target="_blank" rel="noreferrer">
 					{t("lbl_FAQ")}
 				</a>
-				<a href={TandC(langId).Deposit} target="_blank">
+				{/* <a href={TandC(langId).Deposit} target="_blank">
 					{t("lbl_Deposit")}
-				</a>
-				<a href={TandC(langId).Withdraw} target="_blank">
+				</a> */}
+				{/* <a href={TandC(langId).Withdraw} target="_blank">
 					{t("lbl_Withdraw")}
-				</a>
+				</a> */}
 			</div>
-		</div>
+		</>
 	);
 };

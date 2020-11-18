@@ -93,6 +93,14 @@ export default {
 	liveCasino_SA: {
 		gameId: 2,
 		tpId: 2
+	},
+	liveCasino_AE: {
+		gameId: 15,
+		tpId: 15
+	},
+	liveCasino_eBET: {
+		gameId: 18,
+		tpId: 18
 	}
 };
 

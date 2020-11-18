@@ -57,6 +57,14 @@ const defPlatfrom = [
 		path: path.casino.root,
 		parameter: { provider: defCasinoProviders.PG.name },
 		imgName: "pg"
+	},
+	{
+		...productList.liveCasino_AE,
+		imgName: "ae"
+	},
+	{
+		...productList.liveCasino_eBET,
+		imgName: "eb"
 	}
 ];
 
@@ -85,7 +93,7 @@ export default ({ langId, isLogin }) => {
 	};
 
 	let rows = defPlatfrom.map(p => {
-		let key = `footer-platform-${p.tpId}-${p.gameId}`;
+		let key = `footer-platform-${p.imgName}`;
 		let params = null;
 		if (p.parameter) {
 			params = Object.keys(p.parameter).map(key => {
