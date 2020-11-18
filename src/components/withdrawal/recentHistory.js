@@ -17,7 +17,6 @@ export default props => {
 	const { t } = useTranslation();
 	const { userInfo } = useContext(userInfoContext);
 	const { setPopBox } = useContext(popBoxContext);
-	const [getHistory, setGetHistory] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const isMountedRef = useRef(null);
 
@@ -26,63 +25,12 @@ export default props => {
 		return () => (isMountedRef.current = false);
 	});
 
-	useEffect(() => {
-		GetWithdrawalInfoRecent();
-	}, []);
-
-	useEffect(() => {
-		if (props.shouldRefresh === true) {
-			GetWithdrawalInfoRecent();
-		}
-	}, [props.shouldRefresh]);
-
 	const ClickClose = () => {
 		setPopBox({ isOpen: false });
 	};
 
-	const GetWithdrawalInfoRecent = () => {
-		api_payment_GetWithdrawalInfoRecent().then(
-			res => {
-				if (isMountedRef.current) {
-					if (res.data.errorCode === 0) {
-						setGetHistory(res.data.data);
-					} else {
-						setPopBox({
-							isOpen: true,
-							popBoxType: defPopBoxType.ErrorMsg,
-							message: res.data.message,
-							btnBar: (
-								<div className="btnGroup">
-									<button
-										className="btn-cancel"
-										onClick={ClickClose}>
-										{t("lbl_Close")}
-									</button>
-								</div>
-							)
-						});
-					}
-				}
-			},
-			err => {
-				if (isMountedRef.current) {
-					setPopBox({
-						isOpen: true,
-						popBoxType: defPopBoxType.ErrorMsg,
-						message: t("msg_ApiServerError"),
-						btnBar: (
-							<div className="btnGroup">
-								<button
-									className="btn-cancel"
-									onClick={ClickClose}>
-									{t("lbl_Close")}
-								</button>
-							</div>
-						)
-					});
-				}
-			}
-		);
+	const refreshAvailableBalance = () => {
+		props.getWithdrawalAvailableBalance();
 	};
 
 	const ClickCancel = transId => {
@@ -98,7 +46,7 @@ export default props => {
 				res => {
 					if (isMountedRef.current) {
 						if (res.data.errorCode === 0) {
-							setGetHistory(prev => {
+							props.setRecentData(prev => {
 								let newData = [...prev];
 								let idx = newData.findIndex(
 									x => x.transId === transId
@@ -106,6 +54,8 @@ export default props => {
 								newData[idx].status = 5;
 								return newData;
 							});
+
+							refreshAvailableBalance();
 						} else {
 							setPopBox({
 								isOpen: true,
@@ -164,7 +114,7 @@ export default props => {
 		});
 	};
 
-	let arr = getHistory?.map((item, i) => {
+	let arr = props.recentData?.map((item, i) => {
 		return (
 			<TransactionHistory
 				key={`withdrawal-recent-${item.transId}`}
@@ -176,9 +126,11 @@ export default props => {
 		);
 	});
 
-	return loading ? (
-		<Loading />
-	) : getHistory ? (
+	if (loading) return <Loading />;
+
+	if (props.recentData.length === 0) return null;
+
+	return (
 		<>
 			<div className="list">
 				<div className="tip active">{t("msg_AmountFormatTip")}</div>
@@ -192,10 +144,10 @@ export default props => {
 					<div>{t("lbl_Status")}</div>
 					<div>
 						{t("lbl_Action")}
-						<ReloadSpin func={GetWithdrawalInfoRecent} />
+						<ReloadSpin func={props.getWithdrawalInfoRecent} />
 					</div>
 				</div>
-				{getHistory?.length > 0 ? (
+				{props.recentData?.length > 0 ? (
 					<div className="listBody">{arr}</div>
 				) : (
 					<div className="nodata">{t("msg_NoData")}</div>
@@ -205,5 +157,5 @@ export default props => {
 				to={`/${userInfo.langId}/${path.withdrawalHistory.root}`}
 				className="icon icon-books"></Link>
 		</>
-	) : null;
+	);
 };

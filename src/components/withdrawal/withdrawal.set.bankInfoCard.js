@@ -8,8 +8,7 @@ import { defPopBoxType } from "../common/popBox";
 import Loading from "../common/loading";
 
 export default props => {
-	const [bankInfoList, setBankInfoList] = useState([]);
-	const [checkedBankInfo, setCheckedBankInfo] = useState({});
+	const [setCheckedBankInfo] = useState({});
 
 	const { userInfo } = useContext(userInfoContext);
 	const { setPopBox } = useContext(popBoxContext);
@@ -28,10 +27,6 @@ export default props => {
 	}, []);
 
 	useEffect(() => {
-		props.allBankCardData(bankInfoList);
-	}, [bankInfoList]);
-
-	useEffect(() => {
 		if (popBoxData.refresh === true) {
 			getApiBankCard();
 		}
@@ -46,7 +41,7 @@ export default props => {
 							res.data.data &&
 							res.data.data.bankInfoDetail?.length > 0
 						) {
-							setBankInfoList(res.data.data.bankInfoDetail);
+							props.setBankInfoList(res.data.data.bankInfoDetail);
 						}
 					}
 					setLoading(false);
@@ -62,11 +57,11 @@ export default props => {
 	};
 
 	const checkInput = (sysId, accountNo, bankName) => {
-		setCheckedBankInfo({ sysId, accountNo });
+		props.setCurrentlyBankInfo(sysId, accountNo, bankName);
 		if (accountNo) {
-			props.bankCardValue(sysId, accountNo, bankName);
+			props.setCurrentlyBankInfo(sysId, accountNo, bankName);
 		} else {
-			props.bankCardValue(0, 0, "");
+			props.setCurrentlyBankInfo(0, 0, "");
 		}
 	};
 
@@ -100,8 +95,8 @@ export default props => {
 		setLoading(true);
 
 		let selected =
-			checkedBankInfo.sysId === sysId &&
-			checkedBankInfo.accountNo === accountNo;
+			props.currentBankInfo.sysIdValue === sysId &&
+			props.currentBankInfo.accountNoValue === accountNo;
 
 		api_accountStrict_DelCustBankInfo({
 			AccountName: userInfo.accountName,
@@ -112,11 +107,11 @@ export default props => {
 				if (isMountedRef.current) {
 					if (res.data.errorCode === 0) {
 						if (selected) {
-							props.bankCardValue(0, 0, "");
+							props.setCurrentlyBankInfo(0, 0, "");
 						}
 
-						setBankInfoList(
-							bankInfoList.filter(
+						props.setBankInfoList(
+							props.bankInfoList.filter(
 								item =>
 									item.sysId !== sysId ||
 									item.accountNo !== accountNo
@@ -163,10 +158,9 @@ export default props => {
 		);
 	};
 
-	let bankCardArr = bankInfoList.map(item => {
+	let bankCardArr = props.bankInfoList.map(item => {
 		let key = `withdrawal-banklist-${item.sysId}-${item.accountNo}`;
 		let checkKey = `${key}-check`;
-
 		return (
 			<div className="addBankName" key={key}>
 				<div className="addBankInfo">
@@ -191,8 +185,10 @@ export default props => {
 							<input
 								type="checkbox"
 								checked={
-									checkedBankInfo.sysId === item.sysId &&
-									checkedBankInfo.accountNo === item.accountNo
+									props.currentBankInfo.sysIdValue ===
+										item.sysId &&
+									props.currentBankInfo.accountNoValue ===
+										item.accountNo
 								}
 								onChange={checkInput.bind(
 									this,
