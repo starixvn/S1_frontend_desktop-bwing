@@ -109,6 +109,10 @@
   content: "\e9b9";
 }
 
+.icon-tiktok:before {
+  content: "\e9e0";
+}
+
 .icon-ETH:before {
   content: "\e9a5";
 }
@@ -1095,6 +1099,10 @@
 
 .icon-volume-medium:before {
   content: "\ea27";
+}
+
+.icon-youtube:before {
+  content: "\ea9d";
 }
 
 .icon-home1:before {
