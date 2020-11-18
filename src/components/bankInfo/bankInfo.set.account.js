@@ -47,7 +47,7 @@ export default ({
 	const clickInfo = col => {
 		let _msg =
 			col === "accountName"
-				? t("lbl_BankAccountNameHint")
+				? t("lbl_Please_input_your_real_name_as_in_your_ID")
 				: t("lbl_BankNumber");
 
 		if (status[col].tip === _msg) {
