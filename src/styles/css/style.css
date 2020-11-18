@@ -73,7 +73,7 @@ a, button {
   outline: none;
 }
 
-.transition, header .header > div.menu .subMenu-Wrapper, .inputBox .dropdown > .dropdown-container, .inputBox-org .dropdown > .dropdown-container, .inputBox-white .dropdown > .dropdown-container, .inputBox-blue .dropdown > .dropdown-container, .inputBox-gray .dropdown > .dropdown-container, .inputBox-yellow .dropdown > .dropdown-container, .tip, .personal .list .listBody {
+.transition, header .header > div.menu .subMenu-Wrapper, .inputBox .dropdown > .dropdown-container, .inputBox-blue .dropdown > .dropdown-container, .tip, .personal .list .listBody {
   visibility: hidden;
   opacity: 0;
   height: 0;
@@ -81,7 +81,7 @@ a, button {
   transition: 0.7s;
 }
 
-.transition-open, header .header > div.menu .subMenu-Wrapper.active, .inputBox .dropdown > .dropdown-container.active, .inputBox-org .dropdown > .dropdown-container.active, .inputBox-white .dropdown > .dropdown-container.active, .inputBox-blue .dropdown > .dropdown-container.active, .inputBox-gray .dropdown > .dropdown-container.active, .inputBox-yellow .dropdown > .dropdown-container.active, .tip.active, .personal .list .listBody.active {
+.transition-open, header .header > div.menu .subMenu-Wrapper.active, .inputBox .dropdown > .dropdown-container.active, .inputBox-blue .dropdown > .dropdown-container.active, .tip.active, .personal .list .listBody.active {
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -1107,7 +1107,7 @@ footer > div.copyright {
   text-align: right;
 }
 
-.inputBox, .inputBox-org, .inputBox-white, .inputBox-blue, .inputBox-gray, .inputBox-yellow {
+.inputBox, .inputBox-blue {
   width: calc(100% - 22px);
   background: #070e22;
   color: white;
@@ -1126,40 +1126,40 @@ footer > div.copyright {
   min-height: 30px;
 }
 
-.inputBox input[type="date"]::-webkit-inner-spin-button, .inputBox-org input[type="date"]::-webkit-inner-spin-button, .inputBox-white input[type="date"]::-webkit-inner-spin-button, .inputBox-blue input[type="date"]::-webkit-inner-spin-button, .inputBox-gray input[type="date"]::-webkit-inner-spin-button, .inputBox-yellow input[type="date"]::-webkit-inner-spin-button, .inputBox input[type="date"]::-webkit-calendar-picker-indicator, .inputBox-org input[type="date"]::-webkit-calendar-picker-indicator, .inputBox-white input[type="date"]::-webkit-calendar-picker-indicator, .inputBox-blue input[type="date"]::-webkit-calendar-picker-indicator, .inputBox-gray input[type="date"]::-webkit-calendar-picker-indicator, .inputBox-yellow input[type="date"]::-webkit-calendar-picker-indicator {
+.inputBox input[type="date"]::-webkit-inner-spin-button, .inputBox-blue input[type="date"]::-webkit-inner-spin-button, .inputBox input[type="date"]::-webkit-calendar-picker-indicator, .inputBox-blue input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
-.inputBox input[type="date"] + .iconModule, .inputBox-org input[type="date"] + .iconModule, .inputBox-white input[type="date"] + .iconModule, .inputBox-blue input[type="date"] + .iconModule, .inputBox-gray input[type="date"] + .iconModule, .inputBox-yellow input[type="date"] + .iconModule {
+.inputBox input[type="date"] + .iconModule, .inputBox-blue input[type="date"] + .iconModule {
   pointer-events: none;
 }
 
-.inputBox::-webkit-input-placeholder, .inputBox-org::-webkit-input-placeholder, .inputBox-white::-webkit-input-placeholder, .inputBox-blue::-webkit-input-placeholder, .inputBox-gray::-webkit-input-placeholder, .inputBox-yellow::-webkit-input-placeholder {
+.inputBox::-webkit-input-placeholder, .inputBox-blue::-webkit-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox:-ms-input-placeholder, .inputBox-org:-ms-input-placeholder, .inputBox-white:-ms-input-placeholder, .inputBox-blue:-ms-input-placeholder, .inputBox-gray:-ms-input-placeholder, .inputBox-yellow:-ms-input-placeholder {
+.inputBox:-ms-input-placeholder, .inputBox-blue:-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox::-ms-input-placeholder, .inputBox-org::-ms-input-placeholder, .inputBox-white::-ms-input-placeholder, .inputBox-blue::-ms-input-placeholder, .inputBox-gray::-ms-input-placeholder, .inputBox-yellow::-ms-input-placeholder {
+.inputBox::-ms-input-placeholder, .inputBox-blue::-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox::placeholder, .inputBox-org::placeholder, .inputBox-white::placeholder, .inputBox-blue::placeholder, .inputBox-gray::placeholder, .inputBox-yellow::placeholder {
+.inputBox::placeholder, .inputBox-blue::placeholder {
   color: #aeb2bc;
 }
 
-.inputBox.active, .active.inputBox-org, .active.inputBox-white, .active.inputBox-blue, .active.inputBox-gray, .active.inputBox-yellow {
+.inputBox.active, .active.inputBox-blue {
   border: 1px solid #1E85EC;
   outline: #1E85EC;
 }
 
-.inputBox > .icon, .inputBox-org > .icon, .inputBox-white > .icon, .inputBox-blue > .icon, .inputBox-gray > .icon, .inputBox-yellow > .icon {
+.inputBox > .icon, .inputBox-blue > .icon {
   margin-right: 5px;
 }
 
-.inputBox input, .inputBox-org input, .inputBox-white input, .inputBox-blue input, .inputBox-gray input, .inputBox-yellow input {
+.inputBox input, .inputBox-blue input {
   background: transparent;
   border: 0;
   color: white;
@@ -1168,40 +1168,41 @@ footer > div.copyright {
       -ms-flex: auto;
           flex: auto;
   padding: 0;
+  margin-left: 5px;
 }
 
-.inputBox input::-webkit-input-placeholder, .inputBox-org input::-webkit-input-placeholder, .inputBox-white input::-webkit-input-placeholder, .inputBox-blue input::-webkit-input-placeholder, .inputBox-gray input::-webkit-input-placeholder, .inputBox-yellow input::-webkit-input-placeholder {
+.inputBox input::-webkit-input-placeholder, .inputBox-blue input::-webkit-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox input:-ms-input-placeholder, .inputBox-org input:-ms-input-placeholder, .inputBox-white input:-ms-input-placeholder, .inputBox-blue input:-ms-input-placeholder, .inputBox-gray input:-ms-input-placeholder, .inputBox-yellow input:-ms-input-placeholder {
+.inputBox input:-ms-input-placeholder, .inputBox-blue input:-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox input::-ms-input-placeholder, .inputBox-org input::-ms-input-placeholder, .inputBox-white input::-ms-input-placeholder, .inputBox-blue input::-ms-input-placeholder, .inputBox-gray input::-ms-input-placeholder, .inputBox-yellow input::-ms-input-placeholder {
+.inputBox input::-ms-input-placeholder, .inputBox-blue input::-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox input::placeholder, .inputBox-org input::placeholder, .inputBox-white input::placeholder, .inputBox-blue input::placeholder, .inputBox-gray input::placeholder, .inputBox-yellow input::placeholder {
+.inputBox input::placeholder, .inputBox-blue input::placeholder {
   color: #aeb2bc;
 }
 
-.inputBox .iconModule, .inputBox-org .iconModule, .inputBox-white .iconModule, .inputBox-blue .iconModule, .inputBox-gray .iconModule, .inputBox-yellow .iconModule {
+.inputBox .iconModule, .inputBox-blue .iconModule {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.inputBox .iconModule .icon, .inputBox-org .iconModule .icon, .inputBox-white .iconModule .icon, .inputBox-blue .iconModule .icon, .inputBox-gray .iconModule .icon, .inputBox-yellow .iconModule .icon {
+.inputBox .iconModule .icon, .inputBox-blue .iconModule .icon {
   margin-left: 5px;
   color: #aeb2bc;
 }
 
-.inputBox .iconModule .icon.icon-checkmark, .inputBox-org .iconModule .icon.icon-checkmark, .inputBox-white .iconModule .icon.icon-checkmark, .inputBox-blue .iconModule .icon.icon-checkmark, .inputBox-gray .iconModule .icon.icon-checkmark, .inputBox-yellow .iconModule .icon.icon-checkmark {
+.inputBox .iconModule .icon.icon-checkmark, .inputBox-blue .iconModule .icon.icon-checkmark {
   margin-right: 0;
 }
 
-.inputBox .dropdown, .inputBox-org .dropdown, .inputBox-white .dropdown, .inputBox-blue .dropdown, .inputBox-gray .dropdown, .inputBox-yellow .dropdown {
+.inputBox .dropdown, .inputBox-blue .dropdown {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1210,7 +1211,7 @@ footer > div.copyright {
       flex-wrap: wrap;
 }
 
-.inputBox .dropdown > .dropdown-container, .inputBox-org .dropdown > .dropdown-container, .inputBox-white .dropdown > .dropdown-container, .inputBox-blue .dropdown > .dropdown-container, .inputBox-gray .dropdown > .dropdown-container, .inputBox-yellow .dropdown > .dropdown-container {
+.inputBox .dropdown > .dropdown-container, .inputBox-blue .dropdown > .dropdown-container {
   position: absolute;
   background: #070e22;
   border: 1px solid #64789b;
@@ -1223,18 +1224,18 @@ footer > div.copyright {
   z-index: 1;
 }
 
-.inputBox .dropdown > .dropdown-container .dropdown-item, .inputBox-org .dropdown > .dropdown-container .dropdown-item, .inputBox-white .dropdown > .dropdown-container .dropdown-item, .inputBox-blue .dropdown > .dropdown-container .dropdown-item, .inputBox-gray .dropdown > .dropdown-container .dropdown-item, .inputBox-yellow .dropdown > .dropdown-container .dropdown-item {
+.inputBox .dropdown > .dropdown-container .dropdown-item, .inputBox-blue .dropdown > .dropdown-container .dropdown-item {
   font-size: 13px;
   padding: 5px 0;
   color: #aeb2bc;
   cursor: pointer;
 }
 
-.inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1), .inputBox-org .dropdown > .dropdown-container .dropdown-item:nth-child(1), .inputBox-white .dropdown > .dropdown-container .dropdown-item:nth-child(1), .inputBox-blue .dropdown > .dropdown-container .dropdown-item:nth-child(1), .inputBox-gray .dropdown > .dropdown-container .dropdown-item:nth-child(1), .inputBox-yellow .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
+.inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1), .inputBox-blue .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
   padding-top: 10px;
 }
 
-.inputBox .dropdown > .btn, .inputBox-org .dropdown > .btn, .inputBox-white .dropdown > .btn, .inputBox-blue .dropdown > .btn, .inputBox-gray .dropdown > .btn, .inputBox-yellow .dropdown > .btn {
+.inputBox .dropdown > .btn, .inputBox-blue .dropdown > .btn {
   width: calc(100% - 26px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1246,46 +1247,6 @@ footer > div.copyright {
       -ms-flex-align: center;
           align-items: center;
   color: #aeb2bc;
-}
-
-.inputBox-org {
-  background: transparent;
-  border: 1px solid #f77900;
-}
-
-.inputBox-org .dropdown .btn {
-  color: #f77900;
-}
-
-.inputBox-org .dropdown .btn:after {
-  border-color: #f77900 transparent transparent transparent;
-}
-
-.inputBox-org .dropdown .dropdown-item {
-  color: #666;
-}
-
-.inputBox-org + .btnGroup {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.inputBox-white {
-  background: white;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-}
-
-.inputBox-white i {
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-.inputBox-white input {
-  border: 0;
-  color: #666;
 }
 
 .inputBox-blue {
@@ -1303,46 +1264,6 @@ footer > div.copyright {
 
 .inputBox-blue .dropdown .btn {
   width: 100%;
-}
-
-.inputBox-gray .dropdown .btn {
-  color: #666;
-}
-
-.inputBox-gray .dropdown .btn:after {
-  border-color: #666 transparent transparent transparent;
-}
-
-.inputBox-gray .dropdown .dropdown-container {
-  margin-left: 0;
-}
-
-.inputBox-gray .dropdown .dropdown-item {
-  color: #666;
-}
-
-.inputBox-yellow {
-  background: transparent;
-  border: 1px solid #fab617;
-}
-
-.inputBox-yellow .dropdown .btn {
-  color: #fab617;
-  padding-left: 5px;
-}
-
-.inputBox-yellow .dropdown .btn:after {
-  border-color: #fab617 transparent transparent transparent;
-}
-
-.inputBox-yellow .dropdown .dropdown-item {
-  color: #666;
-}
-
-.inputBox-yellow + .btnGroup {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 input[type="file"] {
@@ -1527,6 +1448,10 @@ input[type="file"] {
 
 main > .swiper-container .swiper-slide {
   line-height: 0;
+}
+
+.swiper-slide img {
+  max-width: 1600px;
 }
 
 .swiper-pagination {
@@ -2685,7 +2610,7 @@ main > .swiper-container .swiper-slide {
           justify-content: center;
 }
 
-.Submit .btnGroup a, .Submit .btnGroup button, .Success .btnGroup a, .Success .btnGroup button, .Error .btnGroup a, .Error .btnGroup button, .Cancel .btnGroup a, .Cancel .btnGroup button, .uploadSuccess .btnGroup a, .uploadSuccess .btnGroup button, .updateSuccess .btnGroup a, .updateSuccess .btnGroup button, .tokyc .btnGroup a, .tokyc .btnGroup button, .addBankpop .btnGroup a, .addBankpop .btnGroup button, .changePassWordpop .btnGroup a, .changePassWordpop .btnGroup button, .editSuccess .btnGroup a, .editSuccess .btnGroup button, .upload .btnGroup a, .upload .btnGroup button, .update .btnGroup a, .update .btnGroup button, .loackAmount .btnGroup a, .loackAmount .btnGroup button {
+.Submit .btnGroup a, .Success .btnGroup a, .Error .btnGroup a, .Cancel .btnGroup a, .uploadSuccess .btnGroup a, .updateSuccess .btnGroup a, .tokyc .btnGroup a, .addBankpop .btnGroup a, .changePassWordpop .btnGroup a, .editSuccess .btnGroup a, .upload .btnGroup a, .update .btnGroup a, .loackAmount .btnGroup a {
   max-width: 100px;
 }
 
@@ -2840,7 +2765,7 @@ main > .swiper-container .swiper-slide {
           flex-direction: column;
 }
 
-.directions ~ form .inputBox .iconModule .icon:before, .directions ~ form .inputBox-org .iconModule .icon:before, .directions ~ form .inputBox-white .iconModule .icon:before, .directions ~ form .inputBox-blue .iconModule .icon:before, .directions ~ form .inputBox-gray .iconModule .icon:before, .directions ~ form .inputBox-yellow .iconModule .icon:before {
+.directions ~ form .inputBox .iconModule .icon:before, .directions ~ form .inputBox-blue .iconModule .icon:before {
   font-weight: normal;
 }
 
@@ -3138,7 +3063,7 @@ main > .swiper-container .swiper-slide {
   display: block;
 }
 
-.walletTransfer .inputBox, .walletTransfer .inputBox-org, .walletTransfer .inputBox-white, .walletTransfer .inputBox-blue, .walletTransfer .inputBox-gray, .walletTransfer .inputBox-yellow {
+.walletTransfer .inputBox, .walletTransfer .inputBox-blue {
   width: 100%;
   margin-right: 10px;
 }
@@ -3486,23 +3411,23 @@ main > .swiper-container .swiper-slide {
   font-size: 14px;
 }
 
-.addBankpop .inputBox, .addBankpop .inputBox-org, .addBankpop .inputBox-white, .addBankpop .inputBox-blue, .addBankpop .inputBox-gray, .addBankpop .inputBox-yellow {
+.addBankpop .inputBox, .addBankpop .inputBox-blue {
   padding: 2px 10px;
 }
 
-.addBankpop .inputBox .dropdown > .btn, .addBankpop .inputBox-org .dropdown > .btn, .addBankpop .inputBox-white .dropdown > .btn, .addBankpop .inputBox-blue .dropdown > .btn, .addBankpop .inputBox-gray .dropdown > .btn, .addBankpop .inputBox-yellow .dropdown > .btn {
+.addBankpop .inputBox .dropdown > .btn, .addBankpop .inputBox-blue .dropdown > .btn {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-size: 13px;
 }
 
-.addBankpop .inputBox .dropdown > .dropdown-container, .addBankpop .inputBox-org .dropdown > .dropdown-container, .addBankpop .inputBox-white .dropdown > .dropdown-container, .addBankpop .inputBox-blue .dropdown > .dropdown-container, .addBankpop .inputBox-gray .dropdown > .dropdown-container, .addBankpop .inputBox-yellow .dropdown > .dropdown-container {
+.addBankpop .inputBox .dropdown > .dropdown-container, .addBankpop .inputBox-blue .dropdown > .dropdown-container {
   overflow-y: scroll;
   max-height: 200px;
 }
 
-.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item, .addBankpop .inputBox-org .dropdown > .dropdown-container .dropdown-item, .addBankpop .inputBox-white .dropdown > .dropdown-container .dropdown-item, .addBankpop .inputBox-blue .dropdown > .dropdown-container .dropdown-item, .addBankpop .inputBox-gray .dropdown > .dropdown-container .dropdown-item, .addBankpop .inputBox-yellow .dropdown > .dropdown-container .dropdown-item {
+.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item, .addBankpop .inputBox-blue .dropdown > .dropdown-container .dropdown-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3512,11 +3437,11 @@ main > .swiper-container .swiper-slide {
   padding: 7.5px 0;
 }
 
-.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1), .addBankpop .inputBox-org .dropdown > .dropdown-container .dropdown-item:nth-child(1), .addBankpop .inputBox-white .dropdown > .dropdown-container .dropdown-item:nth-child(1), .addBankpop .inputBox-blue .dropdown > .dropdown-container .dropdown-item:nth-child(1), .addBankpop .inputBox-gray .dropdown > .dropdown-container .dropdown-item:nth-child(1), .addBankpop .inputBox-yellow .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
+.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1), .addBankpop .inputBox-blue .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
   padding-top: 15px;
 }
 
-.addBankpop .inputBox img, .addBankpop .inputBox-org img, .addBankpop .inputBox-white img, .addBankpop .inputBox-blue img, .addBankpop .inputBox-gray img, .addBankpop .inputBox-yellow img {
+.addBankpop .inputBox img, .addBankpop .inputBox-blue img {
   max-width: 44px;
   border-radius: 5px;
   margin-right: 10px;
@@ -3585,7 +3510,7 @@ main > .swiper-container .swiper-slide {
   margin: 10px 10px 10px 0px;
 }
 
-w .quickSelect > div.btnGroup.promoType ~ .btnGroup {
+.quickSelect > div.btnGroup.promoType ~ .btnGroup {
   height: auto;
   margin-top: 0;
 }
@@ -3600,22 +3525,22 @@ w .quickSelect > div.btnGroup.promoType ~ .btnGroup {
   margin: 10px 0 0;
 }
 
-.quickSelect > div.inputBox.promoType > button, .quickSelect > div.promoType.inputBox-org > button, .quickSelect > div.promoType.inputBox-white > button, .quickSelect > div.promoType.inputBox-blue > button, .quickSelect > div.promoType.inputBox-gray > button, .quickSelect > div.promoType.inputBox-yellow > button, .quickSelect > div.inputBox.promoType > a, .quickSelect > div.promoType.inputBox-org > a, .quickSelect > div.promoType.inputBox-white > a, .quickSelect > div.promoType.inputBox-blue > a, .quickSelect > div.promoType.inputBox-gray > a, .quickSelect > div.promoType.inputBox-yellow > a, .quickSelect > div:first-child.promoType > button, .quickSelect > div:first-child.promoType > a {
+.quickSelect > div.inputBox.promoType > button, .quickSelect > div.promoType.inputBox-blue > button, .quickSelect > div.inputBox.promoType > a, .quickSelect > div.promoType.inputBox-blue > a, .quickSelect > div:first-child.promoType > button, .quickSelect > div:first-child.promoType > a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.quickSelect > div.inputBox.promoType > button.orange, .quickSelect > div.promoType.inputBox-org > button.orange, .quickSelect > div.promoType.inputBox-white > button.orange, .quickSelect > div.promoType.inputBox-blue > button.orange, .quickSelect > div.promoType.inputBox-gray > button.orange, .quickSelect > div.promoType.inputBox-yellow > button.orange, .quickSelect > div.inputBox.promoType > button.red, .quickSelect > div.promoType.inputBox-org > button.red, .quickSelect > div.promoType.inputBox-white > button.red, .quickSelect > div.promoType.inputBox-blue > button.red, .quickSelect > div.promoType.inputBox-gray > button.red, .quickSelect > div.promoType.inputBox-yellow > button.red, .quickSelect > div.inputBox.promoType > a.orange, .quickSelect > div.promoType.inputBox-org > a.orange, .quickSelect > div.promoType.inputBox-white > a.orange, .quickSelect > div.promoType.inputBox-blue > a.orange, .quickSelect > div.promoType.inputBox-gray > a.orange, .quickSelect > div.promoType.inputBox-yellow > a.orange, .quickSelect > div.inputBox.promoType > a.red, .quickSelect > div.promoType.inputBox-org > a.red, .quickSelect > div.promoType.inputBox-white > a.red, .quickSelect > div.promoType.inputBox-blue > a.red, .quickSelect > div.promoType.inputBox-gray > a.red, .quickSelect > div.promoType.inputBox-yellow > a.red, .quickSelect > div:first-child.promoType > button.orange, .quickSelect > div:first-child.promoType > button.red, .quickSelect > div:first-child.promoType > a.orange, .quickSelect > div:first-child.promoType > a.red {
+.quickSelect > div.inputBox.promoType > button.orange, .quickSelect > div.promoType.inputBox-blue > button.orange, .quickSelect > div.inputBox.promoType > button.red, .quickSelect > div.promoType.inputBox-blue > button.red, .quickSelect > div.inputBox.promoType > a.orange, .quickSelect > div.promoType.inputBox-blue > a.orange, .quickSelect > div.inputBox.promoType > a.red, .quickSelect > div.promoType.inputBox-blue > a.red, .quickSelect > div:first-child.promoType > button.orange, .quickSelect > div:first-child.promoType > button.red, .quickSelect > div:first-child.promoType > a.orange, .quickSelect > div:first-child.promoType > a.red {
   position: relative;
   margin-left: 25px;
 }
 
-.quickSelect > div.inputBox.promoType > button:last-child, .quickSelect > div.promoType.inputBox-org > button:last-child, .quickSelect > div.promoType.inputBox-white > button:last-child, .quickSelect > div.promoType.inputBox-blue > button:last-child, .quickSelect > div.promoType.inputBox-gray > button:last-child, .quickSelect > div.promoType.inputBox-yellow > button:last-child, .quickSelect > div.inputBox.promoType > a:last-child, .quickSelect > div.promoType.inputBox-org > a:last-child, .quickSelect > div.promoType.inputBox-white > a:last-child, .quickSelect > div.promoType.inputBox-blue > a:last-child, .quickSelect > div.promoType.inputBox-gray > a:last-child, .quickSelect > div.promoType.inputBox-yellow > a:last-child, .quickSelect > div:first-child.promoType > button:last-child, .quickSelect > div:first-child.promoType > a:last-child {
+.quickSelect > div.inputBox.promoType > button:last-child, .quickSelect > div.promoType.inputBox-blue > button:last-child, .quickSelect > div.inputBox.promoType > a:last-child, .quickSelect > div.promoType.inputBox-blue > a:last-child, .quickSelect > div:first-child.promoType > button:last-child, .quickSelect > div:first-child.promoType > a:last-child {
   float: right;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-org .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-white .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-gray .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-yellow .blueBorder ~ .inputBox-blue, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue {
   margin: 20px 0 0 10px;
   min-height: auto;
   width: 200px;
@@ -3623,15 +3548,15 @@ w .quickSelect > div.btnGroup.promoType ~ .btnGroup {
   margin-top: 20px;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div.promoType.btnGroup.inputBox-org .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div.promoType.btnGroup.inputBox-white .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div.promoType.btnGroup.inputBox-gray .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div.promoType.btnGroup.inputBox-yellow .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7) {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7) {
   width: 397px;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div.promoType.btnGroup.inputBox-org .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div.promoType.btnGroup.inputBox-white .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div.promoType.btnGroup.inputBox-gray .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div.promoType.btnGroup.inputBox-yellow .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button {
   padding: 0;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue + button, .quickSelect > div.promoType.btnGroup.inputBox-org .blueBorder ~ .inputBox-blue + button, .quickSelect > div.promoType.btnGroup.inputBox-white .blueBorder ~ .inputBox-blue + button, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue + button, .quickSelect > div.promoType.btnGroup.inputBox-gray .blueBorder ~ .inputBox-blue + button, .quickSelect > div.promoType.btnGroup.inputBox-yellow .blueBorder ~ .inputBox-blue + button, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue + button {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue + button, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue + button, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue + button {
   float: left;
 }
 
@@ -4508,8 +4433,16 @@ article pre {
   color: #aeb2bc;
 }
 
-.rdt .inputBox, .rdt .inputBox-org, .rdt .inputBox-white, .rdt .inputBox-blue, .rdt .inputBox-gray, .rdt .inputBox-yellow {
+.rdt .inputBox, .rdt .inputBox-blue {
   width: 100%;
+}
+
+.rdt i.icon.icon-cross:before {
+  color: #F52805;
+}
+
+.rdt i.icon.icon-checkmark:before {
+  color: #259076;
 }
 
 iframe {
