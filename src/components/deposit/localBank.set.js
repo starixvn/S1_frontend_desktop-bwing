@@ -150,7 +150,7 @@ export default () => {
 					<div>
 						<div>{t("lbl_WireTransfers")}</div>
 						<div>
-							{t("lbl_CreditTime")}: {t("lbl_5mins")}
+							{t("lbl_CreditTime")}:&nbsp;{t("lbl_5mins")}
 						</div>
 					</div>
 				</div>
