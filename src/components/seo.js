@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-// import Favicon from "../styles/img/favicon-n8g.ico";
+import Favicon from "../styles/img/favicon.ico";
 import { useLocation } from "@reach/router";
 
 const defHrefLang = {
@@ -53,12 +53,12 @@ function SEO({ description, lang, meta, title }) {
 						rel: "alternate",
 						href,
 						hrefLang: defHrefLang[lang]
+					},
+					{
+						rel: "icon",
+						type: "image/png",
+						href: `${Favicon}`
 					}
-					// {
-					// 	rel: "icon",
-					// 	type: "image/png",
-					// 	href: `${Favicon}`
-					// }
 				]}
 				meta={[
 					{

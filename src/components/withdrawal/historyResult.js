@@ -8,7 +8,8 @@ const statusClassName = {
 	2: "pending",
 	3: "approved",
 	4: "reject",
-	5: "cancel"
+	5: "cancel",
+	7: "reject"
 };
 
 export const TransactionHistory = props => {
