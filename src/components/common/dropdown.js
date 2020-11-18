@@ -81,7 +81,7 @@ export class Dropdown extends Component {
 				<button className="btn txt-orange">
 					{selected}
 					{this.props.showDropDownIcon ? (
-						<i class="icon icon-arrow_drop_down"></i>
+						<i className="icon icon-arrow_drop_down"></i>
 					) : null}
 				</button>
 
