@@ -166,7 +166,7 @@ export default () => {
 					<div>
 						<div>{t("lbl_OnlineBanking")}</div>
 						<div>
-							{t("lbl_CreditTime")}:{t("lbl_Instant")}
+							{t("lbl_CreditTime")}:&nbsp;{t("lbl_Instant")}
 						</div>
 					</div>
 				</div>
