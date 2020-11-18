@@ -17,10 +17,6 @@ export default props => {
 	const { t } = useTranslation();
 	const popBoxData = useContext(popBoxContext).popBox;
 
-	// sysIdValue,
-	// 							accountNoValue,
-	// 							bankNameValue
-
 	useEffect(() => {
 		isMountedRef.current = true;
 		return () => (isMountedRef.current = false);
