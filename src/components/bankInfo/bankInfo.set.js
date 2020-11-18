@@ -156,7 +156,9 @@ export default () => {
 				<div className="inside-title">
 					{t("lbl_BankInfo").toUpperCase()}
 				</div>
-				<div className="txt-white">{t("lbl_UpdateBankInfo")}</div>
+				<div className="txt-white">
+					{t("lbl_Please_update_your_bank_account_details")}
+				</div>
 
 				{userInfo.accountName ? (
 					<>

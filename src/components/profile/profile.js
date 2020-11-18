@@ -137,17 +137,19 @@ export default () => {
 	};
 
 	const checkName = () => {
-		const regx_alpha_dash = /^[a-zA-Z0-9-_]*$/;
+		let pattern_punct = new RegExp(
+			"[`~!@#$^&*()=|{}':;',ˇˋ˙ˊ\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]"
+		);
 
 		let checkResult =
 			(Boolean(userInfo.accountName) || Boolean(nameValue)) &&
-			regx_alpha_dash.test(nameValue);
+			!pattern_punct.test(nameValue);
 
 		let checkTip =
 			nameValue === ""
 				? t("lbl_NameRequired")
-				: !regx_alpha_dash.test(nameValue)
-				? t("msg_Alpha_Dash_Invalid")
+				: pattern_punct.test(nameValue)
+				? t("msg_Regex_Punct_Invalid")
 				: "";
 
 		setStatus(prev => ({
@@ -162,18 +164,13 @@ export default () => {
 	};
 
 	const checkBirth = () => {
-		let checkResult = false;
-		let checkTip = "";
+		const isValidDate = d => {
+			const date = new Date(d);
+			return date instanceof Date && !isNaN(date);
+		};
 
-		if (userInfo.birth_d) {
-			checkResult = true;
-		} else if (!userInfo.birth_d && birthValue === "") {
-			checkResult = false;
-			checkTip = t("lbl_BirthRequired");
-		} else if (!userInfo.birth_d && birthValue !== "") {
-			checkResult = true;
-			checkTip = "";
-		}
+		let checkResult = Boolean(userInfo.birth_d) || isValidDate(birthValue);
+		let checkTip = isValidDate(birthValue) ? "" : t("lbl_BirthRequired");
 
 		setStatus(prev => ({
 			...prev,
@@ -238,7 +235,7 @@ export default () => {
 			checkResult = true;
 		}
 
-		if (!userInfo.phoneNo && phoneValue.length < 0) {
+		if (!userInfo.phoneNo && !phoneValue) {
 			setStatus(prev => ({
 				...prev,
 				phoneNo: {

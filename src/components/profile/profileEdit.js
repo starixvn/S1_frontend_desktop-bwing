@@ -13,6 +13,14 @@ export default props => {
 		return current.isBefore(legalDate);
 	};
 
+	const dateTimeIcon = birth => {
+		if (birth.checked === null) return <i className="icon icon-calendar" />;
+
+		if (birth.checked) return <i className={`icon icon-checkmark`} />;
+
+		if (!birth.checked) return <i className={`icon icon-cross`} />;
+	};
+
 	return (
 		<>
 			{!props.userInfo.accountName ? (
@@ -34,7 +42,6 @@ export default props => {
 				<>
 					<div>{t("lbl_Birthday")}</div>
 					<div className="inputBox-blue">
-						{/* <i className="txt-blue12"></i> */}
 						<DateTime
 							value={props.birthValue}
 							onChange={props.onChangeBirth}
@@ -45,14 +52,17 @@ export default props => {
 							isValidDate={valid}
 						/>
 						<div className="iconModule">
-							<i className="icon icon-calendar"></i>
+							{dateTimeIcon(props.status.birth)}
 						</div>
 					</div>
-				</>
-			) : null}
 
-			{props.status.birth.tip ? (
-				<div className="tip active">{props.status.birth.tip}</div>
+					<div
+						className={`tip ${
+							props.status.birth.checked ? "" : "active"
+						}`}>
+						{props.status.birth.tip}
+					</div>
+				</>
 			) : null}
 
 			{!props.userInfo.phoneNo ? (
