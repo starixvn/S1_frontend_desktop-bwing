@@ -57,6 +57,14 @@ const defPlatfrom = [
 		path: path.casino.root,
 		parameter: { provider: defCasinoProviders.PG.name },
 		imgName: "pg"
+	},
+	{
+		...productList.liveCasino_AE,
+		imgName: "ae"
+	},
+	{
+		...productList.liveCasino_eBET,
+		imgName: "eb"
 	}
 ];
 
