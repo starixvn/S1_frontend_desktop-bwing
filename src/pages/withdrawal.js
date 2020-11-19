@@ -204,6 +204,7 @@ const Content = () => {
 			<RecentHistory
 				recentData={recentData}
 				setRecentData={setRecentData}
+				getKycStatus={getKycStatus}
 				getWithdrawalAvailableBalance={getWithdrawalAvailableBalance}
 				getWithdrawalInfoRecent={getWithdrawalInfoRecent}
 			/>
