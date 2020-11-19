@@ -2880,6 +2880,12 @@ main > .swiper-container .swiper-slide {
   display: none;
 }
 
+.offers .swiper-slide img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .offers .swiper-button-next, .offers .swiper-button-prev {
   -webkit-transform: translateY(60%);
           transform: translateY(60%);
