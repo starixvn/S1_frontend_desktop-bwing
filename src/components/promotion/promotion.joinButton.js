@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useContext } from "react";
 import { Link } from "@reach/router";
 import { useTranslation } from "react-i18next";
 import { defPopBoxType } from "../common/popBox";
+import { defPromotionType } from "./promotion.def";
 import { popBoxContext } from "../common/context";
 import { checkPromotion } from "./promotion.common";
 import { api_promotion_SetClaimPromotion } from "../../service/api/promotion";
@@ -50,10 +51,11 @@ export default ({
 		});
 	};
 
-	const setClaimPromotion = async (langId, bonusCode) => {
+	const setClaimPromotion = async (langId, bonusCode, lockedAmount = 0) => {
 		return api_promotion_SetClaimPromotion({
 			langId,
-			BonusCode: bonusCode
+			BonusCode: bonusCode,
+			LockedAmount: Number(lockedAmount)
 		}).then(
 			({ data: { message, errorCode } }) => {
 				if (!isMountedRef.current) return;
@@ -96,7 +98,7 @@ export default ({
 				openErrorMessagePopBox(message || "error", errorCode);
 			},
 			err => {
-				if (isMountedRef.current) return;
+				if (!isMountedRef.current) return;
 
 				openErrorMessagePopBox();
 			}
@@ -105,15 +107,38 @@ export default ({
 
 	const onJoinPromotion = async () => {
 		const { langId } = userInfo;
-		const { bonusCode } = promotionInfo;
+		const {
+			bonusCode,
+			bonusType,
+			canJoin,
+			promotionType,
+			maxAmount
+		} = promotionInfo;
+
 		const promotionCanJoin = checkPromotion({
 			promotionInfo,
 			userInfo,
 			setPopBox,
 			t
 		});
+
 		if (!promotionCanJoin) return;
-		let success = await setClaimPromotion(langId, bonusCode);
+		if (
+			canJoin &&
+			bonusType === 1 &&
+			promotionType === defPromotionType.redeposit
+		)
+			return setPopBox({
+				isOpen: true,
+				popBoxType: defPopBoxType.PromotionAmountConfirm,
+				langId,
+				promotionInfo,
+				clickClose,
+				setClaimPromotion
+			});
+
+		let success = await setClaimPromotion(langId, bonusCode, maxAmount);
+
 		if (success) return callBack();
 	};
 

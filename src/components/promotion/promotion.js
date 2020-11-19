@@ -35,7 +35,82 @@ export default () => {
 		api_promotion_GetPromotionListV2({ langId: userInfo.langId }).then(
 			res => {
 				if (res.data.errorCode === 0 && isMountedRef.current) {
-					let result = res.data.data.sort((a, b) => {
+					let fakeData = [
+						{
+							bonusCode: "freebet Test",
+							promotionType: 3,
+							title: "Now everyone have free bets",
+							description: "kasi free",
+							banner:
+								"https://www.nova88.net/CMS/Nova88/Promotion/en/banner-ae.jpg?v=a4xydDp9Ju4gMQR8Zd19yRN5BVcRqZIr9kynOcOm6XQ",
+							periodFrom: 1605759140,
+							periodTo: 1605800000,
+							rollOver: 15,
+							details: null,
+							bonus: 5.0,
+							maxBonus: 5.0,
+							bonusType: 2,
+							sort: 2,
+							categoryId: 1,
+							tpId: 0,
+							custRollOver: 0,
+							custTurnOver: 0,
+							status: 0,
+							custExpiryTime: null,
+							canJoin: false,
+							isJoin: false
+						},
+						{
+							bonusCode: "FTDP",
+							promotionType: 1,
+							title: "Fishing Rebate 0.8%",
+							description:
+								"JOIN NOW ! To enjoy up to MYR 388 Bonus with your first deposit at Nova88!",
+							banner:
+								"http://www.n88dev.com/CMS/Nova88/Promotion/en/banner-FishingRebate.jpg",
+							periodFrom: 1605759140,
+							periodTo: 1605800000,
+							rollOver: 15,
+							details: null,
+							bonus: 50.0,
+							maxBonus: 500.0,
+							bonusType: 1,
+							sort: 1,
+							categoryId: 4,
+							tpId: 1,
+							custRollOver: 0,
+							custTurnOver: 0,
+							status: 0,
+							custExpiryTime: null,
+							canJoin: false,
+							isJoin: false
+						},
+						{
+							bonusCode: "SLOTFREEBET",
+							promotionType: 2,
+							title: null,
+							description: null,
+							banner: null,
+							periodFrom: 1605759140,
+							periodTo: 1605800000,
+							rollOver: 25,
+							details: null,
+							bonus: 20.0,
+							maxBonus: 0.0,
+							bonusType: 2,
+							sort: 1,
+							categoryId: 1,
+							tpId: 0,
+							custRollOver: 0,
+							custTurnOver: 0,
+							status: 0,
+							custExpiryTime: null,
+							canJoin: false,
+							isJoin: false
+						}
+					];
+
+					let result = fakeData.sort((a, b) => {
 						return a.periodFrom > b.periodFrom ? -1 : 1;
 					});
 					setInitPromoList(result);
