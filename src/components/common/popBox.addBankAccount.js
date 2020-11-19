@@ -257,7 +257,7 @@ export default ({ bankInfoSysList = [] }) => {
 					{t("lbl_Cancel")}
 				</button>
 				<button className="btn-check" onClick={ClickSubmit}>
-					{t("lbl_Submit")}
+					{t("lbl_add_bank_submit")}
 				</button>
 			</div>
 		</div>

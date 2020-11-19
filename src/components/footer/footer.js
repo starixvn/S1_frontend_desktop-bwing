@@ -22,28 +22,33 @@ export default () => {
 					isLogin={userInfo.isLogin}
 				/>
 				<OurPolicies langId={userInfo.langId} t={t} />
-				<HelpSupport langId={userInfo.langId} t={t} />
-				<Promotions langId={userInfo.langId} t={t} />
+				<div>
+					<HelpSupport langId={userInfo.langId} t={t} />
+					<Promotions langId={userInfo.langId} t={t} />
+				</div>
 				<About langId={userInfo.langId} t={t} />
 
 				<div>
 					<span className="title">{t("lbl_SocialMedia")}</span>
 					<div>
 						<a
-							href="https://www.facebook.com/bwingofficial/"
-							target="_blank"
-							className="icon icon-facebook"></a>
+							href="https://www.facebook.com/Bwingtttt "
+							className="icon icon-facebook"
+							target="_blank"></a>
 						<a
-							href="https://twitter.com/Bwingofficial/"
-							target="_blank"
-							className="icon icon-twitter"></a>
+							href="https://www.youtube.com/channel/UCDvFS9eTrOEYuVjb3BNQ3bg/featured"
+							className="icon icon-youtube"
+							target="_blank"></a>
+						<a
+							href="https://twitter.com/bwingofficial"
+							className="icon icon-twitter"
+							target="_blank"></a>
+						<a
+							href="https://www.tiktok.com/@bwingpro"
+							className="icon icon-tiktok"
+							target="_blank"></a>
 					</div>
 				</div>
-
-				{/* <div>
-					<span className="title">{t("lbl_ContactUs")}</span>
-					<div>{t("lbl_ConatctUsHint")}</div>
-				</div> */}
 			</div>
 			<div>
 				<PlatformSection

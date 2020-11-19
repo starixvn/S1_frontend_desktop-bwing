@@ -4,6 +4,7 @@ import Inputbox from "../common/inputbox";
 
 export default props => {
 	const { t } = useTranslation();
+
 	return (
 		<>
 			<div className="inputModuleRow">
@@ -19,7 +20,7 @@ export default props => {
 
 				<div className="btnGroup">
 					<button className="btn-check" onClick={props.toConfirmPage}>
-						{t("lbl_Submit")}
+						{t("lbl_withdraw_submit")}
 					</button>
 				</div>
 			</div>

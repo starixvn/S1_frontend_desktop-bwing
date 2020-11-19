@@ -236,7 +236,7 @@ const Content = () => {
 						className="btn-check"
 						type="submit"
 						onClick={clickSubmit}>
-						{t("lbl_Submit")}
+						{t("lbl_change_password_submit")}
 					</button>
 				</div>
 			</form>
