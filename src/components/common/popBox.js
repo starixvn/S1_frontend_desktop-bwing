@@ -22,7 +22,8 @@ export const defPopBoxType = {
 	WithdrawalSuccess: "WithdrawalSuccess",
 	UpdateProfile: "UpdateProfile",
 	TurnoverAccumulated: "TurnoverAccumulated",
-	PromotionDepositConfirm: "PromotionDepositConfirm"
+	PromotionDepositConfirm: "PromotionDepositConfirm",
+	PromotionAmountConfirm: "PromotionAmountConfirm"
 };
 
 export default () => {
@@ -207,6 +208,21 @@ export default () => {
 				<PromotionDepositConfirm
 					hint={popBox.hint}
 					btnBar={popBox.btnBar}
+				/>
+			);
+			break;
+
+		case defPopBoxType.PromotionAmountConfirm:
+			const PromotionAmountConfirm = lazy(() =>
+				import("./popBox.promotionAmountConfirm")
+			);
+
+			content = (
+				<PromotionAmountConfirm
+					langId={popBox.langId}
+					promotionInfo={popBox.promotionInfo}
+					clickClose={popBox.clickClose}
+					setClaimPromotion={popBox.setClaimPromotion}
 				/>
 			);
 			break;
