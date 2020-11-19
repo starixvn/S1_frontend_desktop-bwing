@@ -16,6 +16,7 @@ export default ({ channelList, dispatch }) => {
 						alt={c.groupName}
 					/>
 				</a>
+				<span>{c.channelName}</span>
 			</li>
 		);
 	});
