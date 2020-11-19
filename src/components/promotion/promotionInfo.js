@@ -161,6 +161,21 @@ export default () => {
 
 							<div className="proDataTitle">
 								<div>{promotionInfo.description}</div>
+								<div className="btnGroup">
+									<PromotionJoinButton
+										promotionInfo={promotionInfo}
+										userInfo={userInfo}
+										_isExpiry={_isExpiry}
+										_isClaimed={_isClaimed}
+										inListPage={false}
+										callBack={() =>
+											getPromotionDetail(
+												userInfo.langId,
+												promotionInfo.bonusCode
+											)
+										}
+									/>
+								</div>
 							</div>
 
 							<DepositSlip promotionInfo={promotionInfo} t={t} />
@@ -194,24 +209,6 @@ export default () => {
 								dangerouslySetInnerHTML={{
 									__html: `${promotionInfo.details}`
 								}}></div>
-
-							<div className="proDataTitle">
-								<div className="btnGroup">
-									<PromotionJoinButton
-										promotionInfo={promotionInfo}
-										userInfo={userInfo}
-										_isExpiry={_isExpiry}
-										_isClaimed={_isClaimed}
-										inListPage={false}
-										callBack={() =>
-											getPromotionDetail(
-												userInfo.langId,
-												promotionInfo.bonusCode
-											)
-										}
-									/>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
