@@ -11,6 +11,7 @@ import EventSwipper from "./eventSwipper";
 import SwipperBanner from "../common/swipperBanner";
 import PromoGameList from "./promoGameList";
 import TandC from "../../service/t_and_c";
+import SideBarQuickLink from "./sideBarQuickLink";
 
 export default () => {
 	const { t } = useTranslation();
@@ -122,6 +123,7 @@ export default () => {
 					</div>
 				</div>
 			</section>
+			<SideBarQuickLink />
 		</main>
 	);
 };
