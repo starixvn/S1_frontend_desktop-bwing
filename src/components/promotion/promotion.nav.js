@@ -4,6 +4,7 @@ export const defFilterType = {
 	all: 0,
 	expiry: 999,
 	firstDeposit: 1,
+	redeposit: 2,
 	freeBet: 3
 };
 
@@ -24,6 +25,12 @@ export default ({ t, onClick, selected }) => {
 			value: defFilterType.freeBet,
 			className: "blueBorder"
 		},
+		{
+			displayKey: "lbl_Redeposit_Promo",
+			value: defFilterType.redeposit,
+			className: "blueBorder"
+		},
+
 		{
 			displayKey: "lbl_Expired",
 			value: defFilterType.expiry,
