@@ -169,6 +169,7 @@
 	"lbl_Freebet": "Cược miễn phí",
 	"lbl_Promo": "khuyến mãi ",
 	"lbl_PromoJoinNow": "Tham Gia Ngay",
+	"lbl_Redeposit_Promo": "Nạp lại",
 	"lbl_MinAmount": "Số tiền tối thiểu",
 	"lbl_RemainingTime": "Thời gian còn lại",
 	"lbl_RequireMinAmountHint_Front": "Tiền gửi tối thiểu là",
@@ -361,7 +362,7 @@
 	"lbl_BankAccount": "Tài khoản ngân hàng",
 	"lbl_RollOver": "Số vòng cược",
 	"lbl_Please_update_your_bank_account_details": "Vui lòng cập nhật thông tin tài khoản ngân hàng trước khi rút tiền. Lưu ý rằng bạn nên điền đúng tên thật như trong CMND để giao dịch được suôn sẻ. Tên tài khoản phải giống với tên trong hồ sơ của bạn.",
-	"lbl_Please_input_your_real_name_as_in_your_ID":"Lưu ý rằng bạn nên điền đúng tên thật như trong CMND để giao dịch được suôn sẻ. Tên tài khoản phải giống với tên trong hồ sơ của bạn.",
+	"lbl_Please_input_your_real_name_as_in_your_ID": "Lưu ý rằng bạn nên điền đúng tên thật như trong CMND để giao dịch được suôn sẻ. Tên tài khoản phải giống với tên trong hồ sơ của bạn.",
 
 	"casino ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Casino": "CASINO",
@@ -398,8 +399,10 @@
 	"lbl_SelectPaymentMethods": "Lựa Chọn Phương Thức",
 	"msg_Regex_Punct_Invalid": "Không thể có số hoặc ký tự đặc biệt",
 	"lbl_dream_gaming_se_die": "Xóc đĩa live",
-	"lbl_check_history":"Xem lịch sử",
-	"lbl_restore_all_hint":"Khi chọn nút Phục hồi quỹ, toàn bộ quỹ từ các ví khác của bạn sẽ được chuyển về ví này.",
+	"lbl_check_history": "Xem lịch sử",
+	"lbl_restore_all_hint": "Khi chọn nút Phục hồi quỹ, toàn bộ quỹ từ các ví khác của bạn sẽ được chuyển về ví này.",
+	"lbl_PleaseEnterClaimAmount": "Vui lòng nhập số tiền bạn muốn để nhận khuyến mãi",
+	"lbl_ClaimAmountRange": "Khoảng tiền nạp",
 
 	"---end---": "---"
 }

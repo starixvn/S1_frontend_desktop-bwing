@@ -169,6 +169,7 @@
 	"lbl_FreeBet": "Free Bet",
 	"lbl_Promo": "Promo",
 	"lbl_PromoJoinNow": "Join Now",
+	"lbl_Redeposit_Promo": "Redeposit",
 	"lbl_MinAmount": "Min Amount",
 	"lbl_RemainingTime": "REMAINING TIME",
 	"lbl_RequireMinAmountHint_Front": "The minimum amount of deposit are required to be at least",
@@ -361,7 +362,7 @@
 	"lbl_BankAccount": "Bank Account",
 	"lbl_RollOver": "Rollover",
 	"lbl_Please_update_your_bank_account_details": "Please update your bank account details before making a withdrawal. Please note that you should input your real name as in your ID to avoid delay in your transactions. Your account name should be the same with your profile name.",
-	"lbl_Please_input_your_real_name_as_in_your_ID":"Please input your real name as in your ID. Your account name should be the same with your profile name.",
+	"lbl_Please_input_your_real_name_as_in_your_ID": "Please input your real name as in your ID. Your account name should be the same with your profile name.",
 
 	"casino ■■■■■■■■■■■■■■■■■■■■": "",
 	"lbl_Casino": "CASINO",
@@ -398,8 +399,10 @@
 	"lbl_SelectPaymentMethods": "Select Payment Methods",
 	"msg_Regex_Punct_Invalid": "Cannot contain any numbers or special characters",
 	"lbl_dream_gaming_se_die": "Dream Gaming Se die",
-	"lbl_check_history":"submit",
-	"lbl_restore_all_hint":"By clicking Restore All button, you will restore all of your funds from the other wallet.",
+	"lbl_check_history": "submit",
+	"lbl_restore_all_hint": "By clicking Restore All button, you will restore all of your funds from the other wallet.",
+	"lbl_PleaseEnterClaimAmount": "Please enter your prefer amount to claim promotion",
+	"lbl_ClaimAmountRange": "Claim Amount Range",
 
 	"---end---": "---"
 }
