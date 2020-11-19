@@ -366,11 +366,7 @@ export default ({
 						{!showConfirmPage ? (
 							<div className="subModuleBody">
 								<Calculation
-									balance={balanceData.balance}
-									deduction={balanceData.deduction}
-									availableBalance={
-										balanceData.availableBalance
-									}
+									balanceData={balanceData}
 									_isConvert={_isConvert}
 								/>
 								{/* <CashBar
