@@ -226,32 +226,20 @@ const DepositSlip = ({ promotionInfo, t }) => {
 	if (!refList || promotionType !== defPromotionType.redeposit) return null;
 
 	return (
-		<>
-			<div className="colorInfo">
-				<div>
-					<span></span>
-					{t("lbl_ID")}
-				</div>
-				<div>
-					<span></span>
-					{"lbl_Amount"}
-				</div>
+		<div className="depositSlip">
+			<div className="depositSlipList">
+				{refList?.map(item => (
+					<div
+						key={`promo-deposit-record-${bonusCode}-${item.depositId}`}>
+						<div>{item.depositId}</div>
+						<div>{number_format(item.amount)}</div>
+					</div>
+				))}
 			</div>
-			<div className="depositSlip">
-				<div className="depositSlipList">
-					{refList?.map(item => (
-						<div
-							key={`promo-deposit-record-${bonusCode}-${item.depositId}`}>
-							<div>{item.depositId}</div>
-							<div>{number_format(item.amount)}</div>
-						</div>
-					))}
-				</div>
-				<div className="txt-yellow">
-					{t("lbl_total")}: {number_format(depositAmount)}
-				</div>
+			<div className="txt-orange">
+				{t("lbl_total")}: {number_format(depositAmount)}
 			</div>
-		</>
+		</div>
 	);
 };
 
