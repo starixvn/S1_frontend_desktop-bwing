@@ -1457,10 +1457,6 @@ main > .swiper-container .swiper-slide {
   line-height: 0;
 }
 
-.swiper-slide img {
-  max-width: 1600px;
-}
-
 .swiper-pagination {
   padding: 0 calc((100% - 1560px) / 2);
   max-width: 1560px;
@@ -1541,55 +1537,46 @@ main > .swiper-container .swiper-slide {
 
 .quickLink {
   position: fixed;
-  right: 15px;
   top: 25%;
-  z-index: 1;
+  z-index: 2;
+  background: #00B9FF;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  width: 40px;
+  height: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.quickLink span {
+  -webkit-transform: translateY(10px) rotate(-90deg);
+          transform: translateY(10px) rotate(-90deg);
+  width: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.quickLink a, .quickLink button {
-  width: 62px;
-  height: 62px;
-  margin: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.quickLink a.icon, .quickLink button.icon {
-  padding: 5px;
-  background: #1E85EC;
-}
-
-.quickLink a:before, .quickLink button:before {
-  font-size: 48px;
-}
-
-.quickLink a.icon-library:before, .quickLink button.icon-library:before {
-  font-size: 36px;
-}
-
-.quickLink a img, .quickLink button img {
-  width: auto;
+.quickLink img {
+  width: 25px;
+  height: 25px;
 }
 
 .rightModule {
@@ -2318,8 +2305,6 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background: white;
   color: black;
   padding: 15px;
@@ -2581,6 +2566,10 @@ main > .swiper-container .swiper-slide {
 
 #popup > div.loginpop .loginModule .loginFunction .btnGroup {
   margin: 10px 0;
+}
+
+#popup > div.loginpop .loginModule .loginFunction .btnGroup .blue {
+  max-width: unset;
 }
 
 .Submit, .Success, .Error, .Cancel, .uploadSuccess, .updateSuccess, .tokyc, .addBankpop, .changePassWordpop, .editSuccess, .upload, .update, .loackAmount {
@@ -2885,6 +2874,29 @@ main > .swiper-container .swiper-slide {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
+}
+
+.offers .pagination {
+  display: none;
+}
+
+.offers .swiper-button-next, .offers .swiper-button-prev {
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+}
+
+.offers .swiper-button-next:after, .offers .swiper-button-prev:after {
+  font-size: 12px;
+  color: #001e42;
+  font-weight: bold;
+}
+
+.offers .swiper-button-next {
+  right: 65px;
+}
+
+.offers .swiper-button-prev {
+  left: 65px;
 }
 
 .offers > img, .offers > div {
@@ -3544,6 +3556,7 @@ main > .swiper-container .swiper-slide {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  white-space: nowrap;
 }
 
 .quickSelect > div.inputBox.promoType > button.orange, .quickSelect > div.promoType.inputBox-blue > button.orange, .quickSelect > div.inputBox.promoType > button.red, .quickSelect > div.promoType.inputBox-blue > button.red, .quickSelect > div.inputBox.promoType > a.orange, .quickSelect > div.promoType.inputBox-blue > a.orange, .quickSelect > div.inputBox.promoType > a.red, .quickSelect > div.promoType.inputBox-blue > a.red, .quickSelect > div:first-child.promoType > button.orange, .quickSelect > div:first-child.promoType > button.red, .quickSelect > div:first-child.promoType > a.orange, .quickSelect > div:first-child.promoType > a.red {
@@ -4302,17 +4315,30 @@ main > .swiper-container .swiper-slide {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .promotionsInfo .proData .proDataTitle .btnGroup button, .promotionsInfo .proData .proDataTitle .btnGroup a {
   max-width: 130px;
 }
 
-.promotionsInfo .proData .bounsName {
-  color: #56ceff;
+.promotionsInfo .proData .proDataTitle ~ .btnGroup {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.promotionsInfo .proData .proDataTitle ~ .btnGroup button, .promotionsInfo .proData .proDataTitle ~ .btnGroup a {
+  max-width: 130px;
+}
+
+.promotionsInfo .proData .proDataTitle ~ .proDataBody {
+  color: white;
 }
 
 form {
@@ -4363,7 +4389,9 @@ form {
       -ms-flex: 0 0 calc(50% - 5px);
           flex: 0 0 calc(50% - 5px);
   min-width: auto;
+  max-width: none;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .slotList > div .brand {
@@ -5133,5 +5161,44 @@ input + .iconModule i.icon.icon-checkmark:before {
   width: max-content;
   border-radius: 10px;
   color: white;
+}
+
+.uploadBox {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.uploadBox .upload_img {
+  border: 2px dashed #56ceff;
+  background: #010E33;
+  width: 290px;
+  height: 120px;
+}
+
+.uploadBox .upload_img .icon {
+  color: #56ceff;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  float: left;
+}
+
+.uploadBox .upload_img .icon:before {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.uploadBox .upload_img + .directions {
+  border: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.uploadBox + .btnGroup {
+  margin-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
