@@ -101,6 +101,10 @@ export default {
 	liveCasino_eBET: {
 		gameId: 18,
 		tpId: 18
+	},
+	liveCasino_WM: {
+		gameId: 20,
+		tpId: 20
 	}
 };
 

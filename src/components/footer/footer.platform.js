@@ -65,6 +65,10 @@ const defPlatfrom = [
 	{
 		...productList.liveCasino_eBET,
 		imgName: "eb"
+	},
+	{
+		...productList.liveCasino_WM,
+		imgName: "wm"
 	}
 ];
 
