@@ -236,22 +236,13 @@ export default ({
 					!userInfo.accountName &&
 					userInfo.accountName !== undefined ? (
 						<>
-							<div className="inputModuleRow">
-								<Inputbox
-									placeholder={t("lbl_RealName")}
-									onChange={onChangeName}
-									value={nameValue}
-									onBlur={checkName}
-									checked={status.accountName.checked}
-									tip={status.accountName.tip}
-								/>
-							</div>
-							{status.accountName.tip === "" ? (
-								<div className="tip active">
-									{t("lbl_RemindForDepositName")}
-								</div>
-							) : null}
-							<br />
+							<Inputbox
+								placeholder={t("lbl_RealName")}
+								onChange={onChangeName}
+								value={nameValue}
+								onBlur={checkName}
+								checked={status.accountName.checked}
+							/>
 						</>
 					) : null}
 
