@@ -2,10 +2,7 @@ import React, { useEffect, useRef, useState, useContext } from "react";
 import moment from "moment";
 import { useTranslation } from "react-i18next";
 import { userInfoContext, popBoxContext } from "../common/context";
-import {
-	api_payment_GetWithdrawalInfoRecent,
-	api_payment_SetWithdrawalCancel
-} from "../../service/api/payment";
+import { api_payment_SetWithdrawalCancel } from "../../service/api/payment";
 import { TransactionHistory } from "./historyResult";
 import { defPopBoxType } from "../common/popBox";
 import path from "../../path";
@@ -13,7 +10,13 @@ import { Link } from "@reach/router";
 import Loading from "../common/loading";
 import ReloadSpin from "../common/reloadSpin";
 
-export default props => {
+export default ({
+	recentData,
+	setRecentData,
+	getKycStatus,
+	getWithdrawalInfoRecent,
+	getWithdrawalAvailableBalance
+}) => {
 	const { t } = useTranslation();
 	const { userInfo } = useContext(userInfoContext);
 	const { setPopBox } = useContext(popBoxContext);
@@ -29,10 +32,6 @@ export default props => {
 		setPopBox({ isOpen: false });
 	};
 
-	const refreshAvailableBalance = () => {
-		props.getWithdrawalAvailableBalance();
-	};
-
 	const ClickCancel = transId => {
 		const ClosePopBox = () => {
 			setPopBox({ isOpen: false });
@@ -46,7 +45,7 @@ export default props => {
 				res => {
 					if (isMountedRef.current) {
 						if (res.data.errorCode === 0) {
-							props.setRecentData(prev => {
+							setRecentData(prev => {
 								let newData = [...prev];
 								let idx = newData.findIndex(
 									x => x.transId === transId
@@ -55,7 +54,8 @@ export default props => {
 								return newData;
 							});
 
-							refreshAvailableBalance();
+							getWithdrawalAvailableBalance();
+							getKycStatus();
 						} else {
 							setPopBox({
 								isOpen: true,
@@ -114,7 +114,7 @@ export default props => {
 		});
 	};
 
-	let arr = props.recentData?.map((item, i) => {
+	let arr = recentData?.map((item, i) => {
 		return (
 			<TransactionHistory
 				key={`withdrawal-recent-${item.transId}`}
@@ -128,7 +128,7 @@ export default props => {
 
 	if (loading) return <Loading />;
 
-	if (props.recentData.length === 0) return null;
+	if (recentData.length === 0) return null;
 
 	return (
 		<>
@@ -144,10 +144,10 @@ export default props => {
 					<div>{t("lbl_Status")}</div>
 					<div>
 						{t("lbl_Action")}
-						<ReloadSpin func={props.getWithdrawalInfoRecent} />
+						<ReloadSpin func={getWithdrawalInfoRecent} />
 					</div>
 				</div>
-				{props.recentData?.length > 0 ? (
+				{recentData?.length > 0 ? (
 					<div className="listBody">{arr}</div>
 				) : (
 					<div className="nodata">{t("msg_NoData")}</div>
