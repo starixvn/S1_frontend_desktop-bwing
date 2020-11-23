@@ -122,6 +122,14 @@ export const defMenuLinks = {
 		displayKey: "lbl_LiveCasino",
 		subMenu: [
 			{
+				gameId: 20,
+				tpId: 20,
+				className: "liveWM",
+				icon: "icon icon-WM",
+				displayText: "WM",
+				menuType: defMenuType.entPage
+			},
+			{
 				gameId: 4,
 				tpId: 4,
 				className: "liveDG",
@@ -209,7 +217,7 @@ export const defMenuLinks = {
 	promotion: {
 		path: path.promotion.root,
 		displayKey: "lbl_Promotions"
-	},
+	}
 	// lottery: {
 	// 	productInfo: productList.lottery,
 	// 	path: path.sports.root,
