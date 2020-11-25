@@ -354,7 +354,7 @@ const Content = () => {
 		return checked;
 	};
 
-	const isUrlAffCode = getUrlParameter("affCode") || readCookie("affCode");
+	const isUrlAffCode = getUrlParameter("AffCode") || readCookie("AffCode");
 
 	const clickSubmit = e => {
 		e.preventDefault();
