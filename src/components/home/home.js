@@ -74,7 +74,7 @@ export default () => {
 			<SwipperBanner ImgFolder="Promotion" filterHideInHome={true} />
 			<Marquee />
 			<section>
-				<EventSwipper />
+				<EventSwipper langId={userInfo.langId} />
 			</section>
 			<section>
 				<PromoGameList t={t} userInfo={userInfo} />
