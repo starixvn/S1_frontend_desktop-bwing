@@ -36,7 +36,7 @@ export default ({ promotionInfo, t, inListPage }) => {
 	return (
 		<div className="rollover">
 			<div>
-				<div>{t("lbl_Bonus")}</div>
+				{/* <div>{t("lbl_Bonus")}</div> */}
 				<div>{t("lbl_MaxBonusAmount")}</div>
 				{/* {requiredAmount > 0 ? (
 					<div className="icon icon-icon32px_money">
@@ -48,7 +48,7 @@ export default ({ promotionInfo, t, inListPage }) => {
 			</div>
 
 			<div className={inListPage ? "txt-yellow" : ""}>
-				<div>{number_format(promotionInfo.bonus)}</div>
+				{/* <div>{number_format(promotionInfo.bonus)}</div> */}
 				<div>{number_format(promotionInfo.maxBonus)}</div>
 				{/* {requiredAmount > 0 ? (
 					<div>{number_format(requiredAmount)}</div>
