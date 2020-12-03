@@ -34,19 +34,27 @@ export default () => {
 						<a
 							href="https://www.facebook.com/Bwingtttt "
 							className="icon icon-facebook"
-							target="_blank"></a>
+							target="_blank">
+							{t("Facebook")}
+						</a>
 						<a
 							href="https://www.youtube.com/channel/UCDvFS9eTrOEYuVjb3BNQ3bg/featured"
 							className="icon icon-youtube"
-							target="_blank"></a>
+							target="_blank">
+							{t("Instagram")}
+						</a>
 						<a
 							href="https://twitter.com/bwingofficial"
 							className="icon icon-twitter"
-							target="_blank"></a>
+							target="_blank">
+							{t("YouTube")}
+						</a>
 						<a
 							href="https://www.tiktok.com/@bwingpro"
 							className="icon icon-tiktok"
-							target="_blank"></a>
+							target="_blank">
+							{t("lbl_TikTok")}
+						</a>
 					</div>
 				</div>
 			</div>
