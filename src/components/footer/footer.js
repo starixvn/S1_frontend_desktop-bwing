@@ -53,7 +53,7 @@ export default () => {
 							href="https://www.tiktok.com/@bwingpro"
 							className="icon icon-tiktok"
 							target="_blank">
-							Tik Tok
+							TikTok
 						</a>
 					</div>
 				</div>
