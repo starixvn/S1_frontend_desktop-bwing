@@ -66,14 +66,15 @@ img {
   display: block;
 }
 
-a, button {
+a,
+button {
   color: white;
   font-family: "Segoe UI", sans-serif;
   cursor: pointer;
   outline: none;
 }
 
-.transition, header .header > div.menu .subMenu-Wrapper, .inputBox .dropdown > .dropdown-container, .inputBox-blue .dropdown > .dropdown-container, .tip, .personal .list .listBody {
+.transition, header .header > div.menu .subMenu-Wrapper, .inputBox .dropdown > .dropdown-container, .tip, .personal .list .listBody {
   visibility: hidden;
   opacity: 0;
   height: 0;
@@ -81,7 +82,7 @@ a, button {
   transition: 0.7s;
 }
 
-.transition-open, header .header > div.menu .subMenu-Wrapper.active, .inputBox .dropdown > .dropdown-container.active, .inputBox-blue .dropdown > .dropdown-container.active, .tip.active, .personal .list .listBody.active {
+.transition-open, header .header > div.menu .subMenu-Wrapper.active, .inputBox .dropdown > .dropdown-container.active, .tip.active, .personal .list .listBody.active {
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -89,12 +90,14 @@ a, button {
   transition: 0.7s;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   outline: none;
   z-index: 1;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   background: #070e22;
   font-size: 14px;
@@ -103,7 +106,8 @@ body, html {
   height: 100%;
 }
 
-#___gatsby, #gatsby-focus-wrapper {
+#___gatsby,
+#gatsby-focus-wrapper {
   height: 100%;
 }
 
@@ -177,7 +181,8 @@ header .header > div.menu {
   white-space: nowrap;
 }
 
-header .header > div.menu > a, header .header > div.menu > button {
+header .header > div.menu > a,
+header .header > div.menu > button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -193,7 +198,9 @@ header .header > div.menu > a, header .header > div.menu > button {
   font-family: "Segoe UI", sans-serif;
 }
 
-header .header > div.menu > a:hover, header .header > div.menu > a.active, header .header > div.menu > button:hover, header .header > div.menu > button.active {
+header .header > div.menu > a:hover, header .header > div.menu > a.active,
+header .header > div.menu > button:hover,
+header .header > div.menu > button.active {
   cursor: pointer;
   background: #000924;
   color: #56ceff;
@@ -224,20 +231,37 @@ header .header > div.menu .subMenu-Wrapper .icon:before {
   font-size: 30px;
 }
 
-header .header > div.menu .gameList, header .header > div.menu .casinoList, header .header > div.menu .livecasinoList, header .header > div.menu .fishList {
+header .header > div.menu .gameList,
+header .header > div.menu .casinoList,
+header .header > div.menu .livecasinoList,
+header .header > div.menu .fishList {
   width: 100%;
   max-width: 1170px;
   margin: auto;
   display: none;
 }
 
-header .header > div.menu .gameList.active, header .header > div.menu .gameList div, header .header > div.menu .casinoList.active, header .header > div.menu .casinoList div, header .header > div.menu .livecasinoList.active, header .header > div.menu .livecasinoList div, header .header > div.menu .fishList.active, header .header > div.menu .fishList div {
+header .header > div.menu .gameList.active,
+header .header > div.menu .gameList div,
+header .header > div.menu .casinoList.active,
+header .header > div.menu .casinoList div,
+header .header > div.menu .livecasinoList.active,
+header .header > div.menu .livecasinoList div,
+header .header > div.menu .fishList.active,
+header .header > div.menu .fishList div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .header > div.menu .gameList a, header .header > div.menu .gameList button, header .header > div.menu .casinoList a, header .header > div.menu .casinoList button, header .header > div.menu .livecasinoList a, header .header > div.menu .livecasinoList button, header .header > div.menu .fishList a, header .header > div.menu .fishList button {
+header .header > div.menu .gameList a,
+header .header > div.menu .gameList button,
+header .header > div.menu .casinoList a,
+header .header > div.menu .casinoList button,
+header .header > div.menu .livecasinoList a,
+header .header > div.menu .livecasinoList button,
+header .header > div.menu .fishList a,
+header .header > div.menu .fishList button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -260,18 +284,39 @@ header .header > div.menu .gameList a, header .header > div.menu .gameList butto
   margin-top: -20px;
 }
 
-header .header > div.menu .gameList a img, header .header > div.menu .gameList button img, header .header > div.menu .casinoList a img, header .header > div.menu .casinoList button img, header .header > div.menu .livecasinoList a img, header .header > div.menu .livecasinoList button img, header .header > div.menu .fishList a img, header .header > div.menu .fishList button img {
+header .header > div.menu .gameList a img,
+header .header > div.menu .gameList button img,
+header .header > div.menu .casinoList a img,
+header .header > div.menu .casinoList button img,
+header .header > div.menu .livecasinoList a img,
+header .header > div.menu .livecasinoList button img,
+header .header > div.menu .fishList a img,
+header .header > div.menu .fishList button img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-header .header > div.menu .gameList a span, header .header > div.menu .gameList button span, header .header > div.menu .casinoList a span, header .header > div.menu .casinoList button span, header .header > div.menu .livecasinoList a span, header .header > div.menu .livecasinoList button span, header .header > div.menu .fishList a span, header .header > div.menu .fishList button span {
+header .header > div.menu .gameList a span,
+header .header > div.menu .gameList button span,
+header .header > div.menu .casinoList a span,
+header .header > div.menu .casinoList button span,
+header .header > div.menu .livecasinoList a span,
+header .header > div.menu .livecasinoList button span,
+header .header > div.menu .fishList a span,
+header .header > div.menu .fishList button span {
   top: 20px;
   position: relative;
 }
 
-header .header > div.menu .gameList a:hover, header .header > div.menu .gameList button:hover, header .header > div.menu .casinoList a:hover, header .header > div.menu .casinoList button:hover, header .header > div.menu .livecasinoList a:hover, header .header > div.menu .livecasinoList button:hover, header .header > div.menu .fishList a:hover, header .header > div.menu .fishList button:hover {
+header .header > div.menu .gameList a:hover,
+header .header > div.menu .gameList button:hover,
+header .header > div.menu .casinoList a:hover,
+header .header > div.menu .casinoList button:hover,
+header .header > div.menu .livecasinoList a:hover,
+header .header > div.menu .livecasinoList button:hover,
+header .header > div.menu .fishList a:hover,
+header .header > div.menu .fishList button:hover {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -468,12 +513,14 @@ header .header > div.function > div:last-child {
   margin-right: 0;
 }
 
-header .header > div.function > div button, header .header > div.function > div a {
+header .header > div.function > div button,
+header .header > div.function > div a {
   white-space: nowrap;
   max-width: unset;
 }
 
-header .header > div.function > div, header .header > div.function > button {
+header .header > div.function > div,
+header .header > div.function > button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -486,11 +533,13 @@ header .header > div.function > div, header .header > div.function > button {
   margin-right: 1%;
 }
 
-header .header > div.function > div:hover, header .header > div.function > button:hover {
+header .header > div.function > div:hover,
+header .header > div.function > button:hover {
   cursor: pointer;
 }
 
-header .header > div.function > div .flag, header .header > div.function > button .flag {
+header .header > div.function > div .flag,
+header .header > div.function > button .flag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +549,8 @@ header .header > div.function > div .flag, header .header > div.function > butto
   color: white;
 }
 
-header .header > div.function > div .flag:before, header .header > div.function > button .flag:before {
+header .header > div.function > div .flag:before,
+header .header > div.function > button .flag:before {
   content: "";
   display: block;
   width: 22px;
@@ -510,27 +560,33 @@ header .header > div.function > div .flag:before, header .header > div.function 
   cursor: pointer;
 }
 
-header .header > div.function > div .flag.ch:before, header .header > div.function > button .flag.ch:before {
+header .header > div.function > div .flag.ch:before,
+header .header > div.function > button .flag.ch:before {
   background: url(../img/flag/ch.png) no-repeat top left/cover;
 }
 
-header .header > div.function > div .flag.cs:before, header .header > div.function > button .flag.cs:before {
+header .header > div.function > div .flag.cs:before,
+header .header > div.function > button .flag.cs:before {
   background: url(../img/flag/cs.png) no-repeat top left/cover;
 }
 
-header .header > div.function > div .flag.en:before, header .header > div.function > button .flag.en:before {
+header .header > div.function > div .flag.en:before,
+header .header > div.function > button .flag.en:before {
   background: url(../img/flag/en.png) no-repeat top center/cover;
 }
 
-header .header > div.function > div .flag.th:before, header .header > div.function > button .flag.th:before {
+header .header > div.function > div .flag.th:before,
+header .header > div.function > button .flag.th:before {
   background: url(../img/flag/th.png) no-repeat top left/cover;
 }
 
-header .header > div.function > div .flag.id:before, header .header > div.function > button .flag.id:before {
+header .header > div.function > div .flag.id:before,
+header .header > div.function > button .flag.id:before {
   background: url(../img/flag/id.png) no-repeat top left/cover;
 }
 
-header .header > div.function > div .flag.vn:before, header .header > div.function > button .flag.vn:before {
+header .header > div.function > div .flag.vn:before,
+header .header > div.function > button .flag.vn:before {
   background: url(../img/flag/vn.png) no-repeat top center/cover;
 }
 
@@ -543,7 +599,7 @@ header .header > div.function .icon-email {
 }
 
 header .header > div.function .icon-email.active:after {
-  content: '●';
+  content: "●";
   position: absolute;
   font-size: 14px;
   color: #fab617;
@@ -570,7 +626,8 @@ header .header > div.function .country .countryList {
   z-index: 1;
 }
 
-header .header > div.function .country .countryList button, header .header > div.function .country .countryList a {
+header .header > div.function .country .countryList button,
+header .header > div.function .country .countryList a {
   margin: 10px 0;
   padding: 0 20px;
   display: -webkit-box;
@@ -579,19 +636,23 @@ header .header > div.function .country .countryList button, header .header > div
   line-height: 30px;
 }
 
-header .header > div.function .country .countryList button:hover, header .header > div.function .country .countryList a:hover {
-  background: #0F1A38;
+header .header > div.function .country .countryList button:hover,
+header .header > div.function .country .countryList a:hover {
+  background: #0f1a38;
 }
 
 header .header > div.function .country.active .countryList {
   display: block;
 }
 
-header .header > div.function .btnGroup a, header .header > div.function .btnGroup button {
+header .header > div.function .btnGroup a,
+header .header > div.function .btnGroup button {
   max-height: 32px;
 }
 
-header .header > div.function .cashier, header .header > div.function .wallet, header .header > div.function .memberfile {
+header .header > div.function .cashier,
+header .header > div.function .wallet,
+header .header > div.function .memberfile {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -600,14 +661,21 @@ header .header > div.function .cashier, header .header > div.function .wallet, h
   cursor: pointer;
 }
 
-header .header > div.function .cashier > button, header .header > div.function .cashier > a, header .header > div.function .wallet > button, header .header > div.function .wallet > a, header .header > div.function .memberfile > button, header .header > div.function .memberfile > a {
+header .header > div.function .cashier > button,
+header .header > div.function .cashier > a,
+header .header > div.function .wallet > button,
+header .header > div.function .wallet > a,
+header .header > div.function .memberfile > button,
+header .header > div.function .memberfile > a {
   color: white;
   font-size: 14px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
-header .header > div.function .cashier .submenu, header .header > div.function .wallet .submenu, header .header > div.function .memberfile .submenu {
+header .header > div.function .cashier .submenu,
+header .header > div.function .wallet .submenu,
+header .header > div.function .memberfile .submenu {
   display: none;
   position: absolute;
   margin-top: 30px;
@@ -623,17 +691,29 @@ header .header > div.function .cashier .submenu, header .header > div.function .
   z-index: 1;
 }
 
-header .header > div.function .cashier .submenu > a, header .header > div.function .cashier .submenu > button, header .header > div.function .wallet .submenu > a, header .header > div.function .wallet .submenu > button, header .header > div.function .memberfile .submenu > a, header .header > div.function .memberfile .submenu > button {
+header .header > div.function .cashier .submenu > a,
+header .header > div.function .cashier .submenu > button,
+header .header > div.function .wallet .submenu > a,
+header .header > div.function .wallet .submenu > button,
+header .header > div.function .memberfile .submenu > a,
+header .header > div.function .memberfile .submenu > button {
   padding: 0 20px;
   line-height: 30px;
   text-align: left;
 }
 
-header .header > div.function .cashier .submenu > a:hover, header .header > div.function .cashier .submenu > button:hover, header .header > div.function .wallet .submenu > a:hover, header .header > div.function .wallet .submenu > button:hover, header .header > div.function .memberfile .submenu > a:hover, header .header > div.function .memberfile .submenu > button:hover {
-  background: #0F1A38;
+header .header > div.function .cashier .submenu > a:hover,
+header .header > div.function .cashier .submenu > button:hover,
+header .header > div.function .wallet .submenu > a:hover,
+header .header > div.function .wallet .submenu > button:hover,
+header .header > div.function .memberfile .submenu > a:hover,
+header .header > div.function .memberfile .submenu > button:hover {
+  background: #0f1a38;
 }
 
-header .header > div.function .cashier .submenu .icon-exit, header .header > div.function .wallet .submenu .icon-exit, header .header > div.function .memberfile .submenu .icon-exit {
+header .header > div.function .cashier .submenu .icon-exit,
+header .header > div.function .wallet .submenu .icon-exit,
+header .header > div.function .memberfile .submenu .icon-exit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,41 +725,61 @@ header .header > div.function .cashier .submenu .icon-exit, header .header > div
           align-items: flex-end;
 }
 
-header .header > div.function .cashier .submenu .icon-exit:before, header .header > div.function .wallet .submenu .icon-exit:before, header .header > div.function .memberfile .submenu .icon-exit:before {
+header .header > div.function .cashier .submenu .icon-exit:before,
+header .header > div.function .wallet .submenu .icon-exit:before,
+header .header > div.function .memberfile .submenu .icon-exit:before {
   color: #1E85EC;
 }
 
-header .header > div.function .cashier .submenu .icon-exit span, header .header > div.function .wallet .submenu .icon-exit span, header .header > div.function .memberfile .submenu .icon-exit span {
+header .header > div.function .cashier .submenu .icon-exit span,
+header .header > div.function .wallet .submenu .icon-exit span,
+header .header > div.function .memberfile .submenu .icon-exit span {
   padding: 0 5px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
-header .header > div.function .cashier.active > button, header .header > div.function .cashier.active > a, header .header > div.function .cashier.active:before, header .header > div.function .cashier.active:after, header .header > div.function .wallet.active > button, header .header > div.function .wallet.active > a, header .header > div.function .wallet.active:before, header .header > div.function .wallet.active:after, header .header > div.function .memberfile.active > button, header .header > div.function .memberfile.active > a, header .header > div.function .memberfile.active:before, header .header > div.function .memberfile.active:after {
+header .header > div.function .cashier.active > button,
+header .header > div.function .cashier.active > a, header .header > div.function .cashier.active:before, header .header > div.function .cashier.active:after,
+header .header > div.function .wallet.active > button,
+header .header > div.function .wallet.active > a,
+header .header > div.function .wallet.active:before,
+header .header > div.function .wallet.active:after,
+header .header > div.function .memberfile.active > button,
+header .header > div.function .memberfile.active > a,
+header .header > div.function .memberfile.active:before,
+header .header > div.function .memberfile.active:after {
   color: #1E85EC;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
-header .header > div.function .cashier.active .submenu, header .header > div.function .wallet.active .submenu, header .header > div.function .memberfile.active .submenu {
+header .header > div.function .cashier.active .submenu,
+header .header > div.function .wallet.active .submenu,
+header .header > div.function .memberfile.active .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
 }
 
-header .header > div.function .cashier.active:after, header .header > div.function .wallet.active:after, header .header > div.function .memberfile.active:after {
+header .header > div.function .cashier.active:after,
+header .header > div.function .wallet.active:after,
+header .header > div.function .memberfile.active:after {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
-header .header > div.function .cashier:before, header .header > div.function .wallet:before, header .header > div.function .memberfile:before {
+header .header > div.function .cashier:before,
+header .header > div.function .wallet:before,
+header .header > div.function .memberfile:before {
   font-size: 18px;
 }
 
-header .header > div.function .wallet button.icon-eye-blocked, header .header > div.function .wallet button.icon-eye {
+header .header > div.function .wallet button.icon-eye-blocked,
+header .header > div.function .wallet button.icon-eye {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,7 +843,8 @@ header .header > div.function .wallet .submenu > div.btnGroup {
           justify-content: space-between;
 }
 
-header .header > div.function .wallet .submenu > div.btnGroup a, header .header > div.function .wallet .submenu > div.btnGroup button {
+header .header > div.function .wallet .submenu > div.btnGroup a,
+header .header > div.function .wallet .submenu > div.btnGroup button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -751,7 +852,8 @@ header .header > div.function .wallet .submenu > div.btnGroup a, header .header 
   margin-right: 10px;
 }
 
-header .header > div.function .wallet .submenu > div.btnGroup a:last-child, header .header > div.function .wallet .submenu > div.btnGroup button:last-child {
+header .header > div.function .wallet .submenu > div.btnGroup a:last-child,
+header .header > div.function .wallet .submenu > div.btnGroup button:last-child {
   margin-right: 0;
 }
 
@@ -805,7 +907,8 @@ main section > div .articleModule {
           justify-content: space-between;
 }
 
-main section > div .articleModule a, main section > div .articleModule button {
+main section > div .articleModule a,
+main section > div .articleModule button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -822,11 +925,13 @@ main section > div .articleModule a, main section > div .articleModule button {
           justify-content: space-between;
 }
 
-main section > div .articleModule a:last-child, main section > div .articleModule button:last-child {
+main section > div .articleModule a:last-child,
+main section > div .articleModule button:last-child {
   margin-right: 0;
 }
 
-main section > div .articleModule a .title, main section > div .articleModule button .title {
+main section > div .articleModule a .title,
+main section > div .articleModule button .title {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -890,13 +995,20 @@ footer > div.webmap > div div:nth-child(2) {
   clear: both;
 }
 
-footer > div.webmap > div div a, footer > div.webmap > div div button {
+footer > div.webmap > div div a,
+footer > div.webmap > div div button {
   line-height: 24px;
   font-size: 12px;
   text-align: left;
 }
 
-footer > div.webmap > div div a:hover, footer > div.webmap > div div button:hover {
+footer > div.webmap > div div a::before,
+footer > div.webmap > div div button::before {
+  margin-right: 5px;
+}
+
+footer > div.webmap > div div a:hover,
+footer > div.webmap > div div button:hover {
   color: #56ceff;
 }
 
@@ -913,7 +1025,8 @@ footer > div .platformGroup {
           align-items: center;
 }
 
-footer > div .platformGroup a, footer > div .platformGroup button {
+footer > div .platformGroup a,
+footer > div .platformGroup button {
   width: auto;
   padding: 0 5px;
   max-width: 100px;
@@ -966,7 +1079,8 @@ footer > div.copyright {
   margin: 15px 0 30px;
 }
 
-.joinus .joinModule > div:not(.btnGroup) > a, .joinus .joinModule > div:not(.btnGroup) > button {
+.joinus .joinModule > div:not(.btnGroup) > a,
+.joinus .joinModule > div:not(.btnGroup) > button {
   font-weight: bold;
   text-decoration: underline;
   margin-left: 10px;
@@ -987,7 +1101,8 @@ footer > div.copyright {
           align-items: flex-start;
 }
 
-.joinus .joinModule .Terms .agree a, .joinus .joinModule .Terms .agree button {
+.joinus .joinModule .Terms .agree a,
+.joinus .joinModule .Terms .agree button {
   color: #56ceff;
   font-size: 12px;
   font-weight: normal;
@@ -1107,7 +1222,7 @@ footer > div.copyright {
   text-align: right;
 }
 
-.inputBox, .inputBox-blue {
+.inputBox {
   width: calc(100% - 22px);
   background: #070e22;
   color: white;
@@ -1126,40 +1241,41 @@ footer > div.copyright {
   min-height: 30px;
 }
 
-.inputBox input[type="date"]::-webkit-inner-spin-button, .inputBox-blue input[type="date"]::-webkit-inner-spin-button, .inputBox input[type="date"]::-webkit-calendar-picker-indicator, .inputBox-blue input[type="date"]::-webkit-calendar-picker-indicator {
+.inputBox input[type="date"]::-webkit-inner-spin-button,
+.inputBox input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
-.inputBox input[type="date"] + .iconModule, .inputBox-blue input[type="date"] + .iconModule {
+.inputBox input[type="date"] + .iconModule {
   pointer-events: none;
 }
 
-.inputBox::-webkit-input-placeholder, .inputBox-blue::-webkit-input-placeholder {
+.inputBox::-webkit-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox:-ms-input-placeholder, .inputBox-blue:-ms-input-placeholder {
+.inputBox:-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox::-ms-input-placeholder, .inputBox-blue::-ms-input-placeholder {
+.inputBox::-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox::placeholder, .inputBox-blue::placeholder {
+.inputBox::placeholder {
   color: #aeb2bc;
 }
 
-.inputBox.active, .active.inputBox-blue {
+.inputBox.active {
   border: 1px solid #1E85EC;
   outline: #1E85EC;
 }
 
-.inputBox > .icon, .inputBox-blue > .icon {
+.inputBox > .icon {
   margin-right: 5px;
 }
 
-.inputBox input, .inputBox-blue input {
+.inputBox input {
   background: transparent;
   border: 0;
   color: white;
@@ -1171,42 +1287,42 @@ footer > div.copyright {
   margin-left: 5px;
 }
 
-.inputBox input::-webkit-input-placeholder, .inputBox-blue input::-webkit-input-placeholder {
+.inputBox input::-webkit-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox input:-ms-input-placeholder, .inputBox-blue input:-ms-input-placeholder {
+.inputBox input:-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox input::-ms-input-placeholder, .inputBox-blue input::-ms-input-placeholder {
+.inputBox input::-ms-input-placeholder {
   color: #aeb2bc;
 }
 
-.inputBox input::placeholder, .inputBox-blue input::placeholder {
+.inputBox input::placeholder {
   color: #aeb2bc;
 }
 
-.inputBox input.text-right, .inputBox-blue input.text-right {
+.inputBox input.text-right {
   text-align: right;
 }
 
-.inputBox .iconModule, .inputBox-blue .iconModule {
+.inputBox .iconModule {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.inputBox .iconModule .icon, .inputBox-blue .iconModule .icon {
+.inputBox .iconModule .icon {
   margin-left: 5px;
   color: #aeb2bc;
 }
 
-.inputBox .iconModule .icon.icon-checkmark, .inputBox-blue .iconModule .icon.icon-checkmark {
+.inputBox .iconModule .icon.icon-checkmark {
   margin-right: 0;
 }
 
-.inputBox .dropdown, .inputBox-blue .dropdown {
+.inputBox .dropdown {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1215,7 +1331,7 @@ footer > div.copyright {
       flex-wrap: wrap;
 }
 
-.inputBox .dropdown > .dropdown-container, .inputBox-blue .dropdown > .dropdown-container {
+.inputBox .dropdown > .dropdown-container {
   position: absolute;
   background: #070e22;
   border: 1px solid #64789b;
@@ -1228,18 +1344,18 @@ footer > div.copyright {
   z-index: 1;
 }
 
-.inputBox .dropdown > .dropdown-container .dropdown-item, .inputBox-blue .dropdown > .dropdown-container .dropdown-item {
+.inputBox .dropdown > .dropdown-container .dropdown-item {
   font-size: 13px;
   padding: 5px 0;
   color: #aeb2bc;
   cursor: pointer;
 }
 
-.inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1), .inputBox-blue .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
+.inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
   padding-top: 10px;
 }
 
-.inputBox .dropdown > .btn, .inputBox-blue .dropdown > .btn {
+.inputBox .dropdown > .btn {
   width: calc(100% - 26px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1322,7 +1438,8 @@ input[type="file"] {
   display: flex;
 }
 
-.btnGroup button, .btnGroup a {
+.btnGroup button,
+.btnGroup a {
   font-family: Arial;
   padding: 7px 10px;
   border-radius: 3px;
@@ -1344,61 +1461,77 @@ input[type="file"] {
   line-height: normal;
 }
 
-.btnGroup button:first-child, .btnGroup a:first-child {
+.btnGroup button:first-child,
+.btnGroup a:first-child {
   margin-left: 0;
 }
 
-.btnGroup button:last-child, .btnGroup a:last-child {
+.btnGroup button:last-child,
+.btnGroup a:last-child {
   margin-right: 0;
   max-width: 100px;
 }
 
-.btnGroup button.orange, .btnGroup a.orange {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#F85F05));
-  background: linear-gradient(to top, #f20c05, #F85F05);
+.btnGroup button.orange,
+.btnGroup a.orange {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#f85f05));
+  background: linear-gradient(to top, #f20c05, #f85f05);
   color: white;
 }
 
-.btnGroup button.orange:hover, .btnGroup a.orange:hover {
+.btnGroup button.orange:hover,
+.btnGroup a.orange:hover {
   background: #f20c05;
 }
 
-.btnGroup button.gray, .btnGroup a.gray {
-  background: -webkit-gradient(linear, left bottom, left top, from(#505050), to(#C0C0C0));
-  background: linear-gradient(to top, #505050, #C0C0C0);
+.btnGroup button.gray,
+.btnGroup a.gray {
+  background: -webkit-gradient(linear, left bottom, left top, from(#505050), to(#c0c0c0));
+  background: linear-gradient(to top, #505050, #c0c0c0);
 }
 
-.btnGroup button.gray:hover, .btnGroup a.gray:hover {
+.btnGroup button.gray:hover,
+.btnGroup a.gray:hover {
   background: #505050;
 }
 
-.btnGroup button.lightgray, .btnGroup button.btn-cancel, .btnGroup a.lightgray, .btnGroup a.btn-cancel {
+.btnGroup button.lightgray, .btnGroup button.btn-cancel,
+.btnGroup a.lightgray,
+.btnGroup a.btn-cancel {
   background: #afafaf;
   color: black;
 }
 
-.btnGroup button.lightgray:hover, .btnGroup button.btn-cancel:hover, .btnGroup a.lightgray:hover, .btnGroup a.btn-cancel:hover {
+.btnGroup button.lightgray:hover, .btnGroup button.btn-cancel:hover,
+.btnGroup a.lightgray:hover,
+.btnGroup a.btn-cancel:hover {
   background: #aeb2bc;
 }
 
-.btnGroup button.blue, .btnGroup a.blue {
+.btnGroup button.blue,
+.btnGroup a.blue {
   background: #56ceff;
   color: #212121;
 }
 
-.btnGroup button.blue:hover, .btnGroup a.blue:hover {
+.btnGroup button.blue:hover,
+.btnGroup a.blue:hover {
   background: #1fbdfd;
 }
 
-.btnGroup button.blue10, .btnGroup a.blue10 {
+.btnGroup button.blue10,
+.btnGroup a.blue10 {
   background: #0f2346;
 }
 
-.btnGroup button.blue10:hover, .btnGroup a.blue10:hover {
+.btnGroup button.blue10:hover,
+.btnGroup a.blue10:hover {
   background: #1a2e56;
 }
 
-.btnGroup button.blueGradient, .btnGroup button.btn-check, .btnGroup a.blueGradient, .btnGroup a.btn-check {
+.btnGroup button.blueGradient, .btnGroup button.btn-check,
+.btnGroup a.blueGradient,
+.btnGroup a.btn-check {
   background: -webkit-gradient(linear, left bottom, left top, from(#41b2e1), to(#6fd1fa));
   background: linear-gradient(to top, #41b2e1, #6fd1fa);
   color: black;
@@ -1406,43 +1539,53 @@ input[type="file"] {
   max-width: none;
 }
 
-.btnGroup button.blueGradient:hover, .btnGroup button.btn-check:hover, .btnGroup a.blueGradient:hover, .btnGroup a.btn-check:hover {
+.btnGroup button.blueGradient:hover, .btnGroup button.btn-check:hover,
+.btnGroup a.blueGradient:hover,
+.btnGroup a.btn-check:hover {
   background: #1fbdfd;
 }
 
-.btnGroup button.darkGray, .btnGroup a.darkGray {
+.btnGroup button.darkGray,
+.btnGroup a.darkGray {
   background: #666;
   color: white;
 }
 
-.btnGroup button.yellow, .btnGroup a.yellow {
+.btnGroup button.yellow,
+.btnGroup a.yellow {
   background: #fab617;
   color: black;
 }
 
-.btnGroup button.yellow:hover, .btnGroup a.yellow:hover {
+.btnGroup button.yellow:hover,
+.btnGroup a.yellow:hover {
   background: #fa9f17;
 }
 
-.btnGroup button.red, .btnGroup a.red {
+.btnGroup button.red,
+.btnGroup a.red {
   background: #F52805;
   color: white;
 }
 
-.btnGroup button.red:hover, .btnGroup a.red:hover {
+.btnGroup button.red:hover,
+.btnGroup a.red:hover {
   background: #db2c01;
 }
 
-.btnGroup button.blueBorder, .btnGroup a.blueBorder {
+.btnGroup button.blueBorder,
+.btnGroup a.blueBorder {
   border: 1px solid #56ceff;
   color: #56ceff;
 }
 
-.btnGroup button.blueBorder:hover, .btnGroup a.blueBorder:hover {
+.btnGroup button.blueBorder:hover,
+.btnGroup a.blueBorder:hover {
   background: #1E85EC;
 }
 
-.btnGroup button.icon:before, .btnGroup a.icon:before {
+.btnGroup button.icon:before,
+.btnGroup a.icon:before {
   font-weight: normal;
 }
 
@@ -1525,7 +1668,8 @@ main > .swiper-container .swiper-slide {
   margin-left: 20px;
 }
 
-#Marquee .marquee-box .marquee-run a, #Marquee .marquee-box .marquee-run button {
+#Marquee .marquee-box .marquee-run a,
+#Marquee .marquee-box .marquee-run button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -1539,7 +1683,7 @@ main > .swiper-container .swiper-slide {
   position: fixed;
   top: 25%;
   z-index: 2;
-  background: #00B9FF;
+  background: #00b9ff;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 15px 0;
@@ -1587,7 +1731,7 @@ main > .swiper-container .swiper-slide {
   width: 20%;
   min-width: 195px;
   margin-right: 3%;
-  background: #0A1533;
+  background: #0a1533;
   margin: 25px 3% 0 0;
   padding: 5px 0;
 }
@@ -1601,7 +1745,7 @@ main > .swiper-container .swiper-slide {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #0A1533;
+  background: #0a1533;
 }
 
 #leftMenu + div .infoModule {
@@ -1609,10 +1753,11 @@ main > .swiper-container .swiper-slide {
 }
 
 #leftMenu .menuModule {
-  background: #0A1533;
+  background: #0a1533;
 }
 
-#leftMenu .menuModule button, #leftMenu .menuModule a {
+#leftMenu .menuModule button,
+#leftMenu .menuModule a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1626,7 +1771,8 @@ main > .swiper-container .swiper-slide {
   text-align: left;
 }
 
-#leftMenu .menuModule button.active, #leftMenu .menuModule a.active {
+#leftMenu .menuModule button.active,
+#leftMenu .menuModule a.active {
   color: #56ceff;
   border-left: 3px solid #56ceff;
   padding-left: 28px;
@@ -1648,7 +1794,7 @@ main > .swiper-container .swiper-slide {
 }
 
 #leftMenu .menuModule .menuHeader:after {
-  font-family: 'icomoon';
+  font-family: "icomoon";
   content: "\e954";
   font-size: 24px;
   -webkit-transform: rotate(90deg);
@@ -1683,7 +1829,8 @@ main > .swiper-container .swiper-slide {
   margin-top: 20px;
 }
 
-.list + button, .list + a {
+.list + button,
+.list + a {
   color: #1E85EC;
   float: right;
   font-size: 30px;
@@ -1706,7 +1853,8 @@ main > .swiper-container .swiper-slide {
   font-size: 24px;
 }
 
-.list .listTag button, .list .listTag a {
+.list .listTag button,
+.list .listTag a {
   line-height: 30px;
   background: #1E85EC;
   color: white;
@@ -1715,11 +1863,13 @@ main > .swiper-container .swiper-slide {
   border-top-right-radius: 10px;
 }
 
-.list .listTag button.active, .list .listTag a.active {
+.list .listTag button.active,
+.list .listTag a.active {
   background: #134DAE;
 }
 
-.list .listHeader div, .list .listBody div {
+.list .listHeader div,
+.list .listBody div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1733,20 +1883,23 @@ main > .swiper-container .swiper-slide {
           box-sizing: border-box;
 }
 
-.list .listHeader div:first-child, .list .listBody div:first-child {
+.list .listHeader div:first-child,
+.list .listBody div:first-child {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 49px;
           flex: 0 0 49px;
 }
 
-.list .listHeader div:last-child, .list .listBody div:last-child {
+.list .listHeader div:last-child,
+.list .listBody div:last-child {
   min-width: 160px;
   position: relative;
   margin: 0;
   border-right: 0;
 }
 
-.list .listHeader div:nth-last-child(3), .list .listBody div:nth-last-child(3) {
+.list .listHeader div:nth-last-child(3),
+.list .listBody div:nth-last-child(3) {
   min-width: 85px;
 }
 
@@ -1761,7 +1914,8 @@ main > .swiper-container .swiper-slide {
   font-weight: bold;
 }
 
-.list .listHeader button, .list .listHeader a {
+.list .listHeader button,
+.list .listHeader a {
   font-size: 12px;
   position: absolute;
   right: 12px;
@@ -1849,7 +2003,8 @@ main > .swiper-container .swiper-slide {
   margin: 5px 0;
 }
 
-.list .listBody .btnGroup button, .list .listBody .btnGroup a {
+.list .listBody .btnGroup button,
+.list .listBody .btnGroup a {
   border-radius: 5px;
   margin: 2.5px 0;
 }
@@ -1873,7 +2028,8 @@ main > .swiper-container .swiper-slide {
   font-size: 24px;
 }
 
-.pagination a, .pagination button {
+.pagination a,
+.pagination button {
   float: left;
   width: 30px;
   height: 30px;
@@ -1891,24 +2047,28 @@ main > .swiper-container .swiper-slide {
           align-items: center;
 }
 
-.pagination a.active, .pagination a:hover, .pagination button.active, .pagination button:hover {
+.pagination a.active, .pagination a:hover,
+.pagination button.active,
+.pagination button:hover {
   background: #56ceff;
   color: black;
 }
 
-.stepBar, .stepBar-left {
+.stepBar,
+.stepBar-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 70px 20px;
 }
 
-.stepBar > div, .stepBar-left > div {
+.stepBar > div,
+.stepBar-left > div {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px solid #F85B05;
+  border: 1px solid #f85b05;
   border-radius: 3px;
   margin-right: 5px;
   padding: 10px;
@@ -1918,15 +2078,16 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #F85B05;
+  color: #f85b05;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background: #070e22;
 }
 
-.stepBar > div:before, .stepBar-left > div:before {
-  content: '';
+.stepBar > div:before,
+.stepBar-left > div:before {
+  content: "";
   position: absolute;
   width: 11px;
   height: 40px;
@@ -1934,8 +2095,9 @@ main > .swiper-container .swiper-slide {
   background: url(../img/stepAfter.png);
 }
 
-.stepBar > div:after, .stepBar-left > div:after {
-  content: '';
+.stepBar > div:after,
+.stepBar-left > div:after {
+  content: "";
   position: absolute;
   width: 11px;
   height: 40px;
@@ -1944,21 +2106,24 @@ main > .swiper-container .swiper-slide {
   z-index: 1;
 }
 
-.stepBar > div.active, .stepBar-left > div.active {
+.stepBar > div.active,
+.stepBar-left > div.active {
   color: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#F85F05));
-  background: linear-gradient(to top, #f20c05, #F85F05);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f20c05), to(#f85f05));
+  background: linear-gradient(to top, #f20c05, #f85f05);
   border: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.stepBar > div.active:first-child:before, .stepBar-left > div.active:first-child:before {
+.stepBar > div.active:first-child:before,
+.stepBar-left > div.active:first-child:before {
   background: none;
 }
 
-.stepBar > div.active:after, .stepBar-left > div.active:after {
-  content: '';
+.stepBar > div.active:after,
+.stepBar-left > div.active:after {
+  content: "";
   position: absolute;
   width: 11px;
   height: 40px;
@@ -1972,7 +2137,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .cashBar {
-  background: #3B4D80;
+  background: #3b4d80;
   height: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2031,7 +2196,7 @@ main > .swiper-container .swiper-slide {
   height: 15px;
   border-radius: 20px;
   background: #56ceff;
-  border: 2px solid #0C1A3F;
+  border: 2px solid #0c1a3f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2055,7 +2220,8 @@ main > .swiper-container .swiper-slide {
   display: none;
 }
 
-.infoModule > button.icon-arrow-left2, .infoModule > a.icon-arrow-left2 {
+.infoModule > button.icon-arrow-left2,
+.infoModule > a.icon-arrow-left2 {
   color: white;
   margin: 40px 40px 0;
   font-size: 18px;
@@ -2070,7 +2236,8 @@ main > .swiper-container .swiper-slide {
   padding: 5px 10px;
 }
 
-.infoModule > button.icon-arrow-left2:before, .infoModule > a.icon-arrow-left2:before {
+.infoModule > button.icon-arrow-left2:before,
+.infoModule > a.icon-arrow-left2:before {
   margin-right: 5px;
 }
 
@@ -2122,7 +2289,7 @@ main > .swiper-container .swiper-slide {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: #0C1A3F;
+  background: #0c1a3f;
   border-radius: 5px;
   border: 1px solid #1a2b58;
 }
@@ -2214,7 +2381,8 @@ main > .swiper-container .swiper-slide {
   min-width: 76px;
 }
 
-.subModuleList .subModule .subModuleBody ul li a, .subModuleList .subModule .subModuleBody ul li button {
+.subModuleList .subModule .subModuleBody ul li a,
+.subModuleList .subModule .subModuleBody ul li button {
   border-radius: 5px;
   padding: 5px;
   text-align: center;
@@ -2233,12 +2401,14 @@ main > .swiper-container .swiper-slide {
   background: white;
 }
 
-.subModuleList .subModule .subModuleBody ul li a.icon-library, .subModuleList .subModule .subModuleBody ul li button.icon-library {
+.subModuleList .subModule .subModuleBody ul li a.icon-library,
+.subModuleList .subModule .subModuleBody ul li button.icon-library {
   color: #1E85EC;
   font-size: 44px;
 }
 
-.subModuleList .subModule .subModuleBody ul li a img, .subModuleList .subModule .subModuleBody ul li button img {
+.subModuleList .subModule .subModuleBody ul li a img,
+.subModuleList .subModule .subModuleBody ul li button img {
   width: auto;
   height: 100%;
 }
@@ -2251,8 +2421,8 @@ main > .swiper-container .swiper-slide {
   text-align: center;
   margin-top: -3px;
   background: white;
-  color: #0C1A3F;
-  border-top: 1px solid #0C1A3F;
+  color: #0c1a3f;
+  border-top: 1px solid #0c1a3f;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -2272,12 +2442,13 @@ main > .swiper-container .swiper-slide {
   margin-top: 30px;
   padding: 10px;
   position: relative;
-  background: #0C1A3F;
+  background: #0c1a3f;
   border-radius: 5px;
   border: 1px solid #1a2b58;
 }
 
-.platformName button.icon, .platformName a.icon {
+.platformName button.icon,
+.platformName a.icon {
   position: absolute;
   left: 0;
   bottom: -40px;
@@ -2290,7 +2461,8 @@ main > .swiper-container .swiper-slide {
           align-items: center;
 }
 
-.platformName button.icon:before, .platformName a.icon:before {
+.platformName button.icon:before,
+.platformName a.icon:before {
   font-size: 18px;
   margin-right: 5px;
 }
@@ -2393,7 +2565,8 @@ main > .swiper-container .swiper-slide {
   width: calc(25% - 10px);
 }
 
-.platformName + div.subModuleList .subModuleBody ul li a, .platformName + div.subModuleList .subModuleBody ul li button {
+.platformName + div.subModuleList .subModuleBody ul li a,
+.platformName + div.subModuleList .subModuleBody ul li button {
   padding: 5px 10px;
   width: calc(100% - 20px);
 }
@@ -2440,7 +2613,9 @@ main > .swiper-container .swiper-slide {
   height: 100%;
 }
 
-.bankName i, .bankName a, .bankName button {
+.bankName i,
+.bankName a,
+.bankName button {
   position: absolute;
   right: -10px;
   -webkit-transform: translateX(100%);
@@ -2552,7 +2727,8 @@ main > .swiper-container .swiper-slide {
   margin: 10px 0 20px;
 }
 
-#popup > div.loginpop .loginModule .loginFunction .noAccount button, #popup > div.loginpop .loginModule .loginFunction .noAccount a {
+#popup > div.loginpop .loginModule .loginFunction .noAccount button,
+#popup > div.loginpop .loginModule .loginFunction .noAccount a {
   text-decoration: underline;
   font-size: 12px;
   text-align: right;
@@ -2572,56 +2748,176 @@ main > .swiper-container .swiper-slide {
   max-width: unset;
 }
 
-.Submit, .Success, .Error, .Cancel, .uploadSuccess, .updateSuccess, .tokyc, .addBankpop, .changePassWordpop, .editSuccess, .upload, .update, .loackAmount {
+.Submit,
+.Success,
+.Error,
+.Cancel,
+.uploadSuccess,
+.updateSuccess,
+.tokyc,
+.addBankpop,
+.changePassWordpop,
+.editSuccess,
+.upload,
+.update,
+.loackAmount {
   padding: 40px;
-  background: #070E22;
+  background: #070e22;
   text-align: center;
   position: relative;
   max-width: 600px;
   min-width: 300px;
 }
 
-.Submit > .icon, .Success > .icon, .Error > .icon, .Cancel > .icon, .uploadSuccess > .icon, .updateSuccess > .icon, .tokyc > .icon, .addBankpop > .icon, .changePassWordpop > .icon, .editSuccess > .icon, .upload > .icon, .update > .icon, .loackAmount > .icon {
+.Submit > .icon,
+.Success > .icon,
+.Error > .icon,
+.Cancel > .icon,
+.uploadSuccess > .icon,
+.updateSuccess > .icon,
+.tokyc > .icon,
+.addBankpop > .icon,
+.changePassWordpop > .icon,
+.editSuccess > .icon,
+.upload > .icon,
+.update > .icon,
+.loackAmount > .icon {
   font-size: 36px;
   color: #56ceff;
 }
 
-.Submit > .icon.icon-icon32px_notification, .Success > .icon.icon-icon32px_notification, .Error > .icon.icon-icon32px_notification, .Cancel > .icon.icon-icon32px_notification, .uploadSuccess > .icon.icon-icon32px_notification, .updateSuccess > .icon.icon-icon32px_notification, .tokyc > .icon.icon-icon32px_notification, .addBankpop > .icon.icon-icon32px_notification, .changePassWordpop > .icon.icon-icon32px_notification, .editSuccess > .icon.icon-icon32px_notification, .upload > .icon.icon-icon32px_notification, .update > .icon.icon-icon32px_notification, .loackAmount > .icon.icon-icon32px_notification {
+.Submit > .icon.icon-icon32px_notification,
+.Success > .icon.icon-icon32px_notification,
+.Error > .icon.icon-icon32px_notification,
+.Cancel > .icon.icon-icon32px_notification,
+.uploadSuccess > .icon.icon-icon32px_notification,
+.updateSuccess > .icon.icon-icon32px_notification,
+.tokyc > .icon.icon-icon32px_notification,
+.addBankpop > .icon.icon-icon32px_notification,
+.changePassWordpop > .icon.icon-icon32px_notification,
+.editSuccess > .icon.icon-icon32px_notification,
+.upload > .icon.icon-icon32px_notification,
+.update > .icon.icon-icon32px_notification,
+.loackAmount > .icon.icon-icon32px_notification {
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
 }
 
-.Submit > .icon.icon-information-solid, .Success > .icon.icon-information-solid, .Error > .icon.icon-information-solid, .Cancel > .icon.icon-information-solid, .uploadSuccess > .icon.icon-information-solid, .updateSuccess > .icon.icon-information-solid, .tokyc > .icon.icon-information-solid, .addBankpop > .icon.icon-information-solid, .changePassWordpop > .icon.icon-information-solid, .editSuccess > .icon.icon-information-solid, .upload > .icon.icon-information-solid, .update > .icon.icon-information-solid, .loackAmount > .icon.icon-information-solid {
+.Submit > .icon.icon-information-solid,
+.Success > .icon.icon-information-solid,
+.Error > .icon.icon-information-solid,
+.Cancel > .icon.icon-information-solid,
+.uploadSuccess > .icon.icon-information-solid,
+.updateSuccess > .icon.icon-information-solid,
+.tokyc > .icon.icon-information-solid,
+.addBankpop > .icon.icon-information-solid,
+.changePassWordpop > .icon.icon-information-solid,
+.editSuccess > .icon.icon-information-solid,
+.upload > .icon.icon-information-solid,
+.update > .icon.icon-information-solid,
+.loackAmount > .icon.icon-information-solid {
   color: #1E85EC;
 }
 
-.Submit .title, .Success .title, .Error .title, .Cancel .title, .uploadSuccess .title, .updateSuccess .title, .tokyc .title, .addBankpop .title, .changePassWordpop .title, .editSuccess .title, .upload .title, .update .title, .loackAmount .title {
+.Submit .title,
+.Success .title,
+.Error .title,
+.Cancel .title,
+.uploadSuccess .title,
+.updateSuccess .title,
+.tokyc .title,
+.addBankpop .title,
+.changePassWordpop .title,
+.editSuccess .title,
+.upload .title,
+.update .title,
+.loackAmount .title {
   color: #56ceff;
 }
 
-.Submit .txt-lightgray, .Success .txt-lightgray, .Error .txt-lightgray, .Cancel .txt-lightgray, .uploadSuccess .txt-lightgray, .updateSuccess .txt-lightgray, .tokyc .txt-lightgray, .addBankpop .txt-lightgray, .changePassWordpop .txt-lightgray, .editSuccess .txt-lightgray, .upload .txt-lightgray, .update .txt-lightgray, .loackAmount .txt-lightgray {
+.Submit .txt-lightgray,
+.Success .txt-lightgray,
+.Error .txt-lightgray,
+.Cancel .txt-lightgray,
+.uploadSuccess .txt-lightgray,
+.updateSuccess .txt-lightgray,
+.tokyc .txt-lightgray,
+.addBankpop .txt-lightgray,
+.changePassWordpop .txt-lightgray,
+.editSuccess .txt-lightgray,
+.upload .txt-lightgray,
+.update .txt-lightgray,
+.loackAmount .txt-lightgray {
   text-align: center;
   margin: 20px 0;
 }
 
-.Submit .btnGroup, .Success .btnGroup, .Error .btnGroup, .Cancel .btnGroup, .uploadSuccess .btnGroup, .updateSuccess .btnGroup, .tokyc .btnGroup, .addBankpop .btnGroup, .changePassWordpop .btnGroup, .editSuccess .btnGroup, .upload .btnGroup, .update .btnGroup, .loackAmount .btnGroup {
+.Submit .btnGroup,
+.Success .btnGroup,
+.Error .btnGroup,
+.Cancel .btnGroup,
+.uploadSuccess .btnGroup,
+.updateSuccess .btnGroup,
+.tokyc .btnGroup,
+.addBankpop .btnGroup,
+.changePassWordpop .btnGroup,
+.editSuccess .btnGroup,
+.upload .btnGroup,
+.update .btnGroup,
+.loackAmount .btnGroup {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.Submit .btnGroup a, .Success .btnGroup a, .Error .btnGroup a, .Cancel .btnGroup a, .uploadSuccess .btnGroup a, .updateSuccess .btnGroup a, .tokyc .btnGroup a, .addBankpop .btnGroup a, .changePassWordpop .btnGroup a, .editSuccess .btnGroup a, .upload .btnGroup a, .update .btnGroup a, .loackAmount .btnGroup a {
+.Submit .btnGroup a,
+.Success .btnGroup a,
+.Error .btnGroup a,
+.Cancel .btnGroup a,
+.uploadSuccess .btnGroup a,
+.updateSuccess .btnGroup a,
+.tokyc .btnGroup a,
+.addBankpop .btnGroup a,
+.changePassWordpop .btnGroup a,
+.editSuccess .btnGroup a,
+.upload .btnGroup a,
+.update .btnGroup a,
+.loackAmount .btnGroup a {
   max-width: 100px;
 }
 
-.Submit .popList, .Success .popList, .Error .popList, .Cancel .popList, .uploadSuccess .popList, .updateSuccess .popList, .tokyc .popList, .addBankpop .popList, .changePassWordpop .popList, .editSuccess .popList, .upload .popList, .update .popList, .loackAmount .popList {
+.Submit .popList,
+.Success .popList,
+.Error .popList,
+.Cancel .popList,
+.uploadSuccess .popList,
+.updateSuccess .popList,
+.tokyc .popList,
+.addBankpop .popList,
+.changePassWordpop .popList,
+.editSuccess .popList,
+.upload .popList,
+.update .popList,
+.loackAmount .popList {
   width: 100%;
   margin-top: 30px;
 }
 
-.Submit .popList ul, .Success .popList ul, .Error .popList ul, .Cancel .popList ul, .uploadSuccess .popList ul, .updateSuccess .popList ul, .tokyc .popList ul, .addBankpop .popList ul, .changePassWordpop .popList ul, .editSuccess .popList ul, .upload .popList ul, .update .popList ul, .loackAmount .popList ul {
+.Submit .popList ul,
+.Success .popList ul,
+.Error .popList ul,
+.Cancel .popList ul,
+.uploadSuccess .popList ul,
+.updateSuccess .popList ul,
+.tokyc .popList ul,
+.addBankpop .popList ul,
+.changePassWordpop .popList ul,
+.editSuccess .popList ul,
+.upload .popList ul,
+.update .popList ul,
+.loackAmount .popList ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2634,18 +2930,54 @@ main > .swiper-container .swiper-slide {
           justify-content: space-between;
 }
 
-.Submit .popList ul li, .Success .popList ul li, .Error .popList ul li, .Cancel .popList ul li, .uploadSuccess .popList ul li, .updateSuccess .popList ul li, .tokyc .popList ul li, .addBankpop .popList ul li, .changePassWordpop .popList ul li, .editSuccess .popList ul li, .upload .popList ul li, .update .popList ul li, .loackAmount .popList ul li {
+.Submit .popList ul li,
+.Success .popList ul li,
+.Error .popList ul li,
+.Cancel .popList ul li,
+.uploadSuccess .popList ul li,
+.updateSuccess .popList ul li,
+.tokyc .popList ul li,
+.addBankpop .popList ul li,
+.changePassWordpop .popList ul li,
+.editSuccess .popList ul li,
+.upload .popList ul li,
+.update .popList ul li,
+.loackAmount .popList ul li {
   line-height: 30px;
   letter-spacing: 1px;
   font-size: 12px;
 }
 
-.Submit .popList ul li:first-child, .Success .popList ul li:first-child, .Error .popList ul li:first-child, .Cancel .popList ul li:first-child, .uploadSuccess .popList ul li:first-child, .updateSuccess .popList ul li:first-child, .tokyc .popList ul li:first-child, .addBankpop .popList ul li:first-child, .changePassWordpop .popList ul li:first-child, .editSuccess .popList ul li:first-child, .upload .popList ul li:first-child, .update .popList ul li:first-child, .loackAmount .popList ul li:first-child {
+.Submit .popList ul li:first-child,
+.Success .popList ul li:first-child,
+.Error .popList ul li:first-child,
+.Cancel .popList ul li:first-child,
+.uploadSuccess .popList ul li:first-child,
+.updateSuccess .popList ul li:first-child,
+.tokyc .popList ul li:first-child,
+.addBankpop .popList ul li:first-child,
+.changePassWordpop .popList ul li:first-child,
+.editSuccess .popList ul li:first-child,
+.upload .popList ul li:first-child,
+.update .popList ul li:first-child,
+.loackAmount .popList ul li:first-child {
   color: #56ceff;
   font-weight: bold;
 }
 
-.Submit .tip, .Success .tip, .Error .tip, .Cancel .tip, .uploadSuccess .tip, .updateSuccess .tip, .tokyc .tip, .addBankpop .tip, .changePassWordpop .tip, .editSuccess .tip, .upload .tip, .update .tip, .loackAmount .tip {
+.Submit .tip,
+.Success .tip,
+.Error .tip,
+.Cancel .tip,
+.uploadSuccess .tip,
+.updateSuccess .tip,
+.tokyc .tip,
+.addBankpop .tip,
+.changePassWordpop .tip,
+.editSuccess .tip,
+.upload .tip,
+.update .tip,
+.loackAmount .tip {
   text-align: left;
   width: 100%;
 }
@@ -2769,7 +3101,7 @@ main > .swiper-container .swiper-slide {
           flex-direction: column;
 }
 
-.directions ~ form .inputBox .iconModule .icon:before, .directions ~ form .inputBox-blue .iconModule .icon:before {
+.directions ~ form .inputBox .iconModule .icon:before {
   font-weight: normal;
 }
 
@@ -2792,7 +3124,7 @@ main > .swiper-container .swiper-slide {
   float: left;
   border-radius: 5px;
   padding: 20px;
-  background: #0C1A3F;
+  background: #0c1a3f;
   border-radius: 5px;
   border: 1px solid #1a2b58;
   margin-right: 20px;
@@ -2827,7 +3159,7 @@ main > .swiper-container .swiper-slide {
 
 .slipInfo + .subModuleList .upload_img {
   border: 2px dashed #56ceff;
-  background: #010E33;
+  background: #010e33;
   width: 290px;
   height: 120px;
 }
@@ -2886,12 +3218,14 @@ main > .swiper-container .swiper-slide {
   width: max-content;
 }
 
-.offers .swiper-button-next, .offers .swiper-button-prev {
+.offers .swiper-button-next,
+.offers .swiper-button-prev {
   -webkit-transform: translateY(60%);
           transform: translateY(60%);
 }
 
-.offers .swiper-button-next:after, .offers .swiper-button-prev:after {
+.offers .swiper-button-next:after,
+.offers .swiper-button-prev:after {
   font-size: 12px;
   color: #001e42;
   font-weight: bold;
@@ -2905,7 +3239,8 @@ main > .swiper-container .swiper-slide {
   left: 65px;
 }
 
-.offers > img, .offers > div {
+.offers > img,
+.offers > div {
   width: calc(50% - 1px);
   position: relative;
 }
@@ -2941,7 +3276,7 @@ main > .swiper-container .swiper-slide {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  background: #0C1A3F;
+  background: #0c1a3f;
   border-radius: 5px;
   border: 1px solid #1a2b58;
   margin-right: 10px;
@@ -2993,7 +3328,7 @@ main > .swiper-container .swiper-slide {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #0C1A3F;
+  background: #0c1a3f;
   border-radius: 5px;
   border: 1px solid #1a2b58;
   color: #56ceff;
@@ -3004,8 +3339,8 @@ main > .swiper-container .swiper-slide {
 }
 
 .walletModule .walletBalanceModule + .icon-spinner11.active:before {
-  -webkit-animation: rotate .7s linear 2;
-          animation: rotate .7s linear 2;
+  -webkit-animation: rotate 0.7s linear 2;
+          animation: rotate 0.7s linear 2;
 }
 
 .walletModule .walletBalanceModule .icon-error {
@@ -3016,7 +3351,8 @@ main > .swiper-container .swiper-slide {
   margin: 0;
 }
 
-.walletModule .walletBalanceModule .btnGroup button, .walletModule .walletBalanceModule .btnGroup a {
+.walletModule .walletBalanceModule .btnGroup button,
+.walletModule .walletBalanceModule .btnGroup a {
   margin-bottom: 0;
 }
 
@@ -3037,7 +3373,7 @@ main > .swiper-container .swiper-slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #0C1A3F;
+  background: #0c1a3f;
   border-radius: 5px;
   border: 1px solid #1a2b58;
 }
@@ -3081,22 +3417,25 @@ main > .swiper-container .swiper-slide {
   margin: 0 10px;
 }
 
-.walletTransfer .walletModule .from span, .walletTransfer .walletModule .to span {
+.walletTransfer .walletModule .from span,
+.walletTransfer .walletModule .to span {
   color: white;
   display: none;
 }
 
-.walletTransfer .walletModule .from span.active, .walletTransfer .walletModule .to span.active {
+.walletTransfer .walletModule .from span.active,
+.walletTransfer .walletModule .to span.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.walletTransfer .walletModule .from span:nth-child(1), .walletTransfer .walletModule .to span:nth-child(1) {
+.walletTransfer .walletModule .from span:nth-child(1),
+.walletTransfer .walletModule .to span:nth-child(1) {
   display: block;
 }
 
-.walletTransfer .inputBox, .walletTransfer .inputBox-blue {
+.walletTransfer .inputBox {
   width: 100%;
   margin-right: 10px;
 }
@@ -3122,7 +3461,7 @@ main > .swiper-container .swiper-slide {
 
 .addBank {
   width: calc(100% / 3 - 40px);
-  background: #0C1A3F;
+  background: #0c1a3f;
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #1a2b58;
@@ -3186,8 +3525,8 @@ main > .swiper-container .swiper-slide {
           justify-content: space-evenly;
   cursor: pointer;
   min-height: auto;
-  background: #3A4D80;
-  border: 1px solid #4D5E8E;
+  background: #3a4d80;
+  border: 1px solid #4d5e8e;
 }
 
 .addBank .addBankName .addBankInfo {
@@ -3228,7 +3567,7 @@ main > .swiper-container .swiper-slide {
   width: 15px;
   height: 15px;
   margin-right: 0;
-  border: 1px solid #0C1A3F;
+  border: 1px solid #0c1a3f;
   border-radius: 3px;
 }
 
@@ -3238,7 +3577,7 @@ main > .swiper-container .swiper-slide {
 
 .addBank .addBankName .addBankInfo .icon-bin {
   font-size: 24px;
-  color: #56607B;
+  color: #56607b;
   position: static;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3247,7 +3586,8 @@ main > .swiper-container .swiper-slide {
   margin-right: 15px;
 }
 
-.addBank .addBankName button.icon, .addBank .addBankName a.icon {
+.addBank .addBankName button.icon,
+.addBank .addBankName a.icon {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -3345,7 +3685,8 @@ main > .swiper-container .swiper-slide {
   width: calc(25% - 20px);
 }
 
-.addBank + div.subModuleList .subModuleBody ul li a, .addBank + div.subModuleList .subModuleBody ul li button {
+.addBank + div.subModuleList .subModuleBody ul li a,
+.addBank + div.subModuleList .subModuleBody ul li button {
   padding: 5px 10px;
   width: calc(100% - 20px);
 }
@@ -3384,8 +3725,8 @@ main > .swiper-container .swiper-slide {
 }
 
 .calculation > div:nth-child(odd) {
-  background: #3A4D80;
-  border: 1px solid #4D5E8E;
+  background: #3a4d80;
+  border: 1px solid #4d5e8e;
 }
 
 .calculation > div:nth-child(even) {
@@ -3415,7 +3756,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .calculation > div div:first-child {
-  border-bottom: 1px solid #4D5E8E;
+  border-bottom: 1px solid #4d5e8e;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -3444,23 +3785,23 @@ main > .swiper-container .swiper-slide {
   font-size: 14px;
 }
 
-.addBankpop .inputBox, .addBankpop .inputBox-blue {
+.addBankpop .inputBox {
   padding: 2px 10px;
 }
 
-.addBankpop .inputBox .dropdown > .btn, .addBankpop .inputBox-blue .dropdown > .btn {
+.addBankpop .inputBox .dropdown > .btn {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-size: 13px;
 }
 
-.addBankpop .inputBox .dropdown > .dropdown-container, .addBankpop .inputBox-blue .dropdown > .dropdown-container {
+.addBankpop .inputBox .dropdown > .dropdown-container {
   overflow-y: scroll;
   max-height: 200px;
 }
 
-.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item, .addBankpop .inputBox-blue .dropdown > .dropdown-container .dropdown-item {
+.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3470,11 +3811,11 @@ main > .swiper-container .swiper-slide {
   padding: 7.5px 0;
 }
 
-.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1), .addBankpop .inputBox-blue .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
+.addBankpop .inputBox .dropdown > .dropdown-container .dropdown-item:nth-child(1) {
   padding-top: 15px;
 }
 
-.addBankpop .inputBox img, .addBankpop .inputBox-blue img {
+.addBankpop .inputBox img {
   max-width: 44px;
   border-radius: 5px;
   margin-right: 10px;
@@ -3548,7 +3889,8 @@ main > .swiper-container .swiper-slide {
   margin-top: 0;
 }
 
-.quickSelect > div.btnGroup.promoType > button, .quickSelect > div.btnGroup.promoType a {
+.quickSelect > div.btnGroup.promoType > button,
+.quickSelect > div.btnGroup.promoType a {
   -webkit-box-flex: 1 !important;
       -ms-flex: auto !important;
           flex: auto !important;
@@ -3558,23 +3900,36 @@ main > .swiper-container .swiper-slide {
   margin: 10px 0 0;
 }
 
-.quickSelect > div.inputBox.promoType > button, .quickSelect > div.promoType.inputBox-blue > button, .quickSelect > div.inputBox.promoType > a, .quickSelect > div.promoType.inputBox-blue > a, .quickSelect > div:first-child.promoType > button, .quickSelect > div:first-child.promoType > a {
+.quickSelect > div.inputBox.promoType > button,
+.quickSelect > div.inputBox.promoType > a,
+.quickSelect > div:first-child.promoType > button,
+.quickSelect > div:first-child.promoType > a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   white-space: nowrap;
 }
 
-.quickSelect > div.inputBox.promoType > button.orange, .quickSelect > div.promoType.inputBox-blue > button.orange, .quickSelect > div.inputBox.promoType > button.red, .quickSelect > div.promoType.inputBox-blue > button.red, .quickSelect > div.inputBox.promoType > a.orange, .quickSelect > div.promoType.inputBox-blue > a.orange, .quickSelect > div.inputBox.promoType > a.red, .quickSelect > div.promoType.inputBox-blue > a.red, .quickSelect > div:first-child.promoType > button.orange, .quickSelect > div:first-child.promoType > button.red, .quickSelect > div:first-child.promoType > a.orange, .quickSelect > div:first-child.promoType > a.red {
+.quickSelect > div.inputBox.promoType > button.orange, .quickSelect > div.inputBox.promoType > button.red,
+.quickSelect > div.inputBox.promoType > a.orange,
+.quickSelect > div.inputBox.promoType > a.red,
+.quickSelect > div:first-child.promoType > button.orange,
+.quickSelect > div:first-child.promoType > button.red,
+.quickSelect > div:first-child.promoType > a.orange,
+.quickSelect > div:first-child.promoType > a.red {
   position: relative;
   margin-left: 25px;
 }
 
-.quickSelect > div.inputBox.promoType > button:last-child, .quickSelect > div.promoType.inputBox-blue > button:last-child, .quickSelect > div.inputBox.promoType > a:last-child, .quickSelect > div.promoType.inputBox-blue > a:last-child, .quickSelect > div:first-child.promoType > button:last-child, .quickSelect > div:first-child.promoType > a:last-child {
+.quickSelect > div.inputBox.promoType > button:last-child,
+.quickSelect > div.inputBox.promoType > a:last-child,
+.quickSelect > div:first-child.promoType > button:last-child,
+.quickSelect > div:first-child.promoType > a:last-child {
   float: right;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue,
+.quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue {
   margin: 20px 0 0 10px;
   min-height: auto;
   width: 200px;
@@ -3582,15 +3937,18 @@ main > .swiper-container .swiper-slide {
   margin-top: 20px;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue:nth-child(7), .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7) {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7),
+.quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue:nth-child(7) {
   width: 397px;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue .dropdown button, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button,
+.quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue .dropdown button {
   padding: 0;
 }
 
-.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue + button, .quickSelect > div.promoType.btnGroup.inputBox-blue .blueBorder ~ .inputBox-blue + button, .quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue + button {
+.quickSelect > div.inputBox.promoType.btnGroup .blueBorder ~ .inputBox-blue + button,
+.quickSelect > div:first-child.promoType.btnGroup .blueBorder ~ .inputBox-blue + button {
   float: left;
 }
 
@@ -3633,7 +3991,8 @@ main > .swiper-container .swiper-slide {
   margin: 50px 0;
 }
 
-.changePassWord, .forgetPassWord {
+.changePassWord,
+.forgetPassWord {
   max-width: 855px;
   margin: 60px auto 60px;
   display: -webkit-box;
@@ -3646,13 +4005,15 @@ main > .swiper-container .swiper-slide {
       flex-wrap: wrap;
 }
 
-.changePassWord .lastChange, .forgetPassWord .lastChange {
+.changePassWord .lastChange,
+.forgetPassWord .lastChange {
   width: 100%;
   color: #56ceff;
   margin-bottom: 20px;
 }
 
-.changePassWord .lastChange span, .forgetPassWord .lastChange span {
+.changePassWord .lastChange span,
+.forgetPassWord .lastChange span {
   color: white;
   margin-left: 10px;
 }
@@ -3687,14 +4048,14 @@ main > .swiper-container .swiper-slide {
 }
 
 .profile > div:not(.tip) > div:not(.iconModule).icon-spinner11 {
-  -webkit-animation: rotate .7s linear infinite;
-          animation: rotate .7s linear infinite;
+  -webkit-animation: rotate 0.7s linear infinite;
+          animation: rotate 0.7s linear infinite;
   min-width: unset;
   margin-left: 10px;
 }
 
 .profile > div:not(.tip) button {
-  background: #2CA12A;
+  background: #2ca12a;
   border-radius: 5px;
   margin-left: 15px;
   padding: 5px 10px;
@@ -3709,7 +4070,7 @@ main > .swiper-container .swiper-slide {
 }
 
 .profile > div:not(.tip) button.notVer {
-  background: #F94D4D;
+  background: #f94d4d;
 }
 
 .profile > div:not(.tip) button > span {
@@ -3812,7 +4173,7 @@ main > .swiper-container .swiper-slide {
 .accountName {
   padding: 15px;
   margin: 10px 0;
-  background: #0C1A3F;
+  background: #0c1a3f;
   border-radius: 5px;
   border: 1px solid #1a2b58;
   display: -webkit-box;
@@ -3843,26 +4204,33 @@ main > .swiper-container .swiper-slide {
   padding-left: 0;
 }
 
-.announcement, .personal {
+.announcement,
+.personal {
   width: calc(100% - 20px);
   margin: 0 auto;
 }
 
-.announcement pre, .personal pre {
+.announcement pre,
+.personal pre {
   color: white;
 }
 
-.announcement .list > div, .personal .list > div {
+.announcement .list > div,
+.personal .list > div {
   margin-bottom: 10px;
   background: #233157;
   border-radius: 5px;
 }
 
-.announcement .list .listHeader, .announcement .list .listBody, .personal .list .listHeader, .personal .list .listBody {
+.announcement .list .listHeader,
+.announcement .list .listBody,
+.personal .list .listHeader,
+.personal .list .listBody {
   padding: 10px 20px;
 }
 
-.announcement .list .listHeader, .personal .list .listHeader {
+.announcement .list .listHeader,
+.personal .list .listHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3876,12 +4244,14 @@ main > .swiper-container .swiper-slide {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.announcement .list .listHeader div, .personal .list .listHeader div {
+.announcement .list .listHeader div,
+.personal .list .listHeader div {
   padding: 0;
   border: 0;
 }
 
-.announcement .list .listHeader div:nth-child(1), .personal .list .listHeader div:nth-child(1) {
+.announcement .list .listHeader div:nth-child(1),
+.personal .list .listHeader div:nth-child(1) {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
@@ -3891,7 +4261,8 @@ main > .swiper-container .swiper-slide {
   color: #56ceff;
 }
 
-.announcement .list .listHeader div:nth-child(2), .personal .list .listHeader div:nth-child(2) {
+.announcement .list .listHeader div:nth-child(2),
+.personal .list .listHeader div:nth-child(2) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -3902,7 +4273,8 @@ main > .swiper-container .swiper-slide {
           justify-content: flex-end;
 }
 
-.announcement .list .listHeader div:nth-child(2) i, .personal .list .listHeader div:nth-child(2) i {
+.announcement .list .listHeader div:nth-child(2) i,
+.personal .list .listHeader div:nth-child(2) i {
   position: absolute;
   right: 0;
 }
@@ -3916,7 +4288,8 @@ main > .swiper-container .swiper-slide {
   font-weight: normal;
 }
 
-.personal .list > div div.listHeader button, .personal .list > div div.listHeader a {
+.personal .list > div div.listHeader button,
+.personal .list > div div.listHeader a {
   color: white;
   font-size: 18px;
   margin-left: 10px;
@@ -3927,15 +4300,18 @@ main > .swiper-container .swiper-slide {
   margin-right: 5px;
 }
 
-.personal .list .haveRead .listHeader > div:nth-child(2), .personal .list .haveRead .listHeader > div:nth-child(3) {
+.personal .list .haveRead .listHeader > div:nth-child(2),
+.personal .list .haveRead .listHeader > div:nth-child(3) {
   font-weight: normal;
 }
 
-.personal .list .listHeader, .personal .list .functionMenu {
+.personal .list .listHeader,
+.personal .list .functionMenu {
   border-radius: 0;
 }
 
-.personal .list .listHeader .checkbox, .personal .list .functionMenu .checkbox {
+.personal .list .listHeader .checkbox,
+.personal .list .functionMenu .checkbox {
   min-width: auto;
   border: 0;
   -webkit-transform: translateY(0);
@@ -3943,30 +4319,35 @@ main > .swiper-container .swiper-slide {
   margin-right: 20px;
 }
 
-.personal .list .listHeader .checkbox label, .personal .list .functionMenu .checkbox label {
+.personal .list .listHeader .checkbox label,
+.personal .list .functionMenu .checkbox label {
   border-radius: 0;
   width: 15px;
   height: 15px;
   margin-right: 0;
 }
 
-.personal .list .listHeader .checkbox label.icon.icon:before, .personal .list .functionMenu .checkbox label.icon.icon:before {
+.personal .list .listHeader .checkbox label.icon.icon:before,
+.personal .list .functionMenu .checkbox label.icon.icon:before {
   color: #1E85EC;
   font-size: 18px;
   margin-left: -1px;
 }
 
-.personal .list .listHeader div, .personal .list .functionMenu div {
+.personal .list .listHeader div,
+.personal .list .functionMenu div {
   padding: 0;
 }
 
-.personal .list .listHeader div:nth-child(1), .personal .list .functionMenu div:nth-child(1) {
+.personal .list .listHeader div:nth-child(1),
+.personal .list .functionMenu div:nth-child(1) {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
 
-.personal .list .listHeader div:nth-child(2), .personal .list .functionMenu div:nth-child(2) {
+.personal .list .listHeader div:nth-child(2),
+.personal .list .functionMenu div:nth-child(2) {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
@@ -3975,7 +4356,8 @@ main > .swiper-container .swiper-slide {
           justify-content: flex-start;
 }
 
-.personal .list .listHeader div:nth-child(3), .personal .list .functionMenu div:nth-child(3) {
+.personal .list .listHeader div:nth-child(3),
+.personal .list .functionMenu div:nth-child(3) {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -3984,7 +4366,8 @@ main > .swiper-container .swiper-slide {
           justify-content: flex-end;
 }
 
-.personal .list .listHeader div:nth-child(3) i, .personal .list .functionMenu div:nth-child(3) i {
+.personal .list .listHeader div:nth-child(3) i,
+.personal .list .functionMenu div:nth-child(3) i {
   position: absolute;
   right: 0;
 }
@@ -3998,7 +4381,8 @@ main > .swiper-container .swiper-slide {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.personal .list .listHeader > div:nth-child(2), .personal .list .listHeader > div:nth-child(3) {
+.personal .list .listHeader > div:nth-child(2),
+.personal .list .listHeader > div:nth-child(3) {
   cursor: pointer;
   font-weight: bold;
 }
@@ -4019,12 +4403,14 @@ main > .swiper-container .swiper-slide {
   color: white;
 }
 
-.personal .list .functionMenu .icon-bin, .personal .list .functionMenu .icon-spinner11 {
+.personal .list .functionMenu .icon-bin,
+.personal .list .functionMenu .icon-spinner11 {
   font-size: 16px;
   color: white;
 }
 
-.personal .list .functionMenu button.icon-bin, .personal .list .functionMenu a.icon-bin {
+.personal .list .functionMenu button.icon-bin,
+.personal .list .functionMenu a.icon-bin {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
@@ -4033,7 +4419,8 @@ main > .swiper-container .swiper-slide {
   display: flex;
 }
 
-.personal .list .functionMenu button.icon-spinner11, .personal .list .functionMenu a.icon-spinner11 {
+.personal .list .functionMenu button.icon-spinner11,
+.personal .list .functionMenu a.icon-spinner11 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -4076,7 +4463,8 @@ main > .swiper-container .swiper-slide {
           justify-content: center;
 }
 
-.new:before, .claimed:before {
+.new:before,
+.claimed:before {
   content: "NEW";
   position: absolute;
   display: -webkit-box;
@@ -4111,7 +4499,8 @@ main > .swiper-container .swiper-slide {
   color: black;
 }
 
-.proList, .slotList {
+.proList,
+.slotList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4120,7 +4509,8 @@ main > .swiper-container .swiper-slide {
   line-height: 20px;
 }
 
-.proList > div, .slotList > div {
+.proList > div,
+.slotList > div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(100% / 4 - 52px);
           flex: 0 0 calc(100% / 4 - 52px);
@@ -4131,44 +4521,51 @@ main > .swiper-container .swiper-slide {
   position: relative;
 }
 
-.proList > div.active, .slotList > div.active {
+.proList > div.active,
+.slotList > div.active {
   opacity: 0.7;
 }
 
-.proList > div .txt-blue15, .slotList > div .txt-blue15 {
+.proList > div .txt-blue15,
+.slotList > div .txt-blue15 {
   font-weight: bold;
   margin: 10px 0 0;
 }
 
-.proList > div .txt-lightgray li, .slotList > div .txt-lightgray li {
+.proList > div .txt-lightgray li,
+.slotList > div .txt-lightgray li {
   font-size: 12px;
   list-style: disc;
   margin: 5px 15px;
 }
 
-.proList > div img, .slotList > div img {
+.proList > div img,
+.slotList > div img {
   border-radius: 5px;
 }
 
-.proList .rollover, .slotList .rollover {
+.proList .rollover,
+.slotList .rollover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   font-weight: bold;
   margin: 10px 0;
-  background: #0D1B42;
+  background: #0d1b42;
   border: 1px solid #102358;
   border-radius: 5px;
   padding: 10px;
 }
 
-.proList .rollover > div, .slotList .rollover > div {
+.proList .rollover > div,
+.slotList .rollover > div {
   margin: 0;
   margin-right: 10px;
 }
 
-.proList .rollover > div .icon:before, .slotList .rollover > div .icon:before {
+.proList .rollover > div .icon:before,
+.slotList .rollover > div .icon:before {
   font-weight: normal;
   margin-right: 5px;
 }
@@ -4203,7 +4600,8 @@ main > .swiper-container .swiper-slide {
   color: #F52805;
 }
 
-.proList > div .turnover button, .proList > div .turnover a {
+.proList > div .turnover button,
+.proList > div .turnover a {
   background: #F52805;
 }
 
@@ -4227,11 +4625,15 @@ main > .swiper-container .swiper-slide {
   margin: 0;
 }
 
-.proList.expired > div .txt-blue15, .proList.expired > div .txt-yellow, .proList.expired > div .rollover, .proList.expired > div .progressBarModule {
+.proList.expired > div .txt-blue15,
+.proList.expired > div .txt-yellow,
+.proList.expired > div .rollover,
+.proList.expired > div .progressBarModule {
   color: #aeb2bc;
 }
 
-.proList.expired > div > img, .proList.expired > div .progressBarModule {
+.proList.expired > div > img,
+.proList.expired > div .progressBarModule {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
@@ -4294,7 +4696,7 @@ main > .swiper-container .swiper-slide {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  border-right: 1px solid #697EB5;
+  border-right: 1px solid #697eb5;
 }
 
 .promotionsInfo .proData .rollover > div > div:last-child {
@@ -4326,7 +4728,8 @@ main > .swiper-container .swiper-slide {
           justify-content: flex-end;
 }
 
-.promotionsInfo .proData .proDataTitle .btnGroup button, .promotionsInfo .proData .proDataTitle .btnGroup a {
+.promotionsInfo .proData .proDataTitle .btnGroup button,
+.promotionsInfo .proData .proDataTitle .btnGroup a {
   max-width: 130px;
 }
 
@@ -4339,7 +4742,8 @@ main > .swiper-container .swiper-slide {
           justify-content: flex-start;
 }
 
-.promotionsInfo .proData .proDataTitle ~ .btnGroup button, .promotionsInfo .proData .proDataTitle ~ .btnGroup a {
+.promotionsInfo .proData .proDataTitle ~ .btnGroup button,
+.promotionsInfo .proData .proDataTitle ~ .btnGroup a {
   max-width: 130px;
 }
 
@@ -4390,7 +4794,8 @@ form {
   margin: 10px 0 0;
 }
 
-.slotList > div .btnGroup button, .slotList > div .btnGroup a {
+.slotList > div .btnGroup button,
+.slotList > div .btnGroup a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(50% - 5px);
           flex: 0 0 calc(50% - 5px);
@@ -4447,7 +4852,8 @@ article img {
   border-radius: 10px;
 }
 
-article h1, article h2 {
+article h1,
+article h2 {
   font-size: 24px;
   margin-bottom: 15px;
   color: #1E85EC;
@@ -4490,7 +4896,7 @@ article pre {
   color: #aeb2bc;
 }
 
-.rdt .inputBox, .rdt .inputBox-blue {
+.rdt .inputBox {
   width: 100%;
 }
 
@@ -4608,7 +5014,8 @@ iframe {
   color: white;
 }
 
-.progressBarModule .turnover button, .progressBarModule .turnover a {
+.progressBarModule .turnover button,
+.progressBarModule .turnover a {
   background: #1E85EC;
   color: white;
   border-radius: 100%;
@@ -4689,7 +5096,8 @@ input:-moz-placeholder {
       flex-wrap: wrap;
 }
 
-.buttonBox button, .buttonBox a {
+.buttonBox button,
+.buttonBox a {
   max-width: 120px;
   min-width: 120px;
   -webkit-box-flex: 1;
@@ -4698,7 +5106,8 @@ input:-moz-placeholder {
   margin: 5px 5px 5px 0;
 }
 
-.buttonBox button .icon, .buttonBox a .icon {
+.buttonBox button .icon,
+.buttonBox a .icon {
   display: none;
   margin-left: 5px;
   background: white;
@@ -4713,12 +5122,14 @@ input:-moz-placeholder {
           align-items: center;
 }
 
-.buttonBox button.active, .buttonBox a.active {
+.buttonBox button.active,
+.buttonBox a.active {
   background: #134DAE;
   color: white;
 }
 
-.buttonBox button.active .icon, .buttonBox a.active .icon {
+.buttonBox button.active .icon,
+.buttonBox a.active .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4733,8 +5144,8 @@ input:-moz-placeholder {
 }
 
 .otpLoading {
-  -webkit-animation: rotate .7s linear infinite;
-          animation: rotate .7s linear infinite;
+  -webkit-animation: rotate 0.7s linear infinite;
+          animation: rotate 0.7s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4752,11 +5163,12 @@ input:-moz-placeholder {
 }
 
 .icon-spinner11.active {
-  -webkit-animation: rotate .7s linear 2;
-          animation: rotate .7s linear 2;
+  -webkit-animation: rotate 0.7s linear 2;
+          animation: rotate 0.7s linear 2;
 }
 
-button.icon-books, a.icon-books {
+button.icon-books,
+a.icon-books {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4768,8 +5180,9 @@ button.icon-books, a.icon-books {
           justify-content: flex-end;
 }
 
-button.icon-books:hover:after, a.icon-books:hover:after {
-  content: 'ALL Transaction';
+button.icon-books:hover:after,
+a.icon-books:hover:after {
+  content: "ALL Transaction";
   font-size: 12px;
   margin-left: 10px;
 }
@@ -4800,7 +5213,8 @@ button.icon-books:hover:after, a.icon-books:hover:after {
   position: relative;
 }
 
-.changePassWordpop button.icon-cross, .changePassWordpop a.icon-cross {
+.changePassWordpop button.icon-cross,
+.changePassWordpop a.icon-cross {
   font-size: 12px;
   position: absolute;
   right: -20px;
@@ -4950,12 +5364,14 @@ input + .iconModule i.icon.icon-checkmark:before {
   text-align: center;
 }
 
-.indexGameList a, .indexGameList button {
+.indexGameList a,
+.indexGameList button {
   width: calc(100% / 6 - 24px);
   margin-bottom: 24px;
 }
 
-.indexGameList a div, .indexGameList button div {
+.indexGameList a div,
+.indexGameList button div {
   text-align: center;
   height: 50px;
   display: -webkit-box;
@@ -4970,7 +5386,8 @@ input + .iconModule i.icon.icon-checkmark:before {
   font-weight: bold;
 }
 
-.indexGameList a:hover div, .indexGameList button:hover div {
+.indexGameList a:hover div,
+.indexGameList button:hover div {
   color: #56ceff;
 }
 
@@ -5150,7 +5567,7 @@ input + .iconModule i.icon.icon-checkmark:before {
   padding: 5px;
   text-align: right;
   background: #324578;
-  border-right: 1px solid #697EB5;
+  border-right: 1px solid #697eb5;
 }
 
 .depositSlip .depositSlipList > div > div:nth-child(2) {
@@ -5160,7 +5577,7 @@ input + .iconModule i.icon.icon-checkmark:before {
 .depositSlip .txt-orange {
   margin: 5px 0 15px;
   font-size: 16px;
-  border: 1px solid  #697EB5;
+  border: 1px solid #697eb5;
   padding: 5px 10px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -5178,7 +5595,7 @@ input + .iconModule i.icon.icon-checkmark:before {
 
 .uploadBox .upload_img {
   border: 2px dashed #56ceff;
-  background: #010E33;
+  background: #010e33;
   width: 290px;
   height: 120px;
 }
